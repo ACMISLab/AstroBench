@@ -1,0 +1,8 @@
+﻿filename,overall_exact_match_rate,overall_partial_match_rate,overall_similarity_exact_match_rate,overall_similarity_partial_match_rate
+APBench Calculation-masked-derive-done.csv,0.003401361,0.289115646,0.006802721,0.37414966
+Computational-Reasoning-coded-masked-derive-done.csv,0,0.35483871,0,0.411290323
+Computational-Reasoning-uncoded-masked-done.csv,0,0.428571429,0,0.464285714
+Formula Calculation-derive-done.csv,0,0.043478261,0,0.115942029
+Formula Derivation-masked-done.csv,0,0.55,0,0.65
+TPBench Calculation-masked-done.csv,0,0.111111111,0,0.222222222
+,0.002,0.288,0.004,0.363

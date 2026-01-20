@@ -1,0 +1,2168 @@
+﻿Index,Question,Ori Final Answer,Model_Response,Difficulty
+1,"Please use the Stefan–Boltzmann law to calculate the total radiative power of a star, where:
+- Surface temperature T = 35235.19 K
+- Radius R = 2.66538e+11 meters","Total stellar radiative power L = 7.80273e+34 watts
+       Equivalent to 203832960.84 times the solar luminosity","```python
+def execute_code():
+    # Constants
+    sigma = 5.670374419e-8  # Stefan-Boltzmann constant in W/m²/K⁴
+    
+    # Given values
+    T = 35235.19  # Surface temperature in Kelvin
+    R = 2.66538e+11  # Radius in meters
+    
+    # Stefan-Boltzmann law: L = 4 * pi * sigma * R² * T⁴
+    # where L is the luminosity (total radiative power)
+    import math
+    L = 4 * math.pi * sigma * R**2 * T**4
+    
+    return L
+```",0.45
+2,"Use Wien's displacement law to calculate the peak wavelength of blackbody radiation, given the surface temperature T = 35027.66 K.","Peak wavelength λ_max = 8.27281e-08 m
+ (non-visible light)","```python
+def execute_code():
+    # Wien's displacement law: λ_max = b / T
+    # where:
+    #   λ_max is the peak wavelength in meters
+    #   b is Wien's displacement constant ≈ 2.8977719 × 10^-3 m·K
+    #   T is the temperature in Kelvin
+    
+    b = 2.8977719e-3  # Wien's displacement constant in m·K
+    T = 35027.66  # Temperature in Kelvin
+    
+    # Calculate peak wavelength
+    lambda_max = b / T
+    
+    # Convert to nanometers for more intuitive result (optional, but common)
+    lambda_max_nm = lambda_max * 1e9
+    
+    return lambda_max_nm
+```",0.45
+3,"Use Planck's blackbody radiation law to calculate the spectral radiance, given wavelength λ=7.02486e-07 m and temperature T=9910.37 K",The spectral radiance is B_λ=1.00925e+14 W·m⁻²·sr⁻¹·m⁻¹,"```python
+import numpy as np
+
+def execute_code():
+    # Given values
+    lambda_m = 7.02486e-07  # wavelength in meters
+    T = 9910.37  # temperature in Kelvin
+    
+    # Constants
+    h = 6.62607015e-34  # Planck constant (J·s)
+    c = 299792458  # speed of light (m/s)
+    k_B = 1.380649e-23  # Boltzmann constant (J/K)
+    
+    # Planck's blackbody radiation law for spectral radiance (per unit wavelength)
+    # B_λ(λ, T) = (2*h*c²) / (λ⁵ * (exp(hc/(λ*k_B*T)) - 1))
+    
+    numerator = 2 * h * c**2
+    denominator = lambda_m**5 * (np.exp(h * c / (lambda_m * k_B * T)) - 1)
+    spectral_radiance = numerator / denominator
+    
+    return spectral_radiance
+```",0.51
+4,"Use the magnitude difference formula to calculate the magnitude difference between two stars, given the luminosity ratio L₁/L₂ = 97.23549",The magnitude difference is m₁ - m₂ = -4.96956,"```python
+def execute_code():
+    # Given luminosity ratio
+    L1_over_L2 = 97.23549
+    
+    # Magnitude difference formula: Δm = -2.5 * log10(L1/L2)
+    # where Δm is the magnitude difference, and L1/L2 is the luminosity ratio
+    import math
+    magnitude_difference = -2.5 * math.log10(L1_over_L2)
+    
+    return magnitude_difference
+```",0.45
+5,"Use the Eddington luminosity formula to calculate the limiting luminosity, where the mass M=6.57923e+31 kg and opacity κ=0.31778 m²/kg.",The Eddington luminosity L_Edd = 5.20573e+31 W,"```python
+def execute_code():
+    # Eddington luminosity formula: L_edd = (4 * pi * G * M * c) / kappa
+    # where:
+    #   G = gravitational constant = 6.67430e-11 m^3 kg^-1 s^-2
+    #   c = speed of light = 2.99792458e8 m/s
+    #   M = mass in kg
+    #   kappa = opacity in m^2/kg
+    
+    import math
+    
+    G = 6.67430e-11  # gravitational constant
+    c = 2.99792458e8  # speed of light
+    M = 6.57923e+31  # mass in kg
+    kappa = 0.31778  # opacity in m^2/kg
+    
+    # Calculate Eddington luminosity
+    L_edd = (4 * math.pi * G * M * c) / kappa
+    
+    return L_edd
+```",0.45
+6,"Use the Chandrasekhar limit formula to calculate the maximum mass of a white dwarf, given the electron degeneracy parameter μ_e = 1.455","Chandrasekhar limit mass M_Ch = 5.47915e+30 kg
+ (2.755 times the solar mass)","```python
+def execute_code():
+    # Import necessary libraries
+    import math
+    
+    # Given electron degeneracy parameter
+    mu_e = 1.455
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    c = 299792458   # Speed of light in m/s
+    h_bar = 1.0545718e-34  # Reduced Planck constant in J·s
+    m_e = 9.1093837e-31  # Electron mass in kg
+    k_B = 1.380649e-23  # Boltzmann constant in J/K
+    N_A = 6.02214076e23  # Avogadro's number
+    
+    # Calculate the Chandrasekhar limit using the formula:
+    # M_Ch = (4 * sqrt(3) * pi) / (G * (mu_e * m_p)^2) * (h_bar^2 / (8 * pi^2 * m_e))^(3/2)
+    # But more commonly, we use the simplified form:
+    # M_Ch = (π^(4/3) * (3^(3/2)) * h_bar^2) / (G * (mu_e * m_p)^2 * (8 * pi^2 * m_e)^(3/2))
+    
+    # However, a standard approach is to use:
+    # M_Ch = (4 * sqrt(3) * pi) / (G * (mu_e * m_p)^2) * (h_bar^2 / (8 * pi^2 * m_e))^(3/2)
+    
+    # But for simplicity and accuracy, we'll use the known expression:
+    # M_Ch = (π^(4/3) * 3^(3/2) * h_bar^2) / (G * (mu_e * m_p)^2 * (8 * pi^2 * m_e)^(3/2))
+    
+    # Actually, let's use the more direct formula:
+    # M_Ch = (1.455 * 1.455 * 1.455) * (h_bar^2 / (G * m_e * m_p^2))^(3/2) * (4 * sqrt(3) * pi) / (8 * pi^2)^(3/2)
+    
+    # Let's use the standard derivation:
+    # M_Ch = (4 * sqrt(3) * pi) / (G * (mu_e * m_p)^2) * (h_bar^2 / (8 * pi^2 * m_e))^(3/2)
+    
+    # We need proton mass
+    m_p = 1.6726219e-27  # Proton mass in kg
+    
+    # Calculate the Chandrasekhar limit
+    numerator = 4 * math.sqrt(3) * math.pi
+    denominator = G * (mu_e * m_p)**2
+    inner_term = (h_bar**2) / (8 * math.pi**2 * m_e)
+    power_term = inner_term**(3/2)
+    
+    M_Ch = (numerator / denominator) * power_term
+    
+    # Convert to solar masses
+    M_sun = 1.98847e30  # Solar mass in kg
+    M_Ch_solar = M_Ch / M_sun
+    
+    return M_Ch_solar
+
+# Execute the code
+result = execute_code()
+print(result)
+```
+
+The above code calculates the Chandrasekhar limit using the electron degeneracy parameter μ_e = 1.455. The result is returned in solar masses.
+
+However, there's an issue with the formula I used. Let me correct it with the proper derivation:
+
+```python
+def execute_code():
+    import math
+    
+    # Given electron degeneracy parameter
+    mu_e = 1.455
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    h_bar = 1.0545718e-34  # Reduced Planck constant in J·s
+    m_e = 9.1093837e-31  # Electron mass in kg
+    m_p = 1.6726219e-27  # Proton mass in kg
+    M_sun = 1.98847e30  # Solar mass in kg
+    
+    # Correct formula for Chandrasekhar limit:
+    # M_Ch = (π^(4/3) * 3^(3/2) * h_bar^2) / (G * (mu_e * m_p)^2 * (8 * π^2 * m_e)^(3/2))
+    # This can be rewritten as:
+    # M_Ch = (4 * sqrt(3) * π) / (G * (mu_e * m_p)^2) * (h_bar^2 / (8 * π^2 * m_e))^(3/2)
+    
+    # Calculate each part
+    term1 = 4 * math.sqrt(3) * math.pi
+    term2 = G * (mu_e * m_p)**2
+    term3 = (h_bar**2) / (8 * math.pi**2 * m_e)
+    term4 = term3**(3/2)
+    
+    M_Ch_kg = (term1 / term2) * term4
+    
+    # Convert to solar masses
+    M_Ch_solar = M_Ch_kg / M_sun
+    
+    return M_Ch_solar
+```
+
+Actually, let me use the most accurate and widely accepted formula:
+
+```python
+def execute_code():
+    import math
+    
+    # Given electron degeneracy parameter
+    mu_e = 1.455
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    h_bar = 1.0545718e-34  # Reduced Planck constant in J·s
+    m_e = 9.1093837e-31  # Electron mass in kg
+    m_p = 1.6726219e-27  # Proton mass in kg
+    M_sun = 1.98847e30  # Solar mass in kg
+    
+    # Standard formula for Chandrasekhar limit:
+    # M_Ch = (π^(4/3) * 3^(3/2) * h_bar^2) / (G * (mu_e * m_p)^2 * (8 * π^2 * m_e)^(3/2))
+    
+    # Simplified calculation:
+    numerator = math.pi**(4/3) * 3**(3/2) * h_bar**2
+    denominator = G * (mu_e * m_p)**2 * (8 * math.pi**2 * m_e)**(3/2)
+    M_Ch_kg = numerator / denominator
+    
+    # Convert to solar masses
+    M_Ch_solar = M_Ch_kg / M_sun
+    
+    return M_Ch_solar
+```
+
+Let me finalize with the most precise calculation:
+
+```python
+def execute_code():
+    import math
+    
+    # Given electron degeneracy parameter
+    mu_e = 1.455
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    h_bar = 1.0545718e-34  # Reduced Planck constant in J·s
+    m_e = 9.1093837e-31  # Electron mass in kg
+    m_p = 1.6726219e-27  # Proton mass in kg
+    M_sun = 1.98847e30  # Solar mass in kg
+    
+    # Use the standard Chandrasekhar limit formula:
+    # M_Ch = (π^(4/3) * 3^(3/2) * ħ^2) / (G * (μ_e * m_p)^2 * (8 * π^2 * m_e)^(3/2))
+    
+    # Calculate numerator
+    numerator = (math.pi**(4/3)) * (3**(3/2)) * (h_bar**2)
+    
+    # Calculate denominator
+    denominator = G * (mu_e * m_p)**2 * ((8 * math.pi**2 * m_e)**(3/2))
+    
+    # Calculate Chandrasekhar limit in kg
+    M_Ch_kg = numerator / denominator
+    
+    # Convert to solar masses
+    M_Ch_solar = M_Ch_kg / M_sun
+    
+    return M_Ch_solar
+```",0.45
+7,"Use the scaling relation to calculate the physical quantity P, where:
+- Stellar radius R = 2.21811e+10 m
+- Stellar mass M = 3.94172e+31 kg
+- Proportionality constant Q = 1.0",Physical quantity P = 40.43530,"```python
+def execute_code():
+    # Given values
+    R = 2.21811e+10  # Stellar radius in meters
+    M = 3.94172e+31  # Stellar mass in kg
+    Q = 1.0  # Proportionality constant
+    
+    # Since the problem mentions ""scaling relation"" but does not specify the exact form,
+    # we assume a common scaling relation in astrophysics: P ∝ (M / R)
+    # This is typical for quantities like surface gravity or luminosity scaling.
+    # Without more context, we'll use P = Q * (M / R) as a reasonable default.
+    
+    P = Q * (M / R)
+    
+    return P
+```",0.51
+8,"Compute the convective energy flux, given the parameters:
+- Density ρ = 1.204e+04 kg/m³
+- Specific heat capacity c_p = 1.720e+04 J/kg/K
+- Temperature T = 10466.8 K
+- Convective velocity v_c = 42.78 m/s
+- Temperature gradient ∇_T = 0.290","Convective energy flux F_conv = 2.686e+13 W/m²
+ (Average solar surface flux ≈ 6.3×10⁷ W/m²)","```python
+def execute_code():
+    # Given parameters
+    rho = 1.204e+04  # Density in kg/m³
+    cp = 1.720e+04   # Specific heat capacity in J/kg/K
+    T = 10466.8      # Temperature in K
+    vc = 42.78       # Convective velocity in m/s
+    grad_T = 0.290   # Temperature gradient in K/m (assumed units)
+
+    # Formula for convective energy flux: F_conv = rho * cp * T * vc * grad_T
+    # This formula represents the convective energy transport rate per unit area.
+    # Note: In some contexts, convective flux is given as rho * cp * vc * T * (∇T),
+    # where ∇T is the temperature gradient.
+
+    F_conv = rho * cp * T * vc * grad_T
+
+    return F_conv
+```",0.45
+9,"Using the Stefan–Boltzmann law, calculate the total luminosity of the star, given:
+- Stellar radius R = 4.65775e+09 m
+- Effective temperature T_eff = 29787.00 K","Total stellar luminosity L = 1.21697e+31 W
+ (31791.333 times the solar luminosity)","```python
+def execute_code():
+    # Constants
+    sigma = 5.670374419e-8  # Stefan-Boltzmann constant in W/m²/K⁴
+    
+    # Given values
+    R = 4.65775e+09  # Stellar radius in meters
+    T_eff = 29787.00  # Effective temperature in Kelvin
+    
+    # Stefan-Boltzmann law: L = 4πR²σT_eff⁴
+    luminosity = 4 * 3.141592653589793 * (R ** 2) * sigma * (T_eff ** 4)
+    
+    return luminosity
+```",0.45
+10,"According to Kepler's first law, calculate the orbital parameters:
+- Semi-major axis a=4.31486e+12 m
+- Eccentricity e=0.51172
+- Calculate the perihelion and aphelion distances","Perihelion distance = 2.10686e+12 m
+ Aphelion distance = 6.52286e+12 m","```python
+def execute_code():
+    # Given parameters
+    a = 4.31486e+12  # Semi-major axis in meters
+    e = 0.51172     # Eccentricity
+    
+    # Calculate perihelion distance (closest approach to the Sun)
+    perihelion = a * (1 - e)
+    
+    # Calculate aphelion distance (farthest point from the Sun)
+    aphelion = a * (1 + e)
+    
+    # Return results as a dictionary for clarity
+    result = {
+        ""perihelion"": perihelion,
+        ""aphelion"": aphelion
+    }
+    
+    return result
+```",0.45
+11,"According to Kepler's Second Law, verify the conservation of areal velocity:
+- Semi-major axis a = 3.84813e+12 m
+- Eccentricity e = 0.15047
+- Perihelion distance r_peri = 3.26911e+12 m","Areal velocity constant = 1.11709e+16 m²/s
+ Perihelion velocity = 6.83421e+03 m/s","```python
+def execute_code():
+    import math
+    
+    # Given values
+    a = 3.84813e+12  # semi-major axis in meters
+    e = 0.15047      # eccentricity
+    r_peri = 3.26911e+12  # perihelion distance in meters
+    
+    # Calculate aphelion distance using r_aph = a(1 + e)
+    r_aph = a * (1 + e)
+    
+    # Verify consistency: perihelion should be r_peri = a(1 - e)
+    r_peri_calculated = a * (1 - e)
+    
+    # Check if given r_peri matches calculated r_peri
+    r_peri_diff = abs(r_peri - r_peri_calculated)
+    
+    # For Kepler's Second Law, areal velocity is constant.
+    # Areal velocity = (1/2) * r^2 * dθ/dt = constant
+    # At perihelion and aphelion, the velocity is perpendicular to radius vector,
+    # so we can compare r_peri * v_peri = r_aph * v_aph (since areal velocity is proportional to r*v)
+    
+    # We don't have velocities directly, but we can use conservation of angular momentum:
+    # L = m * r * v * sin(θ) = constant
+    # At perihelion and aphelion, θ = 90°, so sin(θ) = 1
+    # Therefore, r_peri * v_peri = r_aph * v_aph
+    
+    # Since we don't have actual velocities, let's calculate the ratio:
+    # If Kepler's Second Law holds, then r_peri * v_peri should equal r_aph * v_aph
+    # So the ratio r_peri / r_aph should be inversely proportional to v_peri / v_aph
+    
+    # But since we don't have velocities, we can verify that the geometry is consistent
+    # with Kepler's laws by checking if r_peri = a(1-e) and r_aph = a(1+e)
+    
+    # Calculate expected perihelion from a and e
+    r_peri_expected = a * (1 - e)
+    
+    # Calculate relative error between given r_peri and expected r_peri
+    relative_error = abs(r_peri - r_peri_expected) / r_peri_expected
+    
+    # For verification, we check if the given parameters are consistent
+    # with Kepler's laws (which underlie Kepler's Second Law)
+    
+    # Also, calculate the semi-minor axis for completeness
+    b = a * math.sqrt(1 - e**2)
+    
+    # Return results for verification
+    result = {
+        ""given_r_peri"": r_peri,
+        ""calculated_r_peri"": r_peri_expected,
+        ""relative_error"": relative_error,
+        ""r_aph"": r_aph,
+        ""semi_minor_axis"": b,
+        ""verification_passed"": relative_error < 1e-10  # very small tolerance
+    }
+    
+    return result
+```",0.45
+12,"Use Kepler's third law to calculate the orbital period, where the semi-major axis a=6.35134e+11 m, the central body's mass M=1.98850e+30 kg, and the gravitational constant G=6.67430e-11",Orbital period T=2.76066e+08 s,"```python
+def execute_code():
+    # Given values
+    a = 6.35134e+11  # semi-major axis in meters
+    M = 1.98850e+30  # mass of central body in kg
+    G = 6.67430e-11  # gravitational constant in m^3 kg^-1 s^-2
+    
+    # Kepler's third law: T^2 = (4 * pi^2 / G * M) * a^3
+    import math
+    
+    # Calculate orbital period T
+    T_squared = (4 * math.pi**2 / (G * M)) * a**3
+    T = math.sqrt(T_squared)
+    
+    # Convert period from seconds to years for better interpretation
+    seconds_per_year = 365.25 * 24 * 3600
+    T_years = T / seconds_per_year
+    
+    # Return both the period in seconds and in years
+    result = {
+        ""period_seconds"": T,
+        ""period_years"": T_years
+    }
+    
+    return result
+```",0.45
+13,"Use Newton's law of universal gravitation to calculate the magnitude of the gravitational force, where:
+- Mass 1 m₁ = 8.20334e+29 kg
+- Mass 2 m₂ = 8.16593e+28 kg
+- Distance between the two objects r = 6.65271e+11 m","Gravitational force F = 1.01019e+25 N
+ (equivalent to 10101949363327999148032.000 kN or 1030811159523265112702976.000 kilogram-force)","```python
+def execute_code():
+    # Newton's law of universal gravitation: F = G * (m1 * m2) / r^2
+    # Gravitational constant G
+    G = 6.67430e-11  # m^3 kg^-1 s^-2
+    
+    # Given masses and distance
+    m1 = 8.20334e+29  # kg
+    m2 = 8.16593e+28  # kg
+    r = 6.65271e+11   # m
+    
+    # Calculate gravitational force
+    F = G * (m1 * m2) / (r ** 2)
+    
+    return F
+```",0.45
+14,"Use the orbital velocity formula to calculate the circular orbital speed, where:
+- Mass of the central body M = 1.81845e+24 kg
+- Orbital radius r = 4.00464e+08 m","Orbital velocity v = 5.50519e+02 m/s
+ (0.55 km/s or 1981.87 km/h)","```python
+def execute_code():
+    # Given values
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    M = 1.81845e+24  # Mass of the central body in kg
+    r = 4.00464e+08  # Orbital radius in meters
+    
+    # Orbital velocity formula for circular orbit: v = sqrt(G * M / r)
+    v = (G * M / r) ** 0.5
+    
+    return v
+```",0.45
+15,"Use the escape velocity formula to calculate, where:
+- Mass of the body M = 5.84484e+26 kg
+- Radius of the body r = 5.84814e+07 m","Escape velocity v_e = 3.65254e+04 m/s
+ (36.53 km/s or 131491.47 km/h)
+ Reference value for Earth: 11.2 km/s","```python
+def execute_code():
+    # Given values
+    M = 5.84484e+26  # Mass of the body in kg
+    r = 5.84814e+07  # Radius of the body in meters
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    
+    # Escape velocity formula: v = sqrt(2 * G * M / r)
+    import math
+    escape_velocity = math.sqrt(2 * G * M / r)
+    
+    return escape_velocity
+```",0.45
+16,"Please use the tidal force formula to calculate the gravitational difference, where:
+- Mass of the primary body M = 4.25246e+25 kg
+- Mass of the tidally affected body m = 2.01172e+24 kg
+- Radius of the tidally affected body R = 5.55447e+07 m
+- Distance between the centers of the two bodies d = 2.96479e+09 m","Tidal force F_tidal = 2.43392e+19 N
+ (equivalent to 24339178.36 trillion newtons)","```python
+def execute_code():
+    # Given values
+    M = 4.25246e+25  # Mass of the primary body in kg
+    m = 2.01172e+24  # Mass of the tidally affected body in kg
+    R = 5.55447e+07  # Radius of the tidally affected body in meters
+    d = 2.96479e+09  # Distance between centers in meters
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+
+    # Tidal force formula: ΔF = (2 * G * M * m * R) / d^3
+    # This gives the differential gravitational force across the radius R of the tidally affected body
+    
+    tidal_force = (2 * G * M * m * R) / (d ** 3)
+    
+    return tidal_force
+```",0.51
+17,"Use the Hill radius formula to calculate the gravitational sphere of influence, where:
+- Semi-major axis a = 3.95219e+12 m
+- Central star mass M = 1.02254e+31 kg
+- Planet mass m = 5.89569e+25 kg","Hill radius r_H = 4.91378e+10 m
+ (0.328 AU or 28288.9 times the lunar orbital radius)","```python
+def execute_code():
+    import math
+    
+    # Given values
+    a = 3.95219e+12  # semi-major axis in meters
+    M = 1.02254e+31  # central star mass in kg
+    m = 5.89569e+25  # planet mass in kg
+    
+    # Gravitational constant
+    G = 6.67430e-11  # m^3 kg^-1 s^-2
+    
+    # Hill radius formula: R_h = a * (m / (3 * M))^(1/3)
+    R_h = a * (m / (3 * M))**(1/3)
+    
+    return R_h
+```",0.51
+18,"Use the Roche lobe radius formula to calculate the critical distance. Given:
+- Planetary radius R_p = 1.20474e+08 m
+- Planetary density ρ_p = 11502.7 kg/m³
+- Stellar density ρ_s = 2710.4 kg/m³","Roche lobe critical distance d = 4.75925e+08 m
+ (74.70 Earth radii or 0.6838 solar radii)","```python
+def execute_code():
+    # Given values
+    R_p = 1.20474e+08  # Planetary radius in meters
+    rho_p = 11502.7    # Planetary density in kg/m³
+    rho_s = 2710.4     # Stellar density in kg/m³
+    
+    # Roche lobe radius formula for the critical distance (for a binary system)
+    # The approximate formula for the Roche lobe radius (in terms of the separation between centers) is:
+    # R_L ≈ 0.49 * q^(2/3) * a / (0.6 * q^(2/3) + ln(1 + q^(1/3)))
+    # where q = M_secondary / M_primary, and a is the orbital separation.
+    
+    # However, if we are to calculate the critical distance using planetary and stellar densities,
+    # we can use the simplified Roche limit formula for tidal disruption:
+    # d_roche ≈ 2.44 * R_p * (ρ_p / ρ_s)^(1/3)
+    
+    # This formula gives the minimum distance at which a second body, held together only by its own gravity,
+    # will disintegrate due to a third body's tidal forces.
+    
+    # Calculate Roche limit
+    d_roche = 2.44 * R_p * (rho_p / rho_s)**(1/3)
+    
+    return d_roche
+```",0.51
+19,"Please calculate the critical rotational angular velocity, given:
+- Celestial body mass M = 1.53185e+31 kg
+- Celestial body radius R = 4.99163e+10 m","Critical rotational angular velocity ω_c = 2.86713e-06 rad/s
+ Corresponding period P_c = 2.19145e+06 s (608.74 hours)","```python
+def execute_code():
+    import math
+    
+    # Given values
+    M = 1.53185e+31  # mass in kg
+    R = 4.99163e+10  # radius in meters
+    G = 6.67430e-11  # gravitational constant in m^3 kg^-1 s^-2
+    
+    # Critical rotational angular velocity formula:
+    # ω_critical = sqrt(G * M / R^3)
+    omega_critical = math.sqrt(G * M / (R ** 3))
+    
+    return omega_critical
+```",0.51
+20,"Verify the conservation of momentum in a multi-body system containing 3 objects:
+- Object 1: mass = 5.473e+25 kg, velocity = 2.364e+04 m/s
+- Object 2: mass = 1.351e+25 kg, velocity = -2.803e+04 m/s
+- Object 3: mass = 2.846e+24 kg, velocity = -4.765e+04 m/s","Total system momentum p_total = 7.798e+29 kg·m/s
+ (Momentum conservation is satisfied for this closed system)","```python
+def execute_code():
+    # Define masses and velocities of the three objects
+    mass1 = 5.473e+25  # kg
+    velocity1 = 2.364e+04  # m/s
+    
+    mass2 = 1.351e+25  # kg
+    velocity2 = -2.803e+04  # m/s
+    
+    mass3 = 2.846e+24  # kg
+    velocity3 = -4.765e+04  # m/s
+    
+    # Calculate momentum for each object (p = m * v)
+    momentum1 = mass1 * velocity1
+    momentum2 = mass2 * velocity2
+    momentum3 = mass3 * velocity3
+    
+    # Calculate total momentum of the system
+    total_momentum = momentum1 + momentum2 + momentum3
+    
+    # Verify conservation of momentum
+    # In an isolated system, total momentum should be constant (and we assume no external forces)
+    # We return the total momentum as the result to verify conservation
+    
+    return total_momentum
+```",0.45
+21,"Use Hubble's law to calculate the galaxy's recessional velocity, where:
+- Distance d = 9730.69 Mpc","Recessional velocity v = 659740.75 km/s
+ Redshift z ≈ 2.1991 (non-relativistic approximation)","```python
+def execute_code():
+    # Hubble's Law: v = H0 * d
+    # Where:
+    #   v = recessional velocity (km/s)
+    #   H0 = Hubble constant (typically around 70 km/s/Mpc, but can vary; we'll use 70 as standard)
+    #   d = distance in Mpc
+    
+    # Given distance
+    d = 9730.69  # in Mpc
+    
+    # Hubble constant (km/s per Mpc) - commonly accepted value is ~70 km/s/Mpc
+    H0 = 70  # km/s/Mpc
+    
+    # Calculate recessional velocity
+    v = H0 * d
+    
+    return v
+```",0.45
+22,"Use the Friedmann equation to verify the cosmic evolution, where:
+- Scale factor a = 8.81
+- Matter density ρ_m = 1.592e-27 kg/m³
+- Curvature parameter k = 0
+- Cosmological constant Λ = 7.694e-53 m⁻²","Under the current cosmological parameters:
+ - Hubble parameter H = 1.787e-18 s⁻¹
+ - Matter density parameter Ω_m = 0.184
+ - Curvature interpretation: flat universe
+ - Dark energy fraction Ω_Λ = 0.72","```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    a = 8.81  # Scale factor
+    rho_m = 1.592e-27  # Matter density in kg/m³
+    k = 0  # Curvature parameter (flat universe)
+    Lambda = 7.694e-53  # Cosmological constant in m⁻²
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m³ kg⁻¹ s⁻²
+    c = 299792458  # Speed of light in m/s
+    
+    # Friedmann equation: (H/a)^2 = (8πG/3) * ρ_m / a^3 + Λ/3 - k/a^2
+    # Since k = 0, the equation simplifies to:
+    # H^2 = (8πG/3) * ρ_m / a^3 + Λ/3
+    
+    # Calculate Hubble parameter squared (H^2)
+    H_squared = (8 * math.pi * G / 3) * (rho_m / a**3) + (Lambda / 3)
+    
+    # Calculate Hubble parameter H
+    H = math.sqrt(H_squared)
+    
+    # Return the calculated Hubble parameter (in s⁻¹) for verification
+    return H
+```",0.45
+23,"Please calculate the critical density of the universe, given:
+- Hubble parameter H = 1.832e-18 s⁻¹
+ (equivalent to 0.86×the Planck measured value 65.39501889466081 km/s/Mpc)",Critical density of the universe ρ_c = 6.001e-27 kg/m³,"```python
+def execute_code():
+    # Constants
+    H = 1.832e-18  # Hubble parameter in s⁻¹
+    c = 299792458  # Speed of light in m/s
+    G = 6.67430e-11  # Gravitational constant in m³ kg⁻¹ s⁻²
+    
+    # Critical density formula: ρ_c = 3H² / (8πG)
+    rho_c = (3 * H**2) / (8 * 3.141592653589793 * G)
+    
+    # Convert to kg/m³ (standard unit for density)
+    result = rho_c
+    
+    return result
+```",0.45
+24,"Calculate the age of the Universe given:
+- Matter density parameter Ω_m = 0.216
+- Dark energy density parameter Ω_Λ = 0.784
+- Hubble constant H₀ = 67.8 km/s/Mpc",Age of the Universe t₀ = 15.22 Gyr,"```python
+import numpy as np
+from scipy.integrate import quad
+
+def execute_code():
+    # Given parameters
+    Omega_m = 0.216  # Matter density parameter
+    Omega_Lambda = 0.784  # Dark energy density parameter
+    H0 = 67.8  # Hubble constant in km/s/Mpc
+    
+    # Convert H0 to s^-1 for calculation
+    # 1 Mpc = 3.08568e22 m
+    # 1 km/s = 1000 m/s
+    # So H0 in s^-1 = (67.8 * 1000) / (3.08568e22)
+    H0_s = (H0 * 1000) / (3.08568e22)
+    
+    # Age of the Universe formula:
+    # t_universe = 1/H0 * ∫₀^∞ dx / sqrt(Ω_m * x³ + Ω_Λ + (1 - Ω_m - Ω_Λ) * x²)
+    # Since Ω_m + Ω_Λ = 1, the term (1 - Ω_m - Ω_Λ) = 0
+    # So the integral becomes: ∫₀^∞ dx / sqrt(Ω_m * x³ + Ω_Λ)
+    
+    def integrand(x):
+        return 1.0 / np.sqrt(Omega_m * x**3 + Omega_Lambda)
+    
+    # Integrate from 0 to a large number (approximating infinity)
+    # We use 1000 as upper limit since the integrand decays rapidly
+    integral_result, error = quad(integrand, 0, 1000)
+    
+    # Age in seconds
+    age_seconds = integral_result / H0_s
+    
+    # Convert to years
+    seconds_per_year = 365.25 * 24 * 3600
+    age_years = age_seconds / seconds_per_year
+    
+    return age_years
+
+# Execute the code and return result
+result = execute_code()
+return result
+```
+
+Wait, I need to fix the code to properly return the result as requested. Here's the corrected version:
+
+```python
+import numpy as np
+from scipy.integrate import quad
+
+def execute_code():
+    # Given parameters
+    Omega_m = 0.216  # Matter density parameter
+    Omega_Lambda = 0.784  # Dark energy density parameter
+    H0 = 67.8  # Hubble constant in km/s/Mpc
+    
+    # Convert H0 to s^-1 for calculation
+    # 1 Mpc = 3.08568e22 m
+    # 1 km/s = 1000 m/s
+    # So H0 in s^-1 = (67.8 * 1000) / (3.08568e22)
+    H0_s = (H0 * 1000) / (3.08568e22)
+    
+    # Age of the Universe formula:
+    # t_universe = 1/H0 * ∫₀^∞ dx / sqrt(Ω_m * x³ + Ω_Λ + (1 - Ω_m - Ω_Λ) * x²)
+    # Since Ω_m + Ω_Λ = 1, the term (1 - Ω_m - Ω_Λ) = 0
+    # So the integral becomes: ∫₀^∞ dx / sqrt(Ω_m * x³ + Ω_Λ)
+    
+    def integrand(x):
+        return 1.0 / np.sqrt(Omega_m * x**3 + Omega_Lambda)
+    
+    # Integrate from 0 to a large number (approximating infinity)
+    # We use 1000 as upper limit since the integrand decays rapidly
+    integral_result, error = quad(integrand, 0, 1000)
+    
+    # Age in seconds
+    age_seconds = integral_result / H0_s
+    
+    # Convert to years
+    seconds_per_year = 365.25 * 24 * 3600
+    age_years = age_seconds / seconds_per_year
+    
+    return age_years
+```",0.45
+25,"Please calculate the angular diameter distance of the object, given:
+- Physical diameter d = 527.40 pc
+- Angular diameter θ = 19.88 arcsec","Angular diameter distance D_A = 1.689e+23 m
+ (5472624.49 pc or 5.47 Mpc)","```python
+def execute_code():
+    # Given values
+    d = 527.40  # physical diameter in parsecs (pc)
+    theta_arcsec = 19.88  # angular diameter in arcseconds
+
+    # Convert angular diameter from arcseconds to radians
+    # 1 arcsecond = 1/3600 degrees = (1/3600) * (pi/180) radians
+    theta_rad = theta_arcsec * (1/3600) * (3.141592653589793 / 180)
+
+    # Angular diameter distance formula: D_A = d / theta
+    # where d is in the same units as D_A, and theta is in radians
+    D_A_pc = d / theta_rad
+
+    # Return the angular diameter distance in parsecs
+    return D_A_pc
+```",0.45
+26,"Use the luminosity distance formula to calculate the distance, where:
+- Luminosity of the object L = 2.674e+32 W
+- Observed flux F = 3.120e-11 W/m²","Luminosity distance D_L = 8.259e+20 m
+ (26761.71 pc or 0.03 Mpc)","```python
+def execute_code():
+    # Given values
+    L = 2.674e+32  # Luminosity in watts (W)
+    F = 3.120e-11  # Observed flux in watts per square meter (W/m²)
+    
+    # Luminosity distance formula: d = sqrt(L / (4 * pi * F))
+    import math
+    
+    # Calculate luminosity distance
+    d = math.sqrt(L / (4 * math.pi * F))
+    
+    # Return the result in meters
+    return d
+```",0.51
+27,"Use the cosmological redshift formula to calculate the ratio of scale factors, given:
+- Observed redshift z = 7.137
+- Present-day scale factor a(t₀) = 1.0",Scale factor at emission a(tₑ) = 0.12290,"```python
+def execute_code():
+    # Given values
+    z = 7.137  # observed redshift
+    a_t0 = 1.0  # present-day scale factor
+    
+    # Cosmological redshift formula: 1 + z = a(t₀) / a(t)
+    # Therefore, the ratio of scale factors a(t₀)/a(t) = 1 + z
+    # We want the ratio a(t₀)/a(t), which is directly given by 1 + z
+    
+    ratio_scale_factors = 1 + z
+    
+    return ratio_scale_factors
+```",0.45
+28,"Please compute the cosmological power spectrum P(k), where:
+- Dimensionless Hubble parameter h = 0.747
+- Wavenumber k = 0.7773 h/Mpc
+- Characteristic scale k_scale = 0.1 h/Mpc
+- Density fluctuation amplitude Δ = 1.000
+- Spectral index n_s = 0.959",Power spectrum P(k) = 7.1462e+00 (h⁻¹Mpc)³,"```python
+def execute_code():
+    import numpy as np
+    
+    # Given parameters
+    h = 0.747  # Dimensionless Hubble parameter
+    k = 0.7773 * h  # Wavenumber in units of h/Mpc
+    k_scale = 0.1 * h  # Characteristic scale in units of h/Mpc
+    Delta = 1.000  # Density fluctuation amplitude
+    n_s = 0.959  # Spectral index
+    
+    # Compute the cosmological power spectrum P(k)
+    # Using the standard formula: P(k) = A_s * (k / k_scale)^(n_s - 1)
+    # where A_s is the amplitude at k_scale, and A_s = (2π^2) * (Δ^2) / (k_scale^3)
+    
+    # Calculate A_s
+    A_s = (2 * np.pi**2) * (Delta**2) / (k_scale**3)
+    
+    # Calculate P(k)
+    P_k = A_s * (k / k_scale)**(n_s - 1)
+    
+    return P_k
+```",0.45
+29,"Use the parallax method to calculate the distance to a star, where:
+- Parallax angle p = 0.364183 arcsec","Stellar distance d = 2.746 pc
+ (or 8.473e+16 m)","```python
+def execute_code():
+    # Parallax angle in arcseconds
+    p = 0.364183  # arcsec
+    
+    # Distance in parsecs is the reciprocal of the parallax angle in arcseconds
+    distance_parsecs = 1 / p
+    
+    # Return the distance in parsecs
+    return distance_parsecs
+```",0.45
+30,"Using the distance modulus formula, calculate the difference between apparent magnitude and absolute magnitude, where the distance is $d=58520.08\,\text{pc}$ ($190866.75\,\text{ly}$).",The distance modulus is $m - M = 18.83652$.,"```python
+def execute_code():
+    # Distance modulus formula: m - M = 5 * log10(d) - 5
+    # where:
+    #   m is apparent magnitude
+    #   M is absolute magnitude
+    #   d is distance in parsecs (pc)
+    
+    d = 58520.08  # distance in parsecs
+    
+    # Calculate the difference between apparent and absolute magnitude
+    magnitude_difference = 5 * (d / 10000) - 5  # This is incorrect, let's fix it
+    
+    # Correct calculation: 5 * log10(d) - 5
+    import math
+    magnitude_difference = 5 * math.log10(d) - 5
+    
+    return magnitude_difference
+```",0.45
+31,"Use the period–luminosity relation to calculate the absolute magnitude, where the period is $P=45.56\,\text{days}$, the coefficients are $a=-3.53$ and $b=-2.81$.",The absolute magnitude is $M = -8.66487$,"```python
+def execute_code():
+    # Given values
+    P = 45.56  # period in days
+    a = -3.53   # coefficient
+    b = -2.81   # coefficient
+    
+    # Period-luminosity relation: M = a + b * log10(P)
+    import math
+    absolute_magnitude = a + b * math.log10(P)
+    
+    return absolute_magnitude
+```",0.45
+32,"Use the Tully–Fisher relation to calculate the galaxy luminosity, where the rotation velocity is $V_{rot}=132.7\,\text{km/s}$ and the power-law index $\alpha=3.5$","The galaxy luminosity is $L = 2.37700e+09\,L_{\odot}$","```python
+def execute_code():
+    # Tully–Fisher relation: L ∝ V_rot^α
+    # We need to calculate luminosity L given V_rot and α
+    # Since no normalization constant is provided, we assume a standard form:
+    # L = L_0 * V_rot^α, where L_0 is a typical normalization constant.
+    # For galaxies in the local universe, a common normalization is:
+    # L (in solar luminosities) ≈ 10^10 * (V_rot / 200 km/s)^α
+    # But since no specific normalization is given in the question, we'll use a general form
+    # that returns luminosity proportional to V_rot^α.
+    
+    V_rot = 132.7  # km/s
+    alpha = 3.5
+    
+    # Calculate luminosity (proportional to V_rot^alpha)
+    # We'll return the value of V_rot^alpha as the luminosity (in arbitrary units)
+    # If a specific unit system is needed, it would require additional constants.
+    luminosity = V_rot ** alpha
+    
+    return luminosity
+
+# Execute the code
+result = execute_code()
+print(result)
+```",0.45
+33,"Calculate the weighted mean luminosity of a system of sources, given:
+Source counts $n_i = [3, 1, 1, 2, 8]$
+Luminosities of each source type $L_i = [9.386e+29, 7.604e+29, 6.829e+29, 1.156e+29, 1.033e+28] \,\mathrm{W}$","The weighted mean luminosity is $\bar{L} = 8.124e+29 \,\mathrm{W}$","```python
+def execute_code():
+    # Given data
+    n_i = [3, 1, 1, 2, 8]  # Source counts
+    L_i = [9.386e+29, 7.604e+29, 6.829e+29, 1.156e+29, 1.033e+28]  # Luminosities in W
+    
+    # Calculate weighted mean luminosity
+    # Weighted mean = sum(n_i * L_i) / sum(n_i)
+    
+    weighted_sum = sum(n * L for n, L in zip(n_i, L_i))
+    total_sources = sum(n_i)
+    
+    weighted_mean_luminosity = weighted_sum / total_sources
+    
+    return weighted_mean_luminosity
+```",0.45
+34,"Using the TRGB absolute magnitude formula, calculate the I-band absolute magnitude, given the color index $(V-I)_0 = 2.37$",The TRGB absolute magnitude is $M_I^{TRGB} = -3.88$,"```python
+def execute_code():
+    # The TRGB (Tip of the Red Giant Branch) absolute magnitude in the I-band can be estimated using an empirical formula.
+    # One commonly used formula is:
+    # M_I = a * (V - I)_0 + b
+    # where a and b are constants determined from observations.
+    
+    # According to the literature (e.g., Lee et al. 1993, Freedman et al. 2001), a typical relation is:
+    # M_I = -4.05 + 0.26 * (V - I)_0
+    # This relation is calibrated for metallicity [Fe/H] ≈ -1.0 to 0.0, and is widely used in distance determinations.
+    
+    # Given color index (V-I)_0 = 2.37
+    V_minus_I_0 = 2.37
+    
+    # Apply the TRGB formula
+    M_I = -4.05 + 0.26 * V_minus_I_0
+    
+    # Return the calculated I-band absolute magnitude
+    return M_I
+
+# Execute the function
+result = execute_code()
+print(result)
+```",0.45
+35,"Please use the Rayleigh criterion to calculate the angular resolution, where the wavelength is $\lambda=8.147e-07$ meters and the aperture diameter is $D=0.77$ meters.","The angular resolution is $\theta = 0.27\,\text{arcsec}$","```python
+def execute_code():
+    # Given values
+    wavelength = 8.147e-07  # in meters
+    aperture_diameter = 0.77  # in meters
+    
+    # Rayleigh criterion formula for angular resolution (in radians)
+    # θ = 1.22 * λ / D
+    angular_resolution = 1.22 * wavelength / aperture_diameter
+    
+    # Return the result
+    return angular_resolution
+```",0.45
+36,"Please calculate the signal-to-noise ratio (SNR) of an astronomical image with the following parameters:
+Number of signal electrons $N_{\text{signal}}=6.34e+05$
+Number of background electrons $N_{\text{background}}=7.80e+03$
+Number of dark-current electrons $N_{\text{dark}}=6.23e+02$
+Readout noise $\sigma_{\text{read}}=8.5$",The signal-to-noise ratio is $\text{SNR} = 790.82$,"```python
+def execute_code():
+    # Given parameters
+    N_signal = 6.34e+05
+    N_background = 7.80e+03
+    N_dark = 6.23e+02
+    sigma_read = 8.5
+    
+    # Total noise is the square root of the sum of squares of all noise sources
+    # Noise sources: signal (Poisson), background (Poisson), dark current (Poisson), readout noise (Gaussian)
+    total_noise = (N_signal + N_background + N_dark + sigma_read**2)**0.5
+    
+    # Signal-to-noise ratio (SNR) is signal divided by total noise
+    SNR = N_signal / total_noise
+    
+    return SNR
+```",0.45
+37,"Solve the radiative transfer equation with the following parameters:
+Absorption coefficient $\alpha_\nu=1.724e-22\,\mathrm{m^{-1}}$
+Emission coefficient $j_\nu=6.245e-15\,\mathrm{W\,m^{-3}\,sr^{-1}\,Hz^{-1}}$
+Initial specific intensity $I_\nu=8.256e-07\,\mathrm{W\,m^{-2}\,sr^{-1}\,Hz^{-1}}$
+Path element $ds=4.969e+17\,\mathrm{m}$","The rate of change of specific intensity is $\frac{dI_\nu}{ds} = 6.245e-15\,\mathrm{W\,m^{-3}\,sr^{-1}\,Hz^{-1}}$","```python
+def execute_code():
+    # Given parameters
+    alpha_nu = 1.724e-22  # absorption coefficient in m^-1
+    j_nu = 6.245e-15     # emission coefficient in W m^-3 sr^-1 Hz^-1
+    I_nu_initial = 8.256e-07  # initial specific intensity in W m^-2 sr^-1 Hz^-1
+    ds = 4.969e+17       # path element in m
+    
+    # Radiative transfer equation: dI_nu/ds = -alpha_nu * I_nu + j_nu
+    # For a small path element ds, we can approximate:
+    # I_nu_final = I_nu_initial * exp(-alpha_nu * ds) + (j_nu / alpha_nu) * (1 - exp(-alpha_nu * ds))
+    
+    # Calculate the optical depth over the path element
+    tau = alpha_nu * ds
+    
+    # Calculate the final specific intensity
+    if abs(tau) < 1e-10:  # Avoid division by zero or near-zero for very small tau
+        I_nu_final = I_nu_initial + j_nu * ds
+    else:
+        exp_tau = exp(-tau)
+        I_nu_final = I_nu_initial * exp_tau + (j_nu / alpha_nu) * (1 - exp_tau)
+    
+    return I_nu_final
+```",0.45
+38,"Calculate the relativistic Doppler effect, where:
+- Emitted frequency $\nu=9.596e+16$ Hz
+- Relative velocity $v=0.442c$ (approaching)","Observed frequency $\nu'=1.544e+17$Hz
+ Relative change $\frac{\Delta\nu}{\nu}=+0.608$","```python
+def execute_code():
+    # Given values
+    nu_emitted = 9.596e16  # emitted frequency in Hz
+    v = 0.442  # relative velocity as fraction of c (approaching)
+    
+    # Speed of light (in m/s, but we only need it as a unit for relativistic factor)
+    c = 1  # since v is given as fraction of c, we can set c=1 for calculation
+    
+    # Relativistic Doppler effect formula for approaching source:
+    # nu_observed = nu_emitted * sqrt((1 + v/c) / (1 - v/c))
+    # Since v is already given as fraction of c, we can simplify:
+    nu_observed = nu_emitted * ((1 + v) / (1 - v))**0.5
+    
+    return nu_observed
+```",0.45
+39,"Calculate the synchrotron radiation power of an electron given:
+- Magnetic field strength $B=9.924e-04$ T
+- Lorentz factor $\gamma=6.057e+06$
+- Pitch angle $\alpha=41.5^\circ$",Synchrotron radiation power $P=3.116e-34$ W,"```python
+import numpy as np
+
+def execute_code():
+    # Given parameters
+    B = 9.924e-04  # Magnetic field strength in Tesla
+    gamma = 6.057e+06  # Lorentz factor
+    alpha_deg = 41.5  # Pitch angle in degrees
+    alpha_rad = np.radians(alpha_deg)  # Convert to radians
+    
+    # Constants
+    e = 1.602176634e-19  # Elementary charge in Coulombs
+    m_e = 9.1093837015e-31  # Electron mass in kg
+    c = 2.99792458e8  # Speed of light in m/s
+    epsilon_0 = 8.8541878128e-12  # Permittivity of free space
+    
+    # Calculate the synchrotron radiation power using the formula:
+    # P = (2 * e^2 * c * gamma^4 * B^2 * sin^2(alpha)) / (3 * epsilon_0)
+    
+    P = (2 * e**2 * c * gamma**4 * B**2 * np.sin(alpha_rad)**2) / (3 * epsilon_0)
+    
+    return P
+```",0.51
+40,"Calculate the inverse Compton scattered photon energy, where:
+- Electron Lorentz factor $\gamma=7.023e+05$
+- Initial photon energy $E_{\text{initial}}=283.579$ eV",Scattered photon energy $E_{\text{scattered}}=139876051903910.109$ eV,"```python
+def execute_code():
+    # Constants
+    c = 299792458.0  # speed of light in m/s
+    h = 6.62607015e-34  # Planck constant in J·s
+    e = 1.602176634e-19  # elementary charge in C
+    
+    # Electron rest mass energy in eV
+    m_e_c2 = 510998.9461  # eV
+    
+    # Given values
+    gamma = 7.023e+05
+    E_initial = 283.579  # eV
+    
+    # Inverse Compton scattering formula for photon energy after scattering
+    # For head-on collision (theta = 180 degrees), the maximum energy transfer occurs
+    # The scattered photon energy is given by:
+    # E_final = E_initial * (gamma^2 * (1 + cos(theta)) / (1 + gamma * (1 - cos(theta)) * E_initial / m_e_c2))
+    # For theta = 180°, cos(theta) = -1
+    # So: E_final = E_initial * (gamma^2 * (1 - 1)) / (1 + gamma * (1 + 1) * E_initial / m_e_c2)
+    # But wait, that gives 0. That's not right.
+    
+    # Actually, for inverse Compton scattering, the correct formula for head-on collision is:
+    # E_final = E_initial * (gamma^2 * (1 + cos(theta))) / (1 + gamma * (1 - cos(theta)) * E_initial / m_e_c2)
+    # For theta = 0° (head-on collision from behind), cos(theta) = 1:
+    # E_final = E_initial * (gamma^2 * 2) / (1 + gamma * 2 * E_initial / m_e_c2)
+    
+    # However, in most astrophysical contexts, the ""maximum"" energy gain occurs when the photon approaches
+    # the electron head-on (i.e., theta = 0° in the lab frame, meaning photon and electron moving toward each other).
+    # Let's use theta = 0° (cos(theta) = 1) for maximum energy gain.
+    
+    cos_theta = 1.0  # head-on collision
+    
+    # Calculate scattered photon energy
+    numerator = E_initial * gamma**2 * (1 + cos_theta)
+    denominator = 1 + gamma * (1 - cos_theta) * E_initial / m_e_c2
+    
+    # For theta = 0°, 1 - cos(theta) = 0, so denominator becomes 1
+    # Therefore: E_final = E_initial * gamma^2 * 2
+    if abs(1 - cos_theta) < 1e-10:
+        # Special case: head-on collision (theta=0°)
+        E_final = E_initial * gamma**2 * 2
+    else:
+        E_final = numerator / denominator
+    
+    return E_final
+```",0.45
+41,"Calculate the maximum detection distance of an astronomical object, where:
+- Luminosity of the object $L=213394.277 L_{\odot}$
+- Minimum detectable flux $F_{\min}=5.443e-21$ W/m²","Maximum detection distance $D_{\max}=1119792523.094$ pc
+ (or 3.456e+25 m)","```python
+def execute_code():
+    # Given values
+    L = 213394.277  # Luminosity in solar luminosities
+    L_sun = 3.828e26  # Solar luminosity in watts (W)
+    F_min = 5.443e-21  # Minimum detectable flux in W/m²
+    
+    # Convert luminosity to watts
+    L_watts = L * L_sun
+    
+    # Use the formula: F = L / (4 * pi * d^2) => d = sqrt(L / (4 * pi * F))
+    import math
+    d = math.sqrt(L_watts / (4 * math.pi * F_min))
+    
+    # Return the maximum detection distance in meters
+    return d
+```",0.51
+42,"Calculate the Gaussian spectral line intensity with:
+- Line center intensity $I_0=4.061e-19$ W/m²/Hz
+- Central frequency $\nu_0=1.024e+10$ Hz
+- Line width $\sigma=9.771e+07$ Hz
+- Observed frequency $\nu=1.029e+10$ Hz",The intensity at observed frequency $\nu=1.029e+10$ Hz is $I(\nu)=3.550e-19$ W/m²/Hz,"```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    I_0 = 4.061e-19  # Line center intensity in W/m²/Hz
+    nu_0 = 1.024e+10  # Central frequency in Hz
+    sigma = 9.771e+07  # Line width in Hz
+    nu = 1.029e+10   # Observed frequency in Hz
+    
+    # Gaussian spectral line intensity formula:
+    # I(nu) = I_0 * exp(-((nu - nu_0)/sigma)**2)
+    
+    # Calculate the exponent term
+    exponent = -((nu - nu_0) / sigma) ** 2
+    
+    # Calculate the intensity at observed frequency
+    I_nu = I_0 * math.exp(exponent)
+    
+    return I_nu
+```",0.45
+43,"Calculate the exponentially attenuated intensity, given:
+- Initial intensity $I_0=543.724$ W/m²
+- Medium type: Lead glass ($\alpha=1.000e+02$ m⁻¹)
+- Propagation distance $x=6.463$ m",Attenuated intensity $I = 0.000$ W/m²,"```python
+def execute_code():
+    # Given values
+    I0 = 543.724  # Initial intensity in W/m²
+    alpha = 1.000e+02  # Attenuation coefficient for lead glass in m⁻¹
+    x = 6.463  # Propagation distance in meters
+    
+    # Exponentially attenuated intensity formula: I = I0 * exp(-alpha * x)
+    import math
+    I = I0 * math.exp(-alpha * x)
+    
+    # Return the result
+    return I
+```",0.45
+44,"Calculate the Jeans mass given:
+- Temperature $T=880.6$ K
+- Mass density $\rho=5.662e-19$ kg/m³
+- Mean molecular weight $\mu=1.53$",Jeans mass $M_J=69071.126$ solar masses,"```python
+import math
+
+def execute_code():
+    # Given parameters
+    T = 880.6  # Temperature in Kelvin
+    rho = 5.662e-19  # Mass density in kg/m³
+    mu = 1.53  # Mean molecular weight
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m³/kg/s²
+    k_B = 1.380649e-23  # Boltzmann constant in J/K
+    m_H = 1.6737236e-27  # Mass of hydrogen atom in kg (used to compute mean particle mass)
+    
+    # Calculate mean particle mass
+    m_mean = mu * m_H
+    
+    # Jeans mass formula: M_J = (π^(1/2) * (k_B * T)^3 / (G^(3/2) * rho^(3/2) * m_mean^(3/2))) * (1/(μ^(3/2)))
+    # But more commonly written as:
+    # M_J = (π * (k_B * T)^3) / (G^3 * rho^3 * m_mean^3) )^(1/2) * sqrt(π) / (m_mean^(3/2)) ... wait, let's use standard form
+    
+    # Standard Jeans mass formula:
+    # M_J = (π * (k_B * T)^3) / (G^3 * rho^3 * m_mean^3) )^(1/2) * sqrt(π) ??? No.
+    
+    # Correct formula:
+    # M_J = (π^(1/2) * (k_B * T)^3) / (G^(3/2) * rho^(3/2) * m_mean^(3/2))
+    
+    # Let's compute step by step
+    numerator = math.pi**0.5 * (k_B * T)**3
+    denominator = G**1.5 * rho**1.5 * m_mean**1.5
+    M_J = numerator / denominator
+    
+    return M_J
+```",0.45
+45,"Calculate the free-fall time, where:
+- Drop height $h=696.819$ m
+- Gravitational environment: Earth ($g=9.807$ m/s²)",Free-fall time $t = 11.921$ s,"```python
+def execute_code():
+    # Given values
+    h = 696.819  # drop height in meters
+    g = 9.807    # acceleration due to gravity on Earth in m/s²
+    
+    # Formula for free-fall time: t = sqrt(2h/g)
+    import math
+    t = math.sqrt(2 * h / g)
+    
+    # Return the result
+    return t
+```",0.45
+46,"Use the Saha equation to calculate the number density ratio of ionization stages, where:
+- Temperature $T=24004.9$ K
+- Ionization energy $\chi_i=7.62$ eV
+- Partition functions $Z_i=4$, $Z_{i+1}=2$
+- Electron number density $n_e=5.421e+19$ m$^{-3}$",Number density ratio $\frac{n_{i+1}}{n_i} = 4.161e+06$,"```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    T = 24004.9  # Temperature in Kelvin
+    chi_i = 7.62  # Ionization energy in eV
+    Z_i = 4       # Partition function for neutral state
+    Z_i_plus_1 = 2  # Partition function for ionized state
+    n_e = 5.421e+19  # Electron number density in m^-3
+    
+    # Constants
+    k_B = 8.617e-5  # Boltzmann constant in eV/K
+    m_e = 9.109e-31  # Electron mass in kg
+    h = 6.626e-34  # Planck constant in J·s
+    q = 1.602e-19  # Elementary charge in C
+    epsilon_0 = 8.854e-12  # Permittivity of free space in F/m
+    
+    # Calculate the Saha equation term: (n_{i+1} * n_e) / n_i
+    # Saha equation: (n_{i+1} * n_e) / n_i = (2 * Z_{i+1} / Z_i) * (k_B * T / (2 * pi * m_e * k_B * T))^(3/2) * exp(-chi_i / (k_B * T))
+    
+    # First, calculate the thermal de Broglie wavelength term
+    # (k_B * T / (2 * pi * m_e * k_B * T))^(3/2) = (1 / (2 * pi * m_e * k_B * T))^(3/2)
+    # But actually, we need to compute (2 * pi * m_e * k_B * T)^(3/2) in denominator
+    
+    # Let's compute the constant factor
+    term1 = (2 * Z_i_plus_1) / Z_i
+    
+    # Compute the exponential term
+    exp_term = math.exp(-chi_i / (k_B * T))
+    
+    # Compute the thermal term: (2 * pi * m_e * k_B * T)^(3/2)
+    thermal_term = (2 * math.pi * m_e * k_B * T) ** (3/2)
+    
+    # The full Saha equation is:
+    # n_{i+1} / n_i = (Z_{i+1} / Z_i) * (2 * pi * m_e * k_B * T)^(3/2) / (n_e * h^3) * exp(-chi_i / (k_B * T))
+    # But wait, let me double-check the standard form.
+    
+    # Standard Saha equation: 
+    # (n_{i+1} * n_e) / n_i = (2 * Z_{i+1} / Z_i) * (2 * pi * m_e * k_B * T / h^2)^(3/2) * exp(-chi_i / (k_B * T))
+    
+    # So I need to compute (2 * pi * m_e * k_B * T / h^2)^(3/2)
+    h_squared = h ** 2
+    thermal_factor = (2 * math.pi * m_e * k_B * T / h_squared) ** (3/2)
+    
+    # Now compute the ratio (n_{i+1} * n_e) / n_i
+    saha_ratio = term1 * thermal_factor * exp_term
+    
+    # The question asks for ""number density ratio of ionization stages"", which typically means n_{i+1}/n_i
+    # But from the Saha equation, we have (n_{i+1} * n_e) / n_i = saha_ratio
+    # Therefore, n_{i+1} / n_i = saha_ratio / n_e
+    
+    n_i_plus_1_over_n_i = saha_ratio / n_e
+    
+    return n_i_plus_1_over_n_i
+
+# Execute the code
+result = execute_code()
+print(result)
+```",0.51
+47,"Calculate the 21 cm hydrogen line radiation intensity, where:
+- Neutral hydrogen column density $N_{\text{HI}}=9.183e+21$ m$^{-2}$
+- Kinetic temperature $T_k=3581.3$ K
+- Line width $\Delta\nu=1.884e+05$ Hz",21 cm line radiation intensity $I = 0.000$ mK,"```python
+def execute_code():
+    import numpy as np
+    
+    # Given parameters
+    N_HI = 9.183e21  # m^-2, neutral hydrogen column density
+    T_k = 3581.3     # K, kinetic temperature
+    Delta_nu = 1.884e5  # Hz, line width
+    
+    # Constants
+    h = 6.62607015e-34  # J·s, Planck constant
+    k_B = 1.380649e-23  # J/K, Boltzmann constant
+    nu_0 = 1.420405751e9  # Hz, rest frequency of 21 cm line
+    
+    # Calculate the radiation intensity in units of Jy (Janskys)
+    # The formula for the 21 cm line radiation intensity is:
+    # I = (k_B * T_eff * Delta_nu) / (2 * k_B * T_sys) * (N_HI / (Delta_v)) * (h * nu_0^2 / (k_B * T_k))
+    # But more commonly, the brightness temperature is used and converted to intensity.
+    
+    # First, calculate the brightness temperature contribution from the 21 cm line
+    # T_b = (T_k * (1 - exp(-h * nu_0 / (k_B * T_k)))) / (1 + (T_k / T_c) * (1 - exp(-h * nu_0 / (k_B * T_k))))
+    # For optically thin case and high T_k, we can approximate:
+    # T_b ≈ T_k * (h * nu_0 / (k_B * T_k)) * (N_HI / (Delta_nu)) * (1 / (2 * pi * (h * nu_0 / (k_B * T_k))))
+    
+    # Actually, a simpler and standard formula for the 21 cm line intensity is:
+    # I = (2 * k_B * T_b * Delta_nu) / (h * nu_0^2)
+    # But since T_b ≈ (h * nu_0 / (k_B * T_k)) * N_HI * (1 / Delta_nu) * (1 / (2 * pi)) for optically thin case?
+    
+    # Let's use the standard relation for brightness temperature:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 / (1 + exp(h * nu_0 / (k_B * T_k)))) * (exp(h * nu_0 / (k_B * T_k)) - 1)
+    # But for T_k >> h*nu_0/k_B (which is true here), this simplifies to:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu)
+    
+    # However, the correct standard formula for 21 cm line brightness temperature is:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 / (1 + exp(h * nu_0 / (k_B * T_k)))) * (exp(h * nu_0 / (k_B * T_k)) - 1)
+    # For T_k >> h*nu_0/k_B, this becomes approximately:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu)
+    
+    # But actually, the most common form is:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 - exp(-h * nu_0 / (k_B * T_k)))
+    # Since h*nu_0/(k_B*T_k) is very small (~ 1.4e-5), exp(-x) ≈ 1-x, so:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (h * nu_0 / (k_B * T_k))
+    # This seems wrong.
+    
+    # Let me recall: The correct formula for brightness temperature is:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 - exp(-h * nu_0 / (k_B * T_k)))
+    # But for optically thin case and high T_k, this becomes:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (h * nu_0 / (k_B * T_k))
+    # Which is not right dimensionally.
+    
+    # Correction: The correct formula for the 21 cm line brightness temperature is:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 - exp(-h * nu_0 / (k_B * T_k)))
+    # And since h*nu_0/(k_B*T_k) << 1, then:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (h * nu_0 / (k_B * T_k))
+    # Wait, no: 1 - exp(-x) ≈ x when x<<1, so:
+    # T_b ≈ (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (h * nu_0 / (k_B * T_k))
+    # This has units: (J·Hz^2 / (J/K·m^2/s^2)) * (m^-2 / Hz) * (J·Hz / (J/K·K)) = (Hz^2 / (K·m^2/s^2)) * (1/Hz) * (Hz/K) = Hz / K^2 — which is wrong.
+    
+    # Let me check dimensions again:
+    # h * nu_0^2 / (2 * k_B * c^2) has units: (J·Hz^2) / (J/K·(m^2/s^2)) = Hz^2·K·s^2/m^2
+    # N_HI / Delta_nu has units: m^-2 / Hz
+    # (1 - exp(-h*nu_0/(k_B*T_k))) is dimensionless
+    # So overall: Hz^2·K·s^2/m^2 * 1/(m^2·Hz) = Hz·K·s^2/m^4 — still wrong.
+    
+    # Correct approach: The standard formula for 21 cm line brightness temperature is:
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 - exp(-h * nu_0 / (k_B * T_k)))
+    # But let's verify constants:
+    # h = 6.626e-34 J·s
+    # nu_0 = 1.42e9 Hz
+    # k_B = 1.38e-23 J/K
+    # c = 3e8 m/s
+    
+    # Compute h * nu_0^2 / (2 * k_B * c^2):
+    c = 299792458.0  # m/s, speed of light
+    factor = (h * nu_0**2) / (2 * k_B * c**2)
+    
+    # Compute (1 - exp(-h * nu_0 / (k_B * T_k))):
+    x = h * nu_0 / (k_B * T_k)
+    exp_term = 1 - np.exp(-x)
+    
+    # Then T_b = factor * (N_HI / Delta_nu) * exp_term
+    T_b = factor * (N_HI / Delta_nu) * exp_term
+    
+    # Convert brightness temperature to intensity in Jy (Janskys)
+    # 1 Jy = 10^-26 W/m^2/Hz = 10^-26 J/s/m^2/Hz
+    # Also, 1 J = 1 W·s, so 1 Jy = 10^-26 W/m^2/Hz
+    # Brightness temperature relates to intensity by: I = (2 * k_B * T_b * Delta_nu) / (h * nu_0^2)
+    # But wait, that's circular.
+    
+    # Actually, the intensity I in Jy is given by:
+    # I = (2 * k_B * T_b * Delta_nu) / (h * nu_0^2) * 1e26  # to convert to Jy
+    # Because 1 Jy = 10^-26 W/m^2/Hz, and W = J/s, so:
+    # I [Jy] = (2 * k_B * T_b * Delta_nu) / (h * nu_0^2) * 1e26
+    
+    I = (2 * k_B * T_b * Delta_nu) / (h * nu_0**2) * 1e26
+    
+    return I
+
+# Execute the code
+result = execute_code()
+return result
+```
+
+Wait, there's an error in my logic. Let me fix it.
+
+The correct approach is:
+
+For the 21 cm line, the brightness temperature is given by:
+T_b = (h * ν₀² / (2 * k_B * c²)) * (N_HI / Δν) * (1 - exp(-h * ν₀ / (k_B * T_k)))
+
+But since h * ν₀ / (k_B * T_k) is very small (≈ 1.4e-5), we can approximate:
+1 - exp(-x) ≈ x, so:
+T_b ≈ (h * ν₀² / (2 * k_B * c²)) * (N_HI / Δν) * (h * ν₀ / (k_B * T_k))
+
+Then, the intensity in Jy is:
+I = (2 * k_B * T_b * Δν) / (h * ν₀²) * 1e26
+
+Let me recalculate with corrected code:
+
+```python
+def execute_code():
+    import numpy as np
+    
+    # Given parameters
+    N_HI = 9.183e21  # m^-2, neutral hydrogen column density
+    T_k = 3581.3     # K, kinetic temperature
+    Delta_nu = 1.884e5  # Hz, line width
+    
+    # Constants
+    h = 6.62607015e-34  # J·s, Planck constant
+    k_B = 1.380649e-23  # J/K, Boltzmann constant
+    nu_0 = 1.420405751e9  # Hz, rest frequency of 21 cm line
+    c = 299792458.0  # m/s, speed of light
+    
+    # Calculate the brightness temperature
+    # T_b = (h * nu_0^2 / (2 * k_B * c^2)) * (N_HI / Delta_nu) * (1 - exp(-h * nu_0 / (k_B * T_k)))
+    # For small x = h*nu_0/(k_B*T_k), 1-exp(-x) ≈ x
+    x = h * nu_0 / (k_B * T_k)
+    if x < 1e-5:
+        exp_term = x
+    else:
+        exp_term = 1 - np.exp(-x)
+    
+    factor = (h * nu_0**2) / (2 * k_B * c**2)
+    T_b = factor * (N_HI / Delta_nu) * exp_term
+    
+    # Convert brightness temperature to intensity in Jy
+    # I [Jy] = (2 * k_B * T_b * Delta_nu) / (h * nu_0^2) * 1e26
+    I = (2 * k_B * T_b * Delta_nu) / (h * nu_0**2) * 1e26
+    
+    return I
+
+# Execute the code
+result = execute_code()
+return result
+```",0.45
+48,"Calculate the extinction at wavelength $\lambda=1.830e-07$ m, where:
+- Mass absorption coefficient $\kappa_\lambda=2.882e-03$ m²/kg
+- Medium density $\rho=8.462e-20$ kg/m³
+- Propagation path $L=32.471$ pc",The extinction at wavelength $\lambda=1.830e-07$ m is $A_\lambda = 0.000$,"```python
+def execute_code():
+    # Given values
+    lambda_val = 1.830e-07  # wavelength in meters
+    kappa_lambda = 2.882e-03  # mass absorption coefficient in m²/kg
+    rho = 8.462e-20  # medium density in kg/m³
+    L = 32.471  # propagation path in parsecs
+    
+    # Convert path length from parsecs to meters
+    # 1 parsec = 3.08568e+16 meters
+    L_meters = L * 3.08568e+16
+    
+    # Calculate extinction (optical depth) using formula: τ = κ_λ * ρ * L
+    extinction = kappa_lambda * rho * L_meters
+    
+    return extinction
+```",0.39
+49,"Calculate the molecular cooling rate, where:
+- H2 number density $n(\text{H}_2)=6.407e+10$ m$^{-3}$
+- Molecular X number density $n(X)=4.016e+09$ m$^{-3}$
+- Temperature $T=402.9$ K
+- Molecular level parameters: CO J=1-0, 2-1, 3-2",Molecular cooling rate $\Lambda = 3.390e-08$ W/m$^3$,"```python
+def execute_code():
+    import numpy as np
+    
+    # Given parameters
+    n_H2 = 6.407e10  # H2 number density in m^-3
+    n_X = 4.016e9   # Molecular X number density in m^-3
+    T = 402.9       # Temperature in K
+    
+    # CO rotational transitions: J=1-0, 2-1, 3-2
+    # For CO, we need to calculate the cooling rate for each transition
+    # Cooling rate formula for a single transition: 
+    # Λ = n(H2) * n(X) * A_ul * (h * ν / k_B) * (g_l / (g_u + g_l)) * (1 - exp(-hν/(k_B*T)))
+    # But typically, for molecular line cooling, we use:
+    # Λ = n(H2) * n(X) * Σ [A_ul * h * ν * (1 - exp(-hν/(k_B*T))) * (g_l / (g_u + g_l))]
+    
+    # Constants
+    h = 6.626e-34  # Planck's constant in J·s
+    k_B = 1.381e-23  # Boltzmann constant in J/K
+    c = 2.998e8    # Speed of light in m/s
+    
+    # CO rotational energy levels and transition frequencies
+    # For CO, the rotational transition frequency is given by:
+    # ν_J = 2B(J+1) where B is the rotational constant
+    # For CO, B ≈ 57.6 GHz (or 5.76e10 Hz)
+    B_CO = 5.76e10  # Rotational constant for CO in Hz
+    
+    # Transition frequencies for J=1-0, 2-1, 3-2
+    nu_10 = 2 * B_CO * 1  # J=1-0 transition
+    nu_21 = 2 * B_CO * 2  # J=2-1 transition  
+    nu_32 = 2 * B_CO * 3  # J=3-2 transition
+    
+    # Einstein A coefficients for CO transitions (in s^-1)
+    # These are approximate values based on standard molecular data
+    # For CO, A_ul ≈ 7.1e-8 * (J+1) * (2J+1) / (J*(J+1)) for J->J-1
+    # But more accurately, for CO J=1-0: A_ul ≈ 7.1e-8 s^-1
+    # For CO J=2-1: A_ul ≈ 2.1e-7 s^-1
+    # For CO J=3-2: A_ul ≈ 3.5e-7 s^-1
+    A_ul_10 = 7.1e-8
+    A_ul_21 = 2.1e-7
+    A_ul_32 = 3.5e-7
+    
+    # Degeneracies: g_u = 2J+1, g_l = 2J-1 for upper and lower levels
+    # For J=1-0: g_u = 3, g_l = 1
+    # For J=2-1: g_u = 5, g_l = 3
+    # For J=3-2: g_u = 7, g_l = 5
+    g_u_10, g_l_10 = 3, 1
+    g_u_21, g_l_21 = 5, 3
+    g_u_32, g_l_32 = 7, 5
+    
+    # Calculate cooling rate for each transition
+    def cooling_rate(n_H2, n_X, A_ul, nu, g_u, g_l, T):
+        h_nu = h * nu
+        exp_term = np.exp(-h_nu / (k_B * T))
+        if exp_term == 0:
+            exp_term = 1e-10  # Avoid division by zero or log(0)
+        return n_H2 * n_X * A_ul * h_nu * (g_l / (g_u + g_l)) * (1 - exp_term)
+    
+    # Calculate individual cooling rates
+    Lambda_10 = cooling_rate(n_H2, n_X, A_ul_10, nu_10, g_u_10, g_l_10, T)
+    Lambda_21 = cooling_rate(n_H2, n_X, A_ul_21, nu_21, g_u_21, g_l_21, T)
+    Lambda_32 = cooling_rate(n_H2, n_X, A_ul_32, nu_32, g_u_32, g_l_32, T)
+    
+    # Total cooling rate
+    total_cooling_rate = Lambda_10 + Lambda_21 + Lambda_32
+    
+    # Convert to erg/s/m^3 (since 1 J = 10^7 erg)
+    total_cooling_rate_erg = total_cooling_rate * 1e7
+    
+    return total_cooling_rate_erg
+
+# Execute the code
+result = execute_code()
+return result
+```",0.45
+50,"Use the Saha-Boltzmann equation to calculate the ionization balance, where:
+- Temperature $T=5791.8$ K
+- Ionization energy $\chi_i=14.61$ eV
+- Degeneracies $g_i=4$, $g_{i+1}=2$
+- Electron number density $n_e=9.564e+19$ m$^{-3}$",Ionization balance ratio $\frac{n_{i+1}}{n_i} = 2.162e-06$,"```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    T = 5791.8  # Temperature in Kelvin
+    chi_i = 14.61  # Ionization energy in eV
+    g_i = 4  # Degeneracy of neutral state
+    g_i_plus_1 = 2  # Degeneracy of ionized state
+    n_e = 9.564e+19  # Electron number density in m^-3
+    
+    # Constants
+    k_B = 8.617e-5  # Boltzmann constant in eV/K
+    m_e = 9.109e-31  # Electron mass in kg
+    h = 6.626e-34  # Planck constant in J·s
+    e = 1.602e-19  # Elementary charge in C
+    N_A = 6.022e23  # Avogadro's number
+    
+    # Calculate the Saha-Boltzmann equation term
+    # The Saha equation is: 
+    # (n_{i+1} * n_e) / n_i = (g_{i+1} / g_i) * (2 * pi * m_e * k_B * T / (h^2))^(3/2) * exp(-chi_i / (k_B * T))
+    
+    # First, calculate the thermal wavelength factor
+    # (2 * pi * m_e * k_B * T / h^2)^(3/2)
+    thermal_factor = (2 * math.pi * m_e * k_B * T / h**2)**(3/2)
+    
+    # Calculate the exponential term
+    exp_term = math.exp(-chi_i / (k_B * T))
+    
+    # Calculate the right-hand side of the Saha equation
+    saha_rhs = (g_i_plus_1 / g_i) * thermal_factor * exp_term
+    
+    # The Saha equation gives us the ratio:
+    # n_{i+1} / n_i = saha_rhs / n_e
+    # But usually we are interested in the fraction of ionized atoms:
+    # Let f = n_{i+1} / (n_i + n_{i+1})
+    # Then f = saha_rhs / (n_e + saha_rhs)
+    
+    # However, since the question asks for ""ionization balance"", we interpret it as the ratio n_{i+1}/n_i
+    # which is given directly by the Saha equation as saha_rhs / n_e? No!
+    
+    # Actually, from Saha equation:
+    # n_{i+1} * n_e / n_i = saha_rhs
+    # So: n_{i+1} / n_i = saha_rhs / n_e
+    
+    # But let's check units:
+    # saha_rhs has units of m^3 (since thermal_factor is m^3 and exp is dimensionless)
+    # n_e has units of m^{-3}
+    # So saha_rhs / n_e is dimensionless, which matches n_{i+1}/n_i.
+    
+    # Therefore:
+    ionization_ratio = saha_rhs / n_e
+    
+    # Return the ionization ratio (n_{i+1}/n_i)
+    return ionization_ratio
+
+# Execute the code
+result = execute_code()
+print(result)
+return result
+```",0.51
+51,"In a three-body system, the three bodies have masses:
+m₁ = 1.32e+25 kg, m₂ = 9.15e+25 kg, m₃ = 2.24e+25 kg.
+At a certain instant, their positions in 2D space are:
+r₁ = (509544860.59384584, -710222662.9016883) m, r₂ = (452064028.2080569, -699752537.5522759) m, r₃ = (-228846866.51914763, 820099963.0375674) m.
+The gravitational constant is G = 6.67430×10⁻¹¹ N·m²/kg².
+Using the Newtonian three-body equations of motion, compute the acceleration vector of body m₁ at this instant.","The acceleration of body m₁ is a₁ = (-1.7593127141773577, 0.3208843998160993) m/s²","```python
+def execute_code():
+    import numpy as np
+    
+    # Given constants
+    G = 6.67430e-11  # gravitational constant in N·m²/kg²
+    
+    # Masses of the three bodies (in kg)
+    m1 = 1.32e+25
+    m2 = 9.15e+25
+    m3 = 2.24e+25
+    
+    # Positions of the three bodies (in meters)
+    r1 = np.array([509544860.59384584, -710222662.9016883])
+    r2 = np.array([452064028.2080569, -699752537.5522759])
+    r3 = np.array([-228846866.51914763, 820099963.0375674])
+    
+    # Compute acceleration of body m1 due to m2 and m3 using Newton's law of gravitation
+    # Acceleration on m1 due to m2: a12 = -G * m2 * (r1 - r2) / |r1 - r2|^3
+    # Acceleration on m1 due to m3: a13 = -G * m3 * (r1 - r3) / |r1 - r3|^3
+    # Total acceleration: a1 = a12 + a13
+    
+    # Vector from m2 to m1
+    r12 = r1 - r2
+    r12_mag = np.linalg.norm(r12)
+    a12 = -G * m2 * r12 / (r12_mag ** 3)
+    
+    # Vector from m3 to m1
+    r13 = r1 - r3
+    r13_mag = np.linalg.norm(r13)
+    a13 = -G * m3 * r13 / (r13_mag ** 3)
+    
+    # Total acceleration on m1
+    a1 = a12 + a13
+    
+    return a1.tolist()
+```",0.51
+52,"Given the fundamental equations of perturbation theory:
+dr/dt = v, dv/dt = -μ/r³ · r + F_pert.
+The position vector is r = (2.032205037451003, 8.201901659086458, 9.616577505893401), the velocity vector is v = (-3.0306055928648004, -4.515036146376569, -3.4491694774566337),
+the gravitational parameter is μ = 83.736, and the perturbing acceleration is F_pert = (0.008694754353109494, 0.006813807352722056, 0.002172342324621329).
+Please compute the acceleration dv/dt.","dv/dt = (-0.0724186727960485, -0.32055687643582637, -0.3816637099306732)","```python
+def execute_code():
+    # Given values
+    r = [2.032205037451003, 8.201901659086458, 9.616577505893401]
+    v = [-3.0306055928648004, -4.515036146376569, -3.4491694774566337]
+    mu = 83.736
+    F_pert = [0.008694754353109494, 0.006813807352722056, 0.002172342324621329]
+    
+    # Compute the magnitude of r
+    r_mag = (r[0]**2 + r[1]**2 + r[2]**2)**0.5
+    
+    # Compute the gravitational acceleration: -μ/r³ * r
+    r_cubed = r_mag**3
+    grav_accel = [-mu * ri / r_cubed for ri in r]
+    
+    # Compute dv/dt = gravitational acceleration + perturbing acceleration
+    dv_dt = [grav_accel[i] + F_pert[i] for i in range(3)]
+    
+    return dv_dt
+```",0.45
+53,"Compute the Jacobi integral, where:
+- Angular velocity $\Omega=8.817e-15$ rad/s
+- Angular momentum $L_z=3.434e+12$ kg·m²/s
+- Object velocity $v=41.94$ km/s
+- Galaxy mass $M=807955073148.57×10^{10} M_{\odot}$
+- Distance from center $r=58.01$ kpc",Jacobi integral $C = 1.180e+11$ m²/s²,"```python
+def execute_code():
+    # Given values
+    Omega = 8.817e-15  # rad/s
+    L_z = 3.434e+12  # kg·m²/s
+    v = 41.94 * 1000  # convert km/s to m/s
+    M = 807955073148.57 * 10**10 * 1.98847e+30  # convert solar masses to kg (M_sun = 1.98847e+30 kg)
+    r = 58.01 * 3.086e+19  # convert kpc to meters (1 kpc = 3.086e+19 m)
+
+    # Gravitational constant
+    G = 6.67430e-11  # m^3 kg^-1 s^-2
+
+    # Compute the Jacobi integral
+    # Jacobi integral: J = (v^2 / 2) - (G*M / r) + Omega * L_z
+    kinetic_energy = 0.5 * v**2
+    potential_energy = -G * M / r
+    rotational_term = Omega * L_z
+
+    jacobi_integral = kinetic_energy + potential_energy + rotational_term
+
+    return jacobi_integral
+```",0.45
+54,"Please calculate the Schwarzschild radius for an object with mass $M=53.6\,M_{\odot}$","The Schwarzschild radius is $r_s = 1.583e+05\,\mathrm{m}$","```python
+def execute_code():
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    c = 299792458    # Speed of light in m/s
+    M_sun = 1.98847e30  # Solar mass in kg
+    
+    # Given mass in solar masses
+    M_solar_masses = 53.6
+    
+    # Convert to kilograms
+    M_kg = M_solar_masses * M_sun
+    
+    # Schwarzschild radius formula: R_s = (2 * G * M) / c^2
+    R_s = (2 * G * M_kg) / (c ** 2)
+    
+    # Return result in meters
+    return R_s
+
+# Execute the code and return result
+result = execute_code()
+return result
+```",0.45
+55,"Calculate the curvature radiation power of a relativistic electron with the following parameters:
+Curvature radius $\rho=3.220e+05\,\mathrm{m}$
+Lorentz factor $\gamma=9.759e+08$","Curvature radiation power $P = 4.488e-05\,\mathrm{W}$","```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    rho = 3.220e+05  # curvature radius in meters
+    gamma = 9.759e+08  # Lorentz factor
+    
+    # Constants
+    c = 299792458.0  # speed of light in m/s
+    e = 1.602176634e-19  # elementary charge in C
+    m_e = 9.1093837015e-31  # electron mass in kg
+    epsilon_0 = 8.8541878128e-12  # vacuum permittivity in F/m
+    
+    # Calculate the curvature radiation power using the formula:
+    # P = (2 * e^2 * c * gamma^4) / (3 * epsilon_0 * rho^2)
+    
+    numerator = 2 * e**2 * c * gamma**4
+    denominator = 3 * epsilon_0 * rho**2
+    P = numerator / denominator
+    
+    return P
+```",0.45
+56,"Calculate the accretion disk temperature distribution with the following parameters:
+Central mass $M=18.6\,M_{\odot}$
+Accretion rate $\dot{M}=8.46e-08\,M_{\odot}/\mathrm{yr}$
+Inner radius $r_{\mathrm{in}}=41.1\,\mathrm{km}$
+Target radius $r=2467.0\,\mathrm{km}$","Temperature at radius $T(r) = 1125782.45\,\mathrm{K}$","```python
+def execute_code():
+    import numpy as np
+    
+    # Constants
+    G = 6.67430e-11  # Gravitational constant in m^3 kg^-1 s^-2
+    c = 299792458.0  # Speed of light in m/s
+    sigma = 5.67037e-8  # Stefan-Boltzmann constant in W m^-2 K^-4
+    M_sun = 1.9885e30  # Solar mass in kg
+    yr_to_s = 365.25 * 24 * 3600  # Years to seconds
+    
+    # Given parameters
+    M = 18.6 * M_sun  # Central mass in kg
+    M_dot = 8.46e-8 * M_sun / yr_to_s  # Accretion rate in kg/s
+    r_in = 41.1 * 1000  # Inner radius in meters
+    r = 2467.0 * 1000  # Target radius in meters
+    
+    # Calculate temperature at radius r using Shakura-Sunyaev formula for thin accretion disk
+    # T(r) = (3 G M_dot / (8 pi sigma))^(1/4) * (1/r - 1/r_in)^(1/4)
+    
+    # Note: This is the standard formula for the temperature profile in a Shakura-Sunyaev disk
+    # We assume that the inner radius is where the disk starts and energy is released from r_in to r
+    
+    # Compute the temperature
+    term1 = (3 * G * M_dot) / (8 * np.pi * sigma)
+    term2 = (1/r - 1/r_in)
+    
+    if term2 <= 0:
+        # If r <= r_in, this is physically invalid for standard Shakura-Sunyaev disk model
+        # Set temperature to 0 or handle appropriately
+        T = 0.0
+    else:
+        T = term1**0.25 * term2**0.25
+    
+    # Return temperature in Kelvin
+    return T
+```",0.51
+57,"Compute the remaining energy based on energy conservation. Given:
+Initial energy $E_0 = 25.07\,\mathrm{eV}$
+Energy change $E_2 = -4.11\,\mathrm{eV}$","The remaining energy is $E_1 = 29.19\,\mathrm{eV}$","```python
+def execute_code():
+    # Given values
+    E_0 = 25.07  # Initial energy in eV
+    E_2 = -4.11   # Energy change in eV
+    
+    # Compute remaining energy using energy conservation
+    # Remaining energy = Initial energy + Energy change
+    remaining_energy = E_0 + E_2
+    
+    return remaining_energy
+```",0.45
+58,"Calculate the free-free emission power spectrum with the following parameters:
+Atomic number $Z=6$
+Electron number density $n_e=4.077e+19\,\mathrm{m^{-3}}$
+Ion number density $n_i=4.055e+19\,\mathrm{m^{-3}}$
+Temperature $T=5.719e+07\,\mathrm{K}$
+Frequency $\nu=1.963e+14\,\mathrm{Hz}$
+Gaunt factor $g_{ff}=2.35$","The emission power spectrum is $P_\nu = 3.040e-14\,\mathrm{W\,m^{-3}\,Hz^{-1}}$","```python
+def execute_code():
+    import math
+    
+    # Given parameters
+    Z = 6  # Atomic number
+    n_e = 4.077e+19  # Electron number density (m^-3)
+    n_i = 4.055e+19  # Ion number density (m^-3)
+    T = 5.719e+07  # Temperature (K)
+    nu = 1.963e+14  # Frequency (Hz)
+    g_ff = 2.35  # Gaunt factor
+    
+    # Constants
+    k_B = 1.380649e-23  # Boltzmann constant (J/K)
+    e = 1.602176634e-19  # Elementary charge (C)
+    m_e = 9.1093837015e-31  # Electron mass (kg)
+    c = 2.99792458e8  # Speed of light (m/s)
+    epsilon_0 = 8.8541878128e-12  # Permittivity of free space (F/m)
+    
+    # Calculate the free-free emission coefficient (power per unit volume per unit frequency)
+    # Formula: j_ν = (Z^2 * e^6 * n_e * n_i * g_ff) / (4 * pi * epsilon_0^2 * m_e * c^3) * sqrt(2 / (pi * k_B * T)) * (1 / nu^2) * exp(-h * nu / (k_B * T))
+    # But for thermal free-free emission at high temperature, we often use the optically thin approximation:
+    # j_ν ≈ (Z^2 * e^6 * n_e * n_i * g_ff) / (4 * pi * epsilon_0^2 * m_e * c^3) * sqrt(2 / (pi * k_B * T)) * (1 / nu^2)
+    # Note: The exponential term is ~1 when h*nu << k_B*T, which is true here.
+    
+    # Planck's constant
+    h = 6.62607015e-34  # J·s
+    
+    # Check if we are in the Rayleigh-Jeans limit (h*nu << k_B*T)
+    # h*nu = 6.626e-34 * 1.963e14 = 1.301e-19 J
+    # k_B*T = 1.38e-23 * 5.719e7 = 7.887e-16 J
+    # So yes, h*nu << k_B*T, so exp(-h*nu/(k_B*T)) ≈ 1
+    
+    # Calculate the free-free emission power spectrum (j_ν)
+    numerator = Z**2 * e**6 * n_e * n_i * g_ff
+    denominator = 4 * math.pi * epsilon_0**2 * m_e * c**3 * nu**2
+    sqrt_term = math.sqrt(2 / (math.pi * k_B * T))
+    
+    j_nu = (numerator / denominator) * sqrt_term
+    
+    return j_nu
+```",0.45
+59,"Calculate the Pauli repulsive force with the following parameters:
+Force constant $k=2.158e-08\,\mathrm{N}$
+Decay coefficient $\alpha=8.031e+10\,\mathrm{m^{-1}}$
+Distance $r=5.280e-11\,\mathrm{m}$","The Pauli repulsive force is $F_{\text{Pauli}} = -3.109e-10\,\mathrm{N}$","```python
+def execute_code():
+    # Given parameters
+    k = 2.158e-08  # Force constant in N
+    alpha = 8.031e+10  # Decay coefficient in m^-1
+    r = 5.280e-11  # Distance in m
+    
+    # Pauli repulsive force formula: F = -k * exp(-alpha * r)
+    # The negative sign indicates repulsion (force pushes particles apart)
+    # However, in many contexts, the magnitude is reported as positive for repulsive force
+    # We'll compute the magnitude here as a positive value
+    
+    import math
+    
+    # Calculate the exponential term
+    exp_term = math.exp(-alpha * r)
+    
+    # Calculate the force magnitude
+    force_magnitude = k * exp_term
+    
+    # Return the result
+    return force_magnitude
+```",0.45
+60,"Calculate the Einstein radius of a gravitational lens with the following parameters:
+Lens mass $M=2.34e+11\,M_{\odot}$
+Lens distance $D_L=1738.7\,\mathrm{Mpc}$
+Source distance $D_S=2097.1\,\mathrm{Mpc}$","The Einstein radius is $\theta_E = 0.43\,\mathrm{arcsec}$","```python
+def execute_code():
+    import numpy as np
+    
+    # Given parameters
+    M = 2.34e11  # Lens mass in solar masses
+    M_sun = 1.9885e30  # Solar mass in kg
+    D_L = 1738.7  # Lens distance in Mpc
+    D_S = 2097.1  # Source distance in Mpc
+    
+    # Convert distances to meters (1 Mpc = 3.08568e22 m)
+    D_L_m = D_L * 3.08568e22
+    D_S_m = D_S * 3.08568e22
+    
+    # Gravitational constant G in m^3 kg^-1 s^-2
+    G = 6.67430e-11
+    
+    # Speed of light c in m/s
+    c = 2.99792458e8
+    
+    # Calculate Einstein radius in meters
+    theta_E_rad = np.sqrt((4 * G * M * M_sun) / (c**2) * (D_S_m - D_L_m) / (D_L_m * D_S_m))
+    
+    # Convert Einstein radius to arcseconds (1 radian = 206265 arcseconds)
+    theta_E_arcsec = theta_E_rad * 206265
+    
+    return theta_E_arcsec
+```",0.51
+61,"Compute the particle flux with the following parameters:
+Particle number density $n=9.481e+19\,\mathrm{m^{-3}}$
+Particle velocity $v=2.884e+05\,\mathrm{m\,s^{-1}}$","The particle flux is $F = 2.734e+25\,\mathrm{m^{-2}\,s^{-1}}$","```python
+def execute_code():
+    # Given parameters
+    n = 9.481e+19  # particle number density in m^-3
+    v = 2.884e+05  # particle velocity in m/s
+    
+    # Particle flux is given by the product of number density and velocity
+    # Flux = n * v (particles per square meter per second)
+    flux = n * v
+    
+    return flux
+```",0.39
+62,"Calculate the stellar oscillation frequency with the following parameters:
+Large frequency separation $\Delta\nu=287.74\,\mu\mathrm{Hz}$
+Phase offset $\epsilon=1.41$
+Angular degree $l=2$
+Radial order $n=24$
+Offset term $d_{02}=4.41\,\mu\mathrm{Hz}$","The oscillation frequency is $\nu_{24,2} = 7595.07\,\mu\mathrm{Hz}$","```python
+def execute_code():
+    # Given parameters
+    Delta_nu = 287.74  # Large frequency separation in µHz
+    epsilon = 1.41      # Phase offset
+    l = 2               # Angular degree
+    n = 24              # Radial order
+    d_02 = 4.41         # Offset term in µHz
+    
+    # Stellar oscillation frequency formula for mode (n, l)
+    # ν(n, l) = Δν * (n + ε - δ_l) + δ_l
+    # For l=2, we use the offset term d_02 which accounts for the deviation from the asymptotic relation
+    # The standard asymptotic formula is: ν(n,l) = Δν * (n + ε - l/2) + δ_l
+    # But here we are given d_02 as an offset term, so we adjust accordingly.
+    # Typically, for l=2, the frequency is approximated as:
+    # ν(n,2) = Δν * (n + ε) + d_02
+    
+    # Calculate the oscillation frequency
+    nu = Delta_nu * (n + epsilon) + d_02
+    
+    return nu
+```",0.45
+63,"Calculate the radiation intensity with the following parameters:
+Source luminosity $L=6.975e+31\,\mathrm{W}$
+Observation distance $r=2.667e+21\,\mathrm{m}$","The radiation intensity is $I = 7.802e-13\,\mathrm{W\,m^{-2}}$","```python
+def execute_code():
+    # Given parameters
+    L = 6.975e+31  # Source luminosity in watts (W)
+    r = 2.667e+21  # Observation distance in meters (m)
+    
+    # Radiation intensity (I) is given by the formula:
+    # I = L / (4 * π * r^2)
+    import math
+    
+    # Calculate intensity
+    intensity = L / (4 * math.pi * r**2)
+    
+    return intensity
+```",0.45
+64,Please calculate the Julian Date (JD) for the date 2031-9-5 07:23:12,Julian Date $JD = 2463114.80778$,"```python
+def execute_code():
+    # Import necessary modules
+    from datetime import datetime
+    
+    # Define the given date and time
+    date_string = ""2031-9-5 07:23:12""
+    
+    # Parse the string into a datetime object
+    dt = datetime.strptime(date_string, ""%Y-%m-%d %H:%M:%S"")
+    
+    # Calculate Julian Date (JD)
+    # Formula: JD = 2415020 + 365*(year-1) + floor((year-1)/4) - floor((year-1)/100) + floor((year-1)/400) + day_of_year + (hour + minute/60 + second/3600)/24
+    # Alternatively, we can use the known formula for converting Gregorian calendar to Julian Date
+    
+    year = dt.year
+    month = dt.month
+    day = dt.day
+    hour = dt.hour
+    minute = dt.minute
+    second = dt.second
+    
+    # Convert to Julian Date using standard formula
+    if month <= 2:
+        year -= 1
+        month += 12
+    
+    A = year // 100
+    B = 2 - A + A // 4
+    
+    JD = int(365.25 * (year + 4716)) + int(30.6001 * (month + 1)) + day + B - 1524.5
+    
+    # Add fractional part for time
+    fractional_day = (hour + minute / 60 + second / 3600) / 24
+    JD += fractional_day
+    
+    return JD
+
+# Execute the function and return result
+result = execute_code()
+return result
+```",0.51
+65,"Please calculate the Local Sidereal Time (LST), given Greenwich Sidereal Time (GST)=18.29 hours, longitude λ=61.38°, and time difference=-0.66 hours",The Local Sidereal Time is $LST = 21.7218$ hours,"```python
+def execute_code():
+    # Given values
+    GST = 18.29  # Greenwich Sidereal Time in hours
+    longitude_deg = 61.38  # Longitude in degrees
+    time_difference = -0.66  # Time difference in hours (this might be a correction or offset)
+
+    # Convert longitude from degrees to hours (since 360 degrees = 24 hours)
+    longitude_hours = longitude_deg / 15.0
+
+    # Calculate Local Sidereal Time (LST)
+    # LST = GST + longitude_hours + time_difference
+    LST = GST + longitude_hours + time_difference
+
+    # Normalize LST to be within 0 to 24 hours
+    LST = LST % 24.0
+    if LST < 0:
+        LST += 24.0
+
+    return LST
+```",0.45
+66,"Given the angular perturbation system:
+\begin{cases}
+\Delta \psi = \sum_i (A_i \sin \alpha_i + B_i \cos \alpha_i) \\
+\Delta \epsilon = \sum_i (C_i \cos \alpha_i + D_i \sin \alpha_i)
+\end{cases}
+where the specific parameters are:
+[(-0.0022787478155803786, 0.043000668903179495, -0.03449537932501712, 0.09905712146854748)]
+Now, provide an expansion system.","The expanded system is:\Delta \psi = -0.002\sin\alpha_1 + 0.043\cos\alpha_1 \\
+\Delta \epsilon = -0.034\cos\alpha_1 + 0.099\sin\alpha_1","```python
+def execute_code():
+    # Given parameters: (A1, B1, C1, D1)
+    # From the problem: [(-0.0022787478155803786, 0.043000668903179495, -0.03449537932501712, 0.09905712146854748)]
+    A1 = -0.0022787478155803786
+    B1 = 0.043000668903179495
+    C1 = -0.03449537932501712
+    D1 = 0.09905712146854748
+    
+    # The expansion system is simply writing out the given equations with the specific coefficients.
+    # Since only one set of coefficients is provided, we assume i=1.
+    
+    # Define symbolic variable alpha for expansion
+    from sympy import symbols, sin, cos
+    
+    alpha = symbols('alpha')
+    
+    # Expand the given perturbation system
+    Delta_psi_expansion = A1 * sin(alpha) + B1 * cos(alpha)
+    Delta_epsilon_expansion = C1 * cos(alpha) + D1 * sin(alpha)
+    
+    # Return the expanded expressions as a tuple
+    result = (Delta_psi_expansion, Delta_epsilon_expansion)
+    
+    return result
+```",0.39
+67,"Given the equatorial coordinates of a celestial object $\alpha=12.84^\circ$, $\delta=13.26^\circ$, and the obliquity of the ecliptic $\varepsilon=24.24^\circ$, use the following system of equations to compute the ecliptic coordinates $(\beta,\lambda)$:
+\begin{cases}
+\sin\beta = \sin\delta \cos\varepsilon - \cos\delta \sin\varepsilon \sin\alpha \\
+\cos\beta \cos\lambda = \cos\delta \cos\alpha \\
+\cos\beta \sin\lambda = \sin\delta \sin\varepsilon + \cos\delta \cos\varepsilon \sin\alpha
+\end{cases}","Ecliptic coordinates $\beta = 6.91^\circ$, $\lambda = 17.07^\circ$","```python
+import math
+
+def execute_code():
+    # Given values in degrees
+    alpha_deg = 12.84
+    delta_deg = 13.26
+    epsilon_deg = 24.24
+    
+    # Convert degrees to radians for trigonometric functions
+    alpha_rad = math.radians(alpha_deg)
+    delta_rad = math.radians(delta_deg)
+    epsilon_rad = math.radians(epsilon_deg)
+    
+    # Compute sin(beta) using the first equation
+    sin_beta = math.sin(delta_rad) * math.cos(epsilon_rad) - math.cos(delta_rad) * math.sin(epsilon_rad) * math.sin(alpha_rad)
+    
+    # Compute beta (ecliptic latitude)
+    beta_rad = math.asin(sin_beta)
+    beta_deg = math.degrees(beta_rad)
+    
+    # Compute cos(beta) for use in lambda calculation
+    cos_beta = math.cos(beta_rad)
+    
+    # Compute cos(lambda) and sin(lambda) using the second and third equations
+    cos_lambda = math.cos(delta_rad) * math.cos(alpha_rad) / cos_beta if cos_beta != 0 else 0
+    sin_lambda = (math.sin(delta_rad) * math.sin(epsilon_rad) + math.cos(delta_rad) * math.cos(epsilon_rad) * math.sin(alpha_rad)) / cos_beta if cos_beta != 0 else 0
+    
+    # Compute lambda (ecliptic longitude)
+    if abs(cos_lambda) < 1e-10 and abs(sin_lambda) < 1e-10:
+        lambda_rad = 0
+    else:
+        lambda_rad = math.atan2(sin_lambda, cos_lambda)
+    
+    # Convert lambda to degrees
+    lambda_deg = math.degrees(lambda_rad)
+    
+    # Ensure lambda is in [0, 360) range
+    if lambda_deg < 0:
+        lambda_deg += 360
+    
+    # Return results as a tuple (beta_deg, lambda_deg)
+    result = (beta_deg, lambda_deg)
+    return result
+```",0.45
+68,"Given the reference angle $\theta_0=242.93^\circ$, observation distance $D=61.13$ meters, displacement vector $\mathbf{r}=(6.68, -9.27, -9.52)$ meters, and normal vector $\hat{n}=(-0.5720, -0.8200, -0.0194)$, please compute the total angle using the formula:
+$\theta = \theta_0 + \frac{\mathbf{r} \cdot \hat{n}}{D}$",Total angle $\theta = 246.6505^\circ$,"```python
+def execute_code():
+    # Given values
+    theta_0 = 242.93  # degrees
+    D = 61.13  # meters
+    r = [6.68, -9.27, -9.52]  # displacement vector in meters
+    n_hat = [-0.5720, -0.8200, -0.0194]  # normal vector (unit vector)
+
+    # Compute dot product r · n_hat
+    dot_product = sum(r[i] * n_hat[i] for i in range(3))
+
+    # Compute the angle adjustment
+    angle_adjustment = dot_product / D
+
+    # Compute total angle
+    theta = theta_0 + angle_adjustment
+
+    return theta
+```",0.45
+69,"Given the UTC time 2023-03-27 19:17:38 and the leap second correction ΔAT = 10 seconds, use the following time system conversion formulae to calculate TAI and TT:
+\begin{cases}
+TAI = UTC + \Delta AT \\
+TT = TAI + 32.184\ \mathrm{seconds}
+\end{cases}","TAI time = 2023-03-27 19:17:48
+TT time = 2023-03-27 19:18:20","```python
+def execute_code():
+    # Given UTC time as string
+    utc_time_str = ""2023-03-27 19:17:38""
+    
+    # Leap second correction
+    delta_AT = 10  # seconds
+    
+    # Convert UTC string to datetime object for easier handling
+    from datetime import datetime, timedelta
+    
+    # Parse the UTC time string
+    utc_datetime = datetime.strptime(utc_time_str, ""%Y-%m-%d %H:%M:%S"")
+    
+    # Calculate TAI: UTC + ΔAT
+    tai_datetime = utc_datetime + timedelta(seconds=delta_AT)
+    
+    # Calculate TT: TAI + 32.184 seconds
+    tt_datetime = tai_datetime + timedelta(seconds=32.184)
+    
+    # Convert back to strings for output (optional, but useful for display)
+    tai_str = tai_datetime.strftime(""%Y-%m-%d %H:%M:%S"")
+    tt_str = tt_datetime.strftime(""%Y-%m-%d %H:%M:%S"")
+    
+    # For precise calculation of TT time, we can also return the exact float seconds difference
+    # But since the question asks for TAI and TT, we'll return them as datetime objects or strings
+    
+    # Return result as a dictionary with both TAI and TT times
+    result = {
+        ""TAI"": tai_str,
+        ""TT"": tt_str
+    }
+    
+    return result
+```",0.39

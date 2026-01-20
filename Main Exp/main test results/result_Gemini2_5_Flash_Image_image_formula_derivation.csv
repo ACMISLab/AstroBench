@@ -1,0 +1,991 @@
+﻿Index,Question,Solution,Image Lable,Model_Response,Difficulty,,
+1,"The two-body problem concerns how two celestial bodies move under mutual gravitational attraction when only these two bodies are considered (neglecting perturbations from all others). Let there be only the Sun $\odot$ and a planet $P$. Establish an arbitrary spatial coordinate system $O-xyz$(As shown in the figure<image>GSTD-Fig-1</image>). $r_{\odot}$ is the position vector of the Sun, $r_{P}$ is the position vector of the planet, and $r$ is the position vector of the planet relative to the Sun. Denote the masses of the Sun and the planet by $M$ and $m$. Based on the given information, derive the differential equations for the two-body problem.","According to: 
+
+The Sun is subject to the gravitational force exerted by the planet
+
+$F_{\odot} = k^{2} \frac{Mm}{r^{2}} \frac{r}{|r|} = k^{2} \frac{Mm}{r^{3}} r$
+
+Likewise, the planet is subject to the gravitational force exerted by the Sun
+
+$F_{P} = k^{2} \frac{Mm}{r^{2}} \frac{-r}{|r|} = -k^{2} \frac{Mm}{r^{3}} r$
+
+From Newton’s second law: both the Sun and the planet accelerate under the action of force
+
+$F = \frac{\mathrm{d}(m\boldsymbol{v})}{\mathrm{d}t} = m \frac{\mathrm{d}^{2}\boldsymbol{r}}{\mathrm{d}t^{2}}$
+
+Conclude: 
+
+$F_{\odot} = M \frac{\mathrm{d}^{2}r_{\odot}}{\mathrm{d}t^{2}} = k^{2} \frac{Mm}{r^{3}} r$
+
+$F_{P} = m \frac{\mathrm{d}^{2}r_{P}}{\mathrm{d}t^{2}} = -k^{2} \frac{Mm}{r^{3}} r$
+
+According to: 
+
+$r = r_{P} - r_{\odot}$
+
+Conclude: 
+$\frac{\mathrm{d}^{2}\boldsymbol{r}}{\mathrm{d}t^{2}} = \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} (\boldsymbol{r}_{P} - \boldsymbol{r}_{\odot}) = -k^{2} \frac{M+m}{r^{3}} \boldsymbol{r} = -\frac{\mu}{r^{3}} \boldsymbol{r}$
+
+According to: 
+
+where $\mu = k^{2} (M+m)$. Establish a Cartesian coordinate system $x$–$y$–$z$ with the Sun as the origin.
+
+Conclude: 
+
+The differential equations of the two-body problem are
+
+$\begin{cases}
+\frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = -\frac{\mu}{r^{3}} x \\
+\frac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}} = -\frac{\mu}{r^{3}} y \\
+\frac{\mathrm{d}^{2}z}{\mathrm{d}t^{2}} = -\frac{\mu}{r^{3}} z
+\end{cases}$
+
+where $r = \sqrt{x^{2} + y^{2} + z^{2}}$.",Yes,"The two-body problem describes the motion of two celestial bodies under their mutual gravitational attraction, neglecting any external forces. We are given the Sun ($\odot$) and a planet ($P$) with masses $M$ and $m$, respectively. The position vectors are defined as $\vec{r}_{\odot}$ for the Sun, $\vec{r}_{P}$ for the planet, and $\vec{r}$ for the planet relative to the Sun, all measured from an arbitrary origin $O$ in an inertial frame.
+
+**1. Define Position Vectors and Masses:**
+*   Position vector of the Sun from origin $O$: $\vec{r}_{\odot}$
+*   Position vector of the planet $P$ from origin $O$: $\vec{r}_{P}$
+*   Position vector of the planet $P$ relative to the Sun $\odot$: $\vec{r}$
+*   Mass of the Sun: $M$
+*   Mass of the planet: $m$
+*   Gravitational constant: $G$
+
+From the vector diagram, the relative position vector $\vec{r}$ is given by:
+$\vec{r} = \vec{r}_{P} - \vec{r}_{\odot}$
+
+**2. Gravitational Forces:**
+According to Newton's Law of Universal Gravitation, the magnitude of the gravitational force between the Sun and the planet is $F = G \frac{M m}{|\vec{r}|^2}$.
+
+The force exerted by the Sun on the planet, $\vec{F}_{P\odot}$, points from the planet towards the Sun. However, we define $\vec{r}$ as pointing from the Sun to the planet. Therefore, the force on the planet is in the direction opposite to $\vec{r}$:
+$\vec{F}_{P\odot} = -G \frac{M m}{|\vec{r}|^2} \hat{r} = -G \frac{M m}{|\vec{r}|^3} \vec{r}$
+
+According to Newton's Third Law, the force exerted by the planet on the Sun, $\vec{F}_{\odot P}$, is equal in magnitude and opposite in direction to $\vec{F}_{P\odot}$:
+$\vec{F}_{\odot P} = -\vec{F}_{P\odot} = G \frac{M m}{|\vec{r}|^2} \hat{r} = G \frac{M m}{|\vec{r}|^3} \vec{r}$
+
+**3. Newton's Second Law for Each Body:**
+Applying Newton's Second Law ($\vec{F} = \text{mass} \times \text{acceleration}$) to each body:
+
+*   **For the Planet ($P$):**
+    $m \frac{d^2 \vec{r}_{P}}{d t^2} = \vec{F}_{P\odot}$
+    $m \frac{d^2 \vec{r}_{P}}{d t^2} = -G \frac{M m}{|\vec{r}|^3} \vec{r}$
+    Dividing by $m$:
+    $\frac{d^2 \vec{r}_{P}}{d t^2} = -G \frac{M}{|\vec{r}|^3} \vec{r}$  (Equation 1)
+
+*   **For the Sun ($\odot$):**
+    $M \frac{d^2 \vec{r}_{\odot}}{d t^2} = \vec{F}_{\odot P}$
+    $M \frac{d^2 \vec{r}_{\odot}}{d t^2} = G \frac{M m}{|\vec{r}|^3} \vec{r}$
+    Dividing by $M$:
+    $\frac{d^2 \vec{r}_{\odot}}{d t^2} = G \frac{m}{|\vec{r}|^3} \vec{r}$  (Equation 2)
+
+**4. Differential Equation for Relative Motion:**
+To describe the relative motion, we differentiate the relative position vector $\vec{r} = \vec{r}_{P} - \vec{r}_{\odot}$ twice with respect to time:
+$\frac{d^2 \vec{r}}{d t^2} = \frac{d^2 \vec{r}_{P}}{d t^2} - \frac{d^2 \vec{r}_{\odot}}{d t^2}$
+
+Substitute Equation 1 and Equation 2 into this expression:
+$\frac{d^2 \vec{r}}{d t^2} = \left(-G \frac{M}{|\vec{r}|^3} \vec{r}\right) - \left(G \frac{m}{|\vec{r}|^3} \vec{r}\right)$
+$\frac{d^2 \vec{r}}{d t^2} = -G \frac{(M + m)}{|\vec{r}|^3} \vec{r}$
+
+This is the fundamental differential equation governing the relative motion of the two bodies. It shows that the problem of two bodies orbiting each other can be reduced to an equivalent one-body problem where a fictitious particle orbits a fixed central mass equal to the sum of the two masses ($M+m$).
+
+**5. Differential Equation for the Center of Mass Motion:**
+The position of the center of mass $\vec{R}_{CM}$ of the system is given by:
+$\vec{R}_{CM} = \frac{M \vec{r}_{\odot} + m \vec{r}_{P}}{M + m}$
+
+Differentiating twice with respect to time to find the acceleration of the center of mass:
+$\frac{d^2 \vec{R}_{CM}}{d t^2} = \frac{M \frac{d^2 \vec{r}_{\odot}}{d t^2} + m \frac{d^2 \vec{r}_{P}}{d t^2}}{M + m}$
+
+Substituting the forces from Newton's Second Law ($M \ddot{\vec{r}}_{\odot} = \vec{F}_{\odot P}$ and $m \ddot{\vec{r}}_{P} = \vec{F}_{P\odot}$):
+$\frac{d^2 \vec{R}_{CM}}{d t^2} = \frac{\vec{F}_{\odot P} + \vec{F}_{P\odot}}{M + m}$
+
+Since $\vec{F}_{\odot P} = -\vec{F}_{P\odot}$ (Newton's Third Law), the net force on the system is zero:
+$\frac{d^2 \vec{R}_{CM}}{d t^2} = \frac{0}{M + m} = 0$
+
+This implies that the acceleration of the center of mass is zero. Therefore, the center of mass moves at a constant velocity (or remains at rest) in an inertial frame.
+
+**Summary of Differential Equations for the Two-Body Problem:**
+
+The two-body problem is fully described by:
+
+1.  **The differential equation for the relative position vector:**
+    $\frac{d^2 \vec{r}}{d t^2} = -G \frac{(M + m)}{|\vec{r}|^3} \vec{r}$
+    where $\vec{r} = \vec{r}_{P} - \vec{r}_{\odot}$ is the position vector of the planet relative to the Sun.
+
+2.  **The differential equation for the center of mass:**
+    $\frac{d^2 \vec{R}_{CM}}{d t^2} = 0$
+    where $\vec{R}_{CM} = \frac{M \vec{r}_{\odot} + m \vec{r}_{P}}{M + m}$ is the position vector of the center of mass.",0.819,,
+2,"<image>GSTD-Fig-2</image>As shown in the figure, imagine a system in which photons bounce between two mirrors to measure time, with the distance between the mirrors being $L$. If the system is stationary, the round-trip path of the photon is $2L$, and the required time is $t_{0}=2L/c$. If the system is in motion with speed $v$, then when the photon travels from the first mirror to the second mirror, the system has moved from position $A$ to position $B$, and the photon travels a distance $L'$; when it returns to the first mirror, the system has moved to position $C$. The round-trip path of the photon is $2L'$, and the required time is $t=2L'/c$, while the distance between $A$ and $C$ is $vt$. Please derive the relativistic formula based on the given conditions.","According to: 
+
+Using the right-triangle formula
+
+Conclude: 
+
+$L'^{2}=L^{2}+\left(\frac{vt}{2}\right)^{2}$
+
+According to: 
+
+Substitute $L=t_{0}\cdot c/2$ and $L'=t\cdot c/2$
+
+Conclude: 
+
+$\left(\frac{tc}{2}\right)^{2}=\left(\frac{t_{0}c}{2}\right)^{2}+\left(\frac{vt}{2}\right)^{2}$
+
+According to: 
+
+Multiplying both sides by $\left(\frac{2}{t_{0}c}\right)^{2}$ gives  
+$\left(\frac{t}{t_{0}}\right)^{2}=1+\left(\frac{t}{t_{0}}\right)^{2}\cdot\left(\frac{v}{c}\right)^{2}$
+
+Conclude: 
+
+$\left(\frac{t}{t_{0}}\right)^{2}\left[1-\left(\frac{v}{c}\right)^{2}\right]=1$
+
+This yields the relativistic formula. Let $x=v/c$, $y=(t/t_{0})$, and express $y$ as a function of $x$, then  
+$y=f(x)=\frac{1}{\sqrt{1-x^{2}}}$",Yes,"Let's derive the relativistic formula for time dilation based on the provided setup.
+
+**1. Stationary Clock (Observer in the same frame as the clock):**
+When the light clock is stationary, an observer within the same frame measures the time it takes for a photon to travel from one mirror to the other and back.
+*   Distance between mirrors = $L$
+*   Total path length for a round trip = $2L$
+*   Speed of light = $c$
+*   Time taken for a round trip (proper time) = $t_0$
+
+Using the formula distance = speed × time, we have:
+$2L = c \cdot t_0$
+$t_0 = \frac{2L}{c}$  (Equation 1)
+
+**2. Moving Clock (Observer in a different inertial frame):**
+Now, consider the light clock moving at a constant speed $v$ relative to an external observer. The motion is perpendicular to the line connecting the mirrors.
+Let $t$ be the time measured by the external observer for one round trip of the photon.
+
+*   **During the first half-trip (bottom mirror to top mirror):**
+    *   The photon starts from the bottom mirror at position A and travels to the top mirror.
+    *   During this time, the clock itself moves horizontally.
+    *   Let the time taken for this half-trip be $t/2$.
+    *   In this time $t/2$, the clock moves a horizontal distance $v \cdot (t/2)$.
+    *   The vertical distance between the mirrors remains $L$ (length contraction does not occur in the direction perpendicular to motion).
+    *   The path taken by the photon (hypotenuse of the right triangle) is $L'$.
+    *   The photon travels this distance $L'$ at the speed of light $c$.
+    *   So, $L' = c \cdot (t/2)$  (Equation 2)
+
+*   **Applying the Pythagorean Theorem:**
+    From the diagram (specifically, the segment from A to B for the first half of the trip, or B to C for the second half), we can form a right-angled triangle.
+    *   The vertical side is $L$.
+    *   The horizontal side is $v \cdot (t/2)$.
+    *   The hypotenuse is $L'$ (the actual path taken by the photon).
+
+    According to the Pythagorean theorem:
+    $(L')^2 = L^2 + \left(v \cdot \frac{t}{2}\right)^2$  (Equation 3)
+
+*   **Substituting and Solving for $t$:**
+    Substitute Equation 2 ($L' = c \cdot t/2$) into Equation 3:
+    $\left(c \cdot \frac{t}{2}\right)^2 = L^2 + \left(v \cdot \frac{t}{2}\right)^2$
+    $c^2 \left(\frac{t}{2}\right)^2 = L^2 + v^2 \left(\frac{t}{2}\right)^2$
+
+    Now, rearrange the terms to solve for $t$:
+    $c^2 \left(\frac{t}{2}\right)^2 - v^2 \left(\frac{t}{2}\right)^2 = L^2$
+    $\left(\frac{t}{2}\right)^2 (c^2 - v^2) = L^2$
+    $\left(\frac{t}{2}\right)^2 = \frac{L^2}{c^2 - v^2}$
+
+    Take the square root of both sides:
+    $\frac{t}{2} = \frac{L}{\sqrt{c^2 - v^2}}$
+    $t = \frac{2L}{\sqrt{c^2 - v^2}}$  (Equation 4)
+
+**3. Relating $t$ to $t_0$ (Time Dilation Formula):**
+We want to express $t$ in terms of $t_0$. From Equation 1, we know $L = \frac{c \cdot t_0}{2}$.
+Substitute this expression for $L$ into Equation 4:
+$t = \frac{2 \left(\frac{c \cdot t_0}{2}\right)}{\sqrt{c^2 - v^2}}$
+$t = \frac{c \cdot t_0}{\sqrt{c^2 - v^2}}$
+
+To simplify the denominator, factor out $c^2$:
+$t = \frac{c \cdot t_0}{\sqrt{c^2 \left(1 - \frac{v^2}{c^2}\right)}}$
+$t = \frac{c \cdot t_0}{c \sqrt{1 - \frac{v^2}{c^2}}}$
+$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$
+
+This is the relativistic formula for **time dilation**. It shows that the time interval $t$ (measured by the external observer for the moving clock) is longer than the proper time interval $t_0$ (measured by an observer stationary with respect to the clock). The factor $\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$ is known as the Lorentz factor.",0.819,,
+3,"Given the location of an observatory, it is commonly expressed using its geodetic coordinates, namely geodetic longitude $\lambda$, geodetic latitude $\phi$, and altitude $h$. As shown in figure, the geodetic latitude $\phi$ is the complement of the angle between the normal to the geoid $Q_{2}P$ and the polar axis $EB$. The normal $Q_{2}P$ passes through the observatory and is perpendicular to the geoid at point $Q_{0}$. The altitude is $h = |Q_{0}P|$, i.e., the distance from the observatory to the geoid. Let $N = |Q_{2}Q_{0}|$. The geocentric Cartesian coordinates of the observatory in the ITRS are
+
+$\begin{aligned}
+x &= (N+h) \cos \phi \cos \lambda \\
+y &= (N+h) \cos \phi \sin \lambda \\
+z &= [(1-e^{2}) N+h] \sin \phi
+\end{aligned}$
+
+<image>GSTD-Fig-3</image>As shown in the figure, please now prove that the coordinates of the intersection point $Q_{0}$ are
+
+$u_{0}=\frac{a \cos \phi}{\sqrt{1-e^{2} \sin \phi}}$
+
+$z_{0}=\left(\frac{b}{a}\right)^{2} u_{0} \tan \phi$","According to: 
+
+The meridian section diagram of the geoid
+
+Conclude: 
+
+The ellipse equation is: $\frac{z^2}{a^2}+\frac{u^2}{b^2}=1$
+
+According to: 
+
+The normal line $Q_2P$ intersects the ellipse at $Q_0(u_0; z_0)$
+
+Conclude: 
+
+Its slope is: $\tan\phi=\frac{a^2 z_0}{b^2 u_0}=\frac{z_0}{(1-f)^2 u_0}$
+
+According to: 
+
+Solving the two expressions simultaneously
+
+Conclude: 
+
+$u_{0}=\frac{a \cos \phi}{\sqrt{1-e^{2} \sin \phi}}$
+
+$z_{0}=\left(\frac{b}{a}\right)^{2} u_{0} \tan \phi$",Yes,"To prove the coordinates of the intersection point $Q_0(u_0, z_0)$, we will use the geometric properties of an ellipse and the definition of geodetic latitude.
+
+**1. Equation of the Geoid (Ellipse) and its Normal**
+
+The geoid is represented by an ellipse in the $u-c$ plane (equatorial plane $u$ and polar axis $c$). The standard equation of an ellipse centered at the origin with semi-major axis $a$ (along $u$) and semi-minor axis $b$ (along $c$) is:
+$\frac{u^2}{a^2} + \frac{c^2}{b^2} = 1$
+
+Let $Q_0$ be a point on the ellipse with coordinates $(u_0, c_0)$. The geodetic latitude $\phi$ is defined as the angle between the normal to the geoid at $Q_0$ and the equatorial plane (the $u$-axis).
+
+To find the slope of the normal, we first find the slope of the tangent to the ellipse at $Q_0$. Differentiating the ellipse equation with respect to $u$:
+$\frac{2u}{a^2} + \frac{2c}{b^2} \frac{dc}{du} = 0$
+$\frac{dc}{du} = -\frac{b^2 u}{a^2 c}$
+
+The slope of the tangent at $Q_0(u_0, c_0)$ is $m_T = -\frac{b^2 u_0}{a^2 c_0}$.
+The normal to the ellipse at $Q_0$ is perpendicular to the tangent. Therefore, the slope of the normal, $m_N$, is the negative reciprocal of $m_T$:
+$m_N = -\frac{1}{m_T} = -\left(-\frac{a^2 c_0}{b^2 u_0}\right) = \frac{a^2 c_0}{b^2 u_0}$
+
+**2. Deriving the Formula for $z_0$ (which is $c_0$)**
+
+By definition, the geodetic latitude $\phi$ is the angle that the normal makes with the $u$-axis. Thus, the slope of the normal is $\tan \phi$:
+$\tan \phi = m_N = \frac{a^2 c_0}{b^2 u_0}$
+
+From this equation, we can express $c_0$ in terms of $u_0$ and $\phi$:
+$c_0 = \frac{b^2}{a^2} u_0 \tan \phi$
+
+Since $z_0$ is the $c$-coordinate of $Q_0$, we have:
+$z_0 = \left(\frac{b}{a}\right)^2 u_0 \tan \phi$
+This proves the second formula.
+
+**3. Deriving the Formula for $u_0$**
+
+Now we use the fact that $Q_0(u_0, c_0)$ lies on the ellipse. Substitute the expression for $c_0$ into the ellipse equation:
+$\frac{u_0^2}{a^2} + \frac{c_0^2}{b^2} = 1$
+$\frac{u_0^2}{a^2} + \frac{1}{b^2} \left( \frac{b^2}{a^2} u_0 \tan \phi \right)^2 = 1$
+$\frac{u_0^2}{a^2} + \frac{1}{b^2} \frac{b^4}{a^4} u_0^2 \tan^2 \phi = 1$
+$\frac{u_0^2}{a^2} + \frac{b^2}{a^4} u_0^2 \tan^2 \phi = 1$
+
+Factor out $u_0^2$:
+$u_0^2 \left( \frac{1}{a^2} + \frac{b^2}{a^4} \tan^2 \phi \right) = 1$
+$u_0^2 \left( \frac{a^2 + b^2 \tan^2 \phi}{a^4} \right) = 1$
+$u_0^2 = \frac{a^4}{a^2 + b^2 \tan^2 \phi}$
+
+The first eccentricity squared $e^2$ for an oblate spheroid is defined as $e^2 = \frac{a^2 - b^2}{a^2}$. This implies $b^2 = a^2 (1 - e^2)$. Substitute this into the expression for $u_0^2$:
+$u_0^2 = \frac{a^4}{a^2 + a^2 (1 - e^2) \tan^2 \phi}$
+Factor out $a^2$ from the denominator:
+$u_0^2 = \frac{a^4}{a^2 [1 + (1 - e^2) \tan^2 \phi]}$
+$u_0^2 = \frac{a^2}{1 + \tan^2 \phi - e^2 \tan^2 \phi}$
+
+Using the trigonometric identity $1 + \tan^2 \phi = \sec^2 \phi$:
+$u_0^2 = \frac{a^2}{\sec^2 \phi - e^2 \tan^2 \phi}$
+Convert $\sec^2 \phi$ and $\tan^2 \phi$ to terms of $\cos^2 \phi$ and $\sin^2 \phi$:
+$u_0^2 = \frac{a^2}{\frac{1}{\cos^2 \phi} - e^2 \frac{\sin^2 \phi}{\cos^2 \phi}}$
+$u_0^2 = \frac{a^2 \cos^2 \phi}{1 - e^2 \sin^2 \phi}$
+
+Taking the square root (assuming $u_0 > 0$ and $\cos \phi > 0$ for typical latitudes):
+$u_0 = \frac{a \cos \phi}{\sqrt{1 - e^2 \sin^2 \phi}}$
+
+**Note on potential typo:**
+The formula for $u_0$ provided in the question is $u_{0}=\frac{a \cos \phi}{\sqrt{1-e^{2} \sin \phi}}$. However, based on standard geodetic formulas for an oblate spheroid, the denominator typically involves $\sin^2 \phi$. The derivation above leads to $\sqrt{1-e^2 \sin^2 \phi}$. It is highly probable that the question contains a typographical error and intended $\sin^2 \phi$ instead of $\sin \phi$ in the denominator of the $u_0$ formula. The derivation above assumes this common form.
+
+The final answer is $\boxed{u_{0}=\frac{a \cos \phi}{\sqrt{1-e^{2} \sin^{2} \phi}} \text{ and } z_{0}=\left(\frac{b}{a}\right)^{2} u_{0} \tan \phi}$.",0.819,,
+4,"Given that the location of an observatory is usually expressed with its geodetic coordinates, namely geodetic longitude  $\lambda$, geodetic latitude  $\phi$, and altitude  $h$. As shown in Fig. 5.10, the geodetic latitude  $\phi$ is the complement of the angle between the surface normal $Q_{2}P$ to the geoid and the polar axis $EB$. The normal $Q_{2}P$ passes through the observatory and is perpendicular to the geoid at point $Q_{0}$. The altitude is $h = |Q_{0}P|$, which is the distance from the observatory to the geoid. Let $N = |Q_{2}Q_{0}|$. The geocentric Cartesian coordinates of the station in the ITRS are
+
+$\begin{aligned}
+x &= (N+h)\cos\phi\cos\lambda ,\\
+y &= (N+h)\cos\phi\sin\lambda ,\\
+z &= [(1-e^{2})N + h]\sin\phi .
+\end{aligned}$
+
+<image>GSTD-Fig-3</image>As shown in the figure and the known conditions, derive:
+
+$\tan\phi = \frac{\sqrt{1-e^{2}}\,z - a e^{2}\sin^{3}\beta}{\sqrt{1-e^{2}}\,(u - a e^{2}\cos^{3}\beta)}.$","According to: 
+
+Let the center of curvature of the ellipse at point $Q_{0}$ on the geoid be $C$.
+
+Conclude: 
+
+The radius of curvature is  
+
+$M = \frac{a(1-e^{2})}{(1-e^{2}\sin^{2}\phi)^{3/2}}.$
+
+According to: 
+
+The coordinates of the center of curvature $C$ in the illustrated coordinate system are  
+
+$u_{c} = (N - M)\cos\phi, \qquad z_{c} = [(1-e^{2})N - M]\sin\phi .$  
+
+Substituting the expressions of $N$ and $M$ and simplifying.
+
+Conclude: 
+
+(i) $u_{c} = \frac{a e^{2}\cos^{3}\phi}{(1-e^{2}\sin^{2}\phi)^{3/2}},\qquad
+z_{c} = -\frac{a e^{2}(1-e^{2})\sin^{3}\phi}{(1-e^{2}\sin^{2}\phi)^{3/2}}.$
+
+According to: 
+
+Geometric relations
+
+Conclude: 
+
+(ii) $\cos\phi = \sqrt{1-e^{2}\sin^{2}\phi}\,\cos\beta,$ $\sin\phi = \sqrt{\frac{1-e^{2}\sin^{2}\phi}{1-e^{2}}}\,\sin\beta.$
+
+According to: 
+
+Substituting (ii) into (i)
+
+Conclude: 
+
+(iii) $u_{c} = a e^{2}\cos^{3}\beta,\qquad z_{c} = -\frac{a e^{2}}{\sqrt{1-e^{2}}}\sin^{3}\beta.$
+
+According to: 
+
+From the figure, $\tan\phi = (z - z_{c})/(u - u_{c})$. Substituting (iii).
+
+Conclude: 
+
+$\tan\phi=\frac{\sqrt{1-e^{2}}\,z - a e^{2}\sin^{3}\beta}{\sqrt{1-e^{2}}\,(u - a e^{2}\cos^{3}\beta)}.$",Yes,"**1. Understanding the Definitions and Diagram:**
+*   The point P has coordinates $(u, c)$ in the 2D cross-section, where $u = \sqrt{x^2+y^2}$ and $c=z$.
+*   The geodetic latitude $\phi$ is the angle between the normal to the ellipsoid at $Q_0$ (represented by the line segment $Q_2P$) and the equatorial plane (u-axis).
+*   The altitude $h = |Q_0P|$ is the distance from the observatory P to the geoid $Q_0$ along the normal.
+*   The point $Q_0$ is on the ellipsoid. The line $Q_2P$ is the normal to the ellipsoid at $Q_0$.
+*   $Q_2$ is the point where the normal to the ellipsoid at $Q_0$ intersects the polar axis (c-axis).
+*   The geocentric Cartesian coordinates are given by:
+    $x = (N+h)\cos\phi\cos\lambda$
+    $y = (N+h)\cos\phi\sin\lambda$
+    $z = [(1-e^{2})N + h]\sin\phi$
+*   From these, in the 2D cross-section, we have:
+    $u = \sqrt{x^2+y^2} = (N+h)\cos\phi$
+    $z = [(1-e^{2})N + h]\sin\phi$
+*   Standard relationships for an ellipsoid of revolution:
+    *   The prime vertical radius of curvature $N = \frac{a}{\sqrt{1-e^2\sin^2\phi}}$.
+    *   The semi-minor axis $b = a\sqrt{1-e^2}$.
+    *   The coordinates of $Q_0$ (point on the ellipsoid) are $(u_0, z_0) = (N\cos\phi, (1-e^2)N\sin\phi)$.
+    *   The reduced latitude $\beta$ is related to $Q_0$ by $u_0 = a\cos\beta$ and $z_0 = b\sin\beta = a\sqrt{1-e^2}\sin\beta$.
+    *   The relationship between $\phi$ and $\beta$ is $\tan\phi = \frac{a}{b}\tan\beta = \frac{1}{\sqrt{1-e^2}}\tan\beta$.
+
+**2. Exact Relationship from the Diagram:**
+The point P has coordinates $(u,z)$.
+The point $Q_2$ is the intersection of the normal at $Q_0$ with the z-axis. The z-coordinate of $Q_2$ is a known property of the ellipsoid: $z_{Q_2} = -Ne^2\sin\phi$. Its u-coordinate is 0.
+Since the line $Q_2P$ is the normal and makes an angle $\phi$ with the u-axis, its slope is $\tan\phi$.
+Therefore, $\tan\phi = \frac{z - z_{Q_2}}{u - 0} = \frac{z - (-Ne^2\sin\phi)}{u} = \frac{z + Ne^2\sin\phi}{u}$.
+This is a fundamental exact relationship for geodetic latitude.
+
+**3. Expressing $N\sin\phi$ in terms of $\beta$:**
+We have the relations between $\phi$ and $\beta$:
+$N\cos\phi = a\cos\beta$
+$(1-e^2)N\sin\phi = a\sqrt{1-e^2}\sin\beta$
+From the second relation, dividing by $\sqrt{1-e^2}$:
+$\sqrt{1-e^2}N\sin\phi = a\sin\beta \implies N\sin\phi = \frac{a\sin\beta}{\sqrt{1-e^2}}$.
+
+**4. Substituting into the Exact Relationship:**
+Substitute the expression for $N\sin\phi$ into the exact relationship $\tan\phi = \frac{z + Ne^2\sin\phi}{u}$:
+$\tan\phi = \frac{z + e^2 \left(\frac{a\sin\beta}{\sqrt{1-e^2}}\right)}{u}$
+To simplify, multiply the numerator and denominator by $\sqrt{1-e^2}$:
+$\tan\phi = \frac{\sqrt{1-e^2}\,z + a e^2\sin\beta}{u\sqrt{1-e^2}}$
+
+This is an exact formula derived directly from the given conditions and standard definitions.
+
+**5. Comparing with the Target Formula:**
+The derived exact formula is: $\tan\phi = \frac{\sqrt{1-e^2}\,z + a e^2\sin\beta}{u\sqrt{1-e^2}}$.
+The target formula provided in the question is: $\tan\phi = \frac{\sqrt{1-e^{2}}\,z - a e^{2}\sin^{3}\beta}{\sqrt{1-e^{2}}\,(u - a e^{2}\cos^{3}\beta)}$.
+This target formula can be simplified by dividing numerator and denominator by $\sqrt{1-e^2}$:
+$\tan\phi = \frac{z - a e^{2}\sin^{3}\beta/\sqrt{1-e^{2}}}{u - a e^{2}\cos^{3}\beta}$.
+
+Comparing the derived exact formula with the target formula, we observe a significant difference in the terms involving $\sin\beta$ and the denominator:
+*   Derived: $\ldots + a e^2\sin\beta$ in numerator.
+*   Target: $\ldots - a e^2\sin^3\beta/\sqrt{1-e^2}$ in numerator.
+*   Derived: $u\sqrt{1-e^2}$ in denominator.
+*   Target: $\sqrt{1-e^2}\,(u - a e^{2}\cos^{3}\beta)$ in denominator.
+
+**Conclusion:**
+The target formula is a known iterative approximation formula (e.g., a variant of Bowring's formula) used to solve for $\phi$ from $(u,z)$. Its derivation typically involves making approximations (e.g., using a first guess for $\beta$ and expanding terms in a Taylor series, or a specific geometric construction) that introduce the cubic terms ($\sin^3\beta$, $\cos^3\beta$) and result in the specific coefficients and signs.
+
+The information provided in the problem statement (""As shown in the figure and the known conditions"") allows for the derivation of an *exact* formula for $\tan\phi$ as shown in step 4. However, this exact formula is different from the specific iterative form given in the problem's target. Deriving the given iterative formula requires additional assumptions or a more complex approximation technique (such as those used for high-accuracy geodetic transformations) which are not explicitly provided or hinted at in the problem description. Without these unstated approximations, the requested formula cannot be directly derived from the fundamental exact relations.
+
+The problem requires a derivation. Since the exact derivation leads to a different formula, and the derivation of the target formula usually involves approximations not provided, it's appropriate to present the exact derivation and highlight the discrepancy.
+
+The final answer is $\boxed{\tan\phi = \frac{\sqrt{1-e^2}\,z + a e^2\sin\beta}{u\sqrt{1-e^2}}}$.",0.945,,
+5,"<image>GSTD-Fig-4</image>As shown in the figure, find the gravitational potential at point $P$, whose radial vector is $\boldsymbol{r}$, due to a point mass $m$ whose radial vector is $s$, and expand it as a power series in the ratio $t = \frac{s}{r}$, up to the cubic term.","According to: 
+
+The radial vector from the point mass $m$ to point $P$ is $\boldsymbol{r}-\boldsymbol{s}$, and the gravitational potential is
+
+$V(r) = -\frac{Gm}{|\boldsymbol{r}-\boldsymbol{s}|}$
+
+By the law of cosines,
+
+$ |\boldsymbol{r}-\boldsymbol{s}|^2 = r^2 + s^2 - 2rs\cos\theta = r^2(1+t^2-2t\cos\theta) $
+
+where $ t = \frac{s}{r} $, $ \cos\theta = \frac{1}{rs}\boldsymbol{r}^T\boldsymbol{s} $. Substitute these into the expression.
+
+Conclude: 
+
+$ V(\boldsymbol{r}) = -\frac{Gm}{r}(1+t^2 - 2t\cos\theta)^{-1/2} $
+
+According to: 
+
+When $ t < 1 $, expand the right-hand side as a binomial power series in $t$, obtaining
+
+(i): $(1+t^2-2tcos\theta)^{-1/2} = 1 + (cos\theta)t + \frac{1}{2}(3cos^2\theta - 1)t^2 + \frac{1}{2}(5cos^3\theta - 3cos\theta)t^3 + \cdots$
+
+Substituting this.
+
+Conclude: 
+
+$V(r) = -\frac{Gm}{r}\left[1 + (cos\theta)\frac{s}{r} + \frac{1}{2}(3cos^2\theta - 1)\left(\frac{s}{r}\right)^2 + \frac{1}{2}(5cos^3\theta - 3cos\theta)\left(\frac{s}{r}\right)^3 + \cdots \right]$
+
+According to: 
+
+The general expansion of the function $(1+t^2 - 2t\cos\theta)^{-1/2}$ is
+
+$(1+t^2 - 2t\cos\theta)^{-1/2} = \sum_{n=0}^\infty P_n(\cos\theta) t^n$
+
+where $P_n(\cos\theta)$ are the Legendre polynomials of degree $n$ (M. Legendre, 1752–1833, French mathematician). From (i) we may obtain the expressions of the first four Legendre polynomials.
+
+Conclude: 
+
+$P_0 = 1,$
+
+$P_1 = \cos\theta,$
+
+$P_2 = \frac{3}{2}\cos^2\theta - \frac{1}{2},$
+
+$P_3 = \frac{5}{2}\cos^3\theta - \frac{3}{2}\cos\theta, \cdots$",Yes,"The gravitational potential $\Phi$ at a point P due to a point mass $m$ is given by the formula:
+$\Phi = -\frac{Gm}{d}$
+where $G$ is the gravitational constant and $d$ is the distance between the point mass and the observation point.
+
+In this problem:
+1.  The observation point is P, with radial vector $\boldsymbol{r}$. So, its position is $(\boldsymbol{r})$.
+2.  The point mass is $m$, with radial vector $\boldsymbol{s}$. So, its position is $(\boldsymbol{s})$.
+
+The distance $d$ between the point P and the point mass $m$ is the magnitude of the vector connecting $m$ to P. This vector is $\boldsymbol{r} - \boldsymbol{s}$.
+Therefore, $d = |\boldsymbol{r} - \boldsymbol{s}|$.
+
+So, the gravitational potential at P is:
+$\Phi = -\frac{Gm}{|\boldsymbol{r} - \boldsymbol{s}|}$
+
+Now, we need to expand this expression as a power series in the ratio $t = \frac{s}{r}$, where $s = |\boldsymbol{s}|$ and $r = |\boldsymbol{r}|$.
+Let $\theta$ be the angle between the vectors $\boldsymbol{r}$ and $\boldsymbol{s}$, as shown in the figure.
+
+We can express the magnitude squared of the difference vector as:
+$|\boldsymbol{r} - \boldsymbol{s}|^2 = (\boldsymbol{r} - \boldsymbol{s}) \cdot (\boldsymbol{r} - \boldsymbol{s})$
+$|\boldsymbol{r} - \boldsymbol{s}|^2 = |\boldsymbol{r}|^2 + |\boldsymbol{s}|^2 - 2 \boldsymbol{r} \cdot \boldsymbol{s}$
+Using $r = |\boldsymbol{r}|$, $s = |\boldsymbol{s}|$, and $\boldsymbol{r} \cdot \boldsymbol{s} = rs \cos \theta$:
+$|\boldsymbol{r} - \boldsymbol{s}|^2 = r^2 + s^2 - 2rs \cos \theta$
+
+So, the inverse distance is:
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = (r^2 + s^2 - 2rs \cos \theta)^{-1/2}$
+
+To perform the expansion in powers of $t = \frac{s}{r}$, we factor out $r^2$ from the square root:
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = (r^2(1 + \frac{s^2}{r^2} - 2 \frac{s}{r} \cos \theta))^{-1/2}$
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = \frac{1}{r} (1 + (\frac{s}{r})^2 - 2 (\frac{s}{r}) \cos \theta)^{-1/2}$
+
+Let $t = \frac{s}{r}$. The expression becomes:
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = \frac{1}{r} (1 - 2t \cos \theta + t^2)^{-1/2}$
+
+This is the generating function for Legendre polynomials $P_l(\cos \theta)$:
+$(1 - 2t \cos \theta + t^2)^{-1/2} = \sum_{l=0}^{\infty} t^l P_l(\cos \theta)$
+
+We need to expand this up to the cubic term (i.e., up to $t^3$).
+The first few Legendre polynomials are:
+$P_0(x) = 1$
+$P_1(x) = x$
+$P_2(x) = \frac{1}{2}(3x^2 - 1)$
+$P_3(x) = \frac{1}{2}(5x^3 - 3x)$
+
+Substituting $x = \cos \theta$:
+$P_0(\cos \theta) = 1$
+$P_1(\cos \theta) = \cos \theta$
+$P_2(\cos \theta) = \frac{1}{2}(3 \cos^2 \theta - 1)$
+$P_3(\cos \theta) = \frac{1}{2}(5 \cos^3 \theta - 3 \cos \theta)$
+
+So, the expansion of the inverse distance is:
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = \frac{1}{r} \left[ P_0(\cos \theta) + t P_1(\cos \theta) + t^2 P_2(\cos \theta) + t^3 P_3(\cos \theta) + O(t^4) \right]$
+Substituting $t = \frac{s}{r}$:
+$\frac{1}{|\boldsymbol{r} - \boldsymbol{s}|} = \frac{1}{r} \left[ 1 + \left(\frac{s}{r}\right) \cos \theta + \left(\frac{s}{r}\right)^2 \frac{1}{2}(3 \cos^2 \theta - 1) + \left(\frac{s}{r}\right)^3 \frac{1}{2}(5 \cos^3 \theta - 3 \cos \theta) + O\left(\left(\frac{s}{r}\right)^4\right) \right]$
+
+Finally, substitute this back into the formula for gravitational potential:
+$\Phi = -\frac{Gm}{r} \left[ 1 + \left(\frac{s}{r}\right) \cos \theta + \left(\frac{s}{r}\right)^2 \frac{1}{2}(3 \cos^2 \theta - 1) + \left(\frac{s}{r}\right)^3 \frac{1}{2}(5 \cos^3 \theta - 3 \cos \theta) + O\left(\left(\frac{s}{r}\right)^4\right) \right]$
+
+This expansion is valid for $s < r$.
+
+The final answer is $\boxed{-\frac{Gm}{r} \left( 1 + \frac{s}{r} \cos \theta + \left(\frac{s}{r}\right)^2 \frac{1}{2}(3 \cos^2 \theta - 1) + \left(\frac{s}{r}\right)^3 \frac{1}{2}(5 \cos^3 \theta - 3 \cos \theta) \right)}$.",0.819,,
+6,"<image>GSTD-Fig-5</image>As shown in the figure, find the gravitational potential at the location of mass m produced by two equal masses M separated by a distance 2D, and find the gravitational force on m.","According to: 
+
+Gravitational potential: $V_{g}=-GMm\left(\frac{1}{r_{1}}+\frac{1}{r_{2}}\right)$
+
+Expanding $\frac{1}{r_{1}}$ and $\frac{1}{r_{2}}$ respectively in a power series of $\frac{D}{r}$ using Legendre polynomials, accurate up to $(D/r)^{2}$.
+
+Conclude: 
+
+$\left[1+\left(\frac{D}{r}\right)^{2}-2\left(\frac{D}{r}\right)\cos\theta\right]^{-1/2}=1-\frac{1}{2}\left(\frac{D}{r}\right)^{2}+\left(\frac{D}{r}\right)\cos\theta+\frac{3}{2}\left(\frac{D}{r}\right)^{2}\cos^{2}\theta$
+
+$\left[1+\left(\frac{D}{r}\right)^{2}+2\left(\frac{D}{r}\right)\cos\theta\right]^{-1/2}=1-\frac{1}{2}\left(\frac{D}{r}\right)^{2}-\left(\frac{D}{r}\right)\cos\theta+\frac{3}{2}\left(\frac{D}{r}\right)^{2}\cos^{2}\theta$
+
+$V_{g}=-\frac{GMm}{r}\left[2+\left(\frac{D}{r}\right)^{2}\left(3\cos^{2}\theta-1\right)\right]$
+
+According to: 
+
+Taking partial derivatives
+
+Conclude: 
+
+$\frac{\partial V_{g}}{\partial r}=2GMm\left[\frac{1}{r^{2}}+\frac{D^{2}}{r^{4}}\left(\frac{9}{2}\cos^{2}\theta-\frac{3}{2}\right)\right]$
+
+$\frac{\partial V_{g}}{\partial\theta}=2GMm\left[\frac{D^{2}}{r^{3}}\left(3\cos\theta\sin\theta\right)\right]$
+
+According to: 
+
+In polar coordinates the gradient operator can be written as: $\nabla V_{g}=\hat{r}\frac{\partial V_{g}}{\partial r}+\hat{\theta}\frac{1}{r}\frac{\partial V_{g}}{\partial\theta}$
+
+Conclude: 
+
+$\mathbf{F}_{g}=-\nabla V_{g}=-2GMm\left[\hat{r}\left[\frac{1}{r^{2}}+\frac{D^{2}}{r^{4}}\left(\frac{9}{2}\cos^{2}\theta-\frac{3}{2}\right)\right]+\hat{\theta}\left(\frac{3D^{2}\sin\theta\cos\theta}{r^{4}}\right)\right]$",Yes,"**1. Setup and Coordinates:**
+From the figure:
+*   Two equal masses, M, are located at $(-D, 0)$ and $(D, 0)$ on the x-axis. Let's call them M1 and M2 respectively.
+*   The test mass 'm' is located at a general point $(x, y)$.
+*   Let $r_1$ be the distance from M1 to m.
+*   Let $r_2$ be the distance from M2 to m.
+*   The distance from the origin to m is $r$, and its angle with the x-axis is $\theta$.
+
+Using the distance formula:
+$r_1 = \sqrt{(x - (-D))^2 + (y - 0)^2} = \sqrt{(x + D)^2 + y^2}$
+$r_2 = \sqrt{(x - D)^2 + (y - 0)^2} = \sqrt{(x - D)^2 + y^2}$
+
+In polar coordinates, where $x = r \cos \theta$ and $y = r \sin \theta$:
+$r_1 = \sqrt{(r \cos \theta + D)^2 + (r \sin \theta)^2} = \sqrt{r^2 \cos^2 \theta + 2rD \cos \theta + D^2 + r^2 \sin^2 \theta} = \sqrt{r^2 + D^2 + 2rD \cos \theta}$
+$r_2 = \sqrt{(r \cos \theta - D)^2 + (r \sin \theta)^2} = \sqrt{r^2 \cos^2 \theta - 2rD \cos \theta + D^2 + r^2 \sin^2 \theta} = \sqrt{r^2 + D^2 - 2rD \cos \theta}$
+
+**2. Gravitational Potential at mass m (V):**
+The gravitational potential $V$ at a point due to a system of point masses is the scalar sum of the potentials due to each mass. The potential due to a single point mass M at a distance $r$ is $V = -GM/r$.
+
+Therefore, the total gravitational potential $V$ at the location of mass 'm' is:
+$V = V_1 + V_2 = -\frac{GM}{r_1} - \frac{GM}{r_2}$
+$V = -GM \left( \frac{1}{r_1} + \frac{1}{r_2} \right)$
+
+Substituting the expressions for $r_1$ and $r_2$ in Cartesian coordinates:
+$\boxed{V = -GM \left( \frac{1}{\sqrt{(x + D)^2 + y^2}} + \frac{1}{\sqrt{(x - D)^2 + y^2}} \right)}$
+
+In polar coordinates:
+$V = -GM \left( \frac{1}{\sqrt{r^2 + D^2 + 2rD \cos \theta}} + \frac{1}{\sqrt{r^2 + D^2 - 2rD \cos \theta}} \right)$
+
+**3. Gravitational Force on mass m (F):**
+The gravitational force $\mathbf{F}$ on mass 'm' is related to the gravitational potential $V$ by $\mathbf{F} = -m \nabla V$, where $\nabla V$ is the gradient of the potential.
+$\mathbf{F} = F_x \mathbf{i} + F_y \mathbf{j}$, where $F_x = -m \frac{\partial V}{\partial x}$ and $F_y = -m \frac{\partial V}{\partial y}$.
+
+First, let's find the partial derivatives of $V$ with respect to x and y:
+$V = -GM (r_1^{-1} + r_2^{-1})$
+
+$\frac{\partial V}{\partial x} = -GM \left( (-1)r_1^{-2} \frac{\partial r_1}{\partial x} + (-1)r_2^{-2} \frac{\partial r_2}{\partial x} \right)$
+We know $r_1 = ((x+D)^2 + y^2)^{1/2}$, so $\frac{\partial r_1}{\partial x} = \frac{1}{2}((x+D)^2 + y^2)^{-1/2} \cdot 2(x+D) = \frac{x+D}{r_1}$.
+Similarly, $r_2 = ((x-D)^2 + y^2)^{1/2}$, so $\frac{\partial r_2}{\partial x} = \frac{1}{2}((x-D)^2 + y^2)^{-1/2} \cdot 2(x-D) = \frac{x-D}{r_2}$.
+
+Substituting these into $\frac{\partial V}{\partial x}$:
+$\frac{\partial V}{\partial x} = -GM \left( -\frac{1}{r_1^2} \frac{x+D}{r_1} - \frac{1}{r_2^2} \frac{x-D}{r_2} \right) = GM \left( \frac{x+D}{r_1^3} + \frac{x-D}{r_2^3} \right)$
+
+Now for the y-component:
+$\frac{\partial V}{\partial y} = -GM \left( (-1)r_1^{-2} \frac{\partial r_1}{\partial y} + (-1)r_2^{-2} \frac{\partial r_2}{\partial y} \right)$
+We know $\frac{\partial r_1}{\partial y} = \frac{1}{2}((x+D)^2 + y^2)^{-1/2} \cdot 2y = \frac{y}{r_1}$.
+Similarly, $\frac{\partial r_2}{\partial y} = \frac{1}{2}((x-D)^2 + y^2)^{-1/2} \cdot 2y = \frac{y}{r_2}$.
+
+Substituting these into $\frac{\partial V}{\partial y}$:
+$\frac{\partial V}{\partial y} = -GM \left( -\frac{1}{r_1^2} \frac{y}{r_1} - \frac{1}{r_2^2} \frac{y}{r_2} \right) = GM y \left( \frac{1}{r_1^3} + \frac{1}{r_2^3} \right)$
+
+Now we can write the components of the gravitational force:
+$F_x = -m \frac{\partial V}{\partial x} = -GMm \left( \frac{x+D}{r_1^3} + \frac{x-D}{r_2^3} \right)$
+$F_y = -m \frac{\partial V}{\partial y} = -GMm y \left( \frac{1}{r_1^3} + \frac{1}{r_2^3} \right)$
+
+Substituting the full expressions for $r_1$ and $r_2$:
+$\boxed{F_x = -GMm \left( \frac{x+D}{((x+D)^2 + y^2)^{3/2}} + \frac{x-D}{((x-D)^2 + y^2)^{3/2}} \right)}$
+$\boxed{F_y = -GMm y \left( \frac{1}{((x+D)^2 + y^2)^{3/2}} + \frac{1}{((x-D)^2 + y^2)^{3/2}} \right)}$
+
+The total gravitational force vector on m is $\mathbf{F} = F_x \mathbf{i} + F_y \mathbf{j}$.",0.819,,
+7,"<image>GSTD-Fig-6</image>As shown in the figure, using Kepler’s three laws, first derive the Binet equation and then derive the universal law of gravitation.","According to: 
+
+First derive the Binet equation. Since gravity is a central force, from the central-force-field equation we know that the universal gravitational force is
+
+$F = m\left( {\frac{{\mathrm{d}}^{2}r}{\mathrm{\;d}{t}^{2}} - r{\left( \frac{\mathrm{d}\theta }{\mathrm{d}t}\right) }^{2}}\right)$ (1-1)
+
+From Kepler’s Second Law: $C = \frac{\mathrm{d}S}{\mathrm{d}t} = \frac{1}{2}{r}^{2}\frac{\mathrm{d}\theta }{\mathrm{d}t}$ is a constant, it follows that $J = m{r}^{2}\frac{\mathrm{d}\theta }{\mathrm{d}t}$ is also a constant, and
+
+$\frac{\mathrm{d}\theta }{\mathrm{d}t} = \frac{J}{m{r}^{2}}$ (1-2)
+
+Let $r = \frac{1}{u}$, then combining with formula 1-2 we have
+
+Conclude: 
+
+$\frac{\mathrm{d}r}{\mathrm{\;d}t} = \frac{\mathrm{d}r}{\mathrm{\;d}\theta }\frac{\mathrm{d}\theta }{\mathrm{d}t} =  - \frac{1}{{u}^{2}}\frac{\mathrm{d}u}{\mathrm{\;d}\theta }\frac{\mathrm{d}\theta }{\mathrm{d}t} =  - {r}^{2}\frac{J}{m{r}^{2}}\frac{\mathrm{d}u}{\mathrm{\;d}\theta } =  - \frac{J}{m}\frac{\mathrm{d}u}{\mathrm{\;d}\theta }$ (1-3)
+
+Hence
+
+$\frac{{\mathrm{d}}^{2}r}{\mathrm{\;d}{t}^{2}} = \frac{\mathrm{d}\left( {-\frac{J}{m}\frac{\mathrm{d}u}{\mathrm{\;d}\theta }}\right) }{\mathrm{d}\theta }\frac{\mathrm{d}\theta }{\mathrm{d}t} =  - \frac{J}{m}\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}}\frac{J}{m{r}^{2}} =  - \frac{{J}^{2}}{{m}^{2}{r}^{2}}\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}}$ (1-4)
+
+According to: 
+
+Combining with formula 1-1 gives
+
+$F = m\left( {-\frac{{J}^{2}}{{m}^{2}{r}^{2}}\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}} - r\frac{{J}^{2}}{{m}^{2}{r}^{4}}}\right)  =  - m{\left( \frac{J}{m}\right) }^{2}\left( {{u}^{2}\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}} + {u}^{3}}\right)$
+
+Let $h = \frac{J}{m}$,
+
+Conclude: 
+
+This is the Binet equation:
+
+$- F = m{h}^{2}{u}^{2}\left( {\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}} + u}\right) .$ (1-5)
+
+Next, we will use this equation and Kepler’s laws to derive the universal law of gravitation.
+
+According to: 
+
+From Kepler’s First Law: The orbit of a celestial body is an ellipse, and the central body lies at one of the foci of the ellipse. We now derive the polar-coordinate equation of the orbital motion. As shown in the figure, the position vector of point $A$ on the trajectory is $\overrightarrow{r} = \overrightarrow{OA}$. Let $r = \left| \overrightarrow{r}\right|$, the focal distance be ${2c}$, and the major axis be ${2a}$. Then ${OE} = r\cos \theta ,{AE} = r\sin \theta$, ${AF} = {2a} - r$, ${EF} = {2c} - r\cos \theta$.
+
+Thus, from $A{F}^{2} = A{E}^{2} + E{F}^{2}$ we obtain ${\left( r\sin \theta \right) }^{2} + {\left( 2c - r\cos \theta \right) }^{2} = {\left( 2a - r\right) }^{2}$, which after simplification yields
+
+Conclude: 
+
+$r = \frac{\rho }{1 - e\cos \theta }$ (2-1)
+
+where $\rho  = \frac{{b}^{2}}{a}, e = \frac{c}{a}$.
+
+According to: 
+
+From Kepler’s Second Law we know $C = \frac{\pi ab}{T}$ is constant ($T$ is the orbital period). Combining formula 1-2 and $h = \frac{J}{m}$ above, we have
+
+Conclude: 
+
+$T = \frac{2\pi ab}{h}.$ (2-2)
+
+According to: 
+
+From Kepler’s Third Law: $K = \frac{{T}^{2}}{{a}^{3}}$ is a constant, therefore
+
+Conclude: 
+
+$\frac{{T}^{2}}{{a}^{3}} = \frac{1}{{a}^{3}}\frac{4{\pi }^{2}{a}^{2}{b}^{2}}{{h}^{2}} = 4{\pi }^{2}\frac{\rho }{{h}^{2}}$ (2-3)
+
+is a constant. Thus ${K}_{1} = \frac{\rho }{{h}^{2}}$ is also constant.
+
+According to: 
+
+Let $r = \frac{1}{u}$, i.e. $\frac{1}{u} = \frac{\rho }{1 - e\cos \theta}$, hence $u = \frac{1}{\rho } - \frac{e}{\rho }\cos \theta$, and therefore $\frac{{\mathrm{d}}^{2}u}{\mathrm{\;d}{\theta }^{2}} =  \frac{e}{\rho }\cos \theta$. Substituting these results into the Binet equation 1-5 gives
+
+Conclude: 
+
+$- F = m{h}^{2}{u}^{2}\left( {\frac{e}{\rho }\cos \theta  + \frac{1}{\rho } - \frac{e}{\rho }\cos \theta }\right)  = \frac{m{h}^{2}}{{r}^{2}\rho } = \frac{m}{{r}^{2}}{K}_{1}.$
+
+According to: 
+
+It is clear that the gravitational force $F$ is proportional to the mass $m$ of the celestial body and inversely proportional to the square of the distance $r^{2}$ between the two bodies. Furthermore, since the interaction is mutual, the force $F$ must also depend on the mass of the central body. Let ${K}_{1} = GM$, where $G$ is evidently also a constant.
+
+Conclude: 
+
+In conclusion, the universal law of gravitation is
+
+$F =  - G\frac{Mm}{{r}^{2}}$",Yes,"The derivation of the Binet equation and the universal law of gravitation from Kepler's laws is a cornerstone of classical mechanics and astronomy.
+
+### Part 1: Derivation of the Binet Equation
+
+The Binet equation describes the motion of a particle under a central force. We will derive the radial acceleration component in terms of the inverse distance $u = 1/r$ and the angular displacement $\phi$ (represented as $\theta$ in the figure).
+
+1.  **Motion in Polar Coordinates:**
+    Let an orbiting body of mass $m$ be located at $(r, \phi)$ relative to a central body (at the origin, labeled O in the figure). The acceleration vector in polar coordinates is given by:
+    $\vec{a} = (\ddot{r} - r \dot{\phi}^2) \hat{r} + (r \ddot{\phi} + 2 \dot{r} \dot{\phi}) \hat{\phi}$
+    Here, $\hat{r}$ is the radial unit vector and $\hat{\phi}$ is the tangential unit vector.
+
+2.  **Kepler's Second Law (Law of Areas):**
+    Kepler's second law states that the line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. The rate at which area is swept is constant:
+    $\frac{dA}{dt} = \frac{1}{2} r^2 \dot{\phi} = \text{constant}$
+    We define this constant as $h/2$, where $h$ is the angular momentum per unit mass:
+    $r^2 \dot{\phi} = h$
+    This equation implies that for a central force, the tangential acceleration component $a_\phi = \frac{1}{r} \frac{d}{dt}(r^2 \dot{\phi})$ must be zero, confirming that the force is purely radial.
+
+3.  **Transformation to $u = 1/r$:**
+    To simplify the expressions for $\dot{r}$ and $\ddot{r}$, we introduce the substitution $u = 1/r$. From $r^2 \dot{\phi} = h$, we have $\dot{\phi} = h/r^2 = h u^2$.
+    Now, we express $\dot{r}$ and $\ddot{r}$ in terms of $u$ and its derivatives with respect to $\phi$ using the chain rule:
+    $\dot{r} = \frac{dr}{dt} = \frac{dr}{d\phi} \frac{d\phi}{dt}$
+    Since $r = 1/u$, $\frac{dr}{d\phi} = -\frac{1}{u^2} \frac{du}{d\phi}$.
+    So, $\dot{r} = \left(-\frac{1}{u^2} \frac{du}{d\phi}\right) (h u^2) = -h \frac{du}{d\phi}$
+
+    Now for $\ddot{r}$:
+    $\ddot{r} = \frac{d}{dt}(\dot{r}) = \frac{d}{d\phi}(\dot{r}) \frac{d\phi}{dt}$
+    $\ddot{r} = \frac{d}{d\phi}\left(-h \frac{du}{d\phi}\right) (h u^2) = -h \frac{d^2u}{d\phi^2} (h u^2) = -h^2 u^2 \frac{d^2u}{d\phi^2}$
+
+4.  **Substituting into Radial Acceleration ($a_r$):**
+    The radial component of acceleration is $a_r = \ddot{r} - r \dot{\phi}^2$.
+    Substitute the expressions for $\ddot{r}$, $r = 1/u$, and $\dot{\phi} = h u^2$:
+    $a_r = \left(-h^2 u^2 \frac{d^2u}{d\phi^2}\right) - \left(\frac{1}{u}\right) (h u^2)^2$
+    $a_r = -h^2 u^2 \frac{d^2u}{d\phi^2} - \frac{1}{u} h^2 u^4$
+    $a_r = -h^2 u^2 \frac{d^2u}{d\phi^2} - h^2 u^3$
+    Factor out $-h^2 u^2$:
+    $a_r = -h^2 u^2 \left( \frac{d^2u}{d\phi^2} + u \right)$
+
+This is the Binet equation, expressing the radial acceleration in terms of $u$ and its second derivative with respect to $\phi$. By Newton's Second Law, the central force $F(r)$ is $m a_r$, so:
+$F(r) = -m h^2 u^2 \left( \frac{d^2u}{d\phi^2} + u \right)$
+Rearranging this gives the differential equation for the orbit:
+$\frac{d^2u}{d\phi^2} + u = -\frac{F(1/u)}{mh^2 u^2}$
+
+### Part 2: Derivation of the Universal Law of Gravitation
+
+Now we use Kepler's First and Third Laws, along with the Binet equation, to derive Newton's Universal Law of Gravitation.
+
+1.  **Kepler's First Law (Law of Orbits):**
+    Kepler's first law states that planets orbit the Sun in ellipses, with the Sun at one focus. The polar equation of an ellipse with the origin at a focus is:
+    $r = \frac{p}{1 + e \cos \phi}$
+    where $p$ is the semi-latus rectum and $e$ is the eccentricity ($0 \le e < 1$ for an ellipse).
+
+2.  **Applying Kepler's First Law to the Binet Equation:**
+    From Kepler's first law, $u = 1/r = \frac{1 + e \cos \phi}{p}$.
+    Let's find the derivatives of $u$ with respect to $\phi$:
+    $\frac{du}{d\phi} = \frac{-e \sin \phi}{p}$
+    $\frac{d^2u}{d\phi^2} = \frac{-e \cos \phi}{p}$
+    Substitute these into the Binet equation for $a_r$:
+    $a_r = -h^2 u^2 \left( \frac{d^2u}{d\phi^2} + u \right)$
+    $a_r = -h^2 u^2 \left( \left(\frac{-e \cos \phi}{p}\right) + \left(\frac{1 + e \cos \phi}{p}\right) \right)$
+    $a_r = -h^2 u^2 \left( \frac{-e \cos \phi + 1 + e \cos \phi}{p} \right)$
+    $a_r = -h^2 u^2 \left( \frac{1}{p} \right)$
+    Since $u = 1/r$, we can write:
+    $a_r = -\frac{h^2}{p r^2}$
+    By Newton's Second Law ($F = m a_r$), the central force acting on the planet is:
+    $F = -m \frac{h^2}{p r^2}$
+    This result shows that the force is attractive (negative sign) and inversely proportional to the square of the distance ($F \propto 1/r^2$).
+
+3.  **Kepler's Third Law (Law of Periods):**
+    Kepler's third law states that the square of the orbital period ($T$) is directly proportional to the cube of the semi-major axis ($a$): $T^2 = C a^3$, where $C$ is a constant for all planets orbiting the same central body (e.g., the Sun).
+
+    We can also relate $T$ to $h$ and the ellipse properties. From Kepler's second law, the total area of the ellipse $A_{ellipse}$ is swept in one period $T$.
+    $A_{ellipse} = (h/2) T$
+    The area of an ellipse is $A_{ellipse} = \pi a b$, where $b$ is the semi-minor axis. For an ellipse, $b = a \sqrt{1-e^2}$.
+    So, $A_{ellipse} = \pi a^2 \sqrt{1-e^2}$.
+    Equating the two expressions for $A_{ellipse}$:
+    $\frac{1}{2} h T = \pi a^2 \sqrt{1-e^2}$
+    $T = \frac{2 \pi a^2 \sqrt{1-e^2}}{h}$
+    Square both sides:
+    $T^2 = \frac{4 \pi^2 a^4 (1-e^2)}{h^2}$
+    Recall that the semi-latus rectum $p = a(1-e^2)$. So, $1-e^2 = p/a$. Substitute this into the equation for $T^2$:
+    $T^2 = \frac{4 \pi^2 a^4 (p/a)}{h^2} = \frac{4 \pi^2 a^3 p}{h^2}$
+
+4.  **Connecting the Laws to Universal Gravitation:**
+    Now we equate this derived $T^2$ with Kepler's Third Law $T^2 = C a^3$:
+    $C a^3 = \frac{4 \pi^2 a^3 p}{h^2}$
+    This implies $C = \frac{4 \pi^2 p}{h^2}$.
+    From this, we can express the constant $\frac{h^2}{p}$ (which appeared in the force equation) in terms of $C$:
+    $\frac{h^2}{p} = \frac{4 \pi^2}{C}$
+    Substitute this back into the force equation derived earlier ($F = -m \frac{h^2}{p r^2}$):
+    $F = -m \left( \frac{4 \pi^2}{C} \right) \frac{1}{r^2}$
+
+    This equation confirms that the force causing elliptical orbits is an inverse square law. To make it the ""universal law of gravitation"", Newton hypothesized that the constant $C$ in Kepler's third law depends on the mass of the central body. Through further analysis and his laws of motion, Newton established that $C = \frac{4 \pi^2}{G M_{central}}$, where $G$ is the universal gravitational constant and $M_{central}$ is the mass of the central body (e.g., the Sun).
+
+    Substituting this expression for $C$ into the force equation:
+    $F = -m \left( \frac{4 \pi^2}{4 \pi^2 / (G M_{central})} \right) \frac{1}{r^2}$
+    $F = -m (G M_{central}) \frac{1}{r^2}$
+    $F = -\frac{G M_{central} m}{r^2}$
+
+This is Newton's Universal Law of Gravitation, which describes the attractive force between two masses $M_{central}$ and $m$ separated by a distance $r$. Kepler's laws provided the empirical evidence and the mathematical framework from which Newton deduced this fundamental law.",1.071,,
+8,"Consider a binary system of black holes, both of equal mass $M$, separated by a distance $a$, and revolving around their common center of mass (CM) in circular orbits. This binary system moves against, and interacts with, a very large, uniform field of stars (each of mass $m \ll M$) with number density n. Consider a star that approaches the system from infinity with speed v and impact parameter b, in the reference frame of the CM (As shown in the figure)<image>GSTD-Fig-7</image>. Its closest approach distance to the CM is $r_{p} \approx \frac{1}{2}a$. For tasks (a) and (c), you should make use of the fact that $v^{2} \ll \frac{GM}{a}$.
+
+Obtain an expression for b, in terms of M, a, v, and physical constants. In this task, assume that the star interacts with the binary as if its total mass was fixed at the CM.","According to: 
+
+Let $v_{p}$ be the closest approach velocity of the star. From conservation of mechanical energy: $-\frac{GM_{T}m}{r_{p}}+\frac{1}{2}mv_{p}^{2}=\frac{1}{2}mv^{2}$
+
+where $M_{T}=2M$ is the total mass of the binary. From conservation of angular momentum, 
+
+Conclude: 
+
+we obtain $v_{p}$: $v_{p}=\frac{b}{r_{p}}v$
+
+According to: 
+
+setting $r_{p}\approx a/2$ and inserting $v_{p}$ into the first equation, we solve for $b$: $b=a\sqrt{\frac{1}{4}+\frac{2GM}{av^{2}}}$
+
+Conclude: 
+
+$b\approx\frac{\sqrt{2GMa}}{v}$ Where we have used $v^{2}\ll\frac{GM}{a}$ in the last step.",Yes,"To find an expression for the impact parameter $b$, we will use the conservation of angular momentum and the conservation of energy. The problem instructs us to treat the binary system as a single point mass located at the center of mass (CM), with a total mass of $M_{CM} = M + M = 2M$.
+
+**1. Conservation of Angular Momentum:**
+The angular momentum $L$ of the star (mass $m$) relative to the CM is conserved.
+*   At infinity, the star approaches with speed $v$ and impact parameter $b$. The angular momentum is $L_{\infty} = m v b$.
+*   At the closest approach distance $r_p$, let the speed of the star be $v_p$. The angular momentum at this point is $L_{r_p} = m r_p v_p$.
+
+Equating the angular momenta:
+$m v b = m r_p v_p$
+$v b = r_p v_p \quad (1)$
+
+**2. Conservation of Energy:**
+The total energy $E$ of the star is conserved.
+*   At infinity, the potential energy is zero. The kinetic energy is $\frac{1}{2} m v^2$. So, $E_{\infty} = \frac{1}{2} m v^2$.
+*   At the closest approach distance $r_p$, the potential energy due to the central mass $2M$ is $U_{r_p} = -G \frac{(2M)m}{r_p}$. The kinetic energy is $\frac{1}{2} m v_p^2$. So, $E_{r_p} = \frac{1}{2} m v_p^2 - \frac{2GMm}{r_p}$.
+
+Equating the energies:
+$\frac{1}{2} m v^2 = \frac{1}{2} m v_p^2 - \frac{2GMm}{r_p}$
+Dividing by $m$:
+$\frac{1}{2} v^2 = \frac{1}{2} v_p^2 - \frac{2GM}{r_p} \quad (2)$
+
+**3. Combine and Solve for $b$:**
+From equation (1), we can express $v_p$ as $v_p = \frac{vb}{r_p}$. Substitute this into equation (2):
+$\frac{1}{2} v^2 = \frac{1}{2} \left(\frac{vb}{r_p}\right)^2 - \frac{2GM}{r_p}$
+$\frac{1}{2} v^2 = \frac{1}{2} \frac{v^2 b^2}{r_p^2} - \frac{2GM}{r_p}$
+
+Multiply the entire equation by $2r_p^2$ to eliminate denominators:
+$v^2 r_p^2 = v^2 b^2 - 4GM r_p$
+
+Rearrange the equation to solve for $b^2$:
+$v^2 b^2 = v^2 r_p^2 + 4GM r_p$
+$b^2 = r_p^2 + \frac{4GM r_p}{v^2}$
+
+**4. Substitute the closest approach distance $r_p$ and apply the approximation:**
+The problem states that the closest approach distance is $r_p \approx \frac{1}{2}a$. Substitute this into the expression for $b^2$:
+$b^2 = \left(\frac{a}{2}\right)^2 + \frac{4GM \left(\frac{a}{2}\right)}{v^2}$
+$b^2 = \frac{a^2}{4} + \frac{2GMa}{v^2}$
+
+Now, we use the given condition for task (a): $v^2 \ll \frac{GM}{a}$. This implies that the term $\frac{GM}{av^2}$ is much greater than 1.
+Let's compare the two terms in the expression for $b^2$:
+The first term is $\frac{a^2}{4}$.
+The second term is $\frac{2GMa}{v^2}$.
+We can assess their relative magnitudes by considering their ratio:
+$\frac{2GMa/v^2}{a^2/4} = \frac{2GMa}{v^2} \cdot \frac{4}{a^2} = \frac{8GM}{av^2}$.
+Since $v^2 \ll \frac{GM}{a}$, it means $av^2 \ll GM$, so $\frac{GM}{av^2} \gg 1$.
+Therefore, $\frac{8GM}{av^2} \gg 8$, which means the second term $\frac{2GMa}{v^2}$ is much larger than the first term $\frac{a^2}{4}$.
+
+Given this, we can approximate $b^2$ by neglecting the smaller term $\frac{a^2}{4}$:
+$b^2 \approx \frac{2GMa}{v^2}$
+
+Taking the square root to find $b$:
+$b \approx \sqrt{\frac{2GMa}{v^2}}$
+$b \approx \frac{\sqrt{2GMa}}{v}$
+
+The final answer is $\boxed{b = \frac{\sqrt{2GMa}}{v}}$.",1.092,,
+9,"Magnetic fields in the Sun are constantly shaping the structure of various different features in the Solar atmosphere. Inside any feature, the magnetic field (B) adds to the total pressure exerted by the gas. This so-called magnetic pressure is a function of the height z and can be expressed as: ${P_{mag}}(z) = \frac{{B^2(z)}}{{2\mu_0}}$
+
+On the other hand, the gas can be considered to be in hydrostatic equilibrium and hence the gas pressure decays exponentially from an initial pressure value $P_0$ with increasing z. It can be expressed as, ${P_{gas}}(z) = P_0e^{-z/H}$
+
+where H is the scale height, i.e. the height at which the pressure falls to $\frac{{P_0}}{e}$. <image>GSTD-Fig-8</image>As shown in the figure, consider one type of feature, a magnetic flux tube rising from the Solar surface up into an unmagnetized environment. Assuming that the total pressure of the material inside the tube and of the material outside it is in equilibrium. Find an expression for the magnetic field strength as a function of height $z$.","According to: 
+
+Pressure inside the flux tube = Pressure outside the flux tube (surroundings) ( Magnetic pressure + Gas pressure inside ) = Gas pressure outside. Particularly,
+
+Conclude: 
+
+$\frac{B_{0}^{2}}{2\mu_{0}} + P_{gas_{in}} = P_{gas_{out}}$
+
+$\frac{B_{0}^{2}}{2\mu_{0}} = P_{0_{out}} - P_{0_{in}}$  Eq. (1)
+
+According to: 
+
+Similarly, for a particular height z, $\frac{B(z)^{2}}{2\mu_{0}} = e^{-z/H} \left( P_{0_{out}} - P_{0_{in}} \right)$  Eq. (2). Dividing equation (2) to (1),
+
+Conclude: 
+
+$\frac{B(z)^{2}}{B_{0}^{2}} = e^{-z/H}$
+
+To finally get $B(z) = B_{0}e^{-z/2H}$",Yes,"To find the expression for the magnetic field strength $B(z)$ as a function of height $z$, we need to use the given information and the condition of pressure equilibrium.
+
+**1. Identify the pressures involved:**
+
+*   **Magnetic Pressure ($P_{mag}$):** Given as $P_{mag}(z) = \frac{B^2(z)}{2\mu_0}$. This pressure exists *inside* the magnetic flux tube.
+*   **Gas Pressure ($P_{gas}$):** Given as $P_{gas}(z) = P_0e^{-z/H}$. This describes the gas pressure in hydrostatic equilibrium.
+
+**2. Determine the total pressure outside the flux tube:**
+
+The problem states that the flux tube rises into an ""unmagnetized environment."" This means that outside the tube, there is no magnetic field, and thus no magnetic pressure.
+Therefore, the total pressure outside the tube is solely due to the gas pressure:
+$P_{total, ext}(z) = P_{gas, ext}(z) = P_0e^{-z/H}$.
+
+**3. Determine the total pressure inside the flux tube:**
+
+Inside the magnetic flux tube, both gas pressure and magnetic pressure contribute to the total pressure.
+Let $P_{gas, int}(z)$ be the gas pressure inside the tube.
+$P_{total, int}(z) = P_{gas, int}(z) + P_{mag, int}(z)$
+Substituting the expression for magnetic pressure:
+$P_{total, int}(z) = P_{gas, int}(z) + \frac{B^2(z)}{2\mu_0}$.
+
+**4. Apply the equilibrium condition:**
+
+The problem states that ""the total pressure of the material inside the tube and of the material outside it is in equilibrium.""
+So, $P_{total, int}(z) = P_{total, ext}(z)$.
+$P_{gas, int}(z) + \frac{B^2(z)}{2\mu_0} = P_0e^{-z/H}$ (Equation 1)
+
+**5. Determine the gas pressure inside the flux tube ($P_{gas, int}(z)$):**
+
+The problem states that ""the gas can be considered to be in hydrostatic equilibrium and hence the gas pressure decays exponentially from an initial pressure value $P_0$ with increasing z."" This general description for gas pressure implies that if the gas inside the tube is also in hydrostatic equilibrium and has the same temperature (and composition), its pressure will follow a similar exponential decay, but possibly with a different initial pressure.
+Let's assume the gas inside the tube also has the same scale height $H$ (implying similar temperature and composition as the ambient gas). Then its pressure can be written as:
+$P_{gas, int}(z) = P_{gas, int}(0)e^{-z/H}$.
+
+Now, let's consider the surface of the Sun, $z=0$. At $z=0$, Equation 1 becomes:
+$P_{gas, int}(0) + \frac{B^2(0)}{2\mu_0} = P_0e^{-0/H} = P_0$.
+From this, we can find the initial gas pressure inside the tube at the surface:
+$P_{gas, int}(0) = P_0 - \frac{B^2(0)}{2\mu_0}$.
+
+Substitute this back into the expression for $P_{gas, int}(z)$:
+$P_{gas, int}(z) = \left(P_0 - \frac{B^2(0)}{2\mu_0}\right)e^{-z/H}$ (Equation 2).
+
+**6. Substitute Equation 2 into Equation 1 and solve for $B(z)$:**
+
+$\left(P_0 - \frac{B^2(0)}{2\mu_0}\right)e^{-z/H} + \frac{B^2(z)}{2\mu_0} = P_0e^{-z/H}$
+
+Rearrange to solve for $\frac{B^2(z)}{2\mu_0}$:
+$\frac{B^2(z)}{2\mu_0} = P_0e^{-z/H} - \left(P_0 - \frac{B^2(0)}{2\mu_0}\right)e^{-z/H}$
+$\frac{B^2(z)}{2\mu_0} = \left(P_0 - \left(P_0 - \frac{B^2(0)}{2\mu_0}\right)\right)e^{-z/H}$
+$\frac{B^2(z)}{2\mu_0} = \left(P_0 - P_0 + \frac{B^2(0)}{2\mu_0}\right)e^{-z/H}$
+$\frac{B^2(z)}{2\mu_0} = \frac{B^2(0)}{2\mu_0}e^{-z/H}$
+
+Now, multiply both sides by $2\mu_0$:
+$B^2(z) = B^2(0)e^{-z/H}$
+
+Finally, take the square root of both sides to find $B(z)$:
+$B(z) = \sqrt{B^2(0)e^{-z/H}}$
+$B(z) = B(0)e^{-z/(2H)}$
+
+The expression for the magnetic field strength as a function of height $z$ is:
+$\boxed{B(z) = B(0)e^{-z/(2H)}}$",1.092,,
+10,"<image>GSTD-Fig-9</image>As shown in the figure, a comet of mass $\alpha m$ is heading (""falls"") radially towards the Sun. It is known that the total mechanical energy of the comet is zero. The comet crashes into Venus, whose mass is $m$. We further assume that the orbit of Venus, before the collision, is circular with radius $R_{0}$. After the crash, the comet and Venus form a single object, called ""Venus-2"". Find the expression in terms of $M_{sun}$ and $R_{0}$ for the orbital speed, $v_{0}$, of Venus before the collision.","According to: 
+
+Let M be the mass of the Sun, then, equating the gravitational force with the force Centripetal $-\frac{GMm}{R_0^2}\hat{r} = -\frac{mv_0^2}{R_0}\hat{r}$
+
+Conclude: 
+
+$v_0^2=\frac{GM_{sun}^{\prime}}{R_0}$",Yes,"To find the orbital speed, $v_0$, of Venus before the collision, we consider Venus to be in a stable circular orbit around the Sun. In such an orbit, the gravitational force exerted by the Sun on Venus provides the necessary centripetal force for Venus to maintain its circular path.
+
+1.  **Identify the forces:**
+    *   **Gravitational Force ($F_g$)**: This is the attractive force between the Sun and Venus. According to Newton's Law of Universal Gravitation:
+        $F_g = G \frac{M_{sun} m}{R_0^2}$
+        where:
+        *   $G$ is the universal gravitational constant.
+        *   $M_{sun}$ is the mass of the Sun.
+        *   $m$ is the mass of Venus.
+        *   $R_0$ is the radius of Venus's circular orbit.
+
+    *   **Centripetal Force ($F_c$)**: This is the force required to keep an object moving in a circular path.
+        $F_c = \frac{m v_0^2}{R_0}$
+        where:
+        *   $m$ is the mass of Venus.
+        *   $v_0$ is the orbital speed of Venus.
+        *   $R_0$ is the radius of Venus's orbit.
+
+2.  **Equate the forces for a stable circular orbit:**
+    For Venus to be in a stable circular orbit, the gravitational force must be equal to the centripetal force:
+    $F_g = F_c$
+    $G \frac{M_{sun} m}{R_0^2} = \frac{m v_0^2}{R_0}$
+
+3.  **Solve for $v_0$:**
+    We can simplify the equation by cancelling common terms.
+    First, cancel out the mass of Venus, $m$, from both sides:
+    $G \frac{M_{sun}}{R_0^2} = \frac{v_0^2}{R_0}$
+
+    Next, multiply both sides by $R_0$:
+    $G \frac{M_{sun}}{R_0} = v_0^2$
+
+    Finally, take the square root of both sides to find $v_0$:
+    $v_0 = \sqrt{\frac{G M_{sun}}{R_0}}$
+
+This expression gives the orbital speed of Venus before the collision in terms of $G$, $M_{sun}$, and $R_0$. The information about the comet and its total mechanical energy is not required for this specific part of the problem.
+
+The final answer is $\boxed{v_0 = \sqrt{\frac{G M_{sun}}{R_0}}}$",0.84,,

@@ -1,0 +1,2549 @@
+﻿Difficulty,Test Ori Question,Test Ori Final Answer
+0.455,"You are an astronaut exploring a newly discovered planet Y. Planet Y has a mass that is 4.32 times the mass of Earth and a radius that is 0.70 times the radius of Earth.
+
+If your mass is 78.1 kg, determine:
+1. The formula for the gravitational force acting on you on Earth.
+2. The gravitational force acting on you on planet Y.
+3. How the gravitational force on planet Y compares to that on Earth.","Gravitational force on Earth: 767.24 N
+Gravitational force on planet Y: 6792.57 N
+Planet Y exerts 8.85 times the gravitational force of Earth."
+0.525,"You are an astronaut exploring a newly discovered planet Y.
+
+Planet Y has a mass that is **4.97 times** the mass of Earth and a radius that is **3.21 times** the radius of Earth.
+
+How does the gravitational force acting on you while standing on planet Y compare to the gravitational force on Earth?
+
+Express your answer as a decimal multiplier of Earth's gravitational force.",The gravitational force on planet Y is **0.4823 times** the gravitational force on Earth.
+0.35,"You are an astronaut visiting a newly discovered planet Y. This planet has a mass 4.36 times that of Earth and a radius 1.73 times Earth's radius.
+
+How does your weight on planet Y compare to your weight on Earth? Give your answer as a multiplier relative to your Earth weight.",You would weigh approximately 1.46 times your Earth weight.
+0.35,"- **Check Your Understanding – Height of a Geosynchronous Orbit**
+- Given:
+  - Gravitational parameter of Earth, μE = 399507.5 km³ s⁻²
+  - Angular velocity of Earth, ωE = 7.284e-05 rad s⁻¹
+  - Radius of the Earth, RE = 6384.0 km
+
+- How high above the surface of the Earth is a satellite in a geosynchronous orbit? Assume a circular orbit. Provide the distance in kilometers.","The satellite is approximately 35,841.7 km above the Earth's surface."
+0.525,"The planet Planet A orbits its star in 370.223 days. The semi-major axis of Planet A's orbit is 1.930e+09 km.
+
+Another planet, Planet B, orbits the same star with a semi-major axis of 3.284e+09 km.
+
+Using Kepler’s third law, determine the orbital period of Planet B. Provide your answer in years.","The orbital period of Planet B is approximately 821.56 days, or 2.22 years."
+0.525,"An interplanetary probe is placed into a circular orbit around a planet. The probe orbits at an altitude of 18,753 km above the planet’s surface, with an orbital velocity of 1.32 km/s. The diameter of the planet is 10,235 km, and the planet orbits the Sun at a distance of 2.349 AU.
+
+Given:
+1 AU = 1.495 × 10⁸ km
+1 year = 3.156 × 10⁷ s
+
+Using Kepler’s third law, calculate the mass of the planet in terms of the mass of the Sun, M_S. Provide your answer in decimal form with units of M_S.",M_P = 3.141e-07 M_S
+0.525,"A comet moves in an elliptical orbit about the Sun in the same plane as the Earth. At a point where the comet crosses the Earth's orbit, its heliocentric speed is 28.63 km/s. Assume the Earth's orbit is circular with a radius of 1.0 AU.
+
+Using the vis-viva equation, calculate the semi-major axis of the comet's orbit.
+
+What is the semi-major axis length of the comet's orbit in Astronomical Units (AU)?",The semi-major axis of the comet's orbit is approximately 0.930 AU.
+0.35,"A comet moves in an elliptical orbit about the Sun, coplanar with the Earth's orbit. It is observed to cross the Earth's circular orbit (radius = 1.00 AU) with a heliocentric speed of 34.28 km/s at a true anomaly of 63.3°. 
+
+Assuming the gravitational parameter of the Sun is $\mu = 1.327 \times 10^{11}\ \mathrm{km^3\,s^{-2}}$, determine the eccentricity of the comet's orbit.",0.4377
+0.595,"A comet moves in an elliptical orbit about the Sun, coplanar with Earth's orbit. The comet is observed to cross Earth's circular orbit (radius = 1.0 AU) with a heliocentric speed of 31.55 km/s at a true anomaly of 143.8°. 
+
+Assuming the Sun’s gravitational parameter is normalized, calculate:
+1) The semi-major axis of the comet’s orbit
+2) The eccentricity of the orbit
+3) The time until the comet next crosses Earth's orbit
+
+Provide the time in years.","Semi-major axis: 1.139 AU
+Eccentricity: 0.9114
+Time until next Earth-orbit crossing: 1.150 years"
+0.525,"An artificial probe is orbiting a planet in a circular orbit. The planet has a radius of 4495 km. The probe initially orbits at an altitude of 18597 km above the surface and must be transferred to a higher circular orbit at an altitude of 27795 km using a Hohmann transfer orbit.
+
+Assume the gravitational parameter of the planet is 3.31e+04 km³/s².
+
+What is the first velocity increment (ΔV₁) required to place the probe onto the Hohmann transfer orbit?",ΔV₁ = 0.096 km/s
+0.455,"An unmanned space probe is placed into a circular orbit around Mercury. The probe's final orbital altitude is 25345 km above the surface of the planet. The diameter of Mercury is given as 10477 km.
+
+What is the final orbit radius (measured from the center of Mercury) of the probe? Express your answer in kilometers.",The final orbit radius is 30583.5 km.
+0.455,"Calculate the two velocity increments required to change the orbit of a space probe from a circular orbit at 18579 km above the surface of Mercury to another circular orbit at an altitude of 35755 km above the surface. Assume a Hohmann cotangential elliptic transfer orbit. The diameter of Mercury is 10138 km.
+
+Note: 1 AU = 1.495 × 10^8 km; 1 year = 3.156 × 10^7 s.
+
+What gravitational parameter for Mercury (G_M) is used in the calculation?","The gravitational parameter used for Mercury is:
+
+\[
+G_M = 9.240787e-06 \; \text{AU}^3/\text{year}^2
+\]"
+0.525,"A spacecraft is transferring between two circular orbits around a planet using a Hohmann transfer orbit. The gravitational parameter of the planet is μ = 1.927e-05 AU³/year². The radius of the final circular orbit is 23,103 km from the planet’s center.
+
+How is the second velocity increment (ΔV₂) calculated to circularize the orbit at the final radius? Compute ΔV₂ and express your answer in km/s.",ΔV₂ = 1.673 km/s
+0.455,"An interplanetary probe is orbiting a planet in a circular orbit and needs to be transferred to a higher circular orbit using a Hohmann transfer.
+
+The diameter of the planet is 9510 km. The initial circular orbit is at an altitude of 16998 km above the surface, and the final circular orbit is at an altitude of 41653 km above the surface.
+
+Assuming a Hohmann transfer orbit, calculate the semi-major axis of the transfer orbit. Give your answer in kilometers.",The semi-major axis of the transfer orbit is 34080.1 km.
+0.455,"A spacecraft is initially in a circular orbit around a planet at an altitude of 5353 km above the surface. It is transferred to another circular orbit at an altitude of 27582 km using a Hohmann cotangential transfer orbit.
+
+The diameter of the planet is 7635 km.
+
+What is the eccentricity of the transfer orbit? Provide your answer as a decimal number without a unit.",0.5479
+0.525,"A spacecraft is initially in a circular orbit around Mars at an altitude of 14430 km above the surface. It is to be transferred to another circular orbit at an altitude of 25902 km using a Hohmann transfer orbit.
+
+The radius of Mars is 3390 km and its gravitational parameter is μ = 4.282e+04 km³/s².
+
+Calculate the transfer time for the Hohmann transfer orbit. Give your answer in hours.",The Hohmann transfer time is approximately 15.25 hours.
+0.595,"A spacecraft is initially in a circular orbit at an altitude of 19845 km above the surface of a planet with radius 4525 km. It is required to transfer the spacecraft to another circular orbit at an altitude of 37689 km using a Hohmann (cotangential) elliptic transfer orbit.
+
+(a) Calculate the two required velocity increments (ΔV₁ and ΔV₂).
+(b) Determine the semi-major axis and eccentricity of the transfer orbit.
+(c) Compute the transfer time.
+(d) Bonus: Explain why placing the spacecraft in a very high circular orbit (e.g., several hundred thousand kilometers above the surface) may not be possible.","ΔV₁ = 0.143 km/s, ΔV₂ = 0.125 km/s
+Semi-major axis = 33292 km, Eccentricity = 0.2680
+Transfer time = 107503 s (29.86 hours)
+A very high orbit may be impossible because the required velocity would exceed the planet’s escape velocity."
+0.35,"A spacecraft is launched from Earth onto a lowest-energy Hohmann transfer orbit to an outer planet. Assume that both Earth and the target planet move on circular, coplanar heliocentric orbits.
+
+Given the following data:
+- Semimajor axis of Earth's orbit: 1.00 AU
+- Semimajor axis of the target planet's orbit: 5.02 AU
+- Solar gravitational parameter: GM☉ = 1.327e+11 km³/s²
+
+Using the vis-viva equation, determine the spacecraft’s hyperbolic excess velocity v∞ relative to the target planet at encounter. Provide your answer in km/s.",v∞ ≈ 68878.06 km/s
+0.525,"A spacecraft arrives at a giant planet on a hyperbolic trajectory. At closest approach (periapsis), it passes very near the cloud tops.
+
+Given the following data:
+- Planetary radius: $R = 71,500$ km
+- Gravitational parameter: $GM = 1.267e+08$ km$^3$/s$^2$
+- Periapsis altitude above the cloud tops: 6,354 km
+- Hyperbolic excess speed far from the planet: $v_\infty = 7.57$ km/s
+
+Assuming a two-body interaction and neglecting atmospheric drag, calculate the spacecraft's speed at periapsis. Give your answer in km/s.",The spacecraft's speed at periapsis is **57.55 km/s**.
+0.525,"A spacecraft is orbiting Jupiter-like planet and performs an engine burn at periapsis.
+
+Given:
+- Planet radius: 71947 km
+- Periapsis altitude: 4478 km
+- Initial orbital speed at periapsis: 58.181 km/s
+- Speed reduction due to burn: 462 m/s
+- Gravitational parameter of Jupiter-like planet: 1.222e+08 km³/s²
+
+Compute the semimajor axis of the new post-burn orbit. Give your answer in both kilometers (km) and astronomical units (AU).","Semimajor axis of the new orbit:
+- -914,974 km
+- -0.00612 AU"
+0.525,"The Juno spacecraft has entered orbit around Saturn. The post-insertion orbit is highly elliptical, bringing the spacecraft very close to the planet at periapsis.
+
+You are given the following information:
+- Radius of Saturn: $R = 73507.8\ \text{km}$
+- Spacecraft periapsis altitude: $h_p = 6380.1\ \text{km}$
+- Semi-major axis of the orbit: $a = 486813.5\ \text{km}$
+
+Assuming a Keplerian two-body orbit, calculate the **orbital eccentricity** of the spacecraft’s orbit. Clearly specify the unit of orbital eccentricity.","The orbital eccentricity of the spacecraft is:
+
+\[
+e = 0.8359
+\]
+
+The eccentricity is dimensionless."
+0.525,"A spacecraft has been inserted into a bound orbit around Saturn. The spacecraft’s orbit has a semimajor axis of 208,380 km. The standard gravitational parameter of Saturn is 3.672e+07 km^3/s^2.
+
+Using Kepler’s third law, determine the orbital period of the spacecraft. Show all steps clearly and express your final answer in days.",The orbital period of the spacecraft is 1.14 days.
+0.455,"A spacecraft is placed into a highly elliptical orbit around Jupiter in order to study the planet’s gravity field and interior structure. Assume the following data:
+
+- Jupiter’s equatorial radius: $R_J = 71500\ \mathrm{km}$
+- Jupiter’s gravitational parameter: $GM_J = 1.26686e+08\ \mathrm{km^3/s^2}$
+- Orbital periapsis distance: $r_p = 80924\ \mathrm{km}$
+- Orbital apoapsis distance: $r_a = 3813190\ \mathrm{km}$
+
+a) Calculate the spacecraft’s speed at periapsis.
+b) Explain why such a deep periapsis and a large range of orbital distances are scientifically valuable for studying Jupiter.",The spacecraft’s speed at periapsis is approximately 55.37 km/s. A deep periapsis and wide-ranging orbit enhance sensitivity to Jupiter’s higher-order gravity field and interior structure.
+0.455,"The Jupiter-like planet orbits the parent star on a nearly circular orbit and is being studied by a spacecraft that requires knowledge of the planet’s gravitational sphere of influence.
+
+You are given the following information:
+- Semimajor axis of the planet’s orbit: a = 3.632820 AU
+- Gravitational parameter of the planet: GM = 1.895e+05 km³/s²
+- Gravitational parameter of the star: GM = 1.355e+11 km³/s²
+
+Assuming the planet’s mass is much smaller than the star’s mass, calculate the radius of the planet’s Hill sphere. Give your answer in Astronomical Units (AU).",0.0282 AU
+0.525,"A spacecraft has arrived at Jupiter to study its gravity field and magnetosphere from a close orbit. The orbit is highly elongated and reaches a maximum distance of 0.3065 AU from the planet.
+
+You may assume the following facts:
+- Semimajor axis of Jupiter's orbit: a = 8.450985 AU
+- Gravitational parameter of Jupiter: GM_p = 1.704e+08 km^3/s^2
+- Gravitational parameter of the central star: GM_* = 1.327e+11 km^3/s^2
+
+The heavily perturbed regime is defined as orbits extending beyond half of the Hill sphere radius.
+
+Will the spacecraft’s first orbit around Jupiter enter the heavily perturbed regime? Show all steps clearly.","No, the spacecraft’s orbit does not enter the heavily perturbed regime."
+0.525,"From **Basic Constants**:
+
+- Radius of Earth = 6,378.14 km
+- Gravitational parameter (GM) of Earth = 3.986005e+14 m³/s²
+
+Given:
+- Altitude of the satellite above Earth's surface = 787.3 km
+
+Calculate the velocity of an artificial satellite orbiting the Earth in a **circular orbit** at the given altitude.
+
+Provide your answer in meters per second (m/s) as a standard numeric expression.","7,458 m/s"
+0.455,"Given:
+
+\( r = 9,812,281 \, \text{m} \)
+
+Using Equation (4.9):
+
+\[
+p^2 = 4 \pi^2 \frac{r^3}{GM}
+\]
+
+Calculate the period of revolution for the satellite. Please provide the answer in standard numeric format with the unit in seconds.","9,673 s"
+0.35,"Calculate the radius of orbit for a satellite in a geosynchronous orbit around Earth.
+
+The rotational period of Earth is given as 86,285.8 seconds.
+
+Provide the radius of the orbit in meters (m).","42,216,040 m"
+0.525,"Calculate the velocity of a satellite at perigee.
+
+Given:
+- Earth radius = 6378.14 km
+- Perigee altitude = 305.9 km
+- Apogee altitude = 538.3 km
+- Earth's gravitational parameter, GM = 3.986005e+14 m³/s²
+
+Use the orbital velocity equation:
+
+Vp = sqrt((2 × GM × Ra) / (Rp × (Ra + Rp)))
+
+Provide the velocity at perigee in meters per second (m/s).","Velocity at perigee = 7,788 m/s"
+0.525,"Calculate the velocity of a satellite at apogee.
+
+Given:
+- Earth's mean radius = 6378.14 km
+- Perigee altitude = 297.3 km
+- Apogee altitude = 645.5 km
+- Earth's gravitational parameter, GM = 3.986005e+14 m³/s²
+
+Use the orbital velocity equation for an elliptical orbit:
+
+$V_a = \sqrt{\left(\frac{2GM R_p}{R_a (R_a + R_p)}\right)}$\n\nWhat is the velocity of the satellite at apogee? Provide your answer in meters per second (m/s).","7,437 m/s"
+0.455,"A satellite in Earth orbit passes through its perigee point at an altitude of 315 km above the Earth's surface with a velocity of 7887 m/s.
+
+Calculate the apogee altitude of the satellite. Provide your answer in kilometers.",The apogee altitude of the satellite is approximately 939.3 km.
+0.525,"Given the following orbital parameters for a satellite:
+
+Periapsis radius: R_p = 6,775,714 m
+Periapsis velocity: V_p = 8,076.8 m/s
+
+The orbital eccentricity is given by Equation (4.20):
+
+e = (R_p · V_p²) / (GM) − 1
+
+where GM = 3.986005e+14 m³/s².
+
+Calculate the eccentricity of the orbit. Please specify the unit of measurement for the answer.","The orbital eccentricity is:
+
+e = 0.108904
+
+Eccentricity is a dimensionless quantity (no units)."
+0.455,"A satellite is orbiting the Earth with the following orbital parameters:
+
+- Semi-major axis: 6876.0 km
+- Orbital eccentricity: 0.027
+
+Assuming Earth's mean radius is 6378.14 km, calculate the satellite's altitude above Earth's surface at perigee.
+
+Provide your answer in kilometers.",312.08 km
+0.455,"A satellite is in an Earth-centered orbit with the following parameters:
+
+- Semi-major axis: 6712.6 km
+- Orbital eccentricity: 0.0286
+
+Calculate the satellite's altitude above Earth's surface at apogee. Assume Earth's mean radius is known. Provide your answer in kilometers.",The satellite's altitude at apogee is approximately 526.21 km.
+0.595,"A satellite is launched into Earth orbit where its launch vehicle burns out at an altitude of 343.5 km. At burnout, the satellite's velocity is 7737 m/s and the zenith angle is 88.9 degrees.
+
+What is the satellite's altitude at perigee? Provide your answer in kilometers.",Perigee altitude ≈ **-6376.9 km**
+0.595,"A satellite is launched into Earth orbit where its launch vehicle burns out at an altitude of 261.7 km above Earth's surface. At burnout, the satellite's velocity is 7944 m/s with a zenith angle of 87.8 degrees.
+
+What is the satellite's altitude at apogee? Provide your answer in kilometers.",Altitude at apogee ≈ **1065.2 km**
+0.455,"Given:
+\[ r_1 = 7,010,078 \, \text{m} \]
+\[ v_1 = 7,716 \, \text{m/s} \]
+\[ \gamma_1 = 89.0^\circ \]
+
+Using the orbital eccentricity equation:
+
+\[ e = \sqrt{ \left( \frac{r_1 v_1^2}{GM} - 1 \right)^2 \sin^2 \gamma_1 + \cos^2 \gamma_1 } \]
+
+Calculate the eccentricity of the satellite's orbit. Provide the answer in decimal format without scientific notation.",0.0502689
+0.525,"
+Given:
+\[
+r_1 = 6,823,165 \text{ m}
+\]
+\[
+v_1 = 7,609 \text{ m/s}
+\]
+\[
+\gamma_1 = 88.9^\circ
+\]
+
+Using the orbital mechanics relation:
+
+\[
+\tan V = \frac{(r_1 v_1^2 / GM) \sin \gamma_1 \cos \gamma_1}
+{(r_1 v_1^2 / GM) \sin^2 \gamma_1 - 1}
+\]
+
+Calculate the angle \( V \) from the perigee point to the satellite position.
+Provide your answer in degrees.
+",\( V = -64.166^\circ \)
+0.35,"Given the following orbital parameters for a satellite:
+
+- Orbital radius: r = 6,784,475 m
+- Orbital velocity: v = 8,163 m/s
+
+Using the vis-viva based relation:
+
+a = 1 / \left( \frac{2}{r} - \frac{v^2}{GM} \right)\n\nwhere GM is the standard gravitational parameter of the central body,
+calculate the semi-major axis of the satellite's orbit.
+Provide your answer in meters.","a = 7,836,705 m"
+0.35,"A satellite is launched into orbit, and engine burnout occurs on 2000-01-22 at 10:52 UT.
+
+At the moment of burnout, the satellite has the following geocentric coordinates:
+- Latitude: 22.7°
+- Azimuth heading: 117.5°
+
+Assuming a spherical Earth and neglecting Earth rotation effects, calculate the inclination of the resulting orbit.
+
+Provide your answer in degrees.",The orbital inclination is **35.049°**.
+0.455,"For a satellite in Earth orbit, burnout occurs on 2001-07-15 at 18:30 UT. The geocentric coordinates at burnout are 45.7° N latitude, 162.3° W longitude, and the azimuth heading at burnout is 131.8°.
+
+If the satellite's true anomaly at burnout is ν = 46.992°, calculate the orbit's argument of perigee. Provide the argument of perigee in degrees.",ω = 76.073°
+0.455,"For a satellite undergoing powered flight, burnout occurs on 2000-04-07 at 23:30 UT. The geocentric coordinates at burnout are:
+
+- Latitude: 32.9° N
+- Longitude: 113.9° E
+- Azimuth heading: 60.0°
+
+Using the relation
+
+tan(Δλ₁) = sin(δ) × tan(β),
+
+where δ is the latitude and β is the azimuth heading, determine the value of Δλ₁. Provide your answer in degrees to three decimal places.",43.286°
+0.455,"For a satellite burnout scenario, the burnout occurs on 2000-09-16 at 12:23 UT. The geocentric coordinates at burnout are -21.8° N latitude, 131.2° E longitude, and the azimuth heading is 276.8°.
+
+Given that:
+- λ₂ = 131.166°
+- Δλ₁ = 56.841°
+
+What is the value of λ₁? Please provide the answer in decimal degrees.",74.325°
+0.525,"For a satellite mission, burnout occurs on 2023-07-06 at 13:30 UT. The reference longitude is 8.892°.
+
+What is the local sidereal time at this longitude on the given date and time? Provide the answer in decimal degrees.",135.668°
+0.455,"A satellite is in an orbit with a semi-major axis of 8305 km and an eccentricity of 0.03.
+
+What are the initial and final true anomalies in radians for positions 45.0 degrees and 150.0 degrees past perigee? Provide your answers in radians.","Initial true anomaly: 0.78540 radians
+Final true anomaly: 2.61799 radians"
+0.455,"A satellite is in an elliptical orbit with a semi-major axis of 16770.8 km and an eccentricity of 0.191.
+
+If the satellite's initial true anomaly is \(\nu_0 = 0.20641\) radians, calculate the corresponding eccentric anomaly \(E_0\).
+
+Provide your answer in radians.",E₀ = 0.17030 radians
+0.525,"A satellite moves in an elliptical orbit with a semi-major axis of 9806.5 km and an eccentricity of 0.379.
+
+If the satellite's true anomaly is ν = 0.74426 radians, calculate the corresponding eccentric anomaly E.
+
+Provide your answer in radians.",E = 0.51252 radians
+0.525,"A satellite is in an elliptical orbit with a semi-major axis of 14578.0 km and an eccentricity of 0.099.
+
+If the satellite has an initial eccentric anomaly of E₀ = 0.87995 radians, calculate the corresponding mean anomaly M.
+Provide your answer in radians.",M ≈ 0.80383 radians
+0.525,"A satellite is moving in an elliptical orbit with the following parameters:
+
+- Semi-major axis: 7049.6 km
+- Eccentricity: 0.142
+- Final eccentric anomaly: E = 1.59640 radians
+
+Using Kepler’s equation, calculate the mean anomaly M. Provide your answer in radians rounded to five decimal places.",M = 1.45459 radians
+0.525,"A satellite is orbiting Earth with a semi-major axis of 10,303 km.
+
+How do you calculate the mean motion $n$ of the satellite?
+Provide the answer as a numeric expression with units of radians per second (rad/s).",0.000603724 rad/s
+0.525,"A satellite is in an elliptical orbit with a semi-major axis of 10292 km and an eccentricity of 0.12.
+
+Calculate the time taken for the satellite to move from 29° to 76° past perigee. Provide your answer in seconds.",The time taken is approximately 1154.6 seconds.
+0.455,"An Earth-orbiting satellite has the following orbital parameters:
+
+- Initial time, t₀ = 0 s
+- Initial mean anomaly, M₀ = 0.52179 rad
+- Mean motion, n = 0.000161284 rad/s
+
+What is the mean anomaly of the satellite after 1200 seconds have elapsed from the initial time? Provide your answer in radians.",0.71533 radians
+0.455,"A satellite is in an elliptical orbit with known orbital parameters.
+
+Given:
+- Initial time, t₀ = 0 s
+- Initial mean anomaly, M₀ = 1.95592 rad
+- Mean motion, n = 0.00011370 rad/s
+- Orbital eccentricity, e = 0.18
+
+Using the mean anomaly relation:
+M = M₀ + n(t − t₀)
+
+Determine the true anomaly of the satellite 900 seconds after the initial time using the low-accuracy approximation.",The true anomaly using the low-accuracy method is approximately 134.24 degrees.
+0.455,"
+A satellite is in an elliptical orbit with the following parameters:
+
+- Initial mean anomaly: \( M_0 = 1.81563 \) rad  
+- Mean motion: \( n = 0.00010720 \) rad/s  
+- Orbital eccentricity: \( e = 0.110 \)  
+
+Determine the **eccentric anomaly** \( E \) of the satellite after
+\( t = 2305.1 \) seconds from the initial time using a
+**high-accuracy numerical method**.
+
+Provide your answer in **radians**.
+",E = 2.15462 radians
+0.455,"A satellite is moving in an elliptical orbit.
+
+Given:
+Initial mean anomaly, M₀ = 1.12234 rad
+Mean motion, n = 0.00008408 rad/s
+Eccentricity, e = 0.191
+Time elapsed, t = 900 s
+
+Using a high-accuracy method, determine the true anomaly of the satellite after the given time. Provide your answer in degrees.",The true anomaly of the satellite is approximately 90.45 degrees.
+0.525,"For a satellite in an elliptical orbit, the following parameters are given:
+
+- Semi-major axis, a = 11,964,168 m
+- Eccentricity, e = 0.082
+- True anomaly, v = 90.6 degrees
+
+Calculate the length of the satellite's position vector when the true anomaly is at the given value. Provide the answer in meters (m).","11,895,297.26 m"
+0.525,"An Earth-orbiting satellite has the following orbital parameters:
+
+- Semi-major axis, a = 7,987,306 m
+- Eccentricity, e = 0.108
+- True anomaly, v = 272.6 degrees
+
+Calculate the flight path angle of the satellite at the given true anomaly. Provide your answer in degrees.",The flight path angle is -6.136 degrees.
+0.525,"An Earth-orbiting satellite has the following orbital parameters:
+
+- Semi-major axis, a = 11,671,695 m
+- Eccentricity, e = 0.288
+- True anomaly, ν = 80.7 degrees
+
+Using the standard gravitational parameter of Earth, calculate the magnitude of the satellite's orbital velocity when the true anomaly is at the given value. Express your answer in meters per second (m/s).","6,616 m/s"
+0.525,"An Earth-orbiting space station is flying at an altitude of 389 km above Earth's surface with an orbital period of 91.0 minutes. The orbit is influenced by third-body perturbations from the Moon and the Sun.
+
+Calculate the perturbations in the longitude of the ascending node and the argument of perigee caused by these effects.
+
+What is the inclination of the space station's orbit? Provide your answer in degrees.",97.4 degrees
+0.525,"An Earth-orbiting spacecraft is operating at an altitude of 433 km with an orbital inclination of 32.2 degrees. The spacecraft experiences orbital perturbations due to the gravitational influence of the Moon and the Sun.
+
+The orbital period of the spacecraft is 97.0 minutes.
+
+What is the orbital period of the spacecraft expressed in revolutions per day? Please provide the answer in the format of revolutions per day.",14.84 revolutions per day
+0.525,"An artificial satellite is orbiting the Earth with the following parameters:
+
+- Orbital altitude: 352.3 km
+- Orbital inclination: 31.76 degrees
+- Mean motion: 16.34 revolutions per day
+
+Using a simplified analytical model for third-body perturbations, the lunar contribution to the rate of change of the longitude of the ascending node is given by:
+
+$\displaystyle \dot{\Omega}_{Moon} = -C \frac{\cos(i)}{n}$
+
+where:
+- $C$ is a lunar perturbation coefficient,
+- $i$ is the orbital inclination,
+- $n$ is the mean motion.
+
+Calculate the perturbation in the longitude of the ascending node due to the Moon.
+
+Provide your answer in **degrees per day**.",-1.513629e-04 degrees per day
+0.525,"Calculate the perturbation in the longitude of the ascending node of a satellite due to the Sun. The satellite orbits at an altitude of 547 km, has an inclination of 46.0 degrees, and an orbital period of 90.9 minutes.
+
+Provide the perturbation in the longitude of the ascending node in degrees per day.",-0.0000757 deg/day
+0.525,"Calculate the long-term perturbations in the longitude of the ascending node and the argument of perigee caused by the gravitational influence of the Moon and the Sun for the Research Spacecraft orbiting Earth at an altitude of 352.6 km, with an orbital inclination of 97.13 degrees, and an orbital period of 90.7 minutes.
+
+What is the inclination of the Research Spacecraft's orbit? Please provide the inclination in degrees.",The inclination of the Research Spacecraft's orbit is 97.13 degrees.
+0.525,"Calculate the perturbative context due to the Moon and Sun for a spacecraft orbiting Earth at an altitude of 390 km with an inclination of 40.2 degrees and an orbital period of 89.8 minutes.
+
+As part of this analysis, determine the orbital period of the spacecraft expressed in revolutions per day. Provide your answer in the format of revolutions per day.",16.03 revolutions per day
+0.455,"Calculate the perturbation in the argument of perigee caused by the Moon for a spacecraft orbiting the Earth at an altitude of 579 km, with an orbital inclination of 52.9 degrees and an orbital period of 85.9 minutes.
+
+What is the perturbation in the argument of perigee due to the Moon? Provide your answer in degrees per day.",0.000085 degrees per day
+0.525,"Calculate the perturbations in the longitude of the ascending node and the argument of perigee caused by the Moon and the Sun for the International Space Station, which is orbiting Earth at an altitude of 376.6 km with an orbital period of 97.0 minutes.
+
+What is the inclination of the International Space Station's orbit? Please provide the inclination in degrees.",42.4 degrees
+0.525,"An Earth-orbiting space station is in a circular orbit at an altitude of 350 km with an orbital inclination of 43.1 degrees. The station experiences gravitational perturbations due to the Moon and the Sun.
+
+As part of the orbital analysis, determine the orbital period of the space station in revolutions per day, given that its orbital period is 88.6 minutes.
+
+Provide the answer in the format of revolutions per day.",16.25 revolutions per day
+0.35,"An Earth-orbiting spacecraft is in a near-circular low Earth orbit.
+
+- Orbital altitude: 499 km
+- Inclination: 85.86 degrees
+- Orbital period: 98.8 minutes
+
+Using a simplified analytical model, the perturbation in the argument of perigee due to the Sun is given by:
+
+$\dot{\omega}_{Sun} = 0.00077 \times \frac{(4 - 5 \sin^2 i)}{n}$\n\nwhere:
+- $i$ is the orbital inclination (degrees)
+- $n$ is the mean motion in revolutions per day
+
+Calculate the perturbation in the argument of perigee due to the Sun. Express your answer in degrees per day.",-0.000051 degrees per day
+0.35,"A satellite is in an Earth orbit with the following parameters:
+
+- Semi-major axis: 7894 km
+- Inclination: 19.7 degrees
+- Eccentricity: 0.11
+
+Calculate the perturbation in the longitude of the ascending node due to the Earth's J₂ effect. Express your answer in degrees per day.",-4.557 deg/day
+0.35,"A satellite is in an Earth orbit with the following parameters:
+
+- Semi-major axis: 8377.4 km
+- Inclination: 2.46 degrees
+- Eccentricity: 0.084
+
+Calculate the perturbation in the argument of perigee due to the Earth's J₂ oblateness effect. Express your answer in degrees per day.",7.764 deg/day
+0.525,"A satellite is in a circular orbit around the Earth at an altitude of 531 km above the Earth's surface. Assume the Earth has a mean radius of 6378.14 km and a standard gravitational parameter of 3.986005e+14 m³/s².
+
+What is the velocity of the satellite in its circular orbit? Provide your answer in meters per second (m/s).","7,595 m/s"
+0.595,"A satellite is in a circular Earth orbit at an altitude of 362 km. The satellite has a cylindrical shape 2.1 m in diameter and 5.4 m long, with a total mass of 1439 kg. The satellite’s long axis is perpendicular to the velocity vector, and the drag coefficient is 2.69.
+
+Assuming an atmospheric density of 1.74e-12 kg/m³ at this altitude, what is the change in the semi-major axis per revolution due to atmospheric drag? Provide the answer in meters (m).",-10.37 m per revolution
+0.525,"A satellite is in a circular Earth orbit at an altitude of 404 km. The satellite has a cylindrical shape 2.0 m in diameter and 5.4 m long, with a total mass of 1445 kg. The satellite is oriented with its long axis perpendicular to the velocity vector, and the drag coefficient is 2.41.
+
+Assuming an atmospheric density of 1.89e-12 kg/m³ at this altitude, determine the change in the orbital period per revolution due to atmospheric drag. Provide your answer in seconds.",-0.0120 s
+0.525,"A satellite is in a circular Earth orbit at an altitude of 390 km. The satellite has a cylindrical shape 3.0 m in diameter and 5.3 m long, with a mass of 1411 kg. The satellite travels with its long axis perpendicular to the velocity vector, and its drag coefficient is 2.34. The atmospheric density at this altitude is 1.86e-12 kg/m³.
+
+What is the change in velocity per revolution due to atmospheric drag? Provide the answer in meters per second (m/s).",0.007945 m/s
+0.525,"A satellite is in a circular Earth orbit at an altitude of 434 km. The satellite has a cylindrical shape 1.6 m in diameter and 5.8 m long, with a mass of 1253 kg. It travels with its long axis perpendicular to the velocity vector. The drag coefficient is 2.60. Assume an atmospheric density of 4.96e-11 kg/m³ and a scale height of 63.4 km.
+
+Estimate the satellite's lifetime in terms of the number of orbital revolutions.",2.40e+04 revolutions
+0.455,"A spacecraft is initially in a circular parking orbit around Earth.
+
+- Earth mean radius: 6,371,000 m
+- Parking orbit altitude above Earth's surface: 491,294 m
+- Radius of the target circular orbit: 31,780,168 m
+
+Assuming a Hohmann transfer between the two circular orbits, determine the semi-major axis of the transfer orbit.
+
+Provide your answer in meters.","The semi-major axis of the transfer orbit is 19,321,231 m."
+0.525,"A spacecraft is in a circular parking orbit around a planet.
+
+- Planet radius: 6,378,140 m
+- Parking orbit altitude: 265,798 m
+
+Assuming a Hohmann transfer is to be initiated from this orbit, what is the initial orbital velocity of the spacecraft in the parking orbit? Provide your answer in meters per second (m/s).","7,746 m/s"
+0.525,"A spacecraft is initially placed in a circular parking orbit around Earth.
+
+- Parking orbit altitude: 333,784 km
+- Target circular orbit altitude: 40,102,869 km
+
+Assuming a Hohmann transfer between the two circular orbits, what is the final orbital velocity of the spacecraft once it reaches the target orbit?
+
+Provide your answer in meters per second (m/s).","2,929 m/s"
+0.525,"A spacecraft is initially in a circular parking orbit around Earth with an altitude of 383,760 m above the surface. It is to be transferred to a higher circular orbit with an altitude of 22,353,568 m using a Hohmann transfer.
+
+What is the velocity at the perigee of the transfer orbit? Provide your answer in meters per second (m/s).","9,769.11 m/s"
+0.525,"A spacecraft is initially in a circular parking orbit around Earth.
+
+- Parking orbit altitude: 281 km
+- Target circular orbit radius (from Earth's center): 43570 km
+
+Assuming a Hohmann transfer between the two orbits, what is the velocity of the spacecraft at the apogee of the transfer orbit?
+
+Provide your answer in meters per second (m/s).",1557 m/s
+0.525,"A spacecraft is initially in a circular parking orbit around a planet with an altitude of 200 km above the surface. The spacecraft is to be transferred to a higher circular orbit with an altitude of 980 km using a Hohmann transfer.
+
+Given:
+- Planet radius = 6371 km
+- Gravitational parameter μ = 398600 km³/s²
+
+What is the required velocity change at the perigee of the transfer orbit? Provide your answer in meters per second (m/s).",ΔV_perigee = 215.3 m/s
+0.595,"A spacecraft is initially in a circular parking orbit around Earth at an altitude of 353 km above the surface.
+
+It needs to perform a Hohmann transfer to a higher circular orbit with an altitude of 26469 km.
+
+Assuming Earth's radius is 6371 km and the gravitational parameter μ = 3.986e+05 km³/s², calculate the total velocity change (ΔV) required for the Hohmann transfer.
+
+Provide your answer in meters per second (m/s).",Total ΔV required for the Hohmann transfer: 3674 m/s
+0.525,"A satellite is placed into a circular parking orbit around Earth.
+
+Given:
+- Earth's mean radius: 6378.14 km
+- Parking orbit altitude: 290.29 km
+- Earth's gravitational parameter: μ = 3.986005e+14 m³/s²
+
+Calculate the initial orbital velocity of the satellite in the parking orbit.
+Provide your answer in meters per second (m/s).","7,731.38 m/s"
+0.525,"A satellite is initially in a circular parking orbit around Earth. It is transferred to a geosynchronous orbit.
+
+Given:
+- Earth radius: 6374.45 km
+- Parking orbit altitude: 327.44 km
+- Geosynchronous orbital radius: 42127.10 km
+- Earth's gravitational parameter: 3.986004e+14 m³/s²
+
+Calculate the final orbital velocity of the satellite in the geosynchronous orbit. Provide your answer in meters per second (m/s).",3076.01 m/s
+0.525,"A spacecraft is initially in a circular parking orbit around Earth. Using a one-tangent burn, it is transferred to a higher orbit defined by a transfer ellipse.
+
+Given:
+- Earth radius = 6378.14 km
+- Parking orbit altitude = 315.41 km
+- Semi-major axis of the transfer ellipse = 31891.42 km
+- Earth's gravitational parameter μ = 3.986005e+14 m³/s²
+
+Calculate the spacecraft velocity at the transfer point in the parking orbit. Provide your answer in meters per second (m/s).","10,324.78 m/s"
+0.525,"A satellite is initially in a circular parking orbit around Earth.
+
+Given:
+- Earth radius = 6378.14 km
+- Parking orbit altitude = 288.39 km
+- Radius of the target orbit = 41384.86 km
+- Semi-major axis of the transfer ellipse = 28564.03 km
+
+Using a one-tangent burn transfer, calculate the velocity of the satellite at the transfer point in the target orbit.
+
+Provide your answer in meters per second (m/s).","2,304.01 m/s"
+0.525,"A satellite is initially in a circular parking orbit around Earth.
+
+Given:
+- Parking orbit altitude: 281.4 km
+- Earth mean radius: 6,378.14 km
+- Geosynchronous orbit radius: 42,164.17 km
+- Transfer ellipse semi-major axis: 30521.7 km
+
+The satellite performs a one-tangent burn at the parking orbit to enter the transfer ellipse.
+
+Calculate the required velocity change at the burn point (point A).
+Provide your answer in meters per second (m/s).","Δv_A = 2,590.5 m/s"
+0.525,"A satellite is initially in a circular parking orbit around Earth and is to be transferred to geosynchronous altitude using a one-tangent burn. The transfer orbit is an ellipse with a specified semi-major axis.
+
+Given:
+- Parking orbit altitude = 316.5 km
+- Earth radius = 6,378.14 km
+- Radius at point A: r_A = (6,378.14 + 316.5) × 1,000 = 6,694,645 m
+- Radius at point B (geosynchronous): r_B = 42,164,000 m
+- Transfer ellipse semi-major axis: a_tx = 30844.5 × 1,000 = 30,844,523 m
+
+At point B, the velocity on the transfer orbit is 2213 m/s, while the required circular orbital velocity is 3053 m/s. The angle between the velocity vectors is 48.696°.
+
+Calculate the velocity change (Δv) required at point B. Provide your answer in meters per second (m/s).","Δv at point B = 2,302 m/s"
+0.525,"A satellite is initially in a circular parking orbit around Earth. Using a one-tangent burn maneuver, it is transferred to a higher circular orbit.
+
+Given:
+- Earth radius = 6378.14 km
+- Parking orbit altitude = 359.25 km
+- Target orbit radius = 41429.32 km
+- Semi-major axis of the transfer ellipse = 24333.34 km
+- Earth's gravitational parameter μ = 3.986e+14 m³/s²
+
+Calculate the total required velocity change (Δv) for the transfer. Provide your answer in meters per second (m/s).","Total required velocity change: 3,815.2 m/s"
+0.525,"A spacecraft is traveling along an elliptical transfer orbit.
+
+Given:
+- Eccentricity of the orbit: e = 0.716186
+- True anomaly: v = 101.650 degrees
+
+Calculate the eccentric anomaly E. Provide your answer in radians.",E = 0.925790 rad
+0.595,"A spacecraft is transferred along an elliptical orbit using a one-tangent burn. The orbital parameters of the transfer ellipse are given as follows:
+
+- Eccentric anomaly: E = 1.59953 radians
+- Eccentricity: e = 0.747638
+- Semi-major axis: a = 33,908,266 m
+- Gravitational parameter: GM = 3.986004e+14 m³/s²
+
+Using Kepler’s time-of-flight equation for elliptical orbits,
+
+    TOF = (E − e sin E) √(a³ / GM)
+
+calculate the time of flight for the transfer orbit. Provide your answer in seconds.",Time of flight = 8428.13 seconds (2.341 hours)
+0.525,"A satellite is initially in a circular orbit at an altitude of 791 km above Earth's surface with an inclination of 57.4 degrees. It is planned to transfer the satellite to another circular orbit of the same size but with an inclination of 47.2 degrees.
+
+What is the radius of the satellite's orbit? Provide your answer in meters.","7,169,516 m"
+0.525,"Calculate the orbital velocity of a satellite in a circular Earth orbit.
+
+The satellite is at an altitude of 1174.2 km above Earth's surface. Assume Earth's mean radius is 6,378,140 meters and the Earth's gravitational parameter is μ = 3.986e+14 m³/s².
+
+What is the velocity of the satellite in meters per second (m/s)?","The orbital velocity of the satellite is approximately 7,264.86 m/s."
+0.525,"A satellite is in a circular Earth orbit at an altitude of 766 km with an orbital inclination of 59.1°. It is required to change the inclination to 54.5° while keeping the orbit circular and at the same altitude.
+
+Calculate the velocity change required to perform this inclination maneuver. Provide your answer in meters per second (m/s).",594.5 m/s
+0.455,"A satellite is transferred from a low Earth parking orbit to a geosynchronous orbit using a Hohmann transfer. At apogee, a combined plane change maneuver is performed.
+
+The velocity at apogee of the transfer orbit is 1933 m/s, and the circular velocity of the geosynchronous orbit is 3058 m/s. The required inclination change is 19.7 degrees.
+
+Calculate the combined velocity change required at apogee using the plane change equation. Provide your answer in meters per second (m/s).",The combined velocity change at apogee is approximately 1398.7 m/s.
+0.595,"A satellite is initially in a circular parking orbit at an altitude of 192 km above Earth with an orbital inclination of 35.6°. The satellite must be transferred to a zero-inclination geosynchronous Earth orbit (GEO) using a Hohmann transfer. The inclination change is performed simultaneously with circularization at apogee.
+
+Determine the total velocity change (ΔVₜ) required for this maneuver. Express your answer in meters per second (m/s).","ΔVₜ ≈ 4,462 m/s"
+0.525,"A spacecraft is in an orbit with an inclination of 73.2 degrees and a longitude of the ascending node of 267.6 degrees. The goal is to change the inclination to 74.9 degrees and the longitude of the ascending node to 270.8 degrees.
+
+What is the angle change required to change the inclination from 73.2 degrees to 74.9 degrees? Provide your answer in decimal format with the unit in degrees.",85.689 degrees
+0.455,"A spacecraft is in an orbit with an inclination of 56.1 degrees and a longitude of the ascending node of 74.6 degrees. The target orbit has an inclination of 52.1 degrees and a longitude of the ascending node of 85.6 degrees.
+
+What is the angle change required to change the longitude of the ascending node from 74.6 degrees to 85.6 degrees? Provide your answer in decimal format with units of degrees.",50.002 degrees
+0.455,"You are given two vectors expressed in Cartesian coordinates:
+
+a = (0.128831, 0.426826, 0.895110)
+b = (0.614751, 0.597934, 0.514350)
+
+Using the standard definition of the vector cross product,
+compute the components of the cross product c = a × b.
+Provide your answer in decimal format without any units.","c1 = -0.3156784, c2 = 0.4840055, c3 = -0.1853594"
+0.455,"
+From two spacecraft orbit normal vectors:
+
+a₁ = -0.823263  
+a₂ = 0.503376  
+a₃ = -0.262396  
+
+b₁ = -0.968675  
+b₂ = -0.102383  
+b₃ = -0.226245  
+
+Using the intersection of the two orbital planes, compute the latitude
+of the **first intersection node**.
+
+The intersection direction vector **c** is defined by the cross product:
+
+c₁ = a₂ b₃ − a₃ b₂  
+c₂ = a₃ b₁ − a₁ b₃  
+c₃ = a₁ b₂ − a₂ b₁  
+
+The latitude is given by:
+
+lat₁ = arctan( c₃ / √(c₁² + c₂²) )
+
+What is the latitude of the first intersection node in degrees?
+",74.716 degrees
+0.455,"
+From a spacecraft orbit intersection analysis, the direction cosines of two
+orbital plane normals are given as:
+
+a1 = 0.237073  
+a2 = 0.758634  
+a3 = 0.606853  
+
+b1 = 0.874822  
+b2 = 0.645772  
+b3 = 0.000000  
+
+Using the relations:
+
+c1 = a2·b3 − a3·b2  
+c2 = a3·b1 − a1·b3  
+c3 = a1·b2 − a2·b1  
+
+and the formulas for the latitude and longitude of the intersection node,
+
+lat₁ = arctan(c3 / √(c1² + c2²))  
+long₁ = arctan(c1 / c2) + 90°
+
+What is the longitude of the first intersection node of the spacecraft's orbits?
+Provide your answer in decimal degrees.
+",The longitude of the first intersection node is 53.566 degrees.
+0.525,"
+From a spacecraft orbit determination problem, the direction cosines of two
+orbital plane normal vectors are given as:
+
+a₁ = 0.572267  
+a₂ = 0.334664  
+a₃ = 0.212628  
+
+b₁ = 0.339116  
+b₂ = 0.484508  
+b₃ = 0.523339  
+
+Using the relations:
+
+c₁ = a₂ b₃ − a₃ b₂  
+c₂ = a₃ b₁ − a₁ b₃  
+c₃ = a₁ b₂ − a₂ b₁  
+
+and the formulas for the latitude and longitude of the intersection node:
+
+lat₁ = arctan [ c₃ / (c₁² + c₂²)¹ᐟ² ]  
+
+long₁ = arctan ( c₁ / c₂ ) + 90°  
+
+The second intersection node is located 180° away in longitude and has the
+opposite latitude.
+
+What are the latitude and longitude of the second intersection node of the
+spacecraft's orbits? Give your answer in decimal degrees.
+","Latitude of second node: -34.472 degrees
+Longitude of second node: 252.402 degrees"
+0.455,"Calculate the escape velocity of a spacecraft launched from an Earth orbit with an altitude of 842 km.
+
+What is the escape velocity of the spacecraft? Provide your answer in meters per second (m/s).","10,508 m/s"
+0.35,"A space probe is performing a hyperbolic flyby of Mars. When the probe is at a distance of 131,228 km from the center of Mars, its velocity relative to the planet is 6,603.6 m/s and its flight path angle is -76.23 degrees.
+
+Calculate the eccentricity of the probe's trajectory. Please specify the unit of measurement for the answer.",The eccentricity of the probe's trajectory is e = 48.3904 (dimensionless).
+0.35,"A space probe is approaching Mars on a hyperbolic flyby trajectory. When at a distance of 138,063 km from the center of Mars, its velocity relative to the planet is 5,648.6 m/s and its flight path angle is -64.70 degrees.
+
+Calculate the probe's semi-major axis. Provide your answer in meters as a standard numeric expression.",-1368904 m
+0.525,"A spacecraft is performing a hyperbolic flyby of a planet. The trajectory has a hyperbolic eccentricity of e = 6.5984.
+
+Assuming a two-body approximation, calculate the turning angle of the spacecraft.
+
+Provide the answer in decimal format with the unit in degrees.",17.4336 degrees
+0.455,"A spacecraft is performing a hyperbolic flyby of a planet. The trajectory has an eccentricity of e = 2.7409. 
+
+Using the standard hyperbolic orbit relations, calculate the probe's angle η. Provide your answer in decimal format with degrees as the unit.",η = 111.398°
+0.525,"A space probe is performing a hyperbolic flyby of Mars. When the probe is at a distance of 142,504 km from the planet’s center, its velocity relative to the planet is 12,882.1 m/s. The flight path angle at this point is -86.66 degrees. Assuming the hyperbolic trajectory has an eccentricity of 2.813, calculate the probe’s true anomaly. Give your answer in decimal degrees.",The probe’s true anomaly is approximately -107.447°.
+0.455,"A space probe is performing a hyperbolic flyby of Venus. The hyperbolic trajectory has a semi-major axis of 1,028,696.8 km (negative by convention for a hyperbola) and a total turning angle of 63.13 degrees.
+
+Calculate the probe's impact parameter.
+Provide your answer in kilometers, rounded to two decimal places.",631991.85 km
+0.455,"A spacecraft is performing a hyperbolic flyby of a planet. The trajectory is characterized by a semi-major axis of -10755.8 km and an eccentricity of 2.8246.
+
+Assuming a hyperbolic orbit, calculate the periapsis radius of the trajectory. Provide your answer in kilometers with one decimal place.",19624.8 km
+0.455,"A spacecraft is traveling on a hyperbolic flyby trajectory past a planet. The trajectory is characterized by a semi-major axis of -43040.5 km and an eccentricity of 2.7448.
+
+Calculate the orbital parameter p for this trajectory. Provide your answer in kilometers as a standard numeric expression.","281,219.8 km"
+0.35,"A space probe is traveling along a conic-section trajectory. At a certain point in its motion, the probe has the following orbital parameters:
+
+- Semi-major axis, a = -1,255,543 m
+- Eccentricity, e = 2.9068
+- True anomaly, ν = 51.7°
+
+Calculate the radius vector of the space probe at this true anomaly. Provide your answer in meters (m) using standard numeric format.","3,340,709 m"
+0.525,"A space probe is traveling along a conic-section orbit. At a certain point, the probe has the following orbital parameters:
+
+- Semi-major axis, a = -2,973,185 m
+- Eccentricity, e = 4.4877
+- True anomaly, ν = 63.0°
+
+Calculate the flight path angle of the space probe at this true anomaly. Provide your answer in degrees.",The flight path angle of the space probe is 52.808°.
+0.455,"A space probe is traveling along a hyperbolic trajectory and has reached a true anomaly of 111.6 degrees.
+
+Given the following orbital parameters:
+- Semi-major axis, a = -1,287,404 m
+- Eccentricity, e = 4.1017
+- True anomaly, ν = 111.6°
+
+Calculate the magnitude of the velocity of the space probe at this point in its trajectory. Provide your answer in meters per second (m/s).","5,951.7 m/s"
+0.455,"A spacecraft is launched from Earth on a hyperbolic trajectory with a semi-major axis of -27,451 km and an eccentricity of 1.3633.
+
+How long does it take to move from a true anomaly of 40.7 degrees to a true anomaly of 112.8 degrees? Provide the answer in decimal format with the unit of time in hours.",2.005 hours
+0.35,"A spacecraft is launched from Earth and achieves a burnout velocity of 12,021 m/s at a certain altitude above the surface.
+
+Given that the local escape velocity at this altitude is 11,145 m/s, determine the spacecraft's hyperbolic excess velocity.
+
+Provide your answer in meters per second (m/s) as a standard numeric expression.","4,506 m/s"
+0.525,"From the given astronomical constants:
+
+\[
+D = 200,842,243 \, \text{km}
+\]
+\[
+M_p = 7.518e+24 \, \text{kg}
+\]
+\[
+M_s = 2.181e+30 \, \text{kg}
+\]
+
+The radius of a planet’s sphere of influence is given by:
+
+\[
+R = D \times \left(\frac{M_p}{M_s}\right)^{0.4}
+\]
+
+Calculate the radius of the planet’s sphere of influence. Provide your answer in kilometers.","The radius of the planet’s sphere of influence is approximately 1,311,696 km."
+0.525,"Using a one-tangent burn, calculate the change in true anomaly and the time-of-flight for a transfer between two planets. The radius vector of the departure planet at departure is 0.956 AU, and the semi-major axis of the transfer orbit is 1.172 AU.
+
+How do you calculate the eccentricity of the transfer orbit given the radius vector at departure and the semi-major axis of the transfer orbit? Provide the eccentricity of the transfer orbit as a decimal number without any unit.",0.1843
+0.525,"In an interplanetary transfer analysis, the true anomaly of a spacecraft on an elliptical orbit is given as 129.878 degrees. The eccentricity of the orbit is 0.303742.
+
+Using the standard orbital mechanics relationship, determine the eccentric anomaly in radians.",The eccentric anomaly corresponding to the given true anomaly is **2.003148 radians**.
+0.525,"Using a one-tangent burn, calculate the change in true anomaly and the time-of-flight for a transfer from Earth to Mars. The radius vector of Earth at departure is 1.003 AU and that of Mars at arrival is 1.576 AU. The semi-major axis of the transfer orbit is 1.273 AU.
+
+How do you convert the semi-major axis from astronomical units (AU) to meters? Please provide the answer in standard numeric expression with the unit in meters.",1.904408e+11 m
+0.525,"Using a one-tangent heliocentric transfer orbit, a spacecraft travels between two planetary orbits.
+
+The transfer orbit has the following parameters:
+- Semi-major axis: a = 1.600 AU
+- Eccentricity: e = 0.3037
+- Eccentric anomaly at arrival: E = 2.5813 rad
+
+Using Kepler’s equation, calculate the time-of-flight (TOF) for this transfer.
+Assume the Sun’s gravitational parameter is:
+\( \mu = 1.327124 \times 10^{20} \, \mathrm{m^3/s^2} \).","The time-of-flight for the transfer is approximately 2.460e+07 seconds, or 284.69 days."
+0.595,"Using a one-tangent burn transfer, calculate the change in true anomaly and the time-of-flight (TOF)
+for a transfer between two heliocentric radius vectors.
+
+Given:
+  • Departure radius vector: r₁ = 0.997 AU
+  • Arrival radius vector:   r₂ = 1.880 AU
+  • Transfer semi-major axis: a = 2.249 AU
+
+Assume the departure point is at periapsis of the transfer ellipse (one-tangent condition).
+Use μ☉ = 1.32712440018×10¹¹ km³/s² and 1 AU = 149,597,870.7 km.
+
+How do you convert the time-of-flight from seconds to days? Provide the time-of-flight in days.","TOF = 12,537,412.298 s = 145.11 days"
+0.525,"For an interplanetary transfer orbit, the following data is provided:
+- The angular velocity of the target planet is \( \omega_t = 0.6754^\circ/\text{day} \).
+- The difference in true anomalies is \( V_2 - V_1 = 164.862^\circ \).
+- The time of flight is \( t_2 - t_1 = 150.67 \text{ days} \).
+
+Calculate the departure phase angle for the transfer orbit. Provide your answer in degrees.",The departure phase angle is \( \gamma_1 = 63.09^\circ \).
+0.525,"A spacecraft departs Earth on a specified launch date. At the moment of departure, Earth's heliocentric position vector is given by:
+
+\[
+\vec{r}_1 = 1.011672X - 0.509826Y \; \text{AU}
+\]
+
+What is the magnitude of the vector \( r_1 \)? Provide your answer in Astronomical Units (AU).",1.132873 AU
+0.525,"A spacecraft is launched toward Mars on 2025-2-24 at 0:00 UT. The planned time of flight is 158 days. At the time of intercept, Mars' heliocentric position vector is given by:
+
+r₂ = -0.446838X + 1.593577Y + -0.057117Z AU.
+
+The Sun's gravitational parameter is GM = 1.327124e+20 m³/s².
+
+What is the magnitude of the vector r₂? Provide your answer in Astronomical Units (AU).",1.656024 AU
+0.455,"A spacecraft departs Earth on 2024-11-20 at 0:00 UT for a Mars transfer. The planned time of flight is 282 days.
+
+The heliocentric position vector of Earth at departure is:
+  r₁ = -0.525357 X + -0.165490 Y + -0.032070 Z AU
+
+The heliocentric position vector of Mars at arrival is:
+  r₂ = -1.414872 X + 0.220803 Y + -0.095092 Z AU
+
+The gravitational parameter of the Sun is GM = 1.327124e+20 m³/s².
+
+(a) Compute the geometric quantities k, ℓ, and m used in Lambert’s transfer formulation.
+(b) Provide the value of k in Astronomical Units (AU).","k = 0.082007 AU,  ℓ = 1.986890 AU,  m = 1.501651 AU"
+0.525,"An interplanetary spacecraft is traveling on a heliocentric transfer orbit.
+From orbital geometry and Lambert problem analysis, the following parameters
+have been computed for the transfer trajectory:
+
+- Parameter k = 2.507497
+- Parameter ℓ = 4.348066
+
+The gravitational influence of the Sun is assumed dominant.
+
+Using the standard relation for the transfer-orbit parameter p_i,
+determine the value of p_i in Astronomical Units (AU).",0.3422141 AU
+0.525,"A flight to Mars is launched on 2028-9-14, 0:00 UT. The planned time of flight is 268 days. Earth's heliocentric position vector at departure is -0.321682X + 0.670967Y AU. Mars' heliocentric position vector at intercept is -0.448720X + -0.384723Y + 0.073087Z AU. The semi-latus rectum of the transfer orbit is p = 1.775944 AU, and the change in true anomaly is Δν = 143.75°. 
+
+How do you calculate the value of the f-function for this transfer orbit? Provide the value of f as a standard numeric expression without any unit.",0.394209
+0.525,"A spacecraft is launched toward Mars on 2028-09-20 at 0:00 UT. The planned time of flight is 296 days.
+
+At departure, the magnitude of Earth's heliocentric position vector is 1.064 AU. At intercept, the magnitude of Mars' heliocentric position vector is 1.425 AU. The change in true anomaly along the transfer orbit is 34.73 degrees.
+
+The semi-latus rectum of the transfer orbit is p = 2.239e+11 m, and the Sun’s gravitational parameter is GM = 1.327e+20 m³/s².
+
+How do you calculate the value of g for this transfer orbit? Provide the numerical value of g in meters per second squared (m/s²).",g = 3.548e+06 m/s²
+0.35,"A spacecraft is assumed to travel on a heliocentric elliptical transfer orbit.
+
+- The semi-major axis of the orbit is a = 1.928 AU.
+- The orbital eccentricity is e = 0.299.
+- At the time of planetary intercept, the spacecraft's heliocentric distance is r = 1.930 AU.
+
+Assume the spacecraft departs from perihelion, so the initial eccentric anomaly is E₁ = 0.
+
+How is the change in eccentric anomaly ΔE computed? Provide the final numerical value in radians.",ΔE = 1.575386 radians
+0.455,"A spacecraft is launched from Earth toward Mars on 2024-12-08 at 00:00 UT. The planned time of flight is 219 days.
+
+At departure, Earth's heliocentric position vector is:
+  r_E = -0.830428 X + 0.486342 Y AU.
+
+At intercept, Mars' heliocentric position vector is:
+  r_M = 1.269739 X + -1.330052 Y + 0.049570 Z AU.
+
+The Sun’s gravitational parameter is μ = 1.327e+20 m³/s².
+
+How is the semi-major axis a of the transfer orbit initially calculated?",The semi-major axis of the transfer orbit is initially estimated as a = 1.400927 AU.
+0.525,"A spacecraft departs Earth on 2026-02-05 at 00:00 UT for a transfer to Mars. The planned time of flight is 185.4 days.
+
+The heliocentric position vector of Earth at departure is:
+    r_E = -0.223047 X + -0.352177 Y  AU
+
+The heliocentric position vector of Mars at arrival is:
+    r_M = 0.402076 X + 0.140442 Y + -0.014703 Z  AU
+
+The gravitational parameter of the Sun is:
+    μ = 1.327e+20 m³/s²
+
+Explain how the semi-major axis a of the heliocentric transfer orbit is refined so that the computed time of flight matches the planned value. Also state the time of flight in days.","The semi-major axis is refined iteratively until the computed time of flight matches the mission requirement. The final time of flight is:
+
+**185.4 days**."
+0.595,"A flight to Mars is launched on 2024-01-13, 0:00 UT. The planned time of flight is 256.4 days. Earth's heliocentric position vector at departure is -0.872604X + (0.434562)Y AU. Mars' heliocentric position vector at intercept is 1.481159X + -0.414898Y + 0.096781Z AU. The Sun's gravitational parameter is GM = 1.327124e+20 m^3/s^2.
+
+Using an iterative refinement based on time of flight, what is the final value of the semi-major axis a of the transfer orbit? Provide the answer in Astronomical Units (AU).",1.253674 AU
+0.525,"
+For a heliocentric transfer orbit between two planets, the following parameters
+are provided:
+
+Position vector at departure:
+r₁ = (-0.162059 X + 0.325186 Y + 0.036887 Z) AU
+
+Position vector at arrival:
+r₂ = (0.644306 X + -0.723040 Y + -0.020810 Z) AU
+
+Additional orbital parameters:
+Semi-major axis, a = 1.510068 AU  
+True anomaly change, Δν = 112.027914°
+
+Using standard orbital mechanics notation and assuming a two-body heliocentric
+model, answer the following:
+
+**What is the magnitude of the initial position vector r₁ in Astronomical Units (AU)?**
+","The magnitude of the initial position vector is:
+
+\[
+|\mathbf{r}_1| = 0.365198 \; \text{AU}
+\]"
+0.525,"For a heliocentric transfer orbit, the following parameters are given:
+
+r₂ = 1.716420
+p = 0.960833
+Δv = 144.266833°
+
+The f-parameter is defined by the equation:
+
+f = 1 − (r₂ / p) · (1 − cos Δv)
+
+How is the parameter f calculated for this transfer orbit? Provide the answer in standard numeric format without any unit.",-2.23648
+0.525,"
+For a heliocentric transfer orbit between two planets, the following parameters are given:
+
+- Initial radius: r₁ = 1.039766 AU  
+- Final radius: r₂ = 1.318859 AU  
+- Transfer angle: Δν = 69.219212°  
+- Gravitational parameter: GM = 3.143396e-14 AU³/s²  
+
+The Lagrange coefficient g is defined by the equation:
+
+g = (r₁ · r₂ · sin Δν) / √(GM)
+
+How is the parameter g calculated for this transfer orbit?
+Provide the value of g as a standard numeric expression.
+","g = 7,231,362.440250"
+0.525,"
+For a heliocentric transfer orbit, the following parameters are given:
+
+r₁ = (-0.006309X + -0.262397Y) AU  
+r₂ = (-0.541775X + -1.199299Y + -0.015619Z) AU  
+
+|r₁| = 0.262473 AU  
+|r₂| = 1.316086 AU  
+Semi-major axis, a = 1.574891 AU  
+Transfer angle, Δν = 155.093160 degrees  
+
+The Lagrange coefficient equations are:
+
+f = 1 − (r₂ / p)(1 − cosΔν)  
+g = r₁ r₂ sinΔν / √(μp)  
+v₁ = (r₂ − f r₁) / g  
+
+How is the departure velocity vector v₁ calculated for this transfer orbit?
+Provide the X-component of v₁ in meters per second (m/s).
+","The X-component of the departure velocity vector is:
+
+v₁ₓ = -147698805048105216.00 m/s"
+0.525,"
+For an interplanetary transfer orbit, the following parameters are given:
+
+r₁ = 1.141245 AU  
+r₂ = 1.424277 AU  
+Semi-latus rectum, p = 1.189762 AU  
+Gravitational parameter, GM = 2.959122e-04 AU³/day²  
+True anomaly change, Δν = 119.747°
+
+The relevant equations for the Lagrange coefficients are:
+
+ḟ = √(GM / p) · tan(Δν / 2) · [ ((1 − cos Δν) / p) · (1/r₁ − 1/r₂) ]
+
+ġ = 1 − (r₁ / p) · (1 − cos Δν)
+
+What are the numerical values of ḟ and ġ used in the calculation of the
+intercept velocity vector? Provide the value of ġ in standard numeric format.
+","ḟ = 5.950841e-03
+ġ = -0.435153"
+0.525,"
+For an interplanetary transfer orbit, the following parameters are given:
+
+r₁ = (0.264728X + 0.608444Y + -0.088333Z) AU  
+r₂ = (-0.230255X + -0.796985Y + 0.063306Z) AU  
+
+|r₁| = 0.916752 AU  
+|r₂| = 1.439973 AU  
+a = 1.453934 AU  
+Δν = 124.228487 degrees  
+
+The Lagrange f and g functions are defined as:
+
+f = 1 − (r₂ / p)(1 − cos Δν)  
+g = (r₁ r₂ sin Δν) / √(μ p)  
+
+The velocity vectors are computed as:
+
+v₁ = (r₂ − f r₁) / g  
+v₂ = (f r₁ + g v₁) / g  
+
+Calculate the intercept velocity vector v₂.
+","The intercept velocity vector is:
+
+v₂ = (
+-2.363761e-01 X,
+-8.181725e-01 Y,
+6.498886e-02 Z
+) AU/time-unit"
+0.525,"
+For a heliocentric transfer orbit, the following parameters are given:
+
+r₁ = -0.818674X + 0.566010Y + 0.000000Z AU  
+r₂ = 1.081401X + 0.985112Y + -0.325165Z AU  
+
+|r₁| = 0.995286 AU  
+|r₂| = 1.498535 AU  
+a = 1.246910 AU  
+Δν = 159.410°
+
+Using the Lagrange coefficient formulation, compute and simplify the
+intercept velocity vector v₂ and express it in meters per second (m/s).
+",v₂ = -96206454930.868 X + -475247290568.783 Y + 8517682607.447 Z m/s
+0.455,"An interplanetary spacecraft is on a heliocentric transfer orbit. At a given instant, its position vector **r** and velocity vector **v** in an inertial Cartesian coordinate system are given as:
+
+r = (8.887e+10 X + -7.671e+10 Y + -3.766e+08 Z) m
+
+v = (28413.59 X + 19378.32 Y + 1496.43 Z) m/s
+
+Calculate the specific angular momentum vector **h** for this orbit. Provide the result in component form (X, Y, Z).","The specific angular momentum vector is:
+
+\[
+\mathbf{h} = (-1.075e+14 X + -1.437e+14 Y + 3.902e+15 Z) \, \text{m}^2/\text{s}
+\]"
+0.455,"
+For a heliocentric transfer orbit, determine the **node vector**.
+
+Given:
+
+Position vector at departure:
+\[
+\mathbf{r}_1 = 7.060e+10X -1.037e+11Y \; m
+\]
+
+Velocity vector at departure:
+\[
+\mathbf{v}_1 = 27262.78X + 15838.00Y + 853.54Z \; m/s
+\]
+
+Gravitational parameter of the Sun:
+\[
+\mu = 1.327e+20 \; m^3/s^2
+\]
+
+Calculate the node vector \( \mathbf{n} \) and express the result
+in terms of its X and Y components with units.
+",\[ \mathbf{n} = 6.026e+13X + -8.852e+13Y \; m^2/s \]
+0.525,"For a heliocentric transfer orbit, the components of the specific angular momentum vector **h** (in m²/s) are given as:
+
+hx = 5.58239e+14 m²/s
+hy = 3.13687e+14 m²/s
+hz = 5.62871e+15 m²/s
+
+Calculate the magnitude of the specific angular momentum vector **h**.
+Provide the answer in standard scientific notation.",5.66502e+15 m²/s
+0.525,"For an interplanetary transfer orbit, the node vector **n** is obtained from
+the cross product of the reference direction and the specific angular momentum vector.
+
+Given the components of the node vector:
+
+\[ n_x = 1.26972e+14 \]
+\[ n_y = 1.00435e+14 \]
+
+Calculate the magnitude of the node vector \( \mathbf{n} \).
+Provide the result in standard scientific notation.",The magnitude of the node vector is \( n = 1.61892e+14 \).
+0.525,"Consider a heliocentric transfer orbit defined by the following state vectors:
+
+Position vector:
+r = (8.819e+10 X + -1.054e+11 Y + 3.627e+08 Z) m
+
+Velocity vector:
+v = (29519.6 X + 12367.7 Y + 1354.8 Z) m/s
+
+Gravitational parameter of the Sun:
+GM = 1.327e+20 m^3/s^2
+
+Using the classical orbital mechanics definition of the eccentricity vector,
+compute the eccentricity vector components in the X, Y, and Z directions.","The eccentricity vector of the transfer orbit is:
+
+\[
+\mathbf{e} = -0.249029 X + -0.169192 Y + -0.013108 Z
+\]
+"
+0.455,"Consider a heliocentric transfer orbit. At a given point on the orbit, the spacecraft has the following properties:
+
+- Radial distance from the Sun: r = 2.235590e+11 m
+- Velocity magnitude: v = 26889.97 m/s
+- Solar gravitational parameter: GM = 1.327124e+20 m³/s²
+
+Using the vis-viva equation, calculate the semi-major axis `a` of the orbit. Provide your answer in meters using standard numeric notation.",2.8589540e+11 m
+0.525,"For an interplanetary transfer orbit, the eccentricity vector **e** has been computed from the spacecraft position and velocity vectors.
+
+The components of the eccentricity vector are:
+
+e_x = 0.164301
+e_y = -0.141118
+e_z = 0.009498
+
+Calculate the magnitude of the eccentricity \( e \).
+
+Provide your answer as a decimal number without any unit.",0.216793
+0.455,"For a heliocentric transfer orbit, the specific angular momentum vector **h** has the following components (in m²/s):
+
+h = (3.360e+15 X, 2.377e+15 Y, 4.894e+15 Z)
+
+Calculate the orbital inclination *i* of the transfer orbit. Provide your answer in degrees.",The orbital inclination is i = 40.0674°.
+0.455,"
+For a heliocentric transfer orbit, the spacecraft state vector at departure is given in
+an inertial reference frame as:
+
+Position vector:
+r = (2.886e+10 X + 1.204e+11 Y + 9.054e+09 Z) m
+
+Velocity vector:
+v = (1.174e+04 X + -2.844e+04 Y + 5.424e+03 Z) m/s
+
+Using classical orbital mechanics, calculate the right ascension of the ascending node
+(Ω) of the orbit. Express your final answer in degrees.
+",Ω = 86.84 degrees
+0.525,"
+For a heliocentric transfer orbit, the spacecraft position and velocity at departure are given.
+
+Given:
+r₁ = (7.172e+10 X + -6.015e+10 Y) m  
+v₁ = (28093.3 X + 16531.1 Y + 858.8 Z) m/s  
+Gravitational parameter:  
+μ = 1.327e+20 m³/s²  
+
+Calculate the argument of periapsis ω for the transfer orbit.
+Provide your answer in degrees.
+",The argument of periapsis is ω = 144.722°.
+0.455,"
+For a heliocentric transfer orbit, the following position and velocity
+vectors are known at the departure point.
+
+Given:
+
+Position vector at departure:
+r₁ = (-4.291185e+10 X + 1.330815e+11 Y) m
+
+Magnitude of position vector at arrival:
+r₂ = 1.447430e+11 m
+
+Standard gravitational parameter of the Sun:
+GM = 1.327124e+20 m³/s²
+
+Velocity vector at departure:
+v₁ = 33863.6 X + 12763.0 Y + 1414.7 Z m/s
+
+Orbital elements obtained from prior calculations:
+Longitude of ascending node Ω = 287.108°
+Argument of perihelion ω = 169.830°
+
+Tasks:
+1. Compute the magnitude of the velocity vector at departure.
+2. Using the given orbital elements, calculate the true anomaly ν.
+
+Provide the true anomaly in degrees.
+",The true anomaly is ν = 96.938°.
+0.455,"For a spacecraft departing Earth, the following data is provided:
+
+- Injection occurs from a 250 km circular parking orbit.
+- Earth's heliocentric velocity vector at departure is 29599.7X + 15731.6Y m/s.
+- The spacecraft's heliocentric velocity vector at departure is 32694.1X + 16868.9Y + 708.5Z m/s.
+
+Calculate the following:
+1. The hyperbolic excess velocity at departure. Provide your answer in meters per second with one decimal place.",The hyperbolic excess velocity at departure is 3372.1 m/s.
+0.595,"For a spacecraft departing Earth, the following data are provided:
+- Parking orbit altitude: 288.9 km above Earth's surface
+- Earth's gravitational parameter: μ = 3.986005e+14 m³/s²
+- Earth's velocity vector at departure: 25785.0X + 19072.0Y m/s
+- Spacecraft velocity vector after injection: 27414.0X + 22871.2Y + 1433.7Z m/s
+
+Calculate the required injection ΔV. Provide your answer in meters per second (m/s), rounded to one decimal place.",ΔV = -4073.5 m/s
+0.455,"For a spacecraft departing Earth from a circular parking orbit, the following data are given:
+
+- Spacecraft position vector at departure (ECI frame):
+  r = (6670.0 X + -1180.4 Y + -1180.2 Z) km
+- Spacecraft velocity vector at departure (ECI frame):
+  v = (8.3 X + 2.1 Y + -0.3 Z) km/s
+
+Assuming the local zenith direction is aligned with the radial position vector, calculate the zenith angle of the departure asymptote.
+
+Provide your answer in degrees to three decimal places.",25.471°
+0.455,"For a spacecraft approaching a planet, the inertial velocity vectors at the time of intercept are given below.
+
+Spacecraft velocity vector:
+  V_s = -22344.5X + 5298.6Y + -221.0Z m/s
+
+Planet velocity vector at intercept:
+  V_p = -25852.5X + 3982.1Y + 499.5Z m/s
+
+Calculate the hyperbolic excess velocity, V_∞, of the spacecraft with respect to the planet. Provide your answer in meters per second (m/s).",The hyperbolic excess velocity is V_∞ = 3815.6 m/s.
+0.455,"For a spacecraft performing a hyperbolic approach to a planet, the miss distance at arrival is 14232.9 km. The angle between the incoming asymptote and the miss-distance direction is 97.812 degrees.
+
+Assuming a planar approach, calculate the impact parameter (b) of the spacecraft's trajectory. Provide your answer in kilometers (km).",The impact parameter is **14100.83 km**.
+0.525,"For a spacecraft performing a hyperbolic approach to Jupiter, a miss distance of +18,794 km is predicted at arrival. The hyperbolic excess velocity relative to Jupiter is 1901.4 m/s.
+
+Given the gravitational parameter of Jupiter, GM = 9.458e+15 m³/s², determine the semi-major axis (a) of the hyperbolic approach trajectory.
+
+Provide the value of the semi-major axis in kilometers.",The semi-major axis of the hyperbolic approach trajectory is -2616142.0 km.
+0.455,"A spacecraft is approaching a planet on a hyperbolic trajectory. Analysis of the approach geometry provides the following parameters:
+
+- Impact parameter, b = 9982.6 km
+- Semi-major axis of the hyperbola, a = -9878.9 km
+
+Assuming a purely two-body hyperbolic approach, calculate the eccentricity (e) of the hyperbolic trajectory.
+
+Provide the eccentricity value as a standard numeric expression without any scientific notation or multipliers.",1.4217
+0.525,"As a spacecraft approaches Saturn, it has a velocity of 13748.7 m/s and a flight path angle of 16.46 degrees measured from the horizontal.
+
+At the same instant, Saturn itself is moving with a velocity of 13827.0 m/s at a flight path angle of 9.99 degrees.
+
+Assuming both angles are measured from the same x-axis, what is the x-component (horizontal component) of the spacecraft's initial velocity *relative to Saturn*?
+
+Provide your answer in meters per second (m/s).",-431.97 m/s
+0.525,"As a spacecraft approaches a giant planet, it has a velocity of 8,757 m/s and a flight path angle of 58.3 degrees. The targeted miss distance is -3,771,787 km.
+
+At the intercept point, the planet has a velocity of 9,083 m/s with a flight path angle of 3.92 degrees.
+
+What is the **y-component (vertical component)** of the spacecraft’s initial velocity **relative to the planet**? Provide your answer in meters per second (m/s).","6,828.81 m/s"
+0.525,"As a spacecraft approaches a planet, it has a heliocentric velocity of 14491.8 m/s at a flight path angle of 41.9°. The planet moves with a heliocentric velocity of 13424.9 m/s at a flight path angle of 6.5°. During the swing-by, the spacecraft's planet-relative velocity is deflected by 59.8°.
+
+Using velocity transformation equations, determine the spacecraft's heliocentric velocity after the swing-by.","After the swing-by, the spacecraft's heliocentric velocity is 6064.39 m/s with a flight path angle of 34.27°."
+0.455,"As a spacecraft approaches a giant planet during a gravity-assist maneuver, it has an incoming velocity of 10061.1 m/s with a flight path angle of 23.50 degrees and a targeted miss distance of -1,851,982 km. At intercept, the planet's velocity is 10566.4 m/s with a flight path angle of 1.39 degrees.
+
+After the encounter, the spacecraft's velocity components in the planet-centered frame are measured as:
+- x-component: -6832.7 m/s
+- y-component: 7283.0 m/s
+
+How is the resultant velocity of the spacecraft calculated using the Pythagorean theorem? Provide the answer in meters per second (m/s).",9986.35 m/s
+0.525,"As a spacecraft approaches a giant planet, it has an initial velocity of 8606.7 m/s at a flight path angle of 46.60°. The targeted miss distance is -2,570,868 km. At the intercept point, the planet has a velocity of 11289.9 m/s with a flight path angle of 3.04°.
+
+Using trigonometric relationships and vector addition, how is the final velocity of the spacecraft calculated? Compute the final velocity magnitude in meters per second (m/s).",The final velocity of the spacecraft is 18503.30 m/s.
+0.525,"As a spacecraft approaches a giant planet, it has a velocity of 8426.5 m/s with a flight path angle of 44.01 degrees and a targeted miss distance of -1,031,039 km.
+
+At the time of intercept, the planet’s velocity is 12747.4 m/s with a flight path angle of 2.48 degrees.
+
+Assuming a simplified swing-by model using relative velocity vectors, what is the spacecraft’s flight path angle after the swing-by? Provide your answer in degrees.",The spacecraft’s flight path angle after the swing-by is 141.54°.
+0.525,"A satellite is in distress in a circular, Earth-centered orbit at an altitude of 206.1 km above the Earth's surface. A rescue vehicle is in a co-planar circular orbit at an altitude of 448.5 km. The rescue vehicle is 125.6° behind the target satellite along the orbit.
+
+What is the radius of the target satellite's orbit? Provide your answer in kilometers (km).",6584.1 km
+0.525,"A satellite is in distress in a circular orbit at an altitude of 652.0 km above the Earth's surface. A rescue vehicle (interceptor) is in a co-planar circular orbit at an altitude of 179.2 km. The rescue vehicle is 42.9° behind the target satellite along the orbit.
+
+What is the radius of the interceptor orbit? Provide your answer in kilometers.",6551.8 km
+0.455,"A satellite is in distress in a circular, co-planar Earth orbit at an altitude of 730.7 km above the Earth's surface. A rescue vehicle is in a circular, co-planar orbit at an altitude of 541.7 km. The rescue vehicle is 37.4° behind the target satellite along the orbit.
+
+Assuming a Hohmann transfer is used, determine the semi-major axis of the transfer orbit. Provide your answer in kilometers.",The semi-major axis of the transfer orbit is 7014.2 km.
+0.525,"A satellite is in distress in a circular, co-planar orbit at an altitude of 258.1 km above Earth. A rescue vehicle is in a circular, co-planar orbit at an altitude of 248.6 km. The rescue vehicle is initially 96.1° behind the target.
+
+Assuming a Hohmann transfer maneuver, determine the time of flight for the transfer. Provide your answer in minutes.",Time of flight for the maneuver: **44.79 minutes**.
+0.595,"A satellite is in distress in a circular orbit at 549 km altitude. A rescue vehicle is in a co-planar circular orbit at 440 km altitude. The rescue vehicle is initially 144.7° behind the target satellite.
+
+What is the required lead angle for the rescue maneuver? Provide the answer in degrees.",5969.1°
+0.525,"A satellite is in distress in a circular orbit at an altitude of 555.4 km above Earth. A rescue vehicle is in a co-planar circular orbit at an altitude of 259.9 km. At the initial time, the rescue vehicle is 144.7° behind the target satellite.
+
+Assuming a simplified phasing maneuver model, determine the final phase angle between the two spacecraft. Provide your answer in degrees.",35.33°
+0.525,"A satellite is in distress in a circular, equatorial orbit at an altitude of 495.7 km above Earth. A rescue vehicle is in a co-planar circular orbit at an altitude of 162.3 km. The rescue vehicle is initially 121.0° behind the target satellite.
+
+Assuming Keplerian motion and neglecting perturbations, determine the wait time required for the rescue vehicle to naturally phase around and align with the distressed satellite. Provide your answer in hours.",The required wait time is approximately 6.82 hours.
+0.525,"A spacecraft and its target are in the same circular Earth orbit at an altitude of 743 km above the Earth's surface and are separated by 180° along the orbit.
+
+How do we determine the radius of this orbit? Provide your answer in kilometers.",The radius of the orbit is 7121 km.
+0.525,"A spacecraft is in a circular Earth orbit at an altitude of 344.0 km above the Earth's surface.
+
+Assuming the orbit is perfectly circular, how do we calculate the angular velocity of the spacecraft about the center of the Earth?","The angular velocity of the spacecraft is approximately \(\omega = 1.147373e-03\,\text{rad/s}\)."
+0.525,"A spacecraft and its target are in the same circular Earth orbit at an altitude of 1201 km. The spacecraft initially lags behind the target by 90°. 
+
+If the spacecraft performs a maneuver where it slows down in order to eventually catch up with the target ('slow down to speed up'), determine the time of flight required to rendezvous. Assume Earth's gravitational parameter is 3.986e+05 km³/s².",The required time of flight for the rendezvous is approximately 82.1 minutes.
+0.455,"A payload and its target are in the same circular orbit at an altitude of 1494 km above Earth. The two objects are initially separated by 180° along the orbit.
+
+If the payload performs a maneuver in which it speeds up (entering a higher, slower orbit) in order to fall back and rendezvous with the target, how do we calculate the required travel angle? Provide the answer in degrees.",The required travel angle is 540 degrees.
+0.455,"A spacecraft and a target are in the same circular Earth orbit. The target is ahead of the spacecraft by an angular separation of 118.9° along the orbit.
+
+The target has a constant angular velocity of 0.00124 rad/s.
+
+Assuming the spacecraft must travel the same angular distance along the orbit, determine the time of flight required to reach the target.",The required time of flight is 1675.35 seconds.
+0.525,"A spacecraft and a target are in the same circular Earth orbit at an altitude of 1205 km. The spacecraft trails the target by 90° along the orbit.
+
+Assuming the spacecraft performs a single phasing orbit to rendezvous with the target, determine the required semi-major axis of the phasing orbit. Use Earth's gravitational parameter μ = 398600 km³/s².","The required semi-major axis of the phasing orbit is:
+
+\[
+a_{phasing} \approx 8799 \text{ km}
+\]"
+0.525,"A spacecraft is in the same circular Earth orbit as its target at an altitude of 1094 km, but they are separated by a phase angle of 90°. The spacecraft plans to rendezvous with the target using a phasing orbit over 3 phasing revolutions.
+
+How does the required orbital period determine the semi-major axis of the phasing orbit, and what is the resulting semi-major axis?","The desired orbital period sets the timing needed to remove the phase difference, which directly determines the semi-major axis via Kepler’s third law. For this case, the phasing orbit semi-major axis is approximately 7051 km."
+0.525,"A chaser spacecraft and a target are in the same circular Earth orbit at an altitude of 473 km. The target is ahead of the chaser by a phase angle of 60°. The chaser performs a single phasing maneuver so that it will rendezvous with the target after 3 complete revolutions of the target.
+
+Assuming Keplerian motion and an instantaneous maneuver, determine the required semi-major axis of the phasing orbit.",The required semi-major axis of the phasing orbit is approximately 7116.9 km.
+0.525,"A spacecraft and a target are in the same circular Earth orbit at an altitude of 584 km. The spacecraft trails the target by 60°.
+
+To rendezvous, the spacecraft performs a phasing maneuver using an elliptical orbit that completes 2 revolution(s) before returning to the circular orbit.
+
+Given Earth's gravitational parameter μ = 398600 km³/s², calculate the required semi-major axis of the phasing orbit.",The required semi-major axis of the phasing orbit is approximately 6569.3 km.
+0.595,"A spacecraft and its target are in the same circular Earth orbit at an altitude of 640 km and are separated by 180°.
+
+To rendezvous, the spacecraft performs a phasing maneuver by raising its orbit by 545 km using a two-impulse Hohmann-style transfer.
+
+How do we compute the total ΔV for this maneuver? Provide the total burn required (in km/s).",Total required burn: ΔV = 0.277 km/s
+0.525,"A spacecraft and its target are in the same circular orbit at an altitude of 1495 km above Earth. They are separated by a phase angle of 180°.
+
+Two rendezvous strategies are considered:
+- Case 1: Lower the orbit to 358 km to change phase.
+- Case 2: Raise the orbit by several hundred kilometers to change phase.
+
+Assuming impulsive burns and Earth’s gravitational parameter μ = 398600 km³/s², which case should be chosen if fuel conservation is more important than time?","To conserve fuel, choose **Case 2 (raising the orbit)**, which requires a total delta-v of approximately 0.16 km/s."
+0.455,"Given a satellite orbiting Earth with a semi-major axis a = 12375.3 km and eccentricity e = 0.0276,
+
+determine the mean motion of the orbit. Provide your answer in revolutions per day.",6.306 rev/day
+0.35,"Given a satellite orbit with the following parameters:
+
+- Semi-major axis, a = 7394.9 km
+- Eccentricity, e = 0.0316
+- Mean motion, n = 15.7494 rev/day
+- Time rate of change of mean motion, dn/dt = 0.001750 rev/day²
+
+Determine the time rate of change of the semi-major axis. Express your answer in kilometers per day.",-0.54767 km/day
+0.525,"A satellite orbits the Earth with an initial semi-major axis of 7118.9 km. Due to long-term perturbations, the semi-major axis is changing at a constant rate of -0.01598 km/day.
+
+Assuming this rate remains constant, what will be the satellite’s semi-major axis after 338 days? Provide your answer in kilometers (km).",7113.54 km
+0.525,"Given a satellite in Earth orbit with the following parameters:
+
+- Semi-major axis, a = 6917.6 km
+- Eccentricity, e = 0.0390
+- Mean motion time rate of change, ṅ = 0.003185 rev/day²
+
+Determine the time rate of change of the eccentricity. Provide your answer in decimal format per day.",-1.352242e-04 per day
+0.35,"Given a satellite orbit with the following parameters:
+
+- Semi-major axis, a = 6600.8 km
+- Initial eccentricity, e₀ = 0.00440
+- Rate of change of eccentricity, ṡe = -3.514240e-05 per day
+- Time of flight = 540 days
+
+What is the eccentricity after the given time of flight?
+Provide the eccentricity value as a decimal.",Final eccentricity after 540 days: e = 0.014581
+0.525,"Given a satellite in a low Earth orbit with the following parameters:
+
+- Semi-major axis: a = 7158.5 km
+- Eccentricity: e = 0.007
+
+Assume the orbit is required to be sun-synchronous. A sun-synchronous orbit has a nodal precession rate equal to Earth's mean motion around the Sun (approximately 360° per year).
+
+Using the J2 perturbation model, determine the required orbital inclination. Provide your answer in degrees.",The required sun-synchronous inclination is approximately 98.52°.
+0.525,"
+In orbital mechanics, certain highly elliptical Earth orbits are designed so
+that the argument of perigee does not change over time. This condition is known
+as a *frozen argument of perigee* and is mathematically expressed as:
+
+\[
+\dot{\omega} = 0
+\]
+
+When considering only the Earth's J2 perturbation, the secular rate of change
+of the argument of perigee can be written as:
+
+\[
+\dot{\omega}_{J2} =
+\left[ \frac{3}{2} J_2 \left( \frac{R_e}{p_0} \right)^2
+\left( 2 - 3.053062161971293 \sin^2 i \right) \right] \bar{n}
+\]
+
+Assuming all other quantities are nonzero constants, determine the orbital
+inclination \( i \) (in degrees) required so that the argument of perigee
+remains constant.
+",Required inclination: i = 54.03444°
+0.525,"A satellite is in an elliptical orbit around Earth. The following parameters are given:
+
+- Altitude at perigee: 604 km
+- Orbital eccentricity: 0.08
+
+a) What is the satellite’s altitude at apogee?
+
+Provide your answer in kilometers.",The satellite’s altitude at apogee is 1840 km.
+0.455,"An Earth-orbiting satellite has a perigee altitude of 490.5 km and an orbital eccentricity of 0.12.
+
+b) Determine the orbit’s specific mechanical energy, ε. Provide your answer in units of km²/s².",-25.53 km²/s²
+0.455,"An Earth-orbiting satellite has an altitude at perigee of 1136.5 km and an orbital eccentricity of 0.233.
+
+a) Assuming the Earth's mean radius is 6378.0 km and the Earth's gravitational parameter is 398600.5 km³/s², determine the magnitude of the orbit’s specific angular momentum, h.
+
+Provide your answer in square kilometers per second (km²/s).",60760 km²/s
+0.525,"A satellite is in an elliptical Earth orbit. The altitude of the satellite at perigee is 643 km, and the orbital eccentricity is 0.16.
+
+d) What is the satellite’s speed at apogee? Provide your answer in kilometers per second (km/s).",The satellite’s speed at apogee is **5.87 km/s**.
+0.455,"A geosynchronous orbit is one in which a satellite has the same rotational period as the Earth, allowing it to repeat its ground track each day.
+
+Assume the Earth's gravitational parameter is 398686.8 km³/s² and the Earth's mean radius is 6354.4 km.
+
+If a satellite has an orbital period of 23.97 hours:
+
+1. What is the altitude of the satellite above the Earth's surface?
+   Provide your answer in kilometers.",The satellite's altitude is approximately 35849.1 km.
+0.455,"An Earth-orbiting satellite moves in a circular orbit with an orbital period of 14.82 hours.
+
+a) Determine the semi-major axis of the orbit.
+b) Calculate the specific mechanical energy, ε, of the satellite.
+
+Use Earth's gravitational parameter μ = 398600.5 km³/s². Provide ε in units of km²/s².",Specific mechanical energy: ε = -6.506 km²/s²
+0.455,"A satellite is placed in a circular orbit around the Earth such that it remains above the same longitude on the equator (i.e., a geostationary-type orbit).
+
+Given:
+- Earth's gravitational parameter: μ = 398921.9 km³/s²
+- Orbital radius from Earth's center: R = 42762 km
+
+Assuming a circular orbit, calculate the orbital speed of the satellite.
+Express your answer in kilometers per second (km/s).",The orbital speed of the satellite is **3.05 km/s**.
+0.525,"A space probe is traveling in a circular orbit around Earth. The radius of the orbit is given below:
+
+- Orbital radius: R = 18077 km
+
+What is the velocity of the probe in this circular orbit?
+
+Provide your answer in kilometers per second (km/s).",The velocity of the probe in the circular orbit is 4.70 km/s.
+0.455,"An interplanetary probe is in a circular orbit around Earth.
+
+The radius of the orbit (measured from Earth's center) is 40,396 km.
+
+To leave Earth and continue its journey, the probe must perform a burn that places it onto a parabolic escape trajectory.
+
+What is the **minimum velocity** required at this orbital radius for the probe to enter an escape (parabolic) orbit? Express your answer in kilometers per second (km/s).",4.442 km/s
+0.455,"A space probe is in a circular parking orbit around Earth with a radius of 22,815 km measured from the center of Earth. The Earth's gravitational parameter is 398,600 km³/s².
+
+What is the specific kinetic energy of the probe in this circular orbit? Provide your answer in units of km²/s².",8.735 km²/s²
+0.455,"A deep-space probe is initially in a circular orbit around Earth with a radius of 29,892 km. To begin its journey to the outer planets, the probe performs a maneuver to enter an escape orbit.
+
+If the probe's velocity after the maneuver is 6.50 km/s, what is the specific kinetic energy of the probe in this escape orbit?
+Provide your answer in units of km²/s².",21.15 km²/s²
+0.525,"A space probe is in a circular orbit around Earth with an orbital radius of 26,176 km. To leave Earth and begin an interplanetary transfer, the probe must perform a burn to enter an escape orbit.
+
+Using Earth's standard gravitational parameter (μ = 398,600 km³/s²), determine the difference in specific kinetic energy between the circular orbit (Orbit 1) and the escape orbit (Orbit 2).
+
+Provide your answer in units of km²/s².",The difference in specific kinetic energy between the escape orbit and the circular orbit is 7.614 km²/s².
+0.525,"A space probe is in a circular parking orbit around Earth with a radius of 36049 km. The probe then performs a maneuver to enter an escape orbit.
+
+What is the difference in specific gravitational potential energy between the circular orbit and the escape orbit? Provide your answer in units of km²/s².",11.057 km²/s²
+0.455,"A spacecraft is in a circular parking orbit around Earth with a radius of 49,672 km. The spacecraft then performs a maneuver to enter an escape orbit from Earth.
+
+What is the difference in specific mechanical energy between the circular orbit and the escape orbit? Express your answer in units of km²/s².",4.012 km²/s²
+0.455,"A spacecraft is launched from a circular parking orbit around Earth for an interplanetary transfer. The given parameters are:
+
+- Hyperbolic excess velocity: V∞ = 3.11 km/s
+- Parking orbit radius: R_park = 6918 km (circular)
+
+a) What is the specific orbital energy ε∞ needed at the edge of the Earth’s sphere of influence? Provide the answer in units of km²/s².",ε∞ = 4.84 km²/s²
+0.455,"A spacecraft is departing Earth on an interplanetary trajectory. The following parameters are given:
+
+- Hyperbolic excess velocity: V∞ = 2.12 km/s
+- Radius of the circular parking orbit: Rₚ = 6797 km
+
+What velocity must the spacecraft have at the parking orbit in order to achieve the required velocity at the edge of Earth's sphere of influence?
+
+Provide your answer in kilometers per second (km/s).",The required velocity at the parking orbit is V_BO = 11.036 km/s.
+0.455,"A spacecraft is departing Earth for an interplanetary mission. It starts from a circular parking orbit around Earth with the following parameters:
+
+- Hyperbolic excess velocity relative to Earth: $V_\infty = 2.64\ \text{km/s}$
+- Radius of the circular parking orbit: $R_{\text{park}} = 7032\ \text{km}$
+
+Assume Earth's gravitational parameter is $\mu_\oplus = 398600.5\ \text{km}^3/\text{s}^2$.
+
+What is the boost $\Delta V_\text{needed}$ required to transfer the spacecraft from the circular parking orbit onto the hyperbolic departure trajectory? Express your answer in kilometers per second (km/s).",\(\Delta V_\text{needed} = 3.441\ \text{km/s}\)
+0.455,"Position vector:
+\[
+\vec{R} = 1744.6\hat{\imath} + -407.1\hat{\jmath} + -6179.2\hat{k} \, \text{km}
+\]
+
+Velocity vector:
+\[
+\vec{V} = 3.4\hat{\imath} + -0.4\hat{\jmath} + -1.0\hat{k} \, \text{km/s}
+\]
+
+1. Where is the satellite currently located relative to Earth?","The satellite is currently located above the South Pole, as indicated by the dominant z-component of its position vector."
+0.525,"Position vector:
+\[ \vec{R} = 1225.1\hat{\imath} + 12486.5\hat{\jmath} + 8302.6\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = -1.5\hat{\imath} + 3.0\hat{\jmath} + -1.6\hat{k} \, \text{km/s} \]
+
+What is the flight path angle at the satellite’s current position?",The flight path angle is \( \gamma = 22.999^\circ \).
+0.525,"Position vector:
+\[ \vec{R} = 2000.0\hat{\imath} + 6000.0\hat{\jmath} + 10000.0\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 4.0\hat{\imath} + 1.5\hat{\jmath} + 1.0\hat{k} \, \text{km/s} \]
+
+What is the orbit’s specific angular momentum? Provide the answer as a vector with units of km²/s.","\[ \vec{h} = -9000.0\hat{\imath} + 38000.0\hat{\jmath} + -21000.0\hat{k} \, \text{km}^2/\text{s} \]"
+0.525,"Position vector:
+\[ \vec{R} = 895.5\hat{\imath} + -823.0\hat{\jmath} + 6885.6\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = -3.69\hat{\imath} + -1.10\hat{\jmath} + 1.75\hat{k} \, \text{km/s} \]
+
+What is the orbit’s semi-major axis? Provide your answer in kilometers (km).","The orbit’s semi-major axis is \( a = 4146.45 \, \text{km} \)."
+0.525,"Position vector:
+\[ \vec{R} = 821.07\hat{\imath} + -3053.67\hat{\jmath} + 6333.62\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 7.26\hat{\imath} + -1.63\hat{\jmath} + 1.71\hat{k} \, \text{km/s} \]
+
+Given Earth's gravitational parameter \( \mu = 398600 \, \text{km}^3/\text{s}^2 \),
+
+What is the orbit’s eccentricity? Provide the answer in decimal form.",The orbit’s eccentricity is **e = 0.4036** (dimensionless).
+0.525,"Position vector:
+\[ \vec{R} = -4765.25\hat{\imath} + 187.02\hat{\jmath} + 7302.67\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 4.17\hat{\imath} + 6.11\hat{\jmath} + 1.74\hat{k} \, \text{km/s} \]
+
+What is the orbital inclination, \( i \)? Provide your answer in degrees.",The orbital inclination is i = 116.94 degrees.
+0.525,"Position vector:
+\[ \vec{R} = 5087.9\hat{\imath} + 2394.8\hat{\jmath} + 5363.0\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 2.1\hat{\imath} + 4.7\hat{\jmath} + 1.2\hat{k} \, \text{km/s} \]
+
+What is the Right Ascension of the Ascending Node (RAAN), \( \Omega \)? Provide the answer in degrees.",256.04 degrees
+0.525,"Position vector:
+\[ \vec{R} = 0\hat{\imath} + 0\hat{\jmath} + 11410\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 4.39\hat{\imath} + 0\hat{\jmath} + 0\hat{k} \, \text{km/s} \]
+
+Given the gravitational parameter
+\[ \mu = 398600 \, \text{km}^3/\text{s}^2 \]
+
+Determine the argument of perigee, $\omega$, in degrees.",The argument of perigee is $\omega = 270^\circ$.
+0.525,"Position vector:
+\[ \vec{R} = 14828.4\hat{\imath} + 0.0\hat{\jmath} + 0.0\hat{k} \, \text{km} \]
+
+Velocity vector:
+\[ \vec{V} = 0.00\hat{\imath} + 7.40\hat{\jmath} + 0.00\hat{k} \, \text{km/s} \]
+
+What is the satellite’s true anomaly, \( \nu \)? Provide the answer in degrees.",The satellite’s true anomaly is \( \nu = 0.00^\circ \).
+0.455,"An Earth-orbiting satellite has the following position and velocity vectors expressed in an Earth-centered inertial (ECI) frame:
+
+\[
+\vec{R} = 10000\hat{I} + 0\hat{J} + 0\hat{K} \, \text{km}
+\]
+
+\[
+\vec{V} = 0\hat{I} + 3.531\hat{J} -3.531\hat{K} \, \text{km/s}
+\]
+
+1. Based on these vectors, where is the satellite currently located in its orbit?",The satellite is located on the Earth's equatorial plane at the **descending node** of its orbit.
+0.525,"A satellite is observed at a point in space where its position and velocity vectors are:
+
+\[
+\vec{R} = 9332.59\hat{i} + -3138.04\hat{j} + -2150.40\hat{k} \; \text{km}
+\]
+
+\[
+\vec{V} = 6.922\hat{i} + 4.402\hat{j} + 5.644\hat{k} \; \text{km/s}
+\]
+
+Determine the flight path angle at the satellite’s current position. Provide your answer in degrees.",The flight path angle is 22.655°.
+0.525,"Given the spacecraft position and velocity vectors:
+
+\[
+\vec{R} = 13292\hat{I} + -2027\hat{J} + -4849\hat{K} \; \text{km}
+\]
+
+\[
+\vec{V} = 4.449\hat{I} + 3.614\hat{J} + 0.188\hat{K} \; \text{km/s}
+\]
+
+Determine the orbit’s **specific angular momentum vector**.","\[
+\vec{h} = 17143.21\hat{I} + -24072.097\hat{J} + 57055.411\hat{K} \; \text{km}^2/\text{s}
+\]"
+0.525,"Given the position and velocity vectors of a spacecraft in an Earth-centered inertial frame:
+
+\[
+\vec{R} = 9491.0\hat{I} + 0.0\hat{J} + 0.0\hat{K} \, \text{km}
+\]
+
+\[
+\vec{V} = 0.000\hat{I} + 4.582\hat{J} + -4.582\hat{K} \, \text{km/s}
+\]
+
+Assuming Earth's gravitational parameter is
+\( \mu = 398600.5 \, \text{km}^3/\text{s}^2 \),
+determine the semi-major axis of the orbit. Provide your answer in kilometers.",The semi-major axis of the orbit is **9491.05 km**.
+0.525,"An object is orbiting a central body with gravitational parameter $\mu = 398600.0\,\text{km}^3/\text{s}^2$.
+
+The position and velocity vectors in an inertial reference frame are:
+
+\[
+\vec{R} = 9222.9\hat{I} + 0.0\hat{J} + 0.0\hat{K}\;\text{km}
+\]
+
+\[
+\vec{V} = 0.000\hat{I} + 6.574\hat{J} + 0.000\hat{K}\;\text{km/s}
+\]
+
+Determine the eccentricity of the orbit.","The eccentricity of the orbit is:
+
+\[
+e = 0
+\]"
+0.525,"An object in space has the following position and velocity vectors:
+
+\[
+\vec{R} = 9570.0\hat{I} + 1739.1\hat{J} + -308.2\hat{K} \; \text{km}
+\]
+
+\[
+\vec{V} = 1.303\hat{I} + 3.033\hat{J} + -4.516\hat{K} \; \text{km/s}
+\]
+
+Determine the inclination of the orbit. Express your answer in degrees.",The inclination of the orbit is 58.32 degrees.
+0.455,"Given the position and velocity vectors of a spacecraft:
+
+\[
+\vec{R} = 13342.0\hat{I} + 4150.7\hat{J} + 3374.6\hat{K} \, \text{km}
+\]
+
+\[
+\vec{V} = 4.948\hat{I} + 1.677\hat{J} + 5.004\hat{K} \, \text{km/s}
+\]
+
+Determine the magnitude of the orbital angular momentum \(h = |\vec{R} \times \vec{V}|\). Express your answer in units of km²/s.",52322.76 km²/s
+0.455,"Given the position and velocity vectors of a spacecraft:
+
+\[
+\vec{R} = 8588.6\hat{I} + 2291.0\hat{J} + 4341.8\hat{K}\, \text{km}
+\]
+
+\[
+\vec{V} = -1.872\hat{I} + 1.515\hat{J} + 5.108\hat{K}\, \text{km/s}
+\]
+
+Calculate the cosine of the orbital inclination. Provide the cosine of the inclination as a decimal number.",0.314331
+0.455,"Given the position and velocity vectors of a satellite in an Earth-centered inertial (ECI) frame:
+
+\[
+\vec{R} = 7523.357\hat{I} + -3977.196\hat{J} + 4239.395\hat{K} \, \text{km}
+\]
+
+\[
+\vec{V} = 3.864\hat{I} + 7.243\hat{J} + 2.751\hat{K} \, \text{km/s}
+\]
+
+Determine the Right Ascension of the Ascending Node (RAAN) of the orbit. Provide the RAAN in degrees.",The Right Ascension of the Ascending Node (RAAN) is 275.918 degrees.
+0.525,"Given the following position and velocity vectors of a spacecraft in an Earth-centered inertial frame:
+
+\[
+\vec{R} = -8468.1\hat{I} + 0.0\hat{J} + 0.0\hat{K} \; \text{km}
+\]
+
+\[
+\vec{V} = 0.000\hat{I} + 5.849\hat{J} + 4.801\hat{K} \; \text{km/s}
+\]
+
+Assume the orbit is circular. Determine the **argument of latitude** of the orbit. Provide your answer in degrees.",The argument of latitude is **180°**.
+0.525,"An Earth-orbiting satellite has the following position and velocity vectors:
+
+\[
+\vec{R} = 3598.3\hat{I} + 5965.6\hat{J} + 0.0\hat{K} \text{ km}
+\]
+\[
+\vec{V} = 3.5\hat{I} + -2.5\hat{J} + 0.0\hat{K} \text{ km/s}
+\]
+
+Based on these vectors, where is the satellite currently located relative to Earth?","The satellite is located above the Earth's equator, moving in an equatorial orbit and lies somewhere along that orbit (such as at perigee, apogee, or in a circular path)."
+0.525,"A satellite has the following position and velocity vectors:
+
+\[
+\vec{R} = -6769.8\hat{I} + 1062.3\hat{J} + -810.8\hat{K} \text{ km}
+\]
+\[
+\vec{V} = 9.7\hat{I} + 6.8\hat{J} + -5.2\hat{K} \text{ km/s}
+\]
+
+Determine the flight path angle at the satellite’s current position. Provide your answer in degrees.",The flight path angle is \(\gamma = -37.623^\circ\).
+0.525,"Given the spacecraft position and velocity vectors:
+
+\[
+\vec{R} = 5114\hat{I} + 5720\hat{J} + 5637\hat{K} \; \text{km}
+\]
+\[
+\vec{V} = 0\hat{I} + 0\hat{J} + 2\hat{K} \; \text{km/s}
+\]
+
+Determine the orbit’s **specific angular momentum vector**.",\[\vec{h} = 11440\hat{I} + -10228\hat{J} + 0\hat{K} \; \text{km}^2/\text{s}\]
+0.455,"Given the following position and velocity vectors of a spacecraft:
+
+\[
+\vec{R} = 4141.0\hat{I} + 3004.6\hat{J} + -1497.6\hat{K} \text{ km}
+\]
+\[
+\vec{V} = 5.87\hat{I} + 5.01\hat{J} + -1.44\hat{K} \text{ km/s}
+\]
+
+Assuming the gravitational parameter is \(\mu = 398600.5 \text{ km}^3/\text{s}^2\), determine the semi-major axis of the orbit. Provide your answer in kilometers.",The semi-major axis of the orbit is **4531.86 km**.
+0.525,"An object is in Earth orbit with the following position and velocity vectors:
+
+\[
+\vec{R} = 3593.4\hat{i} + -4695.2\hat{j} + 7438.4\hat{k} \; \text{km}
+\]
+\[
+\vec{V} = 0.73\hat{i} + -7.02\hat{j} + 1.12\hat{k} \; \text{km/s}
+\]
+
+Assume the Earth's gravitational parameter is \(\mu = 398600\, \text{km}^3/\text{s}^2\).
+
+Determine the eccentricity of the orbit. Provide the eccentricity as a decimal value.",The eccentricity of the orbit is e = 0.667.
+0.455,"Given the position and velocity vectors of a satellite:
+
+\[
+\vec{R} = -4846.8\hat{I} + -3647.6\hat{J} + -6997.5\hat{K} \; \text{km}
+\]
+\[
+\vec{V} = -4.8\hat{I} + -9.7\hat{J} + -6.4\hat{K} \; \text{km/s}
+\]
+
+Determine the inclination of the orbit. Provide your answer in degrees.",The inclination of the orbit is 56.35 degrees.
+0.455,"An object is in orbit with the following position and velocity vectors:
+
+\[
+\vec{R} = -7000\hat{I} + 0\hat{J} + 0\hat{K} \text{ km}
+\]
+\[
+\vec{V} = 0.0\hat{I} + -7.5\hat{J} + 0\hat{K} \text{ km/s}
+\]
+
+Assuming the orbit lies in the equatorial plane and the position vector points toward perigee, determine the longitude of perigee. Provide your answer in degrees.",The longitude of perigee is \(180^\circ\).
+0.525,"An object is in an Earth-centered inertial reference frame.
+
+The position and velocity vectors of the object are given by:
+
+\[
+\vec{R} = 7367.9\hat{I} + 0\hat{J} + 0\hat{K} \; \text{km}
+\]
+\[
+\vec{V} = 0\hat{I} + 9.341\hat{J} + 0\hat{K} \; \text{km/s}
+\]
+
+The standard gravitational parameter is \( \mu = 398600.0 \; \text{km}^3/\text{s}^2 \).
+
+Determine the true anomaly of the orbit at this position. Provide the true anomaly in degrees.",0°
+0.455,"Given a radar tracking site with the following parameters:
+- Latitude = 52.77 degrees
+- Altitude above sea level = 282.6 meters
+- Earth's equatorial radius = 6378.137 km
+- Earth's eccentricity = 0.08182
+
+How do you calculate the **x component** of the position vector $\vec{R}_{site}$ for the radar tracking site? Provide your answer in kilometers (km) rounded to two decimal places.",x ≈ 3867.25 km
+0.35,"Given a radar tracking site with the following parameters:
+- Latitude (L) = 33.73 degrees
+- Altitude above sea level (H) = 2457.30 meters
+- Local Sidereal Time (LST) = 233.39 degrees
+
+Calculate the **z component** of the position vector $\vec{R}_{site}$ for the radar tracking site. Provide your answer in **kilometers (km)**, rounded to two decimal places.",3522.93 km
+0.525,"A radar tracking site is located on the Earth with the following parameters:
+
+- Geodetic latitude: -44.22°
+- Altitude above mean sea level: 2161.0 m
+- Local Sidereal Time (LST): 34.04°
+
+Assuming a spherical Earth with radius 6378137 m, express the position vector $\vec{R}_{site}$ in an Earth-centered inertial (ECI) frame using its $x$, $y$, and $z$ components as functions of the Local Sidereal Time.","$\vec{R}_{site} = 4572287.4\cos(34.04^\circ)\,\hat{i} + 4572287.4\sin(34.04^\circ)\,\hat{j} + -4449987.7\,\hat{k}\ \text{m}$"
+0.525,"Given a radar tracking site with the following parameters:
+- Latitude = 12.89 degrees
+- Altitude above sea level = 2168.0 meters
+- Local Sidereal Time (LST) = 106.02 degrees
+
+Calculate the Cartesian components of the position vector $\vec{R}_{site}$ in an Earth-centered inertial frame after substitution.","$\vec{R}_{site} = -1716.32\,\hat{i} + 5977.76\,\hat{j} + 1423.81\,\hat{k} \; 	ext{km}$"
+0.455,"Given satellite parameters as observed by a radar tracking station:
+
+- ρ = 10496.6 km
+- Az = 3.7°
+- El = 49.1°
+
+How do you calculate the ρ_S component of the satellite's position vector? Provide your answer in kilometers (km) as a standard numeric expression.",-6852.68 km
+0.455,"A radar tracking station observes a satellite with the following parameters:
+
+- Slant range (ρ) = 12260.1 km
+- Azimuth (Az) = 359.5°
+- Elevation (El) = 32.6°
+
+Calculate the eastward component (ρ_E) of the satellite's position vector. Provide your answer in kilometers (km).",ρ_E = -90.50 km
+0.455,"A radar tracking station observes a satellite with the following parameters:
+
+- Slant range, ρ = 8138.6 km
+- Azimuth, Az = 270.6°
+- Elevation, El = 65.4°
+
+Using these values, calculate the vertical (Z) component of the satellite's position vector, denoted as ρ_Z. Provide your answer in kilometers (km).",7399.25 km
+0.455,"A radar tracking station observes a satellite with the following parameters:
+
+- Range, $\rho$ = 8439.84 km
+- Azimuth, $Az$ = 172.68°
+- Elevation, $El$ = 50.24°
+
+Determine the South-East-Zenith (SEZ) components of the satellite's position vector.","The SEZ position vector of the satellite is:
+
+\[
+\vec{\rho}_{SEZ} = 5353.41\,\hat{S} + 687.50\,\hat{E} + 6488.40\,\hat{Z} \; (\text{km})
+\]"
+0.455,"A radar tracking station observes a satellite with the following parameters:
+
+- Slant range, ρ = 15898.3 km
+- Azimuth, Az = 28.0°
+- Elevation, El = 21.7°
+- Station latitude, L = 15.3°
+- Local Sidereal Time, LST = 45.6°
+
+What is the transformation matrix used to convert the satellite position vector from the topocentric SEZ coordinate frame to the Earth-centered inertial IJK frame?",$$\begin{bmatrix}0.1839 & -0.7150 & 0.6745 \ 0.1881 & 0.6992 & 0.6898 \ -0.9648 & 0.0000 & 0.2631\end{bmatrix}$$
+0.455,"Given the following satellite observation parameters recorded by a radar station:
+
+- Slant range, ρ = 8261.5 km
+- Azimuth, Az = 33.9°
+- Elevation, El = 18.1°
+- Station latitude, L = -2.6°
+- Local Sidereal Time, LST = 322.2°
+
+Explain how to apply the SEZ-to-IJK transformation matrix and compute the resulting IJK position vector.","The resulting IJK position vector is:
+
+\[
+\vec{\rho}_{IJK} = \begin{bmatrix} 4945.64 \\ 1708.96 \\ 6393.18 \end{bmatrix} \text{ km}
+\]"
+0.455,"A radar tracking station observes a satellite with the following parameters:
+
+- Range, ρ = 7535.32 km
+- Azimuth, Az = 190.22°
+- Elevation, El = 12.18°
+
+The SEZ-to-IJK transformation is defined by the following rotation matrix:
+
+[[-0.33433 -0.86013  0.38522]
+ [-0.90463  0.40752  0.12479]
+ [-0.26432 -0.30676 -0.91435]]
+
+Determine the resulting IJK position vector after applying the transformation to the SEZ vector.","\( \vec{\rho}_{IJK} = -686.46\,\hat{i} + -6891.58\,\hat{j} + -2969.15\,\hat{k} \) km"
+0.525,"An Earth-based radar tracking station observes a satellite and determines the following:
+
+• The position vector of the tracking site in the IJK (Earth-centered inertial) frame is:
+  \( \vec{R}_{site} = -6557.87\,\hat{i} +5883.87\,\hat{j} +3172.93\,\hat{k} \) km
+
+• The line-of-sight vector from the site to the satellite, expressed in the IJK frame, is:
+  \( \vec{\rho}_{IJK} = 3807.94\,\hat{i} -182.23\,\hat{j} +4143.31\,\hat{k} \) km
+
+Determine the final position vector of the satellite in the IJK coordinate frame.","\( \vec{R} = -2749.93\,\hat{i} +5701.64\,\hat{j} +7316.24\,\hat{k} \) km"
+0.525,"A satellite is in a circular orbit with an orbital period of 3.24 hours. The satellite starts with an initial argument of latitude of 189.8°. 
+
+If the satellite travels for 10.72 hours, what is the final argument of latitude, $u_f$? 
+
+Provide your answer in degrees.",$u_f = 300.45^\circ$
+0.455,"A spacecraft is initially in a circular Earth orbit with a radius of 6883.0 km. It is planned to initiate a Hohmann transfer to another orbit.
+
+What is the initial circular orbit velocity required at this radius?
+Provide your answer in kilometers per second (km/s).",The initial circular orbit velocity is 7.610 km/s.
+0.455,"A spacecraft is initially in a circular Earth orbit with a radius of 6766 km. It needs to transfer to another circular orbit with a radius of 6663 km using a Hohmann transfer.
+
+How do you determine the semi-major axis of the transfer orbit? Provide your answer in kilometers (km).",The semi-major axis of the transfer orbit is 6714.5 km.
+0.455,"A satellite is initially in a circular Earth orbit with a radius of 7412.1 km. It needs to transfer to another circular orbit with a radius of 6690.6 km using a Hohmann transfer maneuver.
+
+How do you determine the specific mechanical energy of the transfer orbit? Compute the specific mechanical energy in units of km²/s².",The specific mechanical energy of the transfer orbit is -28.264 km²/s².
+0.455,"A satellite is initially in a circular orbit with a radius of 7088 km around Earth. It needs to transfer to a lower circular orbit with a radius of 6819 km using a Hohmann transfer maneuver.
+
+What is the transfer orbit velocity at the point of departure from the initial orbit (Vₜ₁)?
+Provide your answer in kilometers per second (km/s).",Vₜ₁ = 7.426 km/s
+0.525,"A spacecraft is initially in a circular Earth orbit with a radius of 7013 km. It must transfer to a smaller circular orbit with a radius of 6723 km using a Hohmann transfer.
+
+How do you determine the first burn (ΔV₁) required for this maneuver? Provide your answer in kilometers per second (km/s).",ΔV₁ ≈ 0.080 km/s
+0.525,"A satellite is initially in a circular Earth orbit with a radius of 7551 km. Due to a mission change, it must transfer to a lower circular orbit with a radius of 7067 km using a Hohmann transfer.
+
+What is the final orbit velocity (V₂) in the target orbit? Provide your answer in kilometers per second (km/s).",V₂ = 7.510 km/s
+0.525,"A spacecraft is initially in a higher circular orbit with a radius of 7131 km. It must transfer to a lower circular orbit with a radius of 6829 km using a Hohmann transfer.
+
+Given the Earth's gravitational parameter μ = 398600.5 km³/s², determine the transfer orbit velocity at final orbit entry (Vₜ₂).
+
+Provide your answer in kilometers per second (km/s).",Vₜ₂ = 7.722 km/s
+0.525,"A spacecraft is initially in a higher circular Earth orbit with a radius of 6834.1 km. It must transfer to a lower circular orbit with a radius of 6570.8 km using a Hohmann transfer.
+
+How do you determine the second burn (ΔV₂) required at the final orbit insertion? Provide your answer in kilometers per second (km/s).",ΔV₂ = 0.076 km/s
+0.525,"A satellite is initially in a circular orbit with a radius of 7310 km around the Earth. It needs to transfer to another circular orbit with a radius of 6574 km using a Hohmann transfer.
+
+Assume the Earth's standard gravitational parameter is μ = 398600 km³/s².
+
+What is the total ΔV required for the transfer? Provide your answer in kilometers per second (km/s).",0.402 km/s
+0.525,"A spacecraft is initially in a circular Earth orbit with a radius of 6957 km. It must transfer to a smaller circular orbit with a radius of 6738 km using a Hohmann transfer.
+
+Assuming Earth's gravitational parameter is μ = 398600.5 km³/s², determine the time of flight for the Hohmann transfer. Provide your answer in hours.",The time of flight for the Hohmann transfer is **0.7833 hours**.
+0.455,"A satellite is initially in an elliptical orbit with a semi-major axis a₁ = 8976 km and eccentricity e₁ = 0.28. It is planned to transfer the satellite to a new elliptical orbit with a₂ = 21045 km and eccentricity e₂ = 0.38.
+
+Determine:
+1) The radius of perigee of the initial orbit.
+2) The radius of apogee of the final orbit.
+
+Provide the value of the initial orbit perigee radius.","Radius of perigee of the initial orbit: 6448.41 km
+Radius of apogee of the final orbit: 29019.35 km"
+0.455,"A satellite is initially in an elliptical orbit with a semi-major axis of 8067 km and an eccentricity of 0.20. It must be transferred to another elliptical orbit with a semi-major axis of 21479 km and an eccentricity of 0.48.
+
+Assuming a Hohmann-like transfer that starts at the periapsis of the initial orbit and ends at the apoapsis of the target orbit, determine the semi-major axis of the transfer orbit.",The semi-major axis of the transfer orbit is 19113.44 km.
+0.455,"A satellite is in an elliptical Earth orbit with the following parameters:
+
+- Semi-major axis, a = 28759.3 km
+- Eccentricity, e = 0.49
+
+Assuming the standard gravitational parameter of Earth is μ = 398600 km³/s²,
+
+calculate the **specific mechanical energy** of the orbit.
+
+Provide your answer as a numerical value with units of km²/s².",-6.93 km²/s²
+0.525,"A satellite is in an elliptical Earth orbit with a semi-major axis a = 12624 km and an eccentricity e = 0.27.
+
+What is the velocity of the satellite at perigee?
+Provide your answer as a numerical value with units of km/s.",7.40 km/s
+0.525,"A satellite is initially in an elliptical orbit with a semi-major axis of a₁ = 10753.0 km and an eccentricity e₁ = 0.21. The satellite is to be transferred to another elliptical orbit with a semi-major axis of a₂ = 22617.7 km and an eccentricity e₂ = 0.35.
+
+Assume a Hohmann-type transfer orbit whose semi-major axis is the average of the initial and final semi-major axes. Using Earth's gravitational parameter, compute the specific mechanical energy of the transfer orbit.
+
+Provide your answer in units of km²/s².",-11.945 km²/s²
+0.455,"A spacecraft is placed into a transfer orbit around Earth. The transfer orbit has a semi-major axis of 26268 km and an eccentricity of 0.11. 
+
+Assuming Earth's gravitational parameter is μ = 398600 km³/s², determine the velocity of the spacecraft at the periapsis (transfer point) of the transfer orbit.
+
+Provide your answer as a decimal number followed by the unit km/s.",4.344 km/s
+0.525,"A satellite is initially in an elliptical orbit with a semi-major axis of 11376 km and an eccentricity of 0.14. It must be transferred to a new elliptical orbit with a semi-major axis of 21079 km and an eccentricity of 0.18.
+
+Assuming the first burn is performed at the periapsis of the initial orbit and that this periapsis radius is the same point where the spacecraft joins the target orbit, calculate the required velocity change for the first maneuver.
+
+Provide your answer in kilometers per second (km/s).",1.0993 km/s
+0.35,"A satellite is initially in an elliptical orbit with a semi-major axis a₁ = 11565 km and an eccentricity e₁ = 0.13. It is transferred to a new elliptical orbit with a semi-major axis a₂ = 23980 km and an eccentricity e₂ = 0.52.
+
+What is the specific mechanical energy of the final orbit? Provide your answer in units of km²/s².",-8.31 km²/s²
+0.525,"A satellite is placed into a final elliptical Earth orbit with a semi-major axis of 12921 km and an eccentricity of 0.31.
+
+Determine the velocity of the satellite at the apogee of this final orbit. Provide your answer in kilometers per second (km/s).",4.04 km/s
+0.35,"A satellite is placed into an elliptical orbit around Earth with the following parameters:
+
+- Standard gravitational parameter: μ = 398600 km³/s²
+- Semi-major axis: a = 25064.2 km
+- Eccentricity: e = 0.41
+
+Determine the orbital velocity of the satellite at the apogee of this orbit.
+Provide your answer in kilometers per second (km/s).",2.566 km/s
+0.525,"A satellite is initially in an elliptical orbit with a semi-major axis a₁ = 7351 km and an eccentricity e₁ = 0.13. It is to be transferred to a new elliptical orbit with a semi-major axis a₂ = 12063 km and an eccentricity e₂ = 0.22.
+
+Assuming the second maneuver occurs at the apogee of the target orbit, calculate the velocity change (ΔV₂) required for the second burn. Give your answer in kilometers per second (km/s).",0.55653 km/s
+0.525,"A satellite is initially in a circular Earth orbit with a radius of 11438 km measured from the center of the Earth. It is required to transfer the satellite to another circular orbit with a radius of 20416 km using a Hohmann transfer.
+
+Assuming Earth's gravitational parameter is μ = 398600 km³/s², determine the total ΔV required for the transfer.
+
+Provide the answer in kilometers per second (km/s).",1.4545 km/s
+0.455,"A satellite is initially in an elliptical orbit with a semi-major axis of 9846 km and an eccentricity of 0.04. It must be transferred to another elliptical orbit with a semi-major axis of 16835 km and an eccentricity of 0.39.
+
+Assuming a Hohmann transfer between the two orbits and using Earth's gravitational parameter, determine the time of flight required for the transfer.
+
+Provide your answer in hours.",The required time of flight for the transfer is approximately 2.13 hours.
+0.595,"A satellite in a circular orbit has an orbital speed of 8.26 km/s. It needs to maneuver from an orbit with an inclination of 40.6° to an orbit with an inclination of 108.3°.
+
+How much ΔV is required to perform this orbital inclination change? Provide your answer in kilometers per second (km/s).",ΔV ≈ 9.20 km/s
+0.455,"A satellite is in a circular orbit around the Earth with a radius of 11270 km, measured from the center of the Earth.
+
+Assuming the Earth's standard gravitational parameter is 398600.5 km³/s², what is the velocity of the satellite in this circular orbit?
+
+Provide your answer in kilometers per second (km/s).",The satellite's orbital velocity is 5.947 km/s.
+0.525,"A satellite is initially in a circular orbit with a radius of 7149 km and an inclination of 9.2°. It must be transferred to a circular orbit with a radius of 32217 km and an inclination of 3.7°. 
+
+Assuming a Hohmann transfer orbit is used for the change in orbital radius, determine the semi-major axis of the transfer orbit. Provide your answer in kilometers.",The semi-major axis of the transfer orbit is 19683.4 km.
+0.455,"A satellite is initially in a circular Earth orbit with a radius of 7880 km and an inclination of 32.6°. It is required to transfer the satellite to a circular orbit with a radius of 44281 km and an inclination of 10.0°. Assume the transfer is performed using a Hohmann transfer orbit.
+
+What is the specific mechanical energy of the transfer orbit? Express your answer in units of km²/s².",The specific mechanical energy of the transfer orbit is -7.6417 km²/s².
+0.525,"A satellite is initially in a circular orbit with a radius of 6773 km and an inclination of 10.2°. It needs to be transferred to a circular orbit with a radius of 41609 km and an inclination of 12.4°.
+
+Assuming the transfer between the two circular orbits is performed using an elliptical transfer orbit, determine the velocity of the satellite at its initial entrance to the transfer orbit.
+
+Provide your answer in kilometers per second (km/s).",The velocity of the satellite at the initial entrance to the transfer orbit is 10.061 km/s.
+0.525,"A satellite is initially in a circular Earth orbit with a radius of 6819 km and an inclination of 24.9°. It is to be transferred to a circular orbit with a radius of 36249 km and zero inclination using a Hohmann transfer.
+
+Assuming Earth's gravitational parameter is μ = 398600 km³/s² and neglecting the inclination change for this step, what is the required velocity change (ΔV) for the first burn of the Hohmann transfer?
+
+Provide your answer in kilometers per second (km/s).",ΔV₁ = 2.274 km/s
+0.455,"A satellite is initially in a circular orbit with a radius of 6888 km and an inclination of 0.4°. It must be transferred to a circular orbit with a radius of 42729 km and an inclination of 0.0°. Assume Earth’s gravitational parameter is μ = 398600.5 km³/s².
+
+What are the velocities at the final circular orbit and at the end of the transfer orbit? Provide the velocity at the end of the transfer orbit in km/s.","Velocity at final circular orbit: 3.0543 km/s
+Velocity at the end of the transfer orbit: 1.6093 km/s"
+0.455,"A satellite is initially in a circular orbit with a radius of 7539 km and an inclination of 12.3°. It needs to be transferred to a circular orbit with a radius of 37937 km and an inclination of 1.6°.
+
+What is the required angle of inclination change? Provide your answer in degrees.",10.7°
+0.525,"A satellite must perform a combined orbital maneuver that includes both a change in speed and a change in orbital plane.
+
+The satellite's initial orbital velocity is 2.2125 km/s, and the final required orbital velocity is 3.3640 km/s. The inclination change required is 30.7°.
+
+Assuming the maneuver is performed as a single combined burn, what is the total ΔV required? Express your answer in kilometers per second (km/s).",1.8457 km/s
+0.595,"A satellite is initially in a circular orbit with a radius of 7579 km and an inclination of 38.6°. It must be transferred to a circular orbit with a radius of 41589 km and an inclination of 5.0°.
+
+Assuming a Hohmann transfer and that the inclination change is performed simultaneously with circularization at the final orbit, determine the total velocity change (ΔV) required.
+
+Give your answer in km/s.",Total required ΔV ≈ 4.098 km/s
+0.455,"An object is initially moving in a circular orbit with a radius of 9537 km. It must be transferred to another circular orbit with a radius of 384254 km.
+
+Mission analysis shows that the most fuel-efficient maneuver is a bi-elliptical transfer, where the first transfer orbit reaches an apogee distance of 903310 km from the central body.
+
+Determine the semi-major axis of the first transfer orbit in this bi-elliptical transfer. Express your answer in kilometers.",The semi-major axis of the first transfer orbit is 456423.3 km.
+0.455,"An object in a circular orbit with a radius of 11409 km needs to be transferred to another circular orbit with a radius of 143143 km. After analysis, it is determined that the most fuel-efficient maneuver is a bi-elliptic transfer with an intermediate transfer apoapsis radius of 536623 km.
+
+What is the specific mechanical energy of the *first transfer orbit*? Provide your answer in units of km²/s².",-0.7273 km²/s²
+0.455,"An object is initially traveling in a circular orbit with a radius of 11746 km around a central body. The object must be transferred to another circular orbit with a radius of 165145 km. After analysis, engineers determine that the most fuel-efficient maneuver for this case is a bi-elliptical transfer with a transfer apogee radius of 602884 km.
+
+What is the velocity of the object in its initial circular orbit? Express your answer in kilometers per second (km/s).",5.83 km/s
+0.525,"An object is initially in a circular orbit with a radius of 7377 km around Earth. It needs to be transferred to a circular orbit with a radius of 249605 km.
+
+Mission analysis shows that the most fuel-efficient maneuver is a bi-elliptic transfer with an intermediate transfer apogee located at 700799 km from Earth's center.
+
+Assuming Earth's gravitational parameter is μ = 398600.5 km³/s², determine the initial velocity of the first transfer orbit.
+
+Provide your answer in kilometers per second (km/s).",The initial velocity of the transfer orbit is 10.34 km/s.
+0.525,"An object is initially in a circular orbit with a radius of 7163 km. It must be transferred to a larger circular orbit with a radius of 225943 km. Engineers determine that the most fuel-efficient maneuver is a bi-elliptical transfer with an intermediate transfer apoapsis radius of 909997 km.
+
+Assuming a standard gravitational parameter μ = 398600 km³/s², what is the required velocity change (ΔV) for the *first burn* of the transfer?
+
+Provide your answer in kilometers per second (km/s).",3.05 km/s
+0.455,"An object is initially in a circular orbit with a radius of 12,998 km. It must be transferred to a larger circular orbit with a radius of 371,255 km.
+
+After analysis, engineers determine that the most fuel-efficient maneuver is a bi-elliptical transfer with an intermediate transfer point located 708,099 km from the center of the Earth.
+
+Assuming Earth's gravitational parameter is μ = 398,600.5 km³/s², determine the velocity at point b (the apogee of the first transfer orbit).
+
+Provide your answer in km/s.",0.1425 km/s
+0.525,"An object is initially in a circular orbit with a radius of 7,132 km. The object must be transferred to a new circular orbit with a radius of 138,310 km.
+
+Mission analysts have determined that the most fuel-efficient maneuver for this transfer is a bi-elliptic transfer. In this maneuver, the spacecraft first travels to a distant transfer point located 552,476 km from the central body before descending to the final orbit.
+
+What is the semi-major axis of the second transfer orbit? Provide your answer in kilometers.","The semi-major axis of the second transfer orbit is 345,393 km."
+0.525,"An object initially in a circular orbit with a radius of 13667 km is to be transferred to another circular orbit with a radius of 206512 km.
+
+Mission planners have determined that the most fuel-efficient maneuver is a bi-elliptic transfer with an intermediate transfer point located 971224 km from the center of attraction.
+
+Assuming a gravitational parameter of 398600.5 km³/s², determine the specific mechanical energy of the second transfer orbit.
+
+Provide your answer in units of km²/s².",-0.338 km²/s²
+0.525,"An object initially moves in a circular orbit with a radius of 11,414 km. It must be transferred to another circular orbit with a radius of 134,397 km.
+
+Mission analysis shows that the most fuel-efficient maneuver for this case is a bi-elliptical transfer. The intermediate transfer point (point b) is located at a distance of 496,173 km from the center of attraction.
+
+Assuming a gravitational parameter of μ = 398,600.5 km³/s², determine the velocity of the spacecraft at point b during the second transfer orbit. Provide your answer in km/s.",The velocity at point b during the second transfer is 0.585 km/s.
+0.525,"An object is initially in a circular orbit with a radius of 8,668 km and must be transferred to a circular orbit with a radius of 185,324 km.
+
+After analysis, engineers determine that the most fuel-efficient maneuver is a bi-elliptical transfer with a transfer point located 499,759 km from the center of the Earth.
+
+Assuming Earth's gravitational parameter is μ = 398,600 km³/s², calculate the required velocity change (ΔV) at point b (the transfer point). Provide your answer in kilometers per second (km/s).",ΔV at point b = 0.492 km/s
+0.525,"An object initially in a circular orbit with a radius of 9658 km must be transferred to another circular orbit with a radius of 380690 km.
+
+Mission analysis has shown that the most fuel-efficient maneuver is a bi-elliptic transfer with an intermediate transfer apogee located at 1063471 km from the center of attraction.
+
+Assuming a gravitational parameter of 398600.5 km³/s², determine the velocity of the spacecraft at point c (the point where the second transfer ellipse intersects the final circular orbit).
+
+Provide your answer in kilometers per second (km/s).",1.24 km/s
+0.525,"An object is initially in a circular orbit with a radius of 9,167 km. It must be transferred to another circular orbit with a radius of 277,711 km.
+
+A team of engineers determines that the most fuel-efficient maneuver for this transfer is a bi-elliptical transfer with an intermediate transfer apogee at 924,665 km from the center of attraction.
+
+What is the velocity of the object in the final circular orbit? Provide your answer in meters per second (m/s).","1,198.0 m/s"
+0.525,"An object is initially in a circular orbit with a radius of 11311 km. It must be transferred to a final circular orbit with a radius of 226051 km. Mission planners determine that the most fuel-efficient maneuver is a bi-elliptic transfer with an intermediate transfer point located at a radius of 401593 km.
+
+Using a standard gravitational parameter of μ = 398600 km³/s², what is the required burn at point C (the intermediate transfer point)? Provide your answer in km/s.",ΔV₍c₎ = 0.612 km/s
+0.525,"An object is initially in a circular orbit with a radius of 11703 km around Earth. It must be transferred to a new circular orbit with a radius of 116157 km.
+
+Engineers determine that the most fuel-efficient maneuver is a bi-elliptical transfer with an intermediate transfer point (apoapsis) located at 489612 km from the center of Earth.
+
+Assuming Earth's gravitational parameter is μ = 398600 km³/s², calculate the total ΔV required for the bi-elliptical transfer. Provide your answer in km/s.",Total ΔV for the bi-elliptical transfer: 3.187 km/s
+0.525,"An object is initially in a circular orbit with a radius of 9615 km. It must be transferred to a higher circular orbit with a radius of 234800 km.
+
+For this maneuver, engineers have determined that a bi-elliptical transfer is the most fuel-efficient option, with the intermediate apogee of the transfer orbits located at a radius of 809115 km from the center of the Earth.
+
+Assuming the Earth's gravitational parameter is μ = 398600.5 km³/s², determine the total time of flight for the bi-elliptical transfer. Express your answer in days.",The total time of flight for the bi-elliptical transfer is approximately 36.80 days.
+0.63,"Given the declination of a star as δ = 27.0° and the hour angle t = 162.9°, calculate the altitude h and azimuth A of this star when observed at latitude φ = 38.6°.","h = -22.5°, A = 163.5°"
+0.63,"At latitude $\phi = 6.5^\circ$, the altitude of a star is $h = 44.3^\circ$ and its azimuth is $A = 19.5^\circ$. Compute the declination $\delta$ and the hour angle $t$.",Final_answer: \[\boxed{t = 17^\circ}\]
+0.546,"Hubble measured the distance to a nearby galaxy as 382.2 kpc, whereas the currently accepted value is 764.4 kpc. If this discrepancy is entirely due to an incorrect estimate of the interstellar extinction $A_\lambda$, by how much did Hubble misestimate $A_\lambda$?","$\Delta A_\lambda = 1.505\,\text{mag}$"
+0.63,"Assuming the Earth is a perfect sphere with radius $R_\mathrm{E} = 6444.31\ \mathrm{km}$ and gravitational parameter $GM_\mathrm{E} = 3.9891e+14\ \mathrm{m^3/s^2}$, determine the orbital altitude and linear velocity of a 24-hour (geosynchronous) satellite.","$\boxed{\text{Satellite altitude: } 35731\mathrm{km},\ \text{linear velocity: }3.075\ \mathrm{km/s}}$"
+0.546,"Given that the apsidal precession of Jupiter’s moon Amalthea is $\frac{\mathrm{d}\omega}{\mathrm{d}t}=4.40^\circ/\mathrm{day}$, the orbit is approximately circular with $a=165710\,\mathrm{km}$, and the inclination can be neglected. Find Jupiter’s oblateness parameter $J_{2}$.",$\boxed{J_2=0.0095}$
+0.546,"A certain planet has the same mass and radius as Earth. Its satellite has a perigee altitude of $h_p=200\,\text{km}$, an apogee altitude of $h_a=400\,\text{km}$, an inclination of $i=80^\circ$, and a perigee precession of $\Delta\omega=12^\circ/\text{day}$. Determine the planet’s zonal harmonic coefficient $J_2$.",$\boxed{J_2=-0.00348}$
+0.637,"Derive the limiting magnitude for naked-eye visibility of a star in a dark-sky environment, by considering an analogy to a CCD camera. Assume that the dominant noise source is $\sqrt{n}$ photon shot noise, and visibility requires $\mathrm{SNR}>1$.
+
+The dark-adapted pupil diameter is 7.0 mm, the quantum efficiency is 3%, and the effective exposure time is 42 ms.
+
+The visible solar flux is $5.23\times10^{2}$ W/m$^2$ with apparent magnitude -26.8. Assume $\lambda=505$ nm.",$\boxed{M_\mathrm{limit} \approx 7.9}$
+0.637,"In a binary neutron star system, two identical neutron stars of mass $M$ each undergo a circular orbit of radius $R$ around their center of mass. The system can be approximated as Newtonian circular orbits.
+
+Astronomers measure $R = 0.577\,\text{AU}$ and the orbital period $P = 502.2\,\text{days}$. Calculate $M$, the mass of each neutron star, in solar masses.","$\boxed{M = 0.407\,M_\odot}$"
+0.735,"A spherical star cluster, which appears from Earth under a solid angle of 0.000194 sr, contains approximately 344,538 stars and has an apparent bolometric magnitude of m_bol = 4.91 mag. The spherical cluster is at rest, meaning the velocities of the stars are zero.
+
+Estimate the distance to the cluster as well as the mean angular separation between its stars. Ignore interstellar extinction. Also, compute the objective lens diameter of a telescope required to distinguish two stars of the cluster in the optical. State any assumptions you made.","Distance: \boxed{d \approx 6.17e+03\ \mathrm{pc}}
+Mean angular separation: \boxed{\theta \approx 4.90\ \mathrm{arcsec}}
+Objective diameter: \boxed{D \approx 2.57e-02\ \mathrm{m}}"
+0.735,"Imagine you are on Ganymede and want to escape its parent planet. If Ganymede is currently at a distance of 21,773 km from the planet’s center and has an orbital speed of 1.73 km/s, how much additional speed (Δv) is required to escape the planet’s gravity? The mass of the planet is 6.25e+26 kg.",$\boxed{\Delta v \approx 60151\ \mathrm{m/s}}$
+0.735,"Suppose a rocket orbits a star of mass M = 5.94e+30 kg in a circular orbit of radius R = 9.19e+08 m. The rocket wishes to transfer to a larger circular orbit of radius 5R using a Hohmann transfer.
+
+The transfer consists of two instantaneous burns and has a total delta-v of
+
+    Δv = k √(GM / R).
+
+Compute the dimensionless coefficient k.","k = 0.480009.
+
+"
+0.833,"An astronomer was studying the exoplanets orbiting a star with a mass of 18.3 $M_\odot$. The astronomer decided to draw a $\log T$ vs. $\log a$ plot for the exoplanet orbits, where $T$ corresponds to the orbital period in years and $a$ corresponds to the semi-major axis in AU. What would be the slope of the best-fit line to this plot? (Assume base-10 logarithms.)",The slope of the best-fit line is 3/2.
+0.735,"A recently observed exosolar system consists of a star, a planet, and the planet's satellite. The satellite has a revolution period of 123 minutes around the planet, and the planet has a 118-day revolution period around the star. The satellite approaches the surface of the planet to a minimum height of 1609 km and recedes to a maximum height of 5635 km. The radius of the planet is 4180 km. If the ratio of the mass of the star to the mass of the planet is 1.0e+05, what is the semi-major axis of the planet's revolution around the star? Assume that the mass of the satellite is much smaller than the mass of the planet.",a_p ≈ 4.49e+07 km
+0.735,"A cylindrical space station rotates about its central axis to produce artificial gravity via centripetal acceleration. If the station has a radius of 55.1 m, what rotational period is required so that inhabitants experience an effective gravity equal to 8.56 m/s²?",The required rotational period is T ≈ 15.94 s.
+0.735,"If the space station is too small, inhabitants might experience unwanted effects of being in a rotating reference frame, such as the Coriolis ""force"" on moving objects: $\vec{F} = -2m\vec{\omega} \times \vec{v}$, where $\vec{\omega}$ is the angular velocity vector of the space station and $\vec{v}$ is the velocity of the object in the rotating reference frame.
+For a space station with spin gravity equal to Earth's gravity, what is the minimum radius needed so that a person walking at 1.39954 m/s in any direction experiences negligible Coriolis force (< 0.773223% of Earth's gravity)?","${r > 13.358 \, \text{km}}$"
+0.637,"Just before dawn of the summer solstice, Christopher the sailor begins sailing due West from -40°N, 154°W. His watch is set to UTC. On seeing his 309st sunrise at sea, his watch reads 15:00am. What is his longitude? (The equation of time, in the convention solar time minus mean time, is 2 minutes on the summer solstice and 2 minutes on the autumnal equinox)",$\boxed{\lambda = -135^\circ W}$
+0.735,"Evan uses a telescope of focal distance f = 688 mm to observe a star known to have a parallax p = 93 mas. Observing the CCD of the telescope, Evan notices that the star has a diameter D = 0.949 µm. Furthermore, he measures its apparent magnitude to be m = 7.24. What is the approximate temperature of this star? Please, neglect the atmospheric seeing in your calculations.",\boxed{T \approx 190\ \text{K}}
+0.735,"Two exoplanets, A and B, move in circular orbits around the same central star. The ascending nodes of both orbits coincide at the same ecliptic longitude, and both planets are initially located at that point.
+
+The orbital inclinations are i₁ = 46.2° and i₂ = 76.5°, and the orbital periods are T₁ = 2.00 yr and T₂ = 1.00 yr.
+
+Assuming uniform angular motion, how long will it take until the two planets again share the same ecliptic longitude?",t ≈ 0.165 yr (about 60 days)
+0.637,"Question: It is observed that a planet orbiting a star increases the observed magnitude of the system by 0.008815382385400323 when it transits across the star. Assuming that the system is viewed edge on and is orthogonal to the line of sight, determine the radius of the planet Rp in terms of the radius of the star R.",Final_answer: Rₚ ≈ 0.090 * R
+0.49,What is the focal ratio of a telescope with 1.3973820862378328 m in focal length and 7.779104514069429 cm in aperture?,$\boxed{f = 18.0}$
+0.735,"A supernova is triggered largely by neutrinos. In fact, 97% of the energy coming from the supernova is released in the form of neutrinos. Over a time span of about 5.3 months, the supernova outputs visible light with power equivalent to 1.85e+10 Suns. Assuming supernova neutrinos have mean energy of around 14 MeV, that all the power of the supernova is released during the time it is visible, and that all of the power released is released in the form of either visible light or neutrinos, estimate the number of neutrinos released.",\boxed{N_\nu \approx 10^{57}}
+0.637,"The surface of the Sun exhibits differential rotation, with different rotational periods at different latitudes. We can measure this rotation speed using Doppler spectroscopy or by tracking the motion of sunspots. If the rotation speed of the Sun's surface at the equator is 1915 m/s, and at 60° South is 816 m/s, how long would it take for a sunspot at the equator to do a full extra lap around the Sun compared to a sunspot at 60° South?",$\boxed{T_{\text{lap}} = 179\ \text{days}}$
+0.49,The Extremely Large Telescope (ELT) is an optical telescope under construction in Chile. The primary mirror has been planned to have a diameter of 43.4 m making it largest optical telescope ever built. One of the goals for this telescope is the direct imaging of exoplanets. Consider an exoplanet at a distance of 5 A.U. from a star. What is the maximum distance from Earth of such a star-exoplanet system in which the ELT can resolve the exoplanet separately from the star? Ignore atmospheric seeing and assume optical wavelength to be 478 nm.,$\boxed{d = 1754\ \text{pc}}$
+0.637,"There is a galaxy at redshift 0.5 for which we have a measurement for apparent bolometric magnitude to be 24. With a standard candle in that galaxy, we have found its luminosity distance to Earth to be 1.7 Gpc. Estimate the luminosity of this galaxy.",$\boxed{L \approx 8.58×10^6L_0}$
+0.637,"David the astronomy enthusiast loves looking at stars! Specifically, he particularly enjoys looking at stars on the ecliptic. One day, he is out stargazing at midnight (local solar time) and looks at the antisolar point (the point on the celestial sphere exactly opposite to the Sun). He notices a faint glow of magnitude 11 $mag/arcsec^2$, and after some research he concludes that this is caused by a phenomenon known as $gegenschien$, where Solar System dust is lit up by the Sun and reflects some light back towards Earth. These particles are in an orbit of 1.81AU around the Sun. Assuming the radii of these particles are around 0cm and their albedo is 0.38, estimate the density of these particles. Express your answer in particles per square arcsecond.",$\boxed{N \approx 4.1\times 10^{14}\ \text{particles/arcsec}^2}$
+0.735,"A star cluster has a physical radius of 1.47 parsecs. A Sun-like star in the cluster has an apparent magnitude of 8.50 and an absolute magnitude of 4.83. When observed through a telescope, the cluster just fits within an eyepiece that has a field of view of 25.0 degrees. If the eyepiece focal length is 10.0 mm, what is the focal length of the telescope’s objective lens?",81 mm
+0.637,"Consider a satellite in a circular orbit of radius 9.59e+08 m around a planet. Due to a malfunction, the satellite’s orbital velocity is suddenly reduced to zero. The mass of the planet is 5.38e+24 kg. Neglect any gravitational influences other than that of the planet.
+
+How long does the satellite take to hit the surface of the planet?",t ≈ 20 days
+0.637,"A planet is in an elliptical orbit around a star. Let $r_{\text{min}}$ be the minimum distance between the planet and the star, and let $r_{\text{max}}$ be the maximum distance between the planet and the star. Suppose that $r_{\text{max}} = 4.164559619010866 r_{\text{min}}$. During what percentage of the time period of each orbit is the planet at least $0.687328902145742 r_{\text{min}}$ away from the star?",0.7
+0.637,"An empirically determined approximate formula for the lifetime of a star is:
+
+    T = (M_⊙ / M)^{2.5} × 10^{10} years,
+
+where T is the stellar lifetime and M is the mass of the star.
+
+If the very first stars formed approximately 4.86e+08 years after the Big Bang, what is the most massive such star that could still exist today?",M ≈ 0.89 M_⊙.
+0.637,"With the technology currently available, it would take hundreds of millennia to send a humanmade object to other stars. A possible solution is to use relativistic light sails: tiny probes propelled by radiation pressure. In the Earth observer's reference frame, a sail takes 65.0 years to reach Barnard's Star, which is 8.95 light-years away. Assume the sail travels at constant speed. How long does the trip take in the reference frame of the light sail?",64.38 years
+0.735,"In 1995, researchers at the University of Geneva discovered an exoplanet orbiting the main-sequence star Kepler-7. The star’s spectrum showed a periodic Doppler shift, indicating that its radial velocity varied sinusoidally. The measured radial-velocity semi-amplitude is 67 m/s with a period of 3.29 days, and the star’s mass is 1.26 M⊙. Assuming the orbit is circular and viewed edge-on (sin i = 1), what is the planet’s mass in Jupiter masses?",0.57 M_J
+0.735,"Consider the binary system Kepler-35, which has a primary and secondary star. It has an orbital period P = 34.93 days and the measured parallax is p = 6.27 mas. Calculate the total mass of the stars, using the fact that their maximum angular separation measured from Earth is θ = 5.63 mas and they are on an edge-on orbit.",M = 79.278 M_sun
+0.637,"Erez is designing a Newtonian telescope. The equation of the primary mirror is y = x^2 / (25 m) + (-2.3 m), and the telescope tube intersects the mirror at y = 0.0 m. What is the f-number (focal ratio) of the telescope?",f/0.413
+0.637,How far from the Solar System would a galaxy with a redshift of z = 0.014 be? Assume a Hubble constant of H₀ = 70.0 km/s/Mpc.,d ≈ 57.9 Mpc
+0.735,"Two planets A and B orbit a star on coplanar, non-intersecting elliptical orbits. Their major axes are perfectly aligned, and planet A has a larger semi-major axis than planet B. The eccentricities of A and B are 0.33 and 0.45, respectively.
+
+What is the minimal possible ratio of the semi-major axis of planet A to that of planet B?",Final_answer:1.090
+0.735,The Large Magellanic Cloud (LMC) is a galaxy with a redshift of $z = 5.529e-04$. What is the radial velocity of the LMC with respect to the Solar System? Is it getting closer or farther from the Solar System?,"$\boxed{v = 1.66e+05\,\text{m/s}}$"
+0.637,"A nearby galaxy is observed to have a redshift of z = 1.319e-04. Using Hubble's Law with a Hubble constant of H₀ = 70.0 km/s/Mpc, calculate the distance to the galaxy from the Solar System.",d = 0.57 Mpc
+0.637,"A comet moves in an elliptical orbit around the Sun with the following parameters:
+- Orbital eccentricity: e = 0.994
+- Aphelion distance: r_a = 6.78e+04 AU
+- Mass of the Sun: M_S = 1.98e+30 kg
+- Gravitational constant: G = 6.67e-11 N·m²/kg²
+
+Determine the velocity of the comet at its aphelion.",v_a = 8.57 m/s
+0.735,"Two spherical asteroids, Ek and Do, are orbiting in free space around their stationary center of mass. Ek has mass 5.8M_moon and Do has mass 1.3M_moon. The distance between the two asteroids is 7.9 units. What is the ratio of the angular momentum of the whole system to the angular momentum of Do about the center of mass?",The required ratio is 1.224.
+0.735,Consider a f/10.0 telescope with focal length f = 0.81 m that operates at a visible wavelength λ = 5000 Å. What is the farthest distance at which an open cluster of radius R_C = 5.40 pc can be resolved by this telescope?,approximately 1.43e+06 pc.
+0.735,"An exoplanet was observed during its transit across the surface of a bright star. Estimate the variation of the apparent magnitude (Δm) of the star caused by the exoplanet’s transit. During the transit, assume an Earth-based astronomer observes that the area covered by the exoplanet on the projected surface of the star represents η = 3.5% of the star’s projected surface.", 0.039.
+0.735,Estimate the mass of a globular cluster with a radial velocity dispersion σ_r = 12.88 km/s. The cluster has an angular diameter θ = 5.22′ and is located at a distance d = 11768 pc.,M ≈ 3.425e+36 kg
+0.637,The orbit of a planet around its star has an eccentricity e = 0.125. What is the ratio of the planet's closest distance to its star to its farthest distance on the orbit?,r_min / r_max = 0.778
+0.637,"A solar probe follows an elliptical orbit around the Sun with an orbital period of 80.1 days. At its closest approach, the probe comes to a distance of 8.91e+06 km from the Sun. How fast is the probe traveling at this closest approach?",v = 165.4 km/s
+0.735,"The angular resolution of a space telescope is limited by diffraction. The Hubble Space Telescope (HST) has a primary mirror diameter d = 2.50 m and operates at a wavelength λ = 4.9e-07 m. The James Webb Space Telescope (JWST) has a primary mirror diameter d = 6.54 m and operates at a wavelength λ = 5.7e-06 m. Calculate the ratio of the diffraction-limited angular resolutions θ(HST) / θ(JWST), and determine which telescope can resolve smaller angular features.","θ(HST) / θ(JWST) = 0.224. Therefore, HST can resolve smaller angular features under diffraction-limited conditions."
+0.637,"The energies of an electron in a hydrogen atom are given by
+
+E_n = -13.606 eV / n^2 ,  n = 1, 2, 3, ...
+
+The Ly-α spectral line is produced when an electron transitions from n = 2 to n = 1. Astronomers observe that the wavelength of the Ly-α line in a distant receding galaxy is 6.48 nm longer than the laboratory value.
+
+Assuming Hubble's constant H₀ = 70.0 km/s/Mpc, estimate the distance to the galaxy.",d ≈ 228 Mpc
+0.637,"The following expression describes the mass function of a binary system:
+
+f(M₁, M₂) = (M₂³ sin³ i) / (M₁ + M₂)²
+
+where:
+- M₁ is the mass of star 1,
+- M₂ is the mass of star 2,
+- i is the inclination of the orbit.
+
+Consider an eclipsing binary system with an orbital period of 41.4 years and a total semi-major axis of 37.9 AU. The semi-major axis of star 1 is 1.5 times larger than that of star 2.
+
+Estimate the mass function of the system in units of solar masses.","f(M₁, M₂) ≈ 6.87 M☉$"
+0.735,What is the spectral type of a star with a luminosity of $4.81 * 10^{27}$ W and radius of $9.17 * 10^{9}$ m?,$\boxed{M}$
+0.637,"What is the speed of a star induced by an orbiting planet if the planet has mass $4.42M_{Jup}$ and the star has mass $1.94M_{Sun}$, and the orbit is circular with semi-major axis $49.52 * 10^{9}$ m and period $11.04$ days?",$\boxed{701.3m/s}$
+0.735,"An exoplanet has a radius of 1.52 Jupiter radii, while its host star has a radius of 1.17 Solar radii. What is the transit depth of the planet, in percent?",\boxed{1.68\%}
+0.735,"A comet has an orbital period of approximately 4317 years and an orbital eccentricity of 0.99411. What is the perihelion distance of the comet, in astronomical units (AU)?",\boxed{1.562\ \text{AU}}
+0.637,"A stable open cluster of about N = 1732 sun-like stars has an angular size θ = 30.9 arc minutes and distance d = 1167 pc. Assuming the cluster is a sphere of uniform density, estimate the average stellar velocity.
+
+The gravitational potential energy of a uniform sphere is:
+U = -(3/5) G M^2 / r.",\boxed{\langle v \rangle = 1013\ \text{m/s}}
+0.637,"The spectral line Hα in the spectrum of a star is recorded as having displacement Δλ = 1.38e-11 m. At rest, the spectral line has a wavelength of λ0 = 6.738e-07 m. Calculate the period of rotation for this star, if it is observed from its equatorial plane. We also know: Rstar = 1.05e+06 km.",\boxed{T = 12.48\ \text{days}}
+0.735,"Let us imagine that the Universe is uniformly filled with basketballs, each having a mass of $m_b = 0.57\,\mathrm{kg}$. What numerical density $n_b$ of basketballs would be required such that their total mass density equals the current critical density of the Universe?","$\boxed{n_b = 1.47e-26\,\mathrm{balls/m^3}}$"
+0.735,"An often-repeated fun fact is that humans produce more power per unit volume than stars. If the Sun were the same size as it is today, but produced the same amount of power per unit volume as a human, what would its surface temperature be? Assume an average human produces 113 W of power and has a volume of 61266 cm$^3$.","$\boxed{T \approx 52377\,\mathrm{K}}$"
+0.637,"Jupiter emits more energy to space than it receives from the Sun. The internal heat flux of Jupiter can be quantified by the intrinsic temperature $T_{int}$. The effective temperature $T_{eff}$ of a planet is related to its intrinsic temperature and equilibrium temperature $T_{eq}$ by
+
+$$T_{eff}^4 = T_{eq}^4 + T_{int}^4.$$
+
+Given that Jupiter's albedo is 0.54, its emissivity is 1.0, its average separation from the Sun is 5.1 AU, and its effective temperature is 136 K, estimate Jupiter’s intrinsic temperature. You may assume the Sun’s surface temperature is 5777 K.","$\boxed{T_{int} \approx 123\,\mathrm{K}}$"
+0.735,"Suppose a spacecraft is orbiting in a low Earth orbit at an altitude of 390 km. The spacecraft makes a single orbital maneuver to place it into a Mars transfer orbit. Delta-v (Δv) refers to the change in velocity during an orbital maneuver. What is the Δv required for this trans-Mars injection? The semimajor axes of the orbits of Earth and Mars are 1.469e+08 km and 2.297e+08 km, respectively.",\boxed{\Delta v = 3.624\ \text{km/s}}
+0.637,"After entering Mars orbit, the spacecraft finds that over the course of the martian year, the position of Star A varies by 623.5 milliarcseconds (mas) due to the movement of the spacecraft around the Sun. Determine the distance to Star A.",\(\boxed{4.885\ \text{pc}}\).
+0.637,"Star A, of mass 2.65 $M_\odot$, shows radial velocity variations with an amplitude of 22.4 m/s and a period of 10.58 years, suggesting the presence of an orbiting exoplanet. Assume the orbit is circular and has an inclination of 90°. What is the closest estimate of the mass of the exoplanet? (Mass of Jupiter = $1.898 \times 10^{27}$ kg.)",$\boxed{3.32 M_J}$
+0.637,"Whether or not a diffraction-limited optical system is able to resolve two points as distinct can be determined by the Rayleigh criterion. A nearby star system is located 47.11 pc away, and an exoplanet orbits the host star at a distance of 14.72 AU. When observing in the infrared (λ = 1561 nm), what is the minimum telescope diameter required to resolve the star and its exoplanet under the Rayleigh criterion?",$\boxed{1.257\ \text{m}}$
+0.637,"A luminous star located 0.71 kpc away has an apparent visual magnitude of 4.63 and a $B-V$ color excess of 0.39. Assuming the ratio of V-band extinction to color excess is $R_V = 3.0$, determine the absolute visual magnitude of the star.",$\boxed{M_V = -5.8}$
+0.455,"
+    Around 1100 BCE, ancient Chinese measured the Sun’s maximum altitude on the summer solstice, obtaining h1 = 84°29' and on the winter solstice h2 = 36°47'. In both cases, the Sun was located south of the zenith. Determine the geographic latitude of the observer and compute the obliquity of the ecliptic at that time.
+    ","Geographic latitude of the observer: 29°22', Obliquity of the ecliptic: 23°51'"
+0.455,"
+    In the elliptical galaxy M32 (a satellite galaxy of the Andromeda Galaxy), there are about 85,483,398 stars, and the apparent magnitude of this galaxy is 9.687933999695076. If all stars have the same brightness, what is the apparent magnitude of a single star in this galaxy?
+    ",29.5 mag
+0.455,"
+    The angular separation of the two components of the binary star is 1.2407434672775652"". What is the aperture of a ground-based optical telescope required to resolve them? 
+    If the focal length of the objective is 1.2363777181914375 m, what focal length should the eyepiece have in order to resolve the two stars (the angular resolution of the human eye is 1.932937679955057'')?
+    ","Aperture of the telescope: 11.2 cm, Eyepiece focal length: 1.32 cm."
+0.455,"
+    A 12.685568193958613-m-aperture Keck Telescope is built on Mauna Kea in Hawaii. The observed stellar image diameter can be as small as 0.5866817835673999"". 
+    Please estimate the limiting visual magnitude when observing with the Keck Telescope.
+    ",23.1^m
+0.455,A certain space telescope can achieve an angular resolution of 0.04″ for light of wavelength 650 nm (limited by diffraction). What is its angular resolution for light of wavelength 350 nm?,0.022″.
+0.455,The interval between two successive oppositions of Mars is 775.2 d. Calculate the semi-major axis of Mars’ orbit.,1.53 AU.
+0.455,"The distance from Io to Jupiter is 4.28e+05 km, and its orbital period around Jupiter is 1.84 d. The distance from the Moon to the Earth is 3.71e+05 km, and its orbital period around the Earth is 27.69 d. Calculate the ratio of the mass of Io to the mass of the Moon.",347.7.
+0.35,"As we know, if an object is given a horizontal velocity of 7.740 km/s, it will no longer fall back to Earth but will instead become a satellite orbiting close to Earth’s surface. What is the orbital period of this satellite?",86 min 17 s.
+0.525,"The orbital angular momentum of a planet in a circular orbit is given by
+the product of its mass, orbital velocity, and orbital radius.
+
+Given that:
+- The planet has a mass 221.12 times that of Earth,
+- An orbital radius 8.89 times Earth's orbital radius,
+- An orbital velocity of 10.76 km/s,
+- Earth’s orbital velocity is 29.92 km/s,
+
+calculate the ratio of the orbital angular momentum of the planet
+to that of Earth.",\( \boxed{707.10} \) times that of Earth.
+0.455,"Assume the orbits of Venus and Earth are circular. When Venus is at inferior conjunction and closest to Earth, compare the tidal force exerted by Earth on Venus with that exerted by the Sun on Venus.","\boxed{60538 \text{ times}}
+greater than that exerted by the Earth."
+0.595,"The mass of the Moon is about 1/80 that of the Earth, and the radius of the Moon is about 1/4 the radius of the Earth.
+
+An astronaut weighs 840 N on Earth and wears a spacesuit and backpack weighing 450 N.
+
+What is the astronaut’s weight on the Moon?","corresponding to a mass of \(\boxed{21.76\,\text{kg}}\)."
+0.525,"During Mars' opposition, estimate Mars’ orbital velocity.
+Given the following data:
+- Earth's average orbital velocity v₁ = 29.5 km/s
+- Earth's orbital eccentricity e₁ = 0.017
+- Mars' orbital eccentricity e₂ = 0.093
+- Mars' average distance from the Sun a₂ = 1.530 AU
+
+Estimate Mars' orbital velocity near opposition using Kepler’s laws.","\(\boxed{26.2\,\mathrm{km/s}}\)"
+0.525,"During one opposition of Mars, its apparent magnitude was m₁ = -1.2ᵐ, and its distance from the Sun was r₁ = 1.52 AU. During a later opposition, Mars’ distance from the Sun was r₂ = 1.68 AU. Find the apparent magnitude of Mars during the later opposition.",-0.4ᵐ.
+0.595,"If Saturn’s surface temperature is 97 K and the energy Saturn radiates is more than 3 times the energy it receives from the Sun, use the Stefan–Boltzmann law to calculate Saturn’s effective surface temperature assuming there is no internal heat source.","$\boxed{T_e = 119.08\,\text{K}}$"
+0.525,"Using Kepler’s laws of planetary motion to calculate the orbital period of a comet: the comet’s perihelion distance is 1.0 AU and its aphelion distance is 50,000 AU. After passing near the Sun, non-gravitational forces changed its orbital period from 6,000 years to 3,000 years. By how much did the comet’s semi-major axis change?","    The comet’s semi-major axis changed by approximately 15,749 AU."
+0.525,A spaceship lands on an asteroid with a diameter of 8.32 km and an average density of 2.82 g/cm^3. The asteroid is slowly rotating. The astronauts decide to walk along the asteroid’s equator and complete one full circle in 1.21 hours. Is this feasible?,\boxed{\text{No}}
+0.455,"The comet c1189298 (Sample) has orbital eccentricity e = 1.001904. It reached perihelion on August 13, 2005, with perihelion distance a_c = 1.976 AU. Find the comet's velocity at perihelion (Earth orbital speed v_e = 37 km/s).",37 km/s
+0.455,A comet with an orbital period shorter than 250 years is defined as a short-period comet. Its perihelion distance is 0.874 AU. Find the possible maximum distance of its aphelion.,[Answer] 78.5 AU
+0.455,The thermonuclear reactions of the Sun cause a decrease in the Sun’s mass. Please calculate the increase in the Earth's orbital radius over 227 years resulting from this mass loss. Assume that the Earth maintains a perfectly circular orbit during this process.,2.29m
+0.35,Use the Stefan–Boltzmann law to calculate the ratio of the energy emitted per unit area by a sunspot with a temperature of 5222 K to that emitted by the surrounding photosphere with a temperature of 6000 K.,0.57
+0.455,"The visual binary star consists of two components, one with a magnitude of 0.35^m and the other with a magnitude of 1.67^m. What is the magnitude of this binary system?",\boxed{0.07^m}
+0.455,"Two stars have the same absolute magnitude, but one star is 434 times farther away than the other. What is the difference in their apparent magnitudes?",$\boxed{13^m}$
+0.455,The absolute magnitude of the RR Lyrae star is $0.68^\mathrm{m}\pm0.21^\mathrm{m}$. How large is the deviation in distance caused by the error in the absolute magnitude?,1.216
+0.525,"Observing an eclipsing spectroscopic binary system, the orbital period of the component stars is 11.740558485749258 days. Assuming the orbit is circular and the distance between the two component stars is 0.7997929514592523 AU, and one component star has a mass 1.6554417719720744 times that of the other, find the masses of the two component stars.",$38.58~m_\odot$
+0.455,"In a location with geographic latitude $\varphi = 28^\circ 55^\prime$, a star has declination $\delta = 44^\circ 32^\prime$. When the star culminates, what is its zenith distance?",Final Answer: $\boxed{15^\circ 37^\prime}$
+0.455,"Mount Damavand is located on the southern coast of the Caspian Sea in northern Iran. Suppose an observer stands on the summit of Mount Damavand (Latitude: 31°22′ N, Altitude: 5700.3 m) to observe the sky above the Caspian Sea. Please calculate the minimum declination of celestial objects that never set for this observer. The Earth's radius at this latitude is 6370.8 km.",Final Answer: $\boxed{57^{\circ}49.6'}$
+0.525,"A star has an hour angle of 2h 48m, and its right ascension is 4h 27m. Find the sidereal time at the moment of observation.",Final Answer: $\boxed{7h 15m}$
+0.455,"Eight galaxies are located at each vertex of a cube. The current distance between any two adjacent galaxies is 11.0 Mpc, and the entire cube expands according to Hubble’s law with $H_0 = 70.7\,\mathrm{km/(s\cdot Mpc)}$. Find the recession velocity of a galaxy relative to the one located at the opposite corner of the cube.","$\boxed{v \approx 1349.2\,\mathrm{km/s}}$"
+0.525,"Assume the mass of the neutrino is m_ν = 1.8e-05 m_e. Determine the neutrino number density required to account for the mass of dark matter in the Universe. Assume the Universe is spatially flat,  and dark matter constitutes 25% of the total mass of the Universe. (Hint: The total energy of a classical Universe is zero.)",1.57e+08 particles m⁻³
+0.525,"A telescope with an achromatic convex objective lens of diameter $D = 10 \text{ cm}$ and focal length $f = 200 \text{ cm}$ is pointed to a star at the zenith. Find the diameter (in meters), $d_{\text{image}}$, of the image of a point source as produced by the objective lens at its focal plane for green light ($\lambda = 650 \text{ nm}$), considering only the effects of diffraction.",Final answer: $\boxed{1.586 \times 10^{-3}}$
+0.525,"In order for a photon to carry enough energy to ionize a hydrogen atom, its wavelength must be shorter than 89.27 nm. Use Wien’s displacement law to calculate the temperature corresponding to the peak wavelength of a star’s blackbody radiation curve.",\boxed{T \approx 32486\ \text{K}}
+0.525,"A certain quasar has a redshift of 0.25. If it would have the same apparent brightness as the Sun were it located at a distance of 500 pc, and assuming a Hubble constant of 65 km/(s·Mpc), calculate the luminosity of this quasar (in units of the Sun’s luminosity).","\boxed{1.04e+16\,L_\odot}"
+0.525,"Two galaxies are separated by 534.8 kpc and orbit each other.
+Their orbital period is estimated to be 39.9 billion years.
+Using Kepler's third law, determine the total mass of the two galaxies.",The total mass of the two galaxies is ≈ 1.054e+11 M☉. $
+0.525,"The observed spectral line broadening of a Seyfert galaxy indicates that it has an orbital velocity of 1708 km/s at a distance of 2.8 pc from the orbital center. Assuming the orbit is circular, use Kepler’s law to estimate the mass of the galaxy within this radius.","\[
+ \boxed{M \approx 3.845e+39\,\text{kg}}
+\]"
+0.595,"Assuming a jet has a velocity of 0.7500771533508663c, how long would it take material in the jet to traverse the 899.4107698360757 kpc distance between the galactic nucleus of Sagittarius A and its radio emission lobe?",The material jet takes approximately 3.9073 million years to traverse the distance.
+0.525,"Assume that a type of star has an energy-production efficiency of 0.07 (i.e., the ratio of released energy to mc²). For a quasar emitting 3.75e+41 J of energy per second, if its total available mass is 9.68e+10 m_⊙, how long can it sustain its luminosity?",$\boxed{1.00e+08\ \text{years}}$
+0.455,"The current distance between the Andromeda Galaxy and the Milky Way is 814 kpc. Andromeda is approaching us with a radial velocity of 106 km/s. Ignoring any transverse motion and gravitational acceleration effects, after how many years will the two galaxies collide?",Final_answer:7.5 billion years.
+0.525,"Using Kepler’s third law (circular-orbit form), estimate the mass of the galaxy cluster enclosed within the orbit required for a galaxy to move in a circular orbit of radius 3.56 Mpc with a velocity of 726 km/s.",4.37e+14 M_sun
+0.525,"A small satellite galaxy orbits a much larger host galaxy in a circular orbit, with its orbital motion exactly parallel to our line of sight. The measured recession velocities of the satellite galaxy and the host galaxy are 6445 km/s and 6550 km/s, respectively. Their angular separation on the sky is 0.081°. Assuming a Hubble constant of H₀ = 70 km/(s·Mpc), estimate the mass of the host galaxy.",3.39e+11 M☉
+0.525,"A typical open cluster has a diameter of 15.0 pc, and the average velocity of its member stars is 0.7 km/s. Estimate after how long (in units of one billion years) the orbit of a typical star near the cluster center will dissolve into the tidal field of the Milky Way.",0.0105 billion years.
+0.525,"If the escape velocity of matter on the surface of a star reaches the speed of light (c), what would the radius of the star be? (Given the mass of the star is M = 1.790e+30 kg.)",R = 2658.77 m
+0.525,"The angular momentum of a solid is proportional to its angular velocity multiplied by the square of its radius. Using the law of conservation of angular momentum, if the initial rotation rate of a stellar core is 1 revolution(s) per day, estimate the rotation rate of the compact stellar core when its radius decreases from 1e+04 km to 10 km.",1.00e+06 revolutions per day
+0.455,"A binary star system is at a distance of 20 pc from us. The maximum angular separation of the two components is 5″, and the minimum angular separation is 1.5″. The orbital period is 50 years, and it is assumed that the orbital plane of the binary star is perpendicular to the line of sight. Given that the angular semimajor axis corresponding to one component is a1 = 2.1″, find the masses of the two stars in the binary system.","\boxed{m_1 = 38.87\,M_\odot,\ m_2 = 70.98\,M_\odot}"
+0.455,"Two component stars of an eclipsing spectroscopic binary are observed. Their orbit is circular, with an orbital period of 8.5 days and a separation of 0.42 AU. One star has a mass 1.7 times that of the other. What are the masses of the two component stars?","$\boxed{m_1 = 86.77\,m_\odot,\;m_2 = 50.12\,m_\odot}$"
+0.525,"For an eclipsing binary whose two component stars have the same radius and whose effective temperatures are T_A = 6504 K and T_B = 13062 K, determine the primary and secondary eclipse depths of the light curve.","Primary eclipse depth: 3.09^m, Secondary eclipse depth: 0.06^m"
+0.525,"A Cepheid variable has a brightness variation (light amplitude) of 0.51 mag. If its effective temperature is 6427 K at maximum light and 5458 K at minimum light, what is the radius change caused by the pulsation?",1.10 times the maximum radius.
+0.525,"Question:
+A globular cluster has a tangential velocity of 204.2 km/s and is at a distance of 8.76 kpc from the Earth.
+Find its proper motion (in arcseconds per year, ""/a).","    μ ≈ 4.917e-03 ""/a"
+0.525,"A density wave forms two spiral arms and propagates through the Galactic disk. At a galactocentric radius of 7.2 kpc, the pattern speed of the density wave is 133 km/s, while the Galactic rotation speed is 235 km/s. How many times has the Sun passed through a spiral arm in 5.0 billion years?",12 times
+0.525,"Two galaxies orbit each other at a separation of 694.7 kpc. Their orbital period is estimated to be 40.7 billion years.
+Using Kepler's third law, determine the total mass of the two-galaxy system.", 4.409e+41 kg
+0.455,"A Seyfert galaxy has a spectral-line redshift of 1.772%, and the broadened emission lines indicate a rotational velocity of 150 km/s at an angular distance of 0.335"" from its center. Assuming this rotation is in circular orbits, use Kepler’s law to estimate the mass within the radius corresponding to 0.335"".",Final_answer: 7.8 × 10^11m
+0.728,"Consider a main-sequence star surrounded by a nebula. The observed V-band magnitude of the star is 11.858 mag. The ionised region of the nebula emits Hα and Hβ recombination lines with wavelengths 0.6667 μm and 0.4792 μm, respectively. The intrinsic flux ratio is f(Hα)/f(Hβ) = 2.86. After passing through the dusty outer nebula, the observed fluxes are 5.00e-15 W m⁻² (Hα) and 1.16e-15 W m⁻² (Hβ).
+
+The wavelength-dependent extinction is given by A_λ = κ(λ) E(B−V), where the extinction curve κ(λ) is defined piecewise as
+
+κ(λ) = 2.659[−1.857 + 1.040/λ] + R_V,    0.63 ≤ λ ≤ 2.20
+κ(λ) = 2.659[−2.156 + 1.509/λ − 0.198/λ² + 0.011/λ³] + R_V,    0.12 ≤ λ < 0.63
+
+with R_V = 3.1. Find κ(Hα) and κ(Hβ).","κ(Hα) = 2.310,   κ(Hβ) = 3.713"
+0.84,"A telescope with an achromatic convex objective lens of diameter $D = 10 \text{ cm}$ and focal length $f = 100 \text{ cm}$ is pointed to a star at the zenith. Find the diameter (in meters), $d_{\text{image}}$, of the image of a point source as produced by the objective lens at its focal plane for green light ($\lambda = 450 \text{ nm}$), considering only the effects of diffraction.",Final answer: $\boxed{5.49e-04}$
+0.84,"During the radiation dominated era in the early Universe, the scale factor of the Universe $a\propto t^{1/2}$, where $t$ is the time since Big Bang. During most of this era, neutrons (n) and protons (p) remain in thermal equilibrium with each other via weak interactions. The number density ($N$) of free neutrons or protons is related to the temperature $T$ and their corresponding masses $m$ such that
+
+$N\propto m^{3/2}\exp\!\left(-\frac{mc^{2}}{k_{\mathrm{B}}T}\right),$
+
+as long as time $t\leq t_\mathrm{wk}=2.01$ s, when $k_\mathrm{B}T\geq k_\mathrm{B}T_\mathrm{wk}=978$ keV. After $t_\mathrm{wk}$, the weak interactions can no longer maintain such equilibrium, and free neutrons decay to protons with a half-life time of 528.3 s. Let the number density of protons be $N_{\mathrm{p}}$, and that of neutrons be $N_{\mathrm{n}}$. Calculate the relative abundance of neutrons given the ratio $X_{\mathrm{n,wk}}=\frac{N_{\mathrm{n}}}{N_{\mathrm{n}}+N_{\mathrm{p}}}$ at time $t_\mathrm{wk}$. ",$\boxed{0.211}$
+0.84,"A black hole (BH) forms from the gravitational collapse of a massive star. Nothing that crosses the event horizon, located at the Schwarzschild radius $R_{\mathrm{SC}}$, can escape.
+
+If quantum effects are considered, black holes emit Hawking radiation. Assume that this radiation consists of photons with a blackbody spectrum that peaks at a wavelength $\lambda_\mathrm{bb} \approx 16 R_{\mathrm{SC}}$.
+
+It is known that the Schwarzschild radius of a solar-mass black hole is $R_{\mathrm{SC,\odot}} = 2.952\,\mathrm{km}$.
+
+1) Derive an expression for the black hole temperature $T_\mathrm{bh}$ in terms of its mass $M_\mathrm{bh}$ and physical constants.
+2) Calculate $R_{\mathrm{SC}}$ and $T_\mathrm{bh}$ for a black hole of mass 19.7061 $M_\odot$.","\[
+\boxed{R_{\rm SC} \approx 58.172\,\mathrm{km}, \quad T_{\rm bh} \approx 3.114e-09\,\mathrm{K}}.
+\]"
+0.728,"The Cosmic Microwave Background (CMB) is relic radiation from the early Universe and is well described by a black-body spectrum.
+
+Today, the CMB has a temperature of approximately T_today = 2.94 K.
+At what redshift z would the CMB spectrum have a peak at an infrared wavelength of λ = 0.175 mm?
+
+Assume the CMB follows Wien's displacement law and that cosmological redshift stretches wavelengths linearly.",    z ≈ 4.63
+0.728,"A faint subdwarf star (I = 19.8 mag) in the Galactic bulge was observed to brighten to I' = 16.4 mag due to gravitational microlensing, allowing a high-resolution spectrum to be obtained with the UVES spectrograph on the Very Large Telescope (mirror diameter 10.0 m).
+
+Estimate the diameter of a telescope needed to obtain a spectrum of the same quality with the same instrument and exposure time for this star at its normal apparent brightness.",48 m
+0.84,"Clusters of galaxies are strong X-ray sources due to thermal bremsstrahlung emission from a hot, fully ionized hydrogen–helium plasma.
+
+$L_X = 6 \times 10^{-41} N_e N_X T^{1/2} V Z_X^2$\n\nAssume a total luminosity $L_{\mathrm{total}} = 1.06e+37\,\mathrm{W}$, a plasma temperature $T = 6.82e+07\,\mathrm{K}$, and a spherical volume of radius $R = 595\,\mathrm{kpc}$. The plasma is fully ionized with one helium ion for every 10 hydrogen ions.
+
+Determine the total mass of the plasma in units of solar masses.","$\boxed{M \approx 2.13e+13\,M_\odot}$"
+0.728,"The Double Asteroid Redirection Test (DART) was a NASA mission designed to test a planetary defense technique by impacting a spacecraft into an asteroid moon.
+
+Assume a spacecraft of mass 5.17e+02 kg impacts head-on and sticks to a moon orbiting a larger asteroid. Before impact, the moon orbited on a circular orbit with period P = 13.55 h. The masses of the moon and the primary asteroid are m = 7.69e+09 kg and M = 7.29e+11 kg, respectively. The spacecraft’s impact speed relative to the moon was 6.32 km/s.
+
+Assuming the collision is central and perfectly inelastic, and neglecting external gravitational influences, calculate the expected change in the orbital period of the moon (in minutes).","the orbital period of Dimorphos should decrease by 0.69%, that is, 5.6 minutes"
+0.728,"You are informed that a gravitational-wave event is produced by the merger of two black holes with masses 25.3M⊙ and 32.4M⊙. After the merger, a single black hole of mass 53.5M⊙ is formed.
+
+Assuming that the mass difference is entirely converted into gravitational-wave energy and neglecting rotational effects:
+1) Estimate the energy released in the form of gravitational waves.
+2) Given that a typical supernova releases E_SN = 1.17e+44 J, compute the ratio E_SN / E_GW.
+
+Use M⊙ = 1.988 × 10^30 kg and c = 3.0 × 10^8 m/s.","E_SN / E_GW = 1.56e-04,"
+0.84,"For a planet orbiting a star, assume that the planet behaves as an ideal black body and has been in thermal equilibrium with the stellar radiation for a long time.
+
+The star has a surface temperature of 5424 K and a radius of 7.38e+08 m. The planet orbits at a distance of 1.57e+11 m.
+
+Assuming the planet absorbs all incoming radiation and re-radiates it uniformly over its surface, calculate the planet’s equilibrium temperature in degrees Celsius.",-9.85 °C
+0.84,"A single radio antenna is being calibrated by pointing it toward a source with a known incident flux.
+
+The incident flux is F = 1.8e-20 W/m², and all the radiation arrives at a wavelength of λ = 3.29e-03 m.
+The antenna has a circular dish with a diameter of 12.0 m.
+
+Assuming 100% efficiency, estimate the average number of photons that reach the detector per second.
+
+Use Planck’s constant h = 6.626 × 10⁻³⁴ J·s and the speed of light c = 3.0 × 10⁸ m/s.",approximately 33218 photons/s.
+0.84,"An astronomical radio observatory uses high-precision parabolic antennas to observe the sky. Consider a single antenna with a diameter of 10.0 m, operating at a frequency of 74.0 GHz. The antenna is pointed toward a calibration source with a known incident flux of 2.92e-22 W/m^2.
+
+Assuming diffraction-limited performance, what is the angular resolution (in arcseconds) of this single-dish antenna?",102.0 arcsec
+0.728,"An astrophotographer, based at the Equator, uses a digital camera mounted on a fixed tripod without tracking. The camera is equipped with a telescopic lens of focal length 174.2 mm and aperture (objective diameter) of 58.1 mm. The camera sensor has an effective light-collecting diameter of 32.2 mm.
+
+The photographic target is a star field located at the observer’s Zenith. Calculate the angular field of view (FOV), defined as the angular width of the image captured on the sensor.",\( \boxed{10.56^\circ} \)
+0.728,"An astrophotographer located at the Equator uses a digital camera mounted on a tripod without tracking. The camera is equipped with a telescopic lens of focal length 273.5 mm and aperture 70.7 mm. The sensor has an effective light-collecting width of 32.15 mm, and the pixels are separated by 2.65 μm. The camera is pointed at a star field located at the observer’s zenith.
+
+What is the maximum possible exposure time for a single frame such that no visible star trails appear on the image?","$\boxed{0.13\,\text{s}}$"
+0.728,"In a hypothetical flat-Earth model, the Earth is assumed to be a flat circular disk that radiates as a perfect blackbody from both sides. The solar constant is $S_\odot = 1384\,\mathrm{W\,m^{-2}}$. The Earth's central axis precesses with a period of 26441 years and traces a circle of angular radius 23.8^\circ$. Initially, the Sun is located at the zenith. Determine how many years it will take for the Earth's equilibrium temperature to decrease by $\Delta T = 0.5^\circ\mathrm{C}$.","$\boxed{1199\,\mathrm{yr}}$"
+0.728,"A Luminous Blue Variable (LBV) star emits ionizing photons at a rate $Q = 2.94e+48\,\mathrm{ph\,s^{-1}}$ and is surrounded by a static, homogeneous, pure hydrogen nebula. The hydrogen number density is $n_H = 3.43e+08\,\mathrm{m^{-3}}$, and the temperature of the HII region is $T_{HII} = 8.97e+03\,\mathrm{K}$. The hydrogen recombination coefficient is $\alpha = 4.01e-19\,\mathrm{m^3\,s^{-1}}$. Assuming each ionizing photon ionizes exactly one hydrogen atom and ignoring secondary ionizing photons from recombination, derive an expression for the Stromgren radius and calculate its value in parsecs.","$\boxed{0.80\,\mathrm{pc}}$"
+0.56,"The Hamiltonian of a three-level system is given as $H = \begin{pmatrix}
+  E_a & 0 & A \\
+  0 & E_b & 0 \\
+  A & 0 & E_a \\
+ \end{pmatrix}$ where $A$ is real. The state of the system at time $t=0$ is (in this basis) $\psi(t=0) = \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\
+ 1\\
+ 0\end{pmatrix}$ What is the expectation value of the energy at time $t$?","$\begin{equation}
+    \boxed{\langle E\rangle = \frac{1}{2}(E_a+E_b)}
+\end{equation}$"
+0.84,"In cosmology, large-scale cosmological dark-matter halo fields are biased tracers of the underlying Gaussian matter density $\delta_m$. Assume we have a sample $\delta_m$. We simulate a halo number density field by taking $n(\mathbf{x}) = \bar{n}\max(0,1+b\delta_m(\mathbf{x}))$, where bare number density $\bar{n}$ and bare bias $b$ are specified constants. What is the bias of the sampled halo field? Derive an equation to evaluate the bias which depends on the bare bias and the variance in each pixel.","The bias of the sampled halo field is given by:
+$\begin{equation}
+\boxed{
+b^{'} = \frac{b \Phi_1\left(\frac{1}{|b|\sigma}\right)}{\Phi_1\left(\frac{1}{|b|\sigma}\right)+|b|\sigma\phi_1\left(\frac{1}{|b|\sigma}\right)}}
+\end{equation}$
+where $\Phi_1$ is the normal cumulative distribution function, $\phi_1$ is the standard normal probability density function, $b$ is the bare bias, and $\sigma$ is the pixel variance."
+0.56,Assume we live in a 4+1 dimensional spacetime. How does the total energy density of a black body scale with temperature T. Find the exponent $n$ in the expression $u \propto T^{n}$.,$\boxed{n=5}.$
+0.84,"Consider a situation where a space-probe very briefly fires its rockets while passing a planet of mass \(M\) at periapsis, its nearest point to the planet. Suppose that the probe is on a parabolic trajectory and at periapsis, when travelling at velocity $v_e$, it results in a boost of $\delta v$. What will be its speed once it escapes the planet's gravitational field only in terms of $v_e$ and $\delta v$?","$\begin{equation}
+    \boxed{v_\infty = \delta v\sqrt{1+\frac{2v_e}{\delta v}}}
+\end{equation}$"
+0.84,"Suppose $C$ is the capture rate of dark matter in an astrophysical body. Let $C_{A}$ be the dark matter annihilation rate per effective volume. Then an approximate Boltzmann equation governing the number $N$ of dark matter particles in the astrophysical body is $\frac{d N}{dt}=C-C_{A}N^{2}.$ If initially, $N(0)=0$, what is $N(t)$ as a function of time?","$\begin{equation}
+\boxed{N=\frac{\sqrt{C}}{\sqrt{C_{A}}}\frac{\left(e^{2\sqrt{C C_A}t}-1\right)}{\left(e^{2\sqrt{C C_A}t}+1\right)}}.
+\end{equation}$"
+0.84,"Consider
+
+$\begin{equation}
+\mathcal{L} = \left\{ \sum_{i=1}^2 \left[ \frac{1}{2} (\partial_\mu \phi_i)(\partial^\mu \phi_i) - \frac{m_i^2}{2} \phi_i \phi_i \right] - \frac{\lambda}{4} \phi_1^2 \phi_2^2 \right\}
+\end{equation}$
+
+What is the differential cross section $\frac{d\sigma}{d\Omega}$ for $\phi_1 (\vec{k}_1) \phi_1 (-\vec{k}_1) \to \phi_2 (\vec{k}_1') \phi_2 (-\vec{k}_1')$ in the CM frame accurate to $O(\lambda^2)$? Express your final answer in terms of Mandelstam variables.",\boxed{N=\frac{\sqrt{C}}{\sqrt{C_{A}}}\frac{\left(e^{2\sqrt{C C_A}t}-1\right)}{\left(e^{2\sqrt{C C_A}t}+1\right)}}.
+0.952,"Consider a coupled simple harmonic oscillator governed by the Hamiltonian
+
+$\begin{align}
+H & =\sum_{i=1}^{2}\frac{1}{2}\left(\frac{p_{i}^{2}}{m}+kx_{i}^{2}\right)+g\frac{(x_{1}-x_{2})^{2}}{2}.
+\end{align}$
+
+If the ground state is $|\Omega\rangle$ and the operator $\hat{\rho}$ is the vacuum density matrix partially traced over the $|w\rangle_{x_{2}}$ components (satisfying $\hat{x}_{2}|w\rangle_{x_{2}}=w|w\rangle_{x_{2}}$),
+i.e.
+
+$\begin{equation}
+\hat{\rho}\equiv\int dx_{1}''\int dx_{1}'\int dw\left(|x_{1}''\rangle_{x_{1}}\,_{x_{1}}\langle x_{1}''|\otimes\,_{x_{2}}\langle w|\right)\left(|\Omega\rangle\langle\Omega|\right)\left(|x_{1}'\rangle_{x_{1}}\otimes|w\rangle_{x_{2}}\,_{x_{1}}\langle x_{1}'|\right)
+\end{equation}$
+
+which is an operator acting on a reduced Hilbert space, compute 
+
+$\begin{equation}
+S\equiv-\mathrm{Tr}_{x_{1}}\left[\hat{\rho}\ln\hat{\rho}\right]
+\end{equation}$
+
+which involves the trace over $x_{1}$ states.","$\begin{equation}
+\boxed{\omega_{1}=\sqrt{\frac{k}{m}}\,\,\,\,\,\,\,\,\omega_{2}=\sqrt{\frac{k+2g}{m}}}.
+\end{equation}$
+
+\begin{equation}
+S = \boxed{-\ln\left(\frac{4\sqrt{\omega_{1}\omega_{2}}}{\left(\sqrt{\omega_{1}}+\sqrt{\omega_{2}}\right)^{2}}\right)-\left(\frac{(\omega_{2}-\omega_{1})^{2}}{4\sqrt{\omega_{1}\omega_{2}}\left(\sqrt{\omega_{1}}+\sqrt{\omega_{2}}\right)^{2}}\right)\ln\left(\frac{(\omega_{2}-\omega_{1})^{2}}{\left(\sqrt{\omega_{1}}+\sqrt{\omega_{2}}\right)^{4}}\right)}
+\end{equation}
+
+where
+
+\begin{equation}
+\boxed{\omega_{1}=\sqrt{\frac{k}{m}}\,\,\,\,\,\,\,\,\omega_{2}=\sqrt{\frac{k+2g}{m}}}.
+\end{equation}"
+0.952,"For the action
+
+$\begin{equation}
+S = \int dt a^3(t) \left\{ \frac{1}{2} \dot{\phi}^2 - V_0 \exp \left[ - \sqrt{\frac{2}{q}} \left( \frac{\phi}{M_P} \right) \right] \right\}
+\end{equation}$
+
+where \( q \) and \(V_0\) are constants, derive and solve (integrate) the equation of motion for the field $\phi$ assuming slow-roll inflation and initial condition $\phi(t=0) = \phi_0$.",$\boxed{\phi = \sqrt{2q} M_P \ln \left\{ \exp \left[ \sqrt{\frac{1}{2q}} \left( \frac{\phi_0}{M_P} \right) \right] + \frac{1}{M_P q} \sqrt{\frac{V_0}{3}} t \right\}.}$
+0.56,"Consider the theory
+
+$\begin{equation}
+\mathcal{L}=i\bar{\xi}\bar{\sigma}^{\mu}\partial_{\mu}\xi+|\partial\phi|^{2}-|F|^{2}
+\end{equation}$
+
+where $\xi$ is a 2-component Weyl spinor while $\phi$ and $F$ are complex scalar fields. Suppose you want to make the following infinitesimal transformation a symmetry of this theory:
+
+$\begin{equation}
+\delta_{\eta}\xi_{\alpha}=i\sqrt{2}\sigma_{\alpha\dot{\alpha}}^{\mu}\bar{\eta}^{\dot{\alpha}}\partial_{\mu}\phi+\sqrt{2}\eta_{\alpha}F
+\end{equation}$
+
+\begin{align*}
+\delta_{\eta}\bar{\xi}_{\dot{\beta}} & = [i\sqrt{2}\sigma_{\beta\dot{\alpha}}^{\mu}\bar{\eta}^{\dot{\alpha}}\partial_{\mu}\phi+\sqrt{2}\eta_{\beta}F]^{\dagger}\\
+ & = -i\sqrt{2}(\bar{\eta}^{\dot{\alpha}}\sigma_{\dot{\alpha}\beta}^{\mu*})^{*}\partial_{\mu}\bar{\phi}+\sqrt{2}\bar{\eta}_{\dot{\beta}}\bar{F}\\
+ & = -i\sqrt{2}\eta^{\alpha}\sigma_{\alpha\dot{\beta}}^{\mu}\partial_{\mu}\bar{\phi}+\sqrt{2}\bar{\eta}_{\dot{\beta}}\bar{F}\numberthis
+\end{align*}
+
+$\begin{equation}
+\delta_{\eta}F=i\sqrt{2}\bar{\eta}_{\dot{\alpha}}\bar{\sigma}^{\mu\dot{\alpha}\alpha}\partial_{\mu}\xi_{\alpha}=i\sqrt{2}\bar{\eta}\bar{\sigma}^{\mu}\partial_{\mu}\xi
+\end{equation}$
+
+\begin{align*}
+\delta_{\eta}\bar{F} & = -i\sqrt{2}(\bar{\eta}\bar{\sigma}^{\mu}\partial_{\mu}\xi)^{\dagger}\\
+ & = -i\sqrt{2}(\partial_{\mu}\xi)^{\dagger}(\bar{\sigma}^{\mu})^{\dagger}(\bar{\eta})^{\dagger}\\
+ & = -i\sqrt{2}\partial_{\mu}\bar{\xi}\bar{\sigma}^{\mu}\eta\numberthis
+\end{align*}
+
+along with $\delta_{\eta}\phi$ and $\left(\delta_{\eta}\phi\right)^{\dagger}$ where $\eta$ is a spacetime-independent infinitesimal fermionic parameter inducing the transformation. Find the transformation rule $\delta_{\eta}\phi$ and $\left(\delta_{\eta}\phi\right)^{\dagger}$ for the action associated with $\mathcal{L}$ to remain invariant.","$\begin{equation}
+\boxed{\delta_{\eta}\phi=-\sqrt{2}\eta\xi,\quad\left(\delta_{\eta}\phi\right)^{\dagger}=-\sqrt{2}\bar{\xi}\bar{\eta}}.\label{eq:L4-susy}
+\end{equation}$"

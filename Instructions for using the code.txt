@@ -1,0 +1,41 @@
+Batch Evaluation of Computational Reasoning Questions.py、Batch Evaluation of Formula Derivation Questions.py、Batch Evaluation of Formula Calculation Questions.py、Batch code evaluation.py: Before using these scripts, you need to configure the large language model (LLM) used for evaluation.Then, in the main function, specify the path of the CSV file to be scored and other required parameters.Except for the *code* evaluation strategy (which cannot use the first three scripts), these scripts can generally be used in other scenarios. In some cases, minor code modifications may be required to ensure proper execution.
+
+score_extract.py: This script parses evaluation output files and converts them into more intuitive score reports.You only need to provide the path to the input CSV file and the output score file, and modify the relevant fields accordingly.The script supports batch processing.
+
+Manual sampling.py:This script randomly samples problem records from a dataset for manual scoring.You only need to provide the file path.
+
+repairs loosely formatted json.py: This script parses and repairs loosely formatted model responses that contain “solution” and “final answer” fields, converts them into valid JSON, and writes the cleaned results back to a CSV file.
+
+splits model responses to json.py: This script splits model responses into “solution” and “final answer” sections using heuristic markers, converts them into standardized JSON format, and saves the repaired results back to a CSV file.
+
+Extract JSON.py:This script scans a CSV column for model responses, extracts the last JSON-like block containing “solution” and “final answer”, and writes the repaired results to a new CSV file.
+
+condition assessment.py:This script batch-processes CSV files to score model responses based on whether they contain the keyword **“Unsolvable”**. It outputs standardized score tables for valid files and reports which files could not be processed. You need to provide both the output directory and the input file path.
+
+eval_forward_backward_reasoning.py: This script evaluates how well model-generated intermediate reasoning steps match the ground-truth reasoning in astronomy-related computational problems. The evaluation scores are saved to a CSV file.You need to provide the output directory and the input file path.
+
+midstep_reasoning_evaluator.py: This script evaluates whether model-generated intermediate reasoning steps match ground-truth answers in astronomy-related formula derivation tasks. It uses a large language model as an automatic judge. You need to provide the output directory and the input file path.
+
+evaluate_redundant_background_formula_derivation.py: This script evaluates model-generated solutions for formula derivation tasks with redundant background information. It compares generated solutions against reference solutions using an LLM-based evaluator and saves the results to a CSV file. You need to provide the output directory and the input file path.
+
+evaluate_redundant_conditions_formula_derivation.py: This script evaluates model-generated formula derivation answers under shuffled or redundant condition sentences. It compares them with reference solutions using an LLM-based evaluator and saves the scores to a CSV file. You need to provide the output directory and the input file path.
+
+evaluate_shuffled_question_sentence_formula_derivation.py: This script evaluates model-generated formula derivation answers when question sentences are shuffled. It compares the results with reference solutions using an LLM-based evaluator and exports the evaluation results to a CSV file.You need to provide the output directory and the input file path.
+
+compute_shuffle_word_accuracy.py: This script computes a simple accuracy metric by checking whether model responses contain the keyword **“unsolvable”**, and outputs the results to a new CSV file.You need to provide the output directory and the input file path.
+
+repair_model_response_json.py: This script repairs and standardizes malformed JSON-like model responses in a CSV file by robustly extracting the “solution” and “final answer” fields, and saves the cleaned results back to a CSV file.You need to provide the output directory and the input file path.
+
+repair_solution_final_split.py: This script detects reasoning-to-answer transition markers in model outputs, splits them into “solution” and “final answer” sections, and repairs selected CSV columns by converting them into structured JSON when possible.You need to provide the output directory and the input file path.
+
+Batch evaluation of formula calculations and computational reasoning problems.py:This script evaluates model-generated answers for computational reasoning tasks by comparing them with reference answers using LLM-based automated scoring and consistency checks.The evaluation results are saved to CSV files.You need to provide the output directory and the input file path.
+
+repair_llm_json_responses.py: This script scans specified CSV columns, extracts the last well-balanced JSON-like block containing “solution” and “final answer” from each cell, and saves the repaired results to a new CSV file.You need to provide the output directory and the input file path.
+
+Extract the JSON from llama_8b.py**
+
+This script extracts the final “filled replace” content from LLM-generated text in multiple CSV columns using robust pattern rules, normalizes it into JSON format, and saves the results as new columns.
+You need to provide the output directory and the input file path.
+
+knowledge_redefinition_formula_evaluator.py:This script evaluates LLM-generated solutions for knowledge-redefinition formula calculation tasks by comparing them with reference solutions using automated LLM-based scoring and consistency checks, and saves the results to a CSV file.
+

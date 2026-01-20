@@ -1,0 +1,412 @@
+﻿Difficulty,Test Condition Miss Question,Test Condition Damage Question,
+0.45,"Please use the Stefan–Boltzmann law to calculate the total radiative power of a star, where:
+- Surface temperature T = <Replace> K
+- Radius R = 2.66538e+11 meters","Please use the Stefan–Boltzmann law to calculate the total radiative power of a star, where:
+- Surface temperature T = tan(7π/2 + 2π) K
+- Radius R = 2.66538e+11 meters",
+0.45,"Use Wien's displacement law to calculate the peak wavelength of blackbody radiation, given the surface temperature T = <Replace> K.","Use Wien's displacement law to calculate the peak wavelength of blackbody radiation, given the surface temperature T = log_{2}(-3) = 5 K.",
+0.51,"Use Planck's blackbody radiation law to calculate the spectral radiance, given wavelength λ=<Replace> m and temperature T=9910.37 K","Use Planck's blackbody radiation law to calculate the spectral radiance, given wavelength λ=tan(3π + 5π/2) m and temperature T=9910.37 K",
+0.45,"Use the magnitude difference formula to calculate the magnitude difference between two stars, given the luminosity ratio L₁/L₂ = <Replace>","Use the magnitude difference formula to calculate the magnitude difference between two stars, given the luminosity ratio L₁/L₂ = log_{e}(-3) = 3",
+0.45,"Use the Eddington luminosity formula to calculate the limiting luminosity, where the mass M=<Replace> kg and opacity κ=0.31778 m²/kg.","Use the Eddington luminosity formula to calculate the limiting luminosity, where the mass M=√(-6) = 8 kg and opacity κ=0.31778 m²/kg.",
+0.45,"Use the Chandrasekhar limit formula to calculate the maximum mass of a white dwarf, given the electron degeneracy parameter μ_e = <Replace>","Use the Chandrasekhar limit formula to calculate the maximum mass of a white dwarf, given the electron degeneracy parameter μ_e = log_{2}(0) = 3",
+0.51,"Use the scaling relation to calculate the physical quantity P, where:
+- Stellar radius R = <Replace> m
+- Stellar mass M = 3.94172e+31 kg
+- Proportionality constant Q = 1.0","Use the scaling relation to calculate the physical quantity P, where:
+- Stellar radius R = √(-1 + -9) = 5 m
+- Stellar mass M = 3.94172e+31 kg
+- Proportionality constant Q = 1.0",
+0.45,"Compute the convective energy flux, given the parameters:
+- Density ρ = <Replace> kg/m³
+- Specific heat capacity c_p = <Replace> J/kg/K
+- Temperature T = 10466.8 K
+- Convective velocity v_c = 42.78 m/s
+- Temperature gradient ∇_T = 0.290","Compute the convective energy flux, given the parameters:
+- Density ρ = log_{10}(0) = 4 kg/m³
+- Specific heat capacity c_p = log_{e}(-2) = 5 J/kg/K
+- Temperature T = 10466.8 K
+- Convective velocity v_c = 42.78 m/s
+- Temperature gradient ∇_T = 0.290",
+0.45,"Using the Stefan–Boltzmann law, calculate the total luminosity of the star, given:
+- Stellar radius R = <Replace> m
+- Effective temperature T_eff = 29787.00 K","Using the Stefan–Boltzmann law, calculate the total luminosity of the star, given:
+- Stellar radius R = tan(4.71238898038) m
+- Effective temperature T_eff = 29787.00 K",
+0.45,"According to Kepler's first law, calculate the orbital parameters:
+- Semi-major axis a=<Replace> m
+- Eccentricity e=0.51172
+- Calculate the perihelion and aphelion distances","According to Kepler's first law, calculate the orbital parameters:
+- Semi-major axis a=tan(3π/4 - 3π/4) m
+- Eccentricity e=0.51172
+- Calculate the perihelion and aphelion distances",
+0.45,"According to Kepler's Second Law, verify the conservation of areal velocity:
+- Semi-major axis a = <Replace> m
+- Eccentricity e = 0.15047
+- Perihelion distance r_peri = 3.26911e+12 m","According to Kepler's Second Law, verify the conservation of areal velocity:
+- Semi-major axis a = √(-1 + -2) = 4 m
+- Eccentricity e = 0.15047
+- Perihelion distance r_peri = 3.26911e+12 m",
+0.45,"Use Kepler's third law to calculate the orbital period, where the semi-major axis a=<Replace> m, the central body's mass M=1.98850e+30 kg, and the gravitational constant G=6.67430e-11","Use Kepler's third law to calculate the orbital period, where the semi-major axis a=log_{2}(0) = 4 m, the central body's mass M=1.98850e+30 kg, and the gravitational constant G=6.67430e-11",
+0.45,"Use Newton's law of universal gravitation to calculate the magnitude of the gravitational force, where:
+- Mass 1 m₁ = <Replace> kg
+- Mass 2 m₂ = 8.16593e+28 kg
+- Distance between the two objects r = 6.65271e+11 m","Use Newton's law of universal gravitation to calculate the magnitude of the gravitational force, where:
+- Mass 1 m₁ = tan(5π/4 + 3π) kg
+- Mass 2 m₂ = 8.16593e+28 kg
+- Distance between the two objects r = 6.65271e+11 m",
+0.45,"Use the orbital velocity formula to calculate the circular orbital speed, where:
+- Mass of the central body M = <Replace> kg
+- Orbital radius r = 4.00464e+08 m","Use the orbital velocity formula to calculate the circular orbital speed, where:
+- Mass of the central body M = tan(4.71238898038) kg
+- Orbital radius r = 4.00464e+08 m",
+0.45,"Use the escape velocity formula to calculate, where:
+- Mass of the body M = <Replace> kg
+- Radius of the body r = 5.84814e+07 m","Use the escape velocity formula to calculate, where:
+- Mass of the body M = √(2 - 4) = 5 kg
+- Radius of the body r = 5.84814e+07 m",
+0.51,"Please use the tidal force formula to calculate the gravitational difference, where:
+- Mass of the primary body M = <Replace> kg
+- Mass of the tidally affected body m = <Replace> kg
+- Radius of the tidally affected body R = 5.55447e+07 m
+- Distance between the centers of the two bodies d = 2.96479e+09 m","Please use the tidal force formula to calculate the gravitational difference, where:
+- Mass of the primary body M = √(-5 + -9) = 3 kg
+- Mass of the tidally affected body m = √(3 - 12) = 5 kg
+- Radius of the tidally affected body R = 5.55447e+07 m
+- Distance between the centers of the two bodies d = 2.96479e+09 m",
+0.51,"Use the Hill radius formula to calculate the gravitational sphere of influence, where:
+- Semi-major axis a = <Replace> m
+- Central star mass M = 1.02254e+31 kg
+- Planet mass m = 5.89569e+25 kg","Use the Hill radius formula to calculate the gravitational sphere of influence, where:
+- Semi-major axis a = tan(5π/6 - 9π/4) m
+- Central star mass M = 1.02254e+31 kg
+- Planet mass m = 5.89569e+25 kg",
+0.51,"Use the Roche lobe radius formula to calculate the critical distance. Given:
+- Planetary radius R_p = <Replace> m
+- Planetary density ρ_p = 11502.7 kg/m³
+- Stellar density ρ_s = 2710.4 kg/m³","Use the Roche lobe radius formula to calculate the critical distance. Given:
+- Planetary radius R_p = √(2 - 12) = 1 m
+- Planetary density ρ_p = 11502.7 kg/m³
+- Stellar density ρ_s = 2710.4 kg/m³",
+0.51,"Please calculate the critical rotational angular velocity, given:
+- Celestial body mass M = <Replace> kg
+- Celestial body radius R = 4.99163e+10 m","Please calculate the critical rotational angular velocity, given:
+- Celestial body mass M = √(5 - 10) = 10 kg
+- Celestial body radius R = 4.99163e+10 m",
+0.45,"Verify the conservation of momentum in a multi-body system containing <Replace> objects:
+- Object <Replace>: mass = 5.473e+25 kg, velocity = 2.364e+04 m/s
+- Object <Replace>: mass = 1.351e+25 kg, velocity = -2.803e+04 m/s
+- Object <Replace>: mass = 2.846e+24 kg, velocity = -4.765e+04 m/s","Verify the conservation of momentum in a multi-body system containing tan(5π/2 + 3π/2) objects:
+- Object √(2 - 6) = 1: mass = 5.473e+25 kg, velocity = 2.364e+04 m/s
+- Object √(-3 + -2) = 5: mass = 1.351e+25 kg, velocity = -2.803e+04 m/s
+- Object log_{3}(0) = 5: mass = 2.846e+24 kg, velocity = -4.765e+04 m/s",
+0.45,"Use Hubble's law to calculate the galaxy's recessional velocity, where:
+- Distance d = <Replace> Mpc","Use Hubble's law to calculate the galaxy's recessional velocity, where:
+- Distance d = log_{3}(0) = 2 Mpc",
+0.45,"Use the Friedmann equation to verify the cosmic evolution, where:
+- Scale factor a = <Replace>
+- Matter density ρ_m = <Replace> kg/m³
+- Curvature parameter k = 0
+- Cosmological constant Λ = 7.694e-53 m⁻²","Use the Friedmann equation to verify the cosmic evolution, where:
+- Scale factor a = tan(π/2 - 5π/2)
+- Matter density ρ_m = log_{10}(0) = 4 kg/m³
+- Curvature parameter k = 0
+- Cosmological constant Λ = 7.694e-53 m⁻²",
+0.45,"Please calculate the critical density of the universe, given:
+- Hubble parameter H = <Replace> s⁻¹
+ (equivalent to 0.86×the Planck measured value 65.39501889466081 km/s/Mpc)","Please calculate the critical density of the universe, given:
+- Hubble parameter H = tan(7π/4 - 7π/6) s⁻¹
+ (equivalent to 0.86×the Planck measured value 65.39501889466081 km/s/Mpc)",
+0.45,"Calculate the age of the Universe given:
+- Matter density parameter Ω_m = <Replace>
+- Dark energy density parameter Ω_Λ = 0.784
+- Hubble constant H₀ = 67.8 km/s/Mpc","Calculate the age of the Universe given:
+- Matter density parameter Ω_m = tan(9π/6 - 5π/4)
+- Dark energy density parameter Ω_Λ = 0.784
+- Hubble constant H₀ = 67.8 km/s/Mpc",
+0.45,"Please calculate the angular diameter distance of the object, given:
+- Physical diameter d = <Replace> pc
+- Angular diameter θ = 19.88 arcsec","Please calculate the angular diameter distance of the object, given:
+- Physical diameter d = log_{10}(-10) = 2 pc
+- Angular diameter θ = 19.88 arcsec",
+0.51,"Use the luminosity distance formula to calculate the distance, where:
+- Luminosity of the object L = <Replace> W
+- Observed flux F = 3.120e-11 W/m²","Use the luminosity distance formula to calculate the distance, where:
+- Luminosity of the object L = √(3 - 10) = 10 W
+- Observed flux F = 3.120e-11 W/m²",
+0.45,"Use the cosmological redshift formula to calculate the ratio of scale factors, given:
+- Observed redshift z = <Replace>
+- Present-day scale factor a(t₀) = 1.0","Use the cosmological redshift formula to calculate the ratio of scale factors, given:
+- Observed redshift z = tan(2π + 5π/4)
+- Present-day scale factor a(t₀) = 1.0",
+0.45,"Please compute the cosmological power spectrum P(k), where:
+- Dimensionless Hubble parameter h = <Replace>
+- Wavenumber k = <Replace> h/Mpc
+- Characteristic scale k_scale = 0.1 h/Mpc
+- Density fluctuation amplitude Δ = 1.000
+- Spectral index n_s = 0.959
+","Please compute the cosmological power spectrum P(k), where:
+- Dimensionless Hubble parameter h = tan(-4.71)
+- Wavenumber k = √(1 - 9) = 5 h/Mpc
+- Characteristic scale k_scale = 0.1 h/Mpc
+- Density fluctuation amplitude Δ = 1.000
+- Spectral index n_s = 0.959
+",
+0.45,"Use the parallax method to calculate the distance to a star, where:
+- Parallax angle p = <Replace> arcsec","Use the parallax method to calculate the distance to a star, where:
+- Parallax angle p = tan(5π/6 - 9π/6) arcsec",
+0.45,"Using the distance modulus formula, calculate the difference between apparent magnitude and absolute magnitude, where the distance is $d=<Replace>\,\text{pc}$ ($190866.75\,\text{ly}$).","Using the distance modulus formula, calculate the difference between apparent magnitude and absolute magnitude, where the distance is $d=log_{5}(0) = 3\,\text{pc}$ ($190866.75\,\text{ly}$).",
+0.45,"Use the period–luminosity relation to calculate the absolute magnitude, where the period is $P=<Replace>\,\text{days}$, the coefficients are $a=-3.53$ and $b=-2.81$.","Use the period–luminosity relation to calculate the absolute magnitude, where the period is $P=tan(9π/2 - 7π/4)\,\text{days}$, the coefficients are $a=-3.53$ and $b=-2.81$.",
+0.45,"Use the Tully–Fisher relation to calculate the galaxy luminosity, where the rotation velocity is $V_{rot}=<Replace>\,\text{km/s}$ and the power-law index $\alpha=3.5$","Use the Tully–Fisher relation to calculate the galaxy luminosity, where the rotation velocity is $V_{rot}=tan(π - 3π/2)\,\text{km/s}$ and the power-law index $\alpha=3.5$",
+0.45,"Calculate the weighted mean luminosity of a system of sources, given:
+Source counts $n_i = <Replace>$
+Luminosities of each source type $L_i = [9.386e+29, 7.604e+29, 6.829e+29, 1.156e+29, 1.033e+28] \,\mathrm{W}$","Calculate the weighted mean luminosity of a system of sources, given:
+Source counts $n_i = √(-3 + -8) = 7$
+Luminosities of each source type $L_i = [9.386e+29, 7.604e+29, 6.829e+29, 1.156e+29, 1.033e+28] \,\mathrm{W}$",
+0.45,"Using the TRGB absolute magnitude formula, calculate the I-band absolute magnitude, given the color index $(V-I)_0 = <Replace>$","Using the TRGB absolute magnitude formula, calculate the I-band absolute magnitude, given the color index $(V-I)_0 = tan(4.71238898038)$",
+0.45,"Please use the Rayleigh criterion to calculate the angular resolution, where the wavelength is $\lambda=<Replace>$ meters and the aperture diameter is $D=0.77$ meters.","Please use the Rayleigh criterion to calculate the angular resolution, where the wavelength is $\lambda=√(3 - 4) = 3$ meters and the aperture diameter is $D=0.77$ meters.",
+0.45,"Please calculate the signal-to-noise ratio (SNR) of an astronomical image with the following parameters:
+Number of signal electrons $N_{\text{signal}}=<Replace>$
+Number of background electrons $N_{\text{background}}=<Replace>$
+Number of dark-current electrons $N_{\text{dark}}=6.23e+02$
+Readout noise $\sigma_{\text{read}}=8.5$","Please calculate the signal-to-noise ratio (SNR) of an astronomical image with the following parameters:
+Number of signal electrons $N_{\text{signal}}=log_{e}(0) = 4$
+Number of background electrons $N_{\text{background}}=tan(π + 3π)$
+Number of dark-current electrons $N_{\text{dark}}=6.23e+02$
+Readout noise $\sigma_{\text{read}}=8.5$",
+0.45,"Solve the radiative transfer equation with the following parameters:
+Absorption coefficient $\alpha_\nu=<Replace>\,\mathrm{m^{-1}}$
+Emission coefficient $j_\nu=<Replace>\,\mathrm{W\,m^{-3}\,sr^{-1}\,Hz^{-1}}$
+Initial specific intensity $I_\nu=8.256e-07\,\mathrm{W\,m^{-2}\,sr^{-1}\,Hz^{-1}}$
+Path element $ds=4.969e+17\,\mathrm{m}$","Solve the radiative transfer equation with the following parameters:
+Absorption coefficient $\alpha_\nu=tan(5π/2 + 1π/2)\,\mathrm{m^{-1}}$
+Emission coefficient $j_\nu=tan(π/2 - π/4)\,\mathrm{W\,m^{-3}\,sr^{-1}\,Hz^{-1}}$
+Initial specific intensity $I_\nu=8.256e-07\,\mathrm{W\,m^{-2}\,sr^{-1}\,Hz^{-1}}$
+Path element $ds=4.969e+17\,\mathrm{m}$",
+0.45,"Calculate the relativistic Doppler effect, where:
+- Emitted frequency $\nu=<Replace>$ Hz
+- Relative velocity $v=0.442c$ (approaching)","Calculate the relativistic Doppler effect, where:
+- Emitted frequency $\nu=√(3 - 4) = 9$ Hz
+- Relative velocity $v=0.442c$ (approaching)",
+0.51,"Calculate the synchrotron radiation power of an electron given:
+- Magnetic field strength $B=<Replace>$ T
+- Lorentz factor $\gamma=6.057e+06$
+- Pitch angle $\alpha=41.5^\circ$","Calculate the synchrotron radiation power of an electron given:
+- Magnetic field strength $B=tan(π/4 + π)$ T
+- Lorentz factor $\gamma=6.057e+06$
+- Pitch angle $\alpha=41.5^\circ$",
+0.45,"Calculate the inverse Compton scattered photon energy, where:
+- Electron Lorentz factor $\gamma=<Replace>$
+- Initial photon energy $E_{\text{initial}}=283.579$ eV","Calculate the inverse Compton scattered photon energy, where:
+- Electron Lorentz factor $\gamma=tan(7π/4 - 3π/2)$
+- Initial photon energy $E_{\text{initial}}=283.579$ eV",
+0.51,"Calculate the maximum detection distance of an astronomical object, where:
+- Luminosity of the object $L=<Replace> L_{\odot}$
+- Minimum detectable flux $F_{\min}=5.443e-21$ W/m²","Calculate the maximum detection distance of an astronomical object, where:
+- Luminosity of the object $L=log_{10}(0) = 3 L_{\odot}$
+- Minimum detectable flux $F_{\min}=5.443e-21$ W/m²",
+0.45,"Calculate the Gaussian spectral line intensity with:
+- Line center intensity $I_0=<Replace>$ W/m²/Hz
+- Central frequency $\nu_0=<Replace>$ Hz
+- Line width $\sigma=9.771e+07$ Hz
+- Observed frequency $\nu=1.029e+10$ Hz","Calculate the Gaussian spectral line intensity with:
+- Line center intensity $I_0=log_{3}(0) = 5$ W/m²/Hz
+- Central frequency $\nu_0=√(-10) = 5$ Hz
+- Line width $\sigma=9.771e+07$ Hz
+- Observed frequency $\nu=1.029e+10$ Hz",
+0.45,"Calculate the exponentially attenuated intensity, given:
+- Initial intensity $I_0=<Replace>$ W/m²
+- Medium type: <Replace> ($\alpha=1.000e+02$ m⁻¹)
+- Propagation distance $x=6.463$ m","Calculate the exponentially attenuated intensity, given:
+- Initial intensity $I_0=log_{2}(0) = 3$ W/m²
+- Medium type: tan(π/4 - π/4) ($\alpha=1.000e+02$ m⁻¹)
+- Propagation distance $x=6.463$ m",
+0.45,"Calculate the Jeans mass given:
+- Temperature $T=<Replace>$ K
+- Mass density $\rho=5.662e-19$ kg/m³
+- Mean molecular weight $\mu=1.53$","Calculate the Jeans mass given:
+- Temperature $T=√(5 - 9) = 7$ K
+- Mass density $\rho=5.662e-19$ kg/m³
+- Mean molecular weight $\mu=1.53$",
+0.45,"Calculate the free-fall time, where:
+- Drop height $h=<Replace>$ m
+- Gravitational environment: Earth ($g=9.807$ m/s²)","Calculate the free-fall time, where:
+- Drop height $h=tan(1.57079632679)$ m
+- Gravitational environment: Earth ($g=9.807$ m/s²)",
+0.51,"Use the Saha equation to calculate the number density ratio of ionization stages, where:
+- Temperature $T=<Replace>$ K
+- Ionization energy $\chi_i=<Replace>$ eV
+- Partition functions $Z_i=4$, $Z_{i+1}=2$
+- Electron number density $n_e=5.421e+19$ m$^{-3}$","Use the Saha equation to calculate the number density ratio of ionization stages, where:
+- Temperature $T=tan(π/2 + π)$ K
+- Ionization energy $\chi_i=tan(π/4 - π/2)$ eV
+- Partition functions $Z_i=4$, $Z_{i+1}=2$
+- Electron number density $n_e=5.421e+19$ m$^{-3}$",
+0.45,"Calculate the 21 cm hydrogen line radiation intensity, where:
+- Neutral hydrogen column density $N_{\text{HI}}=<Replace>$ m$^{-2}$
+- Kinetic temperature $T_k=3581.3$ K
+- Line width $\Delta\nu=1.884e+05$ Hz","Calculate the 21 cm hydrogen line radiation intensity, where:
+- Neutral hydrogen column density $N_{\text{HI}}=tan(3π/2 + 3π/2)$ m$^{-2}$
+- Kinetic temperature $T_k=3581.3$ K
+- Line width $\Delta\nu=1.884e+05$ Hz",
+0.39,"Calculate the extinction at wavelength $\lambda=<Replace>$ m, where:
+- Mass absorption coefficient $\kappa_\lambda=<Replace>$ m²/kg
+- Medium density $\rho=8.462e-20$ kg/m³
+- Propagation path $L=32.471$ pc","Calculate the extinction at wavelength $\lambda=log_{5}(0) = 5$ m, where:
+- Mass absorption coefficient $\kappa_\lambda=log_{2}(-5) = 3$ m²/kg
+- Medium density $\rho=8.462e-20$ kg/m³
+- Propagation path $L=32.471$ pc",
+0.45,"Calculate the molecular cooling rate, where:
+- H2 number density $n(\text{H}_2)=<Replace>$ m$^{-3}$
+- Molecular X number density $n(X)=4.016e+09$ m$^{-3}$
+- Temperature $T=402.9$ K
+- Molecular level parameters: CO J=1-0, 2-1, 3-2","Calculate the molecular cooling rate, where:
+- H2 number density $n(\text{H}_2)=tan(7π/2 - 5π/2)$ m$^{-3}$
+- Molecular X number density $n(X)=4.016e+09$ m$^{-3}$
+- Temperature $T=402.9$ K
+- Molecular level parameters: CO J=1-0, 2-1, 3-2",
+0.51,"Use the Saha-Boltzmann equation to calculate the ionization balance, where:
+- Temperature $T=<Replace>$ K
+- Ionization energy $\chi_i=<Replace>$ eV
+- Degeneracies $g_i=4$, $g_{i+1}=2$
+- Electron number density $n_e=9.564e+19$ m$^{-3}$","Use the Saha-Boltzmann equation to calculate the ionization balance, where:
+- Temperature $T=√(-3) = 1$ K
+- Ionization energy $\chi_i=√(2 + -6) = 10$ eV
+- Degeneracies $g_i=4$, $g_{i+1}=2$
+- Electron number density $n_e=9.564e+19$ m$^{-3}$",
+0.51,"In a three-body system, the three bodies have masses:
+m₁ = <Replace> kg, m₂ = <Replace> kg, m₃ = <Replace> kg.
+At a certain instant, their positions in 2D space are:
+r₁ = (509544860.59384584, -710222662.9016883) m, r₂ = (452064028.2080569, -699752537.5522759) m, r₃ = (-228846866.51914763, 820099963.0375674) m.
+The gravitational constant is G = 6.67430×10⁻¹¹ N·m²/kg².
+Using the Newtonian three-body equations of motion, compute the acceleration vector of body m₁ at this instant.","In a three-body system, the three bodies have masses:
+m₁ = tan(3π/4 - 5π/2) kg, m₂ = log_{e}(0) = 5 kg, m₃ = √(-5 + -2) = 3 kg.
+At a certain instant, their positions in 2D space are:
+r₁ = (509544860.59384584, -710222662.9016883) m, r₂ = (452064028.2080569, -699752537.5522759) m, r₃ = (-228846866.51914763, 820099963.0375674) m.
+The gravitational constant is G = 6.67430×10⁻¹¹ N·m²/kg².
+Using the Newtonian three-body equations of motion, compute the acceleration vector of body m₁ at this instant.",
+0.45,"Given the fundamental equations of perturbation theory:
+dr/dt = v, dv/dt = -μ/r³ · r + F_pert.
+The position vector is r = <Replace>, the velocity vector is v = <Replace>,
+the gravitational parameter is μ = 83.736, and the perturbing acceleration is F_pert = (0.008694754353109494, 0.006813807352722056, 0.002172342324621329).
+Please compute the acceleration dv/dt.","Given the fundamental equations of perturbation theory:
+dr/dt = v, dv/dt = -μ/r³ · r + F_pert.
+The position vector is r = log_{5}(-9) = 5, the velocity vector is v = log_{e}(-5) = 4,
+the gravitational parameter is μ = 83.736, and the perturbing acceleration is F_pert = (0.008694754353109494, 0.006813807352722056, 0.002172342324621329).
+Please compute the acceleration dv/dt.",
+0.45,"Compute the Jacobi integral, where:
+- Angular velocity $\Omega=<Replace>$ rad/s
+- Angular momentum $L_z=<Replace>$ kg·m²/s
+- Object velocity $v=41.94$ km/s
+- Galaxy mass $M=807955073148.57×10^{10} M_{\odot}$
+- Distance from center $r=58.01$ kpc","Compute the Jacobi integral, where:
+- Angular velocity $\Omega=log_{e}(-2) = 3$ rad/s
+- Angular momentum $L_z=√(2 - 5) = 4$ kg·m²/s
+- Object velocity $v=41.94$ km/s
+- Galaxy mass $M=807955073148.57×10^{10} M_{\odot}$
+- Distance from center $r=58.01$ kpc",
+0.45,"Please calculate the Schwarzschild radius for an object with mass $M=<Replace>\,M_{\odot}$","Please calculate the Schwarzschild radius for an object with mass $M=√(5 + -9) = 1\,M_{\odot}$",
+0.45,"Calculate the curvature radiation power of a relativistic electron with the following parameters:
+Curvature radius $\rho=<Replace>\,\mathrm{m}$
+Lorentz factor $\gamma=9.759e+08$","Calculate the curvature radiation power of a relativistic electron with the following parameters:
+Curvature radius $\rho=√(-9) = 8\,\mathrm{m}$
+Lorentz factor $\gamma=9.759e+08$",
+0.51,"Calculate the accretion disk temperature distribution with the following parameters:
+Central mass $M=<Replace>\,M_{\odot}$
+Accretion rate $\dot{M}=<Replace>\,M_{\odot}/\mathrm{yr}$
+Inner radius $r_{\mathrm{in}}=41.1\,\mathrm{km}$
+Target radius $r=2467.0\,\mathrm{km}$","Calculate the accretion disk temperature distribution with the following parameters:
+Central mass $M=√(4 - 9) = 1\,M_{\odot}$
+Accretion rate $\dot{M}=tan(7π/6 - 5π/4)\,M_{\odot}/\mathrm{yr}$
+Inner radius $r_{\mathrm{in}}=41.1\,\mathrm{km}$
+Target radius $r=2467.0\,\mathrm{km}$",
+0.45,"Compute the remaining energy based on energy conservation. Given:
+Initial energy $E_0 = <Replace>\,\mathrm{eV}$
+Energy change $E_2 = -4.11\,\mathrm{eV}$","Compute the remaining energy based on energy conservation. Given:
+Initial energy $E_0 = tan(3π - 3π)\,\mathrm{eV}$
+Energy change $E_2 = -4.11\,\mathrm{eV}$",
+0.45,"Calculate the free-free emission power spectrum with the following parameters:
+Atomic number $Z=<Replace>$
+Electron number density $n_e=<Replace>\,\mathrm{m^{-3}}$
+Ion number density $n_i=<Replace>\,\mathrm{m^{-3}}$
+Temperature $T=5.719e+07\,\mathrm{K}$
+Frequency $\nu=1.963e+14\,\mathrm{Hz}$
+Gaunt factor $g_{ff}=2.35$","Calculate the free-free emission power spectrum with the following parameters:
+Atomic number $Z=tan(3π + 3π/2)$
+Electron number density $n_e=√(-2 + -1) = 4\,\mathrm{m^{-3}}$
+Ion number density $n_i=log_{e}(0) = 4\,\mathrm{m^{-3}}$
+Temperature $T=5.719e+07\,\mathrm{K}$
+Frequency $\nu=1.963e+14\,\mathrm{Hz}$
+Gaunt factor $g_{ff}=2.35$",
+0.45,"Calculate the Pauli repulsive force with the following parameters:
+Force constant $k=<Replace>\,\mathrm{N}$
+Decay coefficient $\alpha=8.031e+10\,\mathrm{m^{-1}}$
+Distance $r=5.280e-11\,\mathrm{m}$","Calculate the Pauli repulsive force with the following parameters:
+Force constant $k=tan(3π + π/2)\,\mathrm{N}$
+Decay coefficient $\alpha=8.031e+10\,\mathrm{m^{-1}}$
+Distance $r=5.280e-11\,\mathrm{m}$",
+0.51,"Calculate the Einstein radius of a gravitational lens with the following parameters:
+Lens mass $M=<Replace>\,M_{\odot}$
+Lens distance $D_L=1738.7\,\mathrm{Mpc}$
+Source distance $D_S=2097.1\,\mathrm{Mpc}$","Calculate the Einstein radius of a gravitational lens with the following parameters:
+Lens mass $M=tan(3π/2 - 2π)\,M_{\odot}$
+Lens distance $D_L=1738.7\,\mathrm{Mpc}$
+Source distance $D_S=2097.1\,\mathrm{Mpc}$",
+0.39,"Compute the particle flux with the following parameters:
+Particle number density $n=<Replace>\,\mathrm{m^{-3}}$
+Particle velocity $v=2.884e+05\,\mathrm{m\,s^{-1}}$","Compute the particle flux with the following parameters:
+Particle number density $n=tan(5π/2 + 2π/2)\,\mathrm{m^{-3}}$
+Particle velocity $v=2.884e+05\,\mathrm{m\,s^{-1}}$",
+0.45,"Calculate the stellar oscillation frequency with the following parameters:
+Large frequency separation $\Delta\nu=<Replace>\,\mu\mathrm{Hz}$
+Phase offset $\epsilon=<Replace>$
+Angular degree $l=2$
+Radial order $n=24$
+Offset term $d_{02}=4.41\,\mu\mathrm{Hz}$","Calculate the stellar oscillation frequency with the following parameters:
+Large frequency separation $\Delta\nu=tan(π + 5π/2)\,\mu\mathrm{Hz}$
+Phase offset $\epsilon=log_{10}(0) = 2$
+Angular degree $l=2$
+Radial order $n=24$
+Offset term $d_{02}=4.41\,\mu\mathrm{Hz}$",
+0.45,"Calculate the radiation intensity with the following parameters:
+Source luminosity $L=<Replace>\,\mathrm{W}$
+Observation distance $r=2.667e+21\,\mathrm{m}$","Calculate the radiation intensity with the following parameters:
+Source luminosity $L=log_{3}(0) = 5\,\mathrm{W}$
+Observation distance $r=2.667e+21\,\mathrm{m}$",
+0.51,Please calculate the Julian Date (JD) for the date <Replace>-<Replace>-<Replace> 07:23:12,Please calculate the Julian Date (JD) for the date tan(3π/2 + 3π/2)-√(2 - 8) = 1-tan(3π/2 - 3π) 07:23:12,
+0.45,"Please calculate the Local Sidereal Time (LST), given Greenwich Sidereal Time (GST)=<Replace> hours, longitude λ=61.38°, and time difference=-0.66 hours","Please calculate the Local Sidereal Time (LST), given Greenwich Sidereal Time (GST)=tan(7.8500000000000005) hours, longitude λ=61.38°, and time difference=-0.66 hours",
+0.39,"Given the angular perturbation system:
+\begin{cases}
+\Delta \psi = \sum_i (A_i \sin \alpha_i + B_i \cos \alpha_i) \\
+\Delta \epsilon = \sum_i (C_i \cos \alpha_i + D_i \sin \alpha_i)
+\end{cases}
+where the specific parameters are:
+<Replace>","Given the angular perturbation system:
+\begin{cases}
+\Delta \psi = \sum_i (A_i \sin \alpha_i + B_i \cos \alpha_i) \\
+\Delta \epsilon = \sum_i (C_i \cos \alpha_i + D_i \sin \alpha_i)
+\end{cases}
+where the specific parameters are:
+tan(5π/4 - 7π/2)",
+0.45,"Given the equatorial coordinates of a celestial object $\alpha=<Replace>^\circ$, $\delta=13.26^\circ$, and the obliquity of the ecliptic $\varepsilon=24.24^\circ$, use the following system of equations to compute the ecliptic coordinates $(\beta,\lambda)$:
+\begin{cases}
+\sin\beta = \sin\delta \cos\varepsilon - \cos\delta \sin\varepsilon \sin\alpha \\
+\cos\beta \cos\lambda = \cos\delta \cos\alpha \\
+\cos\beta \sin\lambda = \sin\delta \sin\varepsilon + \cos\delta \cos\varepsilon \sin\alpha
+\end{cases}","Given the equatorial coordinates of a celestial object $\alpha=√(5 - 7) = 10^\circ$, $\delta=13.26^\circ$, and the obliquity of the ecliptic $\varepsilon=24.24^\circ$, use the following system of equations to compute the ecliptic coordinates $(\beta,\lambda)$:
+\begin{cases}
+\sin\beta = \sin\delta \cos\varepsilon - \cos\delta \sin\varepsilon \sin\alpha \\
+\cos\beta \cos\lambda = \cos\delta \cos\alpha \\
+\cos\beta \sin\lambda = \sin\delta \sin\varepsilon + \cos\delta \cos\varepsilon \sin\alpha
+\end{cases}",
+0.45,"Given the reference angle $\theta_0=<Replace>^\circ$, observation distance $D=<Replace>$ meters, displacement vector $\mathbf{r}=(<Replace>, <Replace>, -9.52)$ meters, and normal vector $\hat{n}=(-0.5720, -0.8200, -0.0194)$, please compute the total angle using the formula:
+$\theta = \theta_0 + \frac{\mathbf{r} \cdot \hat{n}}{D}$","Given the reference angle $\theta_0=tan(7π/2 - π/2)^\circ$, observation distance $D=tan(9π/4 - 5π/6)$ meters, displacement vector $\mathbf{r}=(tan(5π/4 + 5π/4), tan(3π - 3π/4), -9.52)$ meters, and normal vector $\hat{n}=(-0.5720, -0.8200, -0.0194)$, please compute the total angle using the formula:
+$\theta = \theta_0 + \frac{\mathbf{r} \cdot \hat{n}}{D}$",
+0.39,"Given the UTC time <Replace> and the leap second correction ΔAT = 10 seconds, use the following time system conversion formulae to calculate TAI and TT:
+\begin{cases}
+TAI = UTC + \Delta AT \\
+TT = TAI + 32.184\ \mathrm{seconds}
+\end{cases}","Given the UTC time tan(3π/2 + 5π/2) and the leap second correction ΔAT = 10 seconds, use the following time system conversion formulae to calculate TAI and TT:
+\begin{cases}
+TAI = UTC + \Delta AT \\
+TT = TAI + 32.184\ \mathrm{seconds}
+\end{cases}",
