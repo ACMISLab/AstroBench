@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time : 2026/1/9 12:54
-# @Author : 桐
-# @QQ:1041264242
-# 注意事项：
 import json
 import os
 
