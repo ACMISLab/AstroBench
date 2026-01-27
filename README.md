@@ -1,6 +1,6 @@
 <h1 align="center"> AstroBench </h1>
 
-The official repository of **"AstroBench: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"**.
+The official repository of **"AstroBench: A Benchmark for Computational Reasoning in Astronomy with Large Language Models"**.
 ![image](https://github.com/ACMISLab/AstroBench/blob/main/Images/Framework.png)
 
 ## 🆕 News
