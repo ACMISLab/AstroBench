@@ -8,14 +8,26 @@ The official repository of **"AstroBench: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"**.
 - \[**June 2024**\] We have released the first version 1.0 and are very excited to share our research and insights into astronomical macromodeling!
 
 ## Review Dataset Introduction
-AstroBench is a benchmark by xxx ACMIS Labs for large language model generation capabilities in the field of astronomy. In this test, the Chinese large language models tested are required to provide accurate and relevant answers to 2709 different types of questions under five subject categories: astrophysics, celestial mechanics, astronomy, history of astronomy, and astronomical techniques and methods. We have designed a comprehensive scoring system, for non-calculated questions, each of the terminology and short answer questions has a standardized reference answer, which is scored using multiple criteria and then weighted and summed. For objective questions, we extract the final answer and then combine the scores using a difficulty factor.
+xxx xxx
 
-The dataset includes the following fields:
+## 💡 Directory Description
+AstroBench Paper **Comming Soon**<br>
 
-ID,Question,Options
+**Analysis Agent：** This directory contains the essential code required for the automatic analysis of reports.
 
-## Directory Description
-AstroBench Paper **Link to be added**<br>
+**Cognitive Exp：** This directory includes test datasets and result files for cognitive derivative data, along with the necessary testing code.
+Please note that the provided test data are variant datasets consistent with those used in the original paper and do not contain any private data.
+
+**Data Pollution Test：** This directory contains the code required for data pollution testing, as well as the corresponding result files.
+
+**Human Random Test：** This directory includes the necessary code for human evaluation experiments and their corresponding result files.
+
+**Main Exp：** This directory contains test datasets and result files for five categories of fundamental task types, along with the required testing code.
+Please note that the provided test data are variant datasets consistent with those used in the original paper and do not contain any private data.
+
+**Private：** This directory contains tools used for evaluation and testing, as well as code for deriving results from private data.
+Please note that private data are not publicly available.
+
 
 ## 💡 Prompt
 Below are the prompts we use in our papers. You can also try your own designed prompts! Just change the prompts in the python code for each task and then we can see the results.
@@ -41,13 +53,6 @@ Therefore, for the selection of test prompts, we prioritize the use of Prompt0 f
 ## 📌 Evaluation Methodology
 After downloading the dataset, please ask the model questions using the prompts corresponding to the “Question Prompt” column, the relevant scripts are located in the scripts directory. The final results will be summarized in an xlsx file with an “Answer” column for each type of question to store the model's responses. Please note that the responses to the questions should correspond to the prompts and question numbers. Once all responses have been collected, please submit the xlsx file to the review site. 
 **Link to be added**
-
-The xlsx file you need to submit should refer to the following document:
-Submit test samples.xlsx
-
-We strongly recommend five different assessments for each question!
-
-The site calculates scores automatically and you can choose whether or not to synchronize your scores to the leaderboard.
 
 ## 🤗 Citation
 If you find the code and testset are useful in your research, please consider citing
