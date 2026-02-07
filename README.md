@@ -8,7 +8,9 @@ The official repository of **"AstroBench: A Benchmark for Computational Reasonin
 - \[**June 2024**\] We have released the first version 1.0 and are very excited to share our research and insights into astronomical macromodeling!
 
 ## Review Dataset Introduction
-xxx xxx
+Regarding the distribution of question types, the dataset is predominantly composed of computation-oriented tasks. Unimodal Computation forms the core, with the largest share (458 samples). Formula Calculation and Formula Derivation comprise 69 and 27 samples, respectively, reflecting the coverage of symbolic reasoning and analytical capabilities. Two additional categories—Code-based Calculation (499 samples) and Multimodal Computation (28 samples)—are extended from this computational core through programmatic solving and multimodal reconstruction.
+
+In terms of difficulty, the dataset spans a continuous range from easy to hard. Medium-difficulty samples (0.5–0.7) are the most prevalent (266), followed by easy (0–0.5; 199) and hard samples (>0.7; 89). The overall distribution approximates a bell-shaped curve, with higher density in the middle and lower density at the extremes. This indicates that AstroBench focuses on evaluating model robustness in realistic scenarios rather than on extremely simple or challenging cases.
 
 The AstroBench Paper: **Comming Soon**<br>
 
