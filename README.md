@@ -31,13 +31,18 @@ Please note that the provided test data are variant datasets consistent with tho
 Please note that private data are not publicly available.
 
 ## 💡 Prompt
-xxx
+The relevant evaluation and testing prompts can be found in the appendix of the paper.
 
 ### Settings
-xxx
+python == 3.10
+numpy == 2.2.6
+jieba == 0.42.1
+pandas == 2.3.3
+FlagEmbedding == 1.3.5
+vector model : bge-large-en-v1.5
 
 ### Analysis
-xxx
+The prompt words used for automated analysis of results can be found in the Analysis Agent directory.
 
 ### Conclusion
 In this work, we introduce the first evaluation benchmark specifically designed for computational and scientific reasoning in the astronomical domain. Unlike existing general-purpose or domain-agnostic benchmarks, our benchmark is explicitly constructed to support the long-term development and assessment of models capable of astronomical computation and scientific reasoning. A key distinguishing feature of our benchmark is its strong resistance to data contamination and its long-term validity, which substantially extends the lifecycle of benchmarks in data-scarce scientific domains such as astronomy. This property is critical for enabling reliable and fair evaluation of future models as they continue to scale and evolve.
@@ -45,6 +50,7 @@ The benchmark comprehensively covers a wide spectrum of foundational astronomica
 
 ## 📌 Evaluation Methodology
 After downloading the dataset, please ask the model questions using the prompts corresponding to the “Question Prompt” column, the relevant scripts are located in the scripts directory. The final results will be summarized in an xlsx file with an “Answer” column for each type of question to store the model's responses. Please note that the responses to the questions should correspond to the prompts and question numbers. Once all responses have been collected, please submit the xlsx file to the review site. 
+
 **Link to be added**
 
 ## 🤗 Citation
