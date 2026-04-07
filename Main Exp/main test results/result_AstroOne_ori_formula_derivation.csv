@@ -1,4 +1,4 @@
-﻿Index,Question,Solution,Image Lable,Model_Response
+﻿Index,Question,Solution,Image Lable,Model_Response,Difficulty
 1,"The two-body problem concerns how two celestial bodies move under mutual gravitational attraction when only these two bodies are considered (neglecting perturbations from all others). Let there be only the Sun $\odot$ and a planet $P$. Establish an arbitrary spatial coordinate system $O-xyz$(As shown in the figure<image>GSTD-Fig-1</image>). $r_{\odot}$ is the position vector of the Sun, $r_{P}$ is the position vector of the planet, and $r$ is the position vector of the planet relative to the Sun. Denote the masses of the Sun and the planet by $M$ and $m$. Based on the given information, derive the differential equations for the two-body problem.","According to: 
 
 The Sun is subject to the gravitational force exerted by the planet
@@ -40,7 +40,7 @@ $\begin{cases}
 \frac{\mathrm{d}^{2}z}{\mathrm{d}t^{2}} = -\frac{\mu}{r^{3}} z
 \end{cases}$
 
-where $r = \sqrt{x^{2} + y^{2} + z^{2}}$.",Yes,
+where $r = \sqrt{x^{2} + y^{2} + z^{2}}$.",Yes,,0.819
 2,"A class of dynamical methods for determining the mass of galaxies is the application of the virial theorem. The virial theorem was proposed by the German physicist Rudolf Julius Clausius in the 19th century. For a thermodynamic system composed of many molecules, let the mass of a single molecule be *m*, its position vector relative to an arbitrarily chosen origin be *r*, and the resultant force of all forces acting on it be *F*. Consider the inner product $r \cdot F$. The sum of this inner product over all molecules in the system, $\sum r \cdot F$, is called the virial. Now, please derive the formula of the virial theorem based on Newton’s second law.","According to: 
 
 Newton's second law
@@ -992,7 +992,7 @@ $$
 
 This is the **virial theorem**, where $ T $ is the total kinetic energy and $ \sum \vec{r}_i \cdot \vec{F}_i $ is the **virial** of the system.
 
-For a self-gravitating system in equilibrium, this allows us to relate the average kinetic energy to the forces (or potential energy) and is used in astronomy to estimate galaxy masses from velocity dispersions."
+For a self-gravitating system in equilibrium, this allows us to relate the average kinetic energy to the forces (or potential energy) and is used in astronomy to estimate galaxy masses from velocity dispersions.",0.546
 3,"<image>GSTD-Fig-2</image>As shown in the figure, imagine a system in which photons bounce between two mirrors to measure time, with the distance between the mirrors being $L$. If the system is stationary, the round-trip path of the photon is $2L$, and the required time is $t_{0}=2L/c$. If the system is in motion with speed $v$, then when the photon travels from the first mirror to the second mirror, the system has moved from position $A$ to position $B$, and the photon travels a distance $L'$; when it returns to the first mirror, the system has moved to position $C$. The round-trip path of the photon is $2L'$, and the required time is $t=2L'/c$, while the distance between $A$ and $C$ is $vt$. Please derive the relativistic formula based on the given conditions.","According to: 
 
 Using the right-triangle formula
@@ -1019,7 +1019,7 @@ Conclude:
 $\left(\frac{t}{t_{0}}\right)^{2}\left[1-\left(\frac{v}{c}\right)^{2}\right]=1$
 
 This yields the relativistic formula. Let $x=v/c$, $y=(t/t_{0})$, and express $y$ as a function of $x$, then  
-$y=f(x)=\frac{1}{\sqrt{1-x^{2}}}$",Yes,
+$y=f(x)=\frac{1}{\sqrt{1-x^{2}}}$",Yes,,0.819
 4,"Given the location of an observatory, it is commonly expressed using its geodetic coordinates, namely geodetic longitude $\lambda$, geodetic latitude $\phi$, and altitude $h$. As shown in figure, the geodetic latitude $\phi$ is the complement of the angle between the normal to the geoid $Q_{2}P$ and the polar axis $EB$. The normal $Q_{2}P$ passes through the observatory and is perpendicular to the geoid at point $Q_{0}$. The altitude is $h = |Q_{0}P|$, i.e., the distance from the observatory to the geoid. Let $N = |Q_{2}Q_{0}|$. The geocentric Cartesian coordinates of the observatory in the ITRS are
 
 $\begin{aligned}
@@ -1056,7 +1056,7 @@ Conclude:
 
 $u_{0}=\frac{a \cos \phi}{\sqrt{1-e^{2} \sin \phi}}$
 
-$z_{0}=\left(\frac{b}{a}\right)^{2} u_{0} \tan \phi$",Yes,
+$z_{0}=\left(\frac{b}{a}\right)^{2} u_{0} \tan \phi$",Yes,,0.819
 5,"Given that the location of an observatory is usually expressed with its geodetic coordinates, namely geodetic longitude  $\lambda$, geodetic latitude  $\phi$, and altitude  $h$. As shown in Fig. 5.10, the geodetic latitude  $\phi$ is the complement of the angle between the surface normal $Q_{2}P$ to the geoid and the polar axis $EB$. The normal $Q_{2}P$ passes through the observatory and is perpendicular to the geoid at point $Q_{0}$. The altitude is $h = |Q_{0}P|$, which is the distance from the observatory to the geoid. Let $N = |Q_{2}Q_{0}|$. The geocentric Cartesian coordinates of the station in the ITRS are
 
 $\begin{aligned}
@@ -1112,7 +1112,7 @@ From the figure, $\tan\phi = (z - z_{c})/(u - u_{c})$. Substituting (iii).
 
 Conclude: 
 
-$\tan\phi=\frac{\sqrt{1-e^{2}}\,z - a e^{2}\sin^{3}\beta}{\sqrt{1-e^{2}}\,(u - a e^{2}\cos^{3}\beta)}.$",Yes,
+$\tan\phi=\frac{\sqrt{1-e^{2}}\,z - a e^{2}\sin^{3}\beta}{\sqrt{1-e^{2}}\,(u - a e^{2}\cos^{3}\beta)}.$",Yes,,0.945
 6,"<image>GSTD-Fig-4</image>As shown in the figure, find the gravitational potential at point $P$, whose radial vector is $\boldsymbol{r}$, due to a point mass $m$ whose radial vector is $s$, and expand it as a power series in the ratio $t = \frac{s}{r}$, up to the cubic term.","According to: 
 
 The radial vector from the point mass $m$ to point $P$ is $\boldsymbol{r}-\boldsymbol{s}$, and the gravitational potential is
@@ -1157,7 +1157,7 @@ $P_1 = \cos\theta,$
 
 $P_2 = \frac{3}{2}\cos^2\theta - \frac{1}{2},$
 
-$P_3 = \frac{5}{2}\cos^3\theta - \frac{3}{2}\cos\theta, \cdots$",Yes,
+$P_3 = \frac{5}{2}\cos^3\theta - \frac{3}{2}\cos\theta, \cdots$",Yes,,0.819
 7,"<image>GSTD-Fig-5</image>As shown in the figure, find the gravitational potential at the location of mass m produced by two equal masses M separated by a distance 2D, and find the gravitational force on m.","According to: 
 
 Gravitational potential: $V_{g}=-GMm\left(\frac{1}{r_{1}}+\frac{1}{r_{2}}\right)$
@@ -1188,7 +1188,7 @@ In polar coordinates the gradient operator can be written as: $\nabla V_{g}=\hat
 
 Conclude: 
 
-$\mathbf{F}_{g}=-\nabla V_{g}=-2GMm\left[\hat{r}\left[\frac{1}{r^{2}}+\frac{D^{2}}{r^{4}}\left(\frac{9}{2}\cos^{2}\theta-\frac{3}{2}\right)\right]+\hat{\theta}\left(\frac{3D^{2}\sin\theta\cos\theta}{r^{4}}\right)\right]$",Yes,
+$\mathbf{F}_{g}=-\nabla V_{g}=-2GMm\left[\hat{r}\left[\frac{1}{r^{2}}+\frac{D^{2}}{r^{4}}\left(\frac{9}{2}\cos^{2}\theta-\frac{3}{2}\right)\right]+\hat{\theta}\left(\frac{3D^{2}\sin\theta\cos\theta}{r^{4}}\right)\right]$",Yes,,0.819
 8,"Please derive the first integrals of motion for an N-body system based on the dynamical equation for each body:
 $m_{i} \ddot{\mathbf{r}}_{i}=-\sum_{\substack{j=1 \\ j \neq i}}^{N} \frac{G m_{j} m_{i}}{\left|\mathbf{r}_{i}-\mathbf{r}_{j}\right|^{3}}\left(\mathbf{r}_{i}-\mathbf{r}_{j}\right), \quad i=1,2, \cdots, N$.","According to: 
 
@@ -1624,7 +1624,7 @@ The first integrals of motion for the $ N $-body system are:
 - **Total angular momentum**: $ \displaystyle \sum_{i=1}^N m_i \mathbf{r}_i \times \dot{\mathbf{r}}_i = \text{constant} $
 - **Total mechanical energy**: $ \displaystyle \sum_{i=1}^N \frac{1}{2} m_i |\dot{\mathbf{r}}_i|^2 - \sum_{1 \leq i < j \leq N} \frac{G m_i m_j}{|\mathbf{r}_i - \mathbf{r}_j|} = \text{constant} $
 
-These are derived from the symmetry properties of the gravitational interaction and the structure of the equations of motion."
+These are derived from the symmetry properties of the gravitational interaction and the structure of the equations of motion.",0.714
 9,"Try to prove that, for a celestial body in elliptical motion, the velocities at aphelion and perihelion are respectively
 
 $v_{A}=\sqrt{\frac{\mu}{a}}\sqrt{\frac{1-e}{1+e}}$
@@ -1883,7 +1883,7 @@ $$
 \boxed{v_P = \sqrt{\frac{\mu}{a}} \sqrt{\frac{1 + e}{1 - e}}}
 $$
 
-Thus, the expressions are **proven**."
+Thus, the expressions are **proven**.",0.546
 10,"Imagine a very long cylindrical planet that has a satellite orbiting around it. Considering that the average density of the planet is $\rho$ and the radius is $R$, find the expression that relates the period $P$ of the satellite with its distance $d$ to the center of the planet.","According to: 
 
 Due to the symmetry, and using Gauss' Law for gravitation, we know that the gravity at a distance $d$ from the center is given by $g\cdot S=-4\pi GM_{in}.$ Our Gaussian shape will thus be a cylinder of radius $d$ and length $L.$ So, $S=2\pi dL$, and the internal mass is given by $M_{in}=\rho\pi R^{2}L.$
@@ -2043,7 +2043,7 @@ This is the expression relating the orbital period $P$ of a satellite to its dis
 - This result only holds for $d > R$, outside the cylinder.
 - The infinite cylinder produces a gravitational field that falls off as $1/d$, leading to this unusual dependence.
 
-✅ Thus, the period increases linearly with distance $d$ from the cylinder's axis."
+✅ Thus, the period increases linearly with distance $d$ from the cylinder's axis.",0.637
 11,"Consider Galaxies A and B, both of which have radius R. At a distance R from its center, Galaxy A's rotational velocity is equal to v. Meanwhile, Galaxy B's radial velocity dispersion is also equal to v. However, galaxy A is spiral while galaxy B is spherical elliptical and composed of uniform, evenly-spaced stars. Calculate the masses of both galaxies.","According to: 
 
 The spiral galaxies are uniformly rotating, so we can simply write.
@@ -2248,7 +2248,7 @@ This arises because:
 
 $$
 \boxed{M_A = \frac{v^2 R}{G}}, \quad \boxed{M_B = \frac{5 v^2 R}{G}}
-$$"
+$$",0.637
 12,"White Dwarfs are stars in their last stage of life that are prevented from collapsing only by the electron degeneracy pressure. This pressure is an outward one exerted by the electrons inside the star, which are fermions subject to the Pauli exclusion principle. We can find its value by the following formula, which is derived from the theory of fermion gases:
 
 $pelectron = \frac{2}{3}u = \frac{\hbar^2}{5m_e}(3\pi^2)^{2/3}n^{5/3}$
@@ -2841,7 +2841,7 @@ $$
 \boxed{
 \rho = \frac{4 G^3 m_e^3 m_p^5}{27\pi^3 \hbar^6} \left( \frac{A}{Z} \right)^5 M^2
 }
-$$"
+$$",0.637
 13,"The 21cm spectral line of hydrogen is a result of the interaction between the electron's and proton's quantum mechanical spin (known as hyperfine splitting). The spins can be either aligned or anti-aligned. When a hydrogen atom decays from the higher energy state to the lower energy state, a photon is emitted with energy equal to the energy difference in these two states. The intrinsic magnetic moment of the electron $\mu_e$ is approximately equal to the Bohr magneton $\mu_B = \frac{e\hbar}{2m_e}$, and the intrinsic magnetic moment of the proton $\mu_p$ is roughly $2.8 \frac{e\hbar}{2m_p}$. Electrons and protons (and any particles with spin $\frac{1}{2}$) have permanent magnetic dipole moments $\vec{m}$ with magnitude equal to the intrinsic magnetic moment.
 
 Consider two classical magnetic dipoles $\vec{m}_1, \vec{m}_2$ separated by a distance $\vec{r} = r\hat{r}$. The magnetic field from a perfect magnetic dipole $\vec{m}$ is
@@ -2928,7 +2928,7 @@ $$
 
 But the question specifically asks for the **classical interaction energy** between two dipoles separated by $ \vec{r} $, so we stop at the dipole-dipole expression above.
 
-Thus, the final boxed expression is the correct classical interaction energy."
+Thus, the final boxed expression is the correct classical interaction energy.",0.49
 14,"There is an electron with its mass $m_{e}$ that orbits a proton with mass $m_{p}$ at a radius $r$. If we only assume the Coulombic attraction, Write an expression of the total energy and the orbital momentum of the electron. Use $e$ for the electric charge quantity and assume that $m_{p}$ is incomparably greater than $m_{e}$ ($m_{p} \gg m_{e}$).","According to: 
 
 The potential energy of the electron.
@@ -3082,7 +3082,7 @@ $$
    \boxed{L = \sqrt{ \frac{m_e e^2 r}{4\pi \epsilon_0} }}
    $$
 
-These expressions are derived under classical mechanics with Coulomb's law, and the assumption that the proton is fixed due to $ m_p \gg m_e $."
+These expressions are derived under classical mechanics with Coulomb's law, and the assumption that the proton is fixed due to $ m_p \gg m_e $.",0.637
 15,"A meteorite that is radially approaching the Earth collides with a space station that revolves around the Earth in a circular orbit with radius R. For all parts of the question, express your results in terms of the mass M of the Earth, the gravitational constant G, the mass $m_1$ of the meteorite, and the mass $m_2$ of the space station.
 
 Assume that, after the impact, the meteorite and the space station form a conglomerate that moves in a closed orbit which approaches the center of the Earth at a minimum distance R/2. State what the shape of the orbit of the conglomerate is and determine:
@@ -3167,7 +3167,69 @@ Conservation of angular momentum immediately yields
 
 Conclude: 
 
-$v_{min} = v_{max} \frac{r_{min}}{r_{max}} \Leftrightarrow \boxed{v_{min} = \frac{2m_1(m_1 + 2m_2)}{m_2(m_1 + m_2)} \sqrt{\frac{GM}{R}}}.$",No,Erro
+$v_{min} = v_{max} \frac{r_{min}}{r_{max}} \Leftrightarrow \boxed{v_{min} = \frac{2m_1(m_1 + 2m_2)}{m_2(m_1 + m_2)} \sqrt{\frac{GM}{R}}}.$",No,"To solve this problem, we will use the conservation of energy and angular momentum principles, as well as the vis-viva equation, which relates the speed of an object in orbit to its distance from the central body. The gravitational constant will be denoted as G, the mass of the Earth as M, the mass of the meteorite as $m_1$, and the mass of the space station as $m_2$.
+
+(i) The speed of the meteorite just before the collision:
+
+Before the collision, the meteorite is radially approaching the Earth. We can use the vis-viva equation to find its speed. The vis-viva equation is:
+
+\[v^2 = GM \left( \frac{2}{r} - \frac{1}{a} \right)\]
+
+where $v$ is the speed of the object, $r$ is the distance from the central body (Earth), and $a$ is the semi-major axis of the orbit. Since the meteorite is approaching the Earth radially, we can assume that its orbit is highly eccentric, and the semi-major axis is very large compared to the distance from the Earth. Therefore, we can approximate the vis-viva equation as:
+
+\[v^2 \approx \frac{2GM}{r}\]
+
+At the moment of collision, the distance $r$ is equal to the radius of the space station's orbit, $R$. So, the speed of the meteorite just before the collision is:
+
+\[v_1 = \sqrt{\frac{2GM}{R}}\]
+
+(ii) The minimum and maximum speeds of the conglomerate:
+
+After the collision, the conglomerate moves in a closed orbit that approaches the center of the Earth at a minimum distance of $R/2$. This means that the conglomerate's orbit is an ellipse with a periapsis (closest point to the Earth) of $R/2$ and an apoapsis (farthest point from the Earth) that we need to determine.
+
+The vis-viva equation can be used to find the speeds at the periapsis and apoapsis:
+
+\[v_{min}^2 = GM \left( \frac{2}{R/2} - \frac{1}{a} \right)\]
+
+\[v_{max}^2 = GM \left( \frac{2}{R} - \frac{1}{a} \right)\]
+
+To find the semi-major axis $a$, we can use the fact that the conglomerate's orbit is an ellipse with a periapsis of $R/2$ and an apoapsis of $R_{max}$. The semi-major axis is the average of the periapsis and apoapsis distances:
+
+\[a = \frac{R/2 + R_{max}}{2}\]
+
+We can also use the conservation of angular momentum to find the relationship between the speeds at the periapsis and apoapsis:
+
+\[m_1v_1R = (m_1 + m_2)v_{min} \cdot \frac{R}{2}\]
+
+\[m_1v_1R = (m_1 + m_2)v_{max}R_{max}\]
+
+From these equations, we can find the minimum and maximum speeds of the conglomerate:
+
+\[v_{min} = \sqrt{\frac{GM}{R/2}}\sqrt{1 - \frac{R/2}{a}}\]
+
+\[v_{max} = \sqrt{\frac{GM}{R}}\sqrt{1 - \frac{R}{a}}\]
+
+(iii) The maximum distance of the conglomerate from the center of the Earth:
+
+The maximum distance of the conglomerate from the center of the Earth is the apoapsis distance, $R_{max}$. We can find this by using the conservation of energy:
+
+\[\frac{1}{2}m_1v_1^2 - \frac{GMm_1}{R} = \frac{1}{2}(m_1 + m_2)v_{max}^2 - \frac{GM(m_1 + m_2)}{R_{max}}\]
+
+Solving for $R_{max}$, we get:
+
+\[R_{max} = \frac{GM(m_1 + m_2)}{\frac{1}{2}(m_1 + m_2)v_{max}^2 - \frac{1}{2}m_1v_1^2 + \frac{GMm_1}{R}}\]
+
+Finally, the condition that $m_1$ and $m_2$ must obey so that the aforementioned scenario is possible:
+
+For the conglomerate to move in a closed orbit that approaches the center of the Earth at a minimum distance of $R/2$, the total energy of the system after the collision must be negative. This means that the kinetic energy of the meteorite before the collision must be less than the potential energy of the conglomerate at the periapsis:
+
+\[\frac{1}{2}m_1v_1^2 < \frac{GM(m_1 + m_2)}{R/2}\]
+
+Solving for $m_1$ and $m_2$, we get:
+
+\[m_1 < \frac{4GM(m_1 + m_2)}{Rv_1^2}\]
+
+This is the condition that $m_1$ and $m_2$ must obey for the scenario to be possible.",0.833
 16,"Galaxies are very hard to spot, even those that are nearest to us. For instance, Andromeda, despite having an apparent magnitude of 3.44, appears very ""dim"" in the sky. This is because its light is very spread out, since its solid angle in the sky is so large (around 3 times that of the Sun!).
 
 Hence, it is often useful to use the surface magnitude of a galaxy, defined as the magnitude that a certain solid angle of that galaxy has. It is usually measured in $mag/arcmin²$.
@@ -3347,7 +3409,7 @@ In a non-expanding universe:
 - Therefore, surface brightness $ F/\Omega \propto \text{constant} $
 - Since surface magnitude $ \mu = -2.5 \log_{10}(F/\Omega) + C $, it also remains constant
 
-✅ **Hence, the surface magnitude of a galaxy is independent of its distance.**"
+✅ **Hence, the surface magnitude of a galaxy is independent of its distance.**",0.735
 17,Please derive Kepler’s laws based on the law of universal gravitation.,"According to: 
 
 A planet is subject to the gravitational force directed toward the center of the Sun. The velocity vector of the planet at a given moment and the center of the Sun together determine a plane. It is easy to see that the planet’s subsequent motion will not leave this plane (because in the direction perpendicular to this plane there is neither velocity nor external force). We adopt a polar coordinate system in this plane with the center of the Sun as the pole.
@@ -3777,7 +3839,7 @@ The constant of proportionality \( \frac{4\pi^2}{GM} \) depends only on the mass
 
 ---
 
-✅ **Conclusion**: All three of Kepler’s laws can be derived from **Newton’s Law of Universal Gravitation** and **laws of motion**, confirming that gravity governs planetary orbits."
+✅ **Conclusion**: All three of Kepler’s laws can be derived from **Newton’s Law of Universal Gravitation** and **laws of motion**, confirming that gravity governs planetary orbits.",0.714
 18,"<image>GSTD-Fig-6</image>As shown in the figure, using Kepler’s three laws, first derive the Binet equation and then derive the universal law of gravitation.","According to: 
 
 First derive the Binet equation. Since gravity is a central force, from the central-force-field equation we know that the universal gravitational force is
@@ -3860,7 +3922,7 @@ Conclude:
 
 In conclusion, the universal law of gravitation is
 
-$F =  - G\frac{Mm}{{r}^{2}}$",Yes,
+$F =  - G\frac{Mm}{{r}^{2}}$",Yes,,1.071
 19,"The rotation curve of our Galaxy is determined using line-of-sight velocity measurements of neutral hydrogen (HI) clouds along various Galactic longitudes, observed through the 21cm HI line Consider an HI cloud with Galactic longitude $l$, located at a distance $R$ from the Galactic Centre (GC) and a distance $D$ from the Sun. Consider Sun to be at a distance $R_0=8.5$kpc from the GC. Assume that both the Sun and the HI cloud are in circular orbits around the GC in the Galactic plane, with angular velocities $\Omega_0$ and $\Omega$, and rotational velocities $V_0$ and $V$,respectively.
 
 The line-of-sight velocity (V<sub>r</sub>) and transverse velocity (V<sub>t</sub>) components of the cloud, as observed from the Sun, can be expressed as  $V_{r} = (\Omega - \Omega_{0})R_{0} \sin l$, $V_{t} = (\Omega - \Omega_{0})R_{0} \cos l - \Omega D$,Seen from the North Galactic Pole, the Galactic rotation is clockwise. Throughout this problem we shall take line-of-sight velocity to be positive when receding and clouds will be treated as point objects.
@@ -4171,7 +4233,7 @@ $$
 \boxed{ \frac{dV}{dR}\bigg|_{R=R_0} = -\frac{1}{2} \frac{V_0}{R_0} }
 $$
 
-These results reflect the difference between a flat rotation curve (implying mass increases with radius, dark matter) and a Keplerian decline (mass interior constant, no dark matter)."
+These results reflect the difference between a flat rotation curve (implying mass increases with radius, dark matter) and a Keplerian decline (mass interior constant, no dark matter).",0.728
 20,"The rotation curve of our Galaxy is determined using line-of-sight velocity measurements of neutral hydrogen (HI) clouds along various Galactic longitudes, observed through the 21cm HI line Consider an HI cloud with Galactic longitude $l$, located at a distance $R$ from the Galactic Centre (GC) and a distance $D$ from the Sun. Consider Sun to be at a distance $R_0=8.5$kpc from the GC. Assume that both the Sun and the HI cloud are in circular orbits around the GC in the Galactic plane, with angular velocities $\Omega_0$ and $\Omega$, and rotational velocities $V_0$ and $V$,respectively.
 
 The line-of-sight velocity (V<sub>r</sub>) and transverse velocity (V<sub>t</sub>) components of the cloud, as observed from the Sun, can be expressed as  $V_{r} = (\Omega - \Omega_{0})R_{0} \sin l$, $V_{t} = (\Omega - \Omega_{0})R_{0} \cos l - \Omega D$,Seen from the North Galactic Pole, the Galactic rotation is clockwise. Throughout this problem we shall take line-of-sight velocity to be positive when receding and clouds will be treated as point objects.
@@ -4520,7 +4582,7 @@ B = -\frac{1}{2} \left( \frac{V_0}{R_0} + \left.\frac{dV}{dR}\right|_{R=R_0} \ri
 }
 $$
 
-These are the standard definitions of **Oort's constants** in terms of the local rotational velocity and its gradient."
+These are the standard definitions of **Oort's constants** in terms of the local rotational velocity and its gradient.",0.728
 21,"Consider a binary system of black holes, both of equal mass $M$, separated by a distance $a$, and revolving around their common center of mass (CM) in circular orbits. This binary system moves against, and interacts with, a very large, uniform field of stars (each of mass $m \ll M$) with number density n. Consider a star that approaches the system from infinity with speed v and impact parameter b, in the reference frame of the CM (As shown in the figure)<image>GSTD-Fig-7</image>. Its closest approach distance to the CM is $r_{p} \approx \frac{1}{2}a$. For tasks (a) and (c), you should make use of the fact that $v^{2} \ll \frac{GM}{a}$.
 
 Obtain an expression for b, in terms of M, a, v, and physical constants. In this task, assume that the star interacts with the binary as if its total mass was fixed at the CM.","According to: 
@@ -4539,7 +4601,7 @@ setting $r_{p}\approx a/2$ and inserting $v_{p}$ into the first equation, we sol
 
 Conclude: 
 
-$b\approx\frac{\sqrt{2GMa}}{v}$ Where we have used $v^{2}\ll\frac{GM}{a}$ in the last step.",Yes,
+$b\approx\frac{\sqrt{2GMa}}{v}$ Where we have used $v^{2}\ll\frac{GM}{a}$ in the last step.",Yes,,1.092
 22,"The accretion of matter onto compact objects, such as neutron stars and black holes, is one of the most efficient ways to produce radiant energy in astrophysical systems. Consider an element of gas of mass $\Delta m$ in a stationary and geometrically thin disc of matter with a maximum radius of $R_{max}$ and minimum stable orbital radius of $R_{min} $(with $R_{min}/R_{max}\ll1$), in rotation around a compact object of mass M and radius R.
 
 Assuming that an element of gas in the disc follows an approximately Keplerian circular orbit, find the expression for the total mechanical energy per unit mass $\frac{\Delta E}{\Delta m}$ released by this gas from the moment it starts orbiting at a radius $R_{max}$ until the moment it reaches an orbit of radius r ≪ $R_{max}$ . This process occurs very slowly, transforming kinetic energy into internal energy of the gas disc through viscous dissipation.
@@ -4678,7 +4740,7 @@ $$
 \boxed{\frac{\Delta E}{\Delta m} = \frac{1}{2} \frac{GM}{r}}
 $$
 
-This is the total mechanical energy per unit mass released by the gas element as it accretes from $ R_{\text{max}} $ to a radius $ r \ll R_{\text{max}} $. The approximation is valid because the initial energy at $ R_{\text{max}} $ is negligible compared to the final binding energy at small $ r $."
+This is the total mechanical energy per unit mass released by the gas element as it accretes from $ R_{\text{max}} $ to a radius $ r \ll R_{\text{max}} $. The approximation is valid because the initial energy at $ R_{\text{max}} $ is negligible compared to the final binding energy at small $ r $.",0.728
 23,"Magnetic fields in the Sun are constantly shaping the structure of various different features in the Solar atmosphere. Inside any feature, the magnetic field (B) adds to the total pressure exerted by the gas. This so-called magnetic pressure is a function of the height z and can be expressed as: ${P_{mag}}(z) = \frac{{B^2(z)}}{{2\mu_0}}$
 
 On the other hand, the gas can be considered to be in hydrostatic equilibrium and hence the gas pressure decays exponentially from an initial pressure value $P_0$ with increasing z. It can be expressed as, ${P_{gas}}(z) = P_0e^{-z/H}$
@@ -4701,14 +4763,14 @@ Conclude:
 
 $\frac{B(z)^{2}}{B_{0}^{2}} = e^{-z/H}$
 
-To finally get $B(z) = B_{0}e^{-z/2H}$",Yes,
+To finally get $B(z) = B_{0}e^{-z/2H}$",Yes,,1.092
 24,"<image>GSTD-Fig-9</image>As shown in the figure, a comet of mass $\alpha m$ is heading (""falls"") radially towards the Sun. It is known that the total mechanical energy of the comet is zero. The comet crashes into Venus, whose mass is $m$. We further assume that the orbit of Venus, before the collision, is circular with radius $R_{0}$. After the crash, the comet and Venus form a single object, called ""Venus-2"". Find the expression in terms of $M_{sun}$ and $R_{0}$ for the orbital speed, $v_{0}$, of Venus before the collision.","According to: 
 
 Let M be the mass of the Sun, then, equating the gravitational force with the force Centripetal $-\frac{GMm}{R_0^2}\hat{r} = -\frac{mv_0^2}{R_0}\hat{r}$
 
 Conclude: 
 
-$v_0^2=\frac{GM_{sun}^{\prime}}{R_0}$",Yes,
+$v_0^2=\frac{GM_{sun}^{\prime}}{R_0}$",Yes,,0.84
 25,"A bored cosmologist comes up with a thought experiment to determine the Hubble constant $(H_{0})$ for his model of a Steady-State-Universe. In this experiment, a large, fully reflecting flat mirror- carrying several gyroscopes that would maintain its spatial orientation in the same plane- would be placed at a distance $D$ from the Solar System in a region without gravitational influences. From the Earth, a laser beam would be directed towards that region for a long period of time. After a time $T$, the radiation would return and be detected, allowing the determination of the fixed constant $H_0$.
 
 Find an expression for $H_0$ as a function of $D,c$ (speed of light) and $T$. Consider that the separation $S$ between the Solar System and the mirror increases only due to the expansion of the universe From the law $S=se^{H_{0}t}$, where $s$ is the initial separation. You may use $e^x\approx1+x$ for $x\ll1$, if necessary.","According to: 
@@ -5502,7 +5564,7 @@ Thus, the final answer is:
 
 $$
 \boxed{H_0 = \frac{2}{T^2} \left( T - \frac{2D}{c} \right)}
-$$"
+$$",0.728
 26,"In a binary neutron star system, two identical neutron stars of mass $M$ each undergo a circular orbit of radius $R$ around their center of mass. This problem explores the general relativistic effect of gravitational waves on this system, but the system can be approximated as Newtonian circular orbits which radiate energy but remain very nearly circular even though the radius is changing very slowly over time.
 
 The total gravitational wave luminosity of the system, $L_{GW}$, can be approximated From general relativity by a single term which includes only a dimensionless constant, the physical constants $G$ and $c$, and $M$ and $R$. Furthermore, $c$ and $R$ are raised to the same power. Using the fact that the dimensionless constant from general relativistic calculations is $\frac{2}{5}$, determine the expression for $L_{GW}$. Use the given value of the dimensionless constant for the remainder of this problem.","According to: 
@@ -5947,7 +6009,7 @@ $$
 \boxed{L_{\text{GW}} = \frac{2}{5} \frac{G^4 M^5}{c^5 R^5}}
 $$
 
-This is the gravitational wave luminosity of the binary neutron star system, with each star of mass $ M $ in a circular orbit of radius $ R $ about the center of mass, and the dimensionless constant given as $ \frac{2}{5} $, consistent with general relativistic calculations when expressed in terms of $ R $."
+This is the gravitational wave luminosity of the binary neutron star system, with each star of mass $ M $ in a circular orbit of radius $ R $ about the center of mass, and the dimensionless constant given as $ \frac{2}{5} $, consistent with general relativistic calculations when expressed in terms of $ R $.",0.637
 27,"In a binary neutron star system, two identical neutron stars of mass $M$ each undergo a circular orbit of radius $R$ around their center of mass. This problem explores the general relativistic effect of gravitational waves on this system, but the system can be approximated as Newtonian circular orbits which radiate energy but remain very nearly circular even though the radius is changing very slowly over time.
 
 Using the expression: $L_{GW} = \frac{2G^4 M^5}{5R^5 c^5}$, find an expression for $\frac{\mathrm{d}R}{\mathrm{d}t}$, the rate of change of the radius $R$ of the circular orbit with respect to time, using the same constants and variables. Hint: $\frac{\mathrm{d}}{\mathrm{d}t}(x^{\alpha}) = \alpha x^{\alpha - 1} \frac{\mathrm{d}x}{\mathrm{d}t}$.","According to: 
@@ -6105,4 +6167,4 @@ $$
 \boxed{\frac{dR}{dt} = -\frac{8 G^3 M^3}{5 R^3 c^5}}
 $$
 
-This is the rate at which the orbital radius decreases due to gravitational wave emission. The negative sign indicates that $ R $ is decreasing over time."
+This is the rate at which the orbital radius decreases due to gravitational wave emission. The negative sign indicates that $ R $ is decreasing over time.",0.49
