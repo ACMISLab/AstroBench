@@ -1,7 +1,7 @@
 <h1 align="center"> AstroBench </h1>
 
 The official repository of **"AstroBench: A Benchmark for Computational Reasoning in Astronomy with Large Language Models"**.
-![image](https://github.com/ACMISLab/AstroBench/blob/main/Images/Framework.png)
+![image](https://github.com/ACMISLab/AstroBench/blob/main/Images/framework.png)
 
 ## 🆕 News
 - \[**January 2026**\] We have released the second version 2.0 and are very excited to share our research and insights into astronomical calculation reasoning!
